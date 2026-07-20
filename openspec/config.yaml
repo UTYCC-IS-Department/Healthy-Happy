@@ -1,0 +1,41 @@
+schema: spec-driven
+
+# Project context — injected into every artifact (proposal, design, specs, tasks)
+context: |
+  Project: Healthy & Happy — wellness/health website targeting Myanmar users, with
+  multi-language support (i18n) as a first-class requirement, not an afterthought.
+
+  Tech stack:
+    Frontend: Next.js + TypeScript
+    Language: TypeScript/JavaScript primary, Python for auxiliary tooling if needed
+
+  i18n requirements:
+    - Support English and Burmese (my) at minimum; design translation keys so
+      additional locales can be added without code changes.
+    - Locale-aware routing (e.g. /en/..., /my/...) and persisted user locale
+      preference.
+    - Burmese text rendering/font support must be verified explicitly — Zawgyi
+      vs Unicode encoding is a known pitfall for Myanmar-facing sites; assume
+      Unicode-only and note this as a constraint.
+    - Externalize all user-facing strings from day one of scaffolding — no
+      hardcoded copy in components.
+
+  Conventions:
+    - RESTful API, JSON responses
+    - Conventional commits
+    - Strict TypeScript on frontend and backend
+
+rules:
+  proposal:
+    - State clearly which locales are in scope for v1 vs future
+    - Call out any font/encoding risk for Burmese script
+  design:
+    - Specify the i18n library/framework choice and why (e.g. react-i18next vs next-intl vs custom)
+    - Include the translation file structure and key-naming convention
+    - Describe how locale is detected/persisted (browser detection, user setting, URL segment)
+  specs:
+    - Use Given/When/Then (Scenario) format
+    - Every locale-dependent requirement must have a scenario for at least two locales
+  tasks:
+    - Break tasks into chunks of max 2 hours
+    - Environment/tooling setup tasks must precede any feature-specific i18n tasks

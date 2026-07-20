@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "title": "Healthy & Happy | ပိုမိုကျန်းမာပျော်ရွှင်သောဘဝ",
+    "description": "မြန်မာအသုံးပြုသူများအတွက် ဘာသာစကားနှစ်မျိုးပါဝင်သော ကျန်းမာရေးအခြေခံ။"
+  },
+  "home": {
+    "brand": "Healthy & Happy",
+    "languageLabel": "ဘာသာစကား",
+    "heroEyebrow": "နူးညံ့စွာ စတင်ရန်",
+    "heroTitle": "ရွေးချယ်မှုသေးသေးလေးတစ်ခုစီဖြင့် ပိုမိုကျန်းမာသော နေ့စဉ်ဘဝကို တည်ဆောက်ပါ။",
+    "heroDescription": "ဤနမူနာစာမျက်နှာသည် အေးချမ်းသောအပြန်အလှန်လုပ်ဆောင်မှု၊ ရှင်းလင်းသောလမ်းညွှန်မှုနှင့် မိမိဘာသာစကားဖြင့် သက်တောင့်သက်သာရှိသော ကျန်းမာရေးအတွေ့အကြုံအတွက် အခြေခံကို ပြသထားပါသည်။",
+    "primaryAction": "အခြေခံကို ကြည့်မည်",
+    "secondaryAction": "လမ်းညွှန်ကို ကြည့်မည်",
+    "setupBadge": "Next.js အခြေခံ",
+    "statOneValue": "၀၂",
+    "statOneLabel": "ဘာသာစကားများ",
+    "statTwoValue": "၀၁",
+    "statTwoLabel": "နမူနာစာမျက်နှာ",
+    "statThreeValue": "∞",
+    "statThreeLabel": "တိုးချဲ့နိုင်မှု",
+    "sectionEyebrow": "ပါဝင်သောအရာများ",
+    "sectionTitle": "ရှူရှိုက်ရန်နေရာရှိသော စနစ်သေးသေးလေး။",
+    "sectionDescription": "ဤစာမျက်နှာရှိ အရာအားလုံးသည် စစ်ဆေးရန်နှင့် ဆက်လက်တိုးချဲ့ရန် ရိုးရှင်းစွာ တည်ဆောက်ထားပါသည်။ UI အခြေခံများသည် ဒေသတွင်းတွင်ရှိပြီး စာသားများသည် လွယ်ကူစွာ ပြောင်းလဲနိုင်ပါသည်။",
+    "wellnessTitle": "နေ့စဉ် ကိုယ်တိုင်စစ်ဆေးခြင်း",
+    "wellnessDescription": "လူများ နေ့စဉ်ပြန်လည်အသုံးပြုနိုင်သော အချိန်တိုများအဖြစ် ကျန်းမာရေးအကြောင်းအရာများကို ဒီဇိုင်းဆွဲပါ။",
+    "wellnessAction": "စစ်ဆေးမှု စတင်မည်",
+    "componentTitle": "ဒေသတွင်း UI အစိတ်အပိုင်းများ",
+    "componentDescription": "ဤကတ်၊ တံဆိပ်နှင့် ခလုတ်များသည် သင့်ပရောဂျက်အတွင်းရှိ shadcn/ui source component များ ဖြစ်ပါသည်။ အပြင်ဘက် design system ကို စောင့်စရာမလိုဘဲ စတိုင်ပြင်နိုင်ပါသည်။",
+    "componentTag": "shadcn/ui",
+    "guideEyebrow": "နောက်တစ်ဆင့်အတွက်",
+    "guideTitle": "shadcn component အသစ်ထည့်ရန်",
+    "guideDescription": "သင့်ပရောဂျက်၏ root folder မှ command ကို run ပါ။ CLI သည် ပြင်ဆင်နိုင်သော component ကို components/ui ထဲသို့ ထည့်ပေးသောကြောင့် code ကို သင်ပိုင်ဆိုင်ပါသည်။",
+    "guideCommand": "npx shadcn@latest add input",
+    "copyCommand": "Command ကို ကူးမည်",
+    "copiedCommand": "ကူးပြီးပါပြီ",
+    "footerNote": "အစကတည်းက Unicode အတွက် အဆင်သင့်ဖြစ်ပါသည်။ ပိုမိုကျန်းမာပျော်ရွှင်သော ဝဘ်အတွက် တည်ဆောက်ထားပါသည်။",
+    "languageEnglish": "English",
+    "languageMyanmar": "မြန်မာ",
+    "activeLanguage": "လက်ရှိဘာသာစကား"
+  }
+}
