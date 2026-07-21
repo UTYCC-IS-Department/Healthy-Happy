@@ -1,32 +1,27 @@
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
-import { isLocale, locales, type Locale } from "@/i18n/config";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return [{ locale: "en" }];
 }
 
 export default async function LocaleLayout({
   children,
   params,
-}: Readonly<{
+}: {
   children: ReactNode;
   params: Promise<{ locale: string }>;
-}>) {
-  const { locale: localeParam } = await params;
-  if (!isLocale(localeParam)) notFound();
-
-  const locale = localeParam as Locale;
-  setRequestLocale(locale);
-  const messages = await getMessages();
+}) {
+  const { locale } = await params;
+  if (locale !== "en") notFound();
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      <div lang={locale} data-locale={locale} className="min-h-screen">
-        {children}
-      </div>
-    </NextIntlClientProvider>
+    <div lang="en" className="flex min-h-screen flex-col">
+      <SiteHeader />
+      <main className="flex-1">{children}</main>
+      <SiteFooter />
+    </div>
   );
 }
