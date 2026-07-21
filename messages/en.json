@@ -37,5 +37,11 @@
     "languageEnglish": "English",
     "languageMyanmar": "မြန်မာ",
     "activeLanguage": "Active language"
+  },
+  "AboutUs": {
+    "title": "About Us",
+    "description": "Learn more about our team, our mission, and our values.",
+    "content": "We are a passionate team dedicated to building a healthier and happier world, one step at a time. Our goal is to provide accessible wellness resources for everyone.",
+    "teamTitle": "Meet Our Team"
   }
 }
