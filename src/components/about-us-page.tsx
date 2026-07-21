@@ -1,14 +1,13 @@
-import { getTranslations } from "next-intl/server";
+"use client";
 
-export async function AboutUsPage() {
-  const t = await getTranslations("AboutUs");
-
+export function AboutUsPage() {
   return (
-    <main className="container mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-4">{t("title")}</h1>
-      <p className="text-lg leading-relaxed">
-        {t("content")}
-      </p>
-    </main>
+    <div className="min-h-screen bg-background p-8 text-foreground">
+      <div className="mx-auto flex max-w-2xl flex-col gap-4 rounded-xl border border-border bg-card p-8 shadow-sm">
+        <h1 className="text-3xl font-semibold">About Us</h1>
+      </div>
+    </div>
   );
 }
+
+export default AboutUsPage;
