@@ -39,9 +39,38 @@
     "activeLanguage": "Active language"
   },
   "AboutUs": {
-    "title": "About Us",
-    "description": "Learn more about our team, our mission, and our values.",
-    "content": "We are a passionate team dedicated to building a healthier and happier world, one step at a time. Our goal is to provide accessible wellness resources for everyone.",
-    "teamTitle": "Meet Our Team"
+    "establishment": "Est. 2017 in Mandalay, Myanmar",
+    "companyName": "Healthy & Happy  Myanmar Co., Ltd.",
+    "imagePlaceholder": "[ Comic / Nepotism Image Placeholder ]",
+    "intro": "The Healthy Plate is dedicated to promoting a wholesome lifestyle centered around fresh ingredients, balanced nutrition, and overall well-being. Our brand identity reflects vitality, health, and happiness through vibrant green aesthetics and clear nutritional categorization.",
+    "brandValues": {
+      "title": "Brand Values",
+      "freshness": {
+        "title": "Freshness",
+        "description": "Emphasizing farm-fresh vegetables, fruits, and organic produce"
+      },
+      "balance": {
+        "title": "Balance",
+        "description": "Highlighting whole grains, lean proteins, and wholesome nutrition."
+      },
+      "joy": {
+        "title": "Joy & Vitality",
+        "description": "Inspiring a positive, energetic lifestyle summarized by our motto: \"Healthy & Happy\""
+      }
+    },
+    "history": {
+      "logoPlaceholder": "[ Logo ]",
+      "title": "Our History",
+      "p1": "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs and a pioneering nutritionist.",
+      "p2": "Our journey began with a deeply personal story. One of our co-founders experienced the heartbreak of losing her father to cancer due to a lack of access to nutritious food. This profound experience ignited a passion to ensure no one else would suffer from preventable health issues due to poor nutrition.",
+      "p3": "Recognizing the prevalence of diabetes and other health conditions in our community, we committed ourselves to making a difference—one nutritious product at a time."
+    },
+    "teamGrid": {
+      "0": { "alt": "Top Left Team Member", "title": "Co-Founder 1" },
+      "1": { "alt": "Top Right Team Member", "title": "Nutritionist" },
+      "2": { "alt": "Center Focus: Founding Story", "title": "The Mission" },
+      "3": { "alt": "Bottom Left: Mandalay Office", "title": "Operations" },
+      "4": { "alt": "Bottom Right Team Member", "title": "Co-Founder 2" }
+    }
   }
 }
