@@ -71,6 +71,39 @@
       "2": { "alt": "Center Focus: Founding Story", "title": "The Mission" },
       "3": { "alt": "Bottom Left: Mandalay Office", "title": "Operations" },
       "4": { "alt": "Bottom Right Team Member", "title": "Co-Founder 2" }
+    },
+    "WhereCanBuy": {
+      "title": "Where Can Buy",
+      "footerNote": "Apart from major modern trade venues, our products are widely available at prominent regional supermarkets and trusted local retail shops across the country",
+      "locations": {
+        "grandhantharHospital1": "Grandhanthar Hospital",
+        "shweOhhPharmacy": "Shwe Ohh Pharmacy",
+        "koHanTinPharmacy": "Ko Han Tin Pharmacy",
+        "marketPlace": "Market Place",
+        "citymart": "Citymart",
+        "grandhantharHospital2": "Grandhanthar Hospital",
+        "grandhantharHospital3": "Grandhanthar Hospital",
+        "grandhantharHospital4": "Grandhanthar Hospital",
+        "grandhantharHospital5": "Grandhanthar Hospital"
+      }
+    },
+    "CoreIdentity": {
+      "title": "Our Core Identity",
+      "mission": {
+        "title": "Mission",
+        "heading": "Revolutionizing Health & Wellness",
+        "description": "To revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet and support sustainable agricultural practices."
+      },
+      "vision": {
+        "title": "Vision",
+        "heading": "SEED to NOURISHING RICH SNACKS",
+        "description": "From seed to nourishing rich snacks—we envision a Myanmar where everyone has access to nutritious, delicious food that supports local farmers and builds healthier communities."
+      },
+      "motto": {
+        "title": "Motto",
+        "heading": "",
+        "description": ""
+      }
     }
   }
 }
