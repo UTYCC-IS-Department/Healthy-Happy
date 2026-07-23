@@ -36,55 +36,70 @@ export const WhereCanBuy: React.FC = () => {
 
             return (
               <div key={item.id} className="relative mt-4">
-                {/* Main Card Shape with Top Tab Bump */}
-                <div
-                  className={`
-                    relative
-                    h-35
-                    rounded-3xl
-                    shadow-lg
-                    px-4
-                    flex
-                    items-center
-                    justify-center
-                    text-center
-                    pt-1
-                    ${
-                      active
-                        ? "bg-[#16b300] text-black font-extrabold"
-                        : "bg-[#dedede] text-black font-bold"
-                    }
-                  `}
-                >
-                  {/* Top-right custom tab bump overlay */}
-                  <div 
+                
+                {/* Shared Centering Wrapper to lock width and alignment together */}
+                <div className="relative w-full max-sm:w-[80%] mx-auto">
+
+                  {/* Background Shadow Badge */}
+                  <div className="absolute -bottom-3 left-11 w-10 h-18 bg-[#3a3437] rounded-br-xl shadow-md z-0 pointer-events-none" />
+
+                  {/* Main Card Shape with Top Tab Bump */}
+                  <div
                     className={`
-                      absolute 
-                      -top-8
-                      right-8
-                      w-18
-                      h-18
-                      rounded-full
-                      ${active ? "bg-[#16b300]" : "bg-[#dedede]"}
+                      relative
+                      h-40
+                      w-full
+                      rounded-3xl
+                      shadow-lg
+                      px-4
+                      flex
+                      items-center
+                      justify-center
+                      text-center
+                      pt-1
+                      z-10
+                      ${
+                        active
+                          ? "bg-[#16b300] text-black font-extrabold"
+                          : "bg-[#dedede] text-black font-bold"
+                      }
                     `}
-                  />
+                  >
+                    {/* Top-right custom tab bump overlay */}
+                    <div 
+                      className={`
+                        absolute 
+                        -top-8
+                        right-8
+                        w-18
+                        h-18
+                        rounded-full
+                        ${active ? "bg-[#16b300]" : "bg-[#dedede]"}
+                      `}
+                    />
 
-                  {/* Top-right brown circle element */}
-                  <div className="absolute -top-6 right-10 w-14 h-14 bg-[#825355] rounded-full z-10" />
+                    {/* Top-right brown circle element */}
+                    <div className="absolute -top-6 right-10 w-14 h-14 bg-[#825355] rounded-full z-10" />
 
-                  {/* Location Title */}
-                  <p className="font-extrabold text-base leading-tight z-10">
-                    {t(item.nameKey)}
-                  </p>
+                    {/* Location Title */}
+                    <p className="font-extrabold text-base leading-tight z-10">
+                      {t(item.nameKey)}
+                    </p>
 
-                  {/* Bottom-left overlapping dark badge tab */}
-                  <div className="absolute -bottom-4 left-4 w-14 h-20 bg-[#4a4246] rounded-t-2xl rounded-b-xl shadow-lg flex flex-col items-center pt-2 z-20">
-                    {/* Inner circle with ID */}
-                    <div className="w-10 h-10 bg-[#825355] rounded-full border-2 border-[#e6d5d5] flex items-center justify-center shadow-inner">
-                      <span className="text-white font-bold text-sm">{item.id}</span>
+                    {/* Bottom-left foreground badge wrapper */}
+                    <div className="absolute -bottom-3 left-4 flex flex-col items-center z-20">
+                      {/* Main Foreground Badge Tab */}
+                      <div className="relative w-15 h-18 bg-[#4a4246] rounded-t-4xl rounded-bl-xl shadow-lg flex flex-col items-center pt-2">
+                        {/* Inner circle with ID */}
+                        <div className="relative bottom-1 w-12 h-12 bg-[#825355] rounded-full border-4 border-[#e6d5d5] flex items-center justify-center shadow-inner">
+                          <span className="text-white font-bold text-2xl">{item.id}</span>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
+
               </div>
             );
           })}
