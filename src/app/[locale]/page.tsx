@@ -168,81 +168,123 @@ export default function HomePage() {
         </div>
       </section>
       <ContactSection />
-      <div className="border-t bg-[#d9d9d9]">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-5 sm:px-8 lg:px-12">
-          <p className="text-sm font-medium">Check Out news for last updated products</p>
-          <Link
-            href="/en/products"
-            className="rounded-lg bg-[#6b6b6b] px-4 py-2 text-sm text-white"
-          >
-            Check out updated news →
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }
 function ContactSection() {
   return (
-    <section className="border-b bg-[#f5f5f5] py-12">
-      <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
-        <h2 className="mb-8 text-center text-xl font-bold">Contact Us</h2>
-        <div className="mb-8 grid gap-10 md:grid-cols-2">
-          <p className="self-center text-base font-medium leading-relaxed">
-            Whether you&apos;re curious, dreaming up something curious, or simply want to connect,
-            we&apos;d love to hear from you.
-          </p>
-          <form className="space-y-3" onSubmit={(event) => event.preventDefault()}>
-            <div className="grid grid-cols-2 gap-3">
+    <section className="bg-[#f4f2eb] pt-12 pb-16 font-['Roboto',sans-serif]">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        {/* Title */}
+        <h2 className="mb-10 text-center text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
+          Contact Us
+        </h2>
+
+        {/* Top Grid: Left Card & Form */}
+        <div className="grid gap-6 md:grid-cols-2">
+          {/* Left Gray Container Card */}
+          <div className="flex items-center justify-center rounded-2xl bg-[#dadada] p-8 text-center sm:p-12">
+            <h3 className="max-w-md text-xl font-extrabold leading-snug text-black sm:text-2xl">
+              Whether you&apos;re curious, dreaming up something custom, or
+              simply want to connect, we&apos;d love to hear from you
+            </h3>
+          </div>
+
+          {/* Right Form */}
+          <form
+            className="flex flex-col space-y-4"
+            onSubmit={(event) => event.preventDefault()}
+          >
+            <div className="grid grid-cols-2 gap-4">
               <input
                 required
                 placeholder="First Name"
-                className="rounded border bg-white px-3 py-2 text-sm"
+                className="w-full rounded-2xl bg-[#dadada] px-5 py-3.5 text-sm font-bold text-black placeholder:font-bold placeholder:text-black focus:outline-none focus:ring-2 focus:ring-black"
               />
               <input
                 required
                 placeholder="Last Name"
-                className="rounded border bg-white px-3 py-2 text-sm"
+                className="w-full rounded-2xl bg-[#dadada] px-5 py-3.5 text-sm font-medium text-black placeholder:font-bold placeholder:text-black focus:outline-none focus:ring-2 focus:ring-black"
               />
             </div>
+
             <input
               required
               type="email"
               placeholder="Email"
-              className="w-full rounded border bg-white px-3 py-2 text-sm"
+              className="w-full rounded-2xl bg-[#dadada] px-5 py-3.5 text-sm font-medium text-black placeholder:font-bold placeholder:text-black focus:outline-none focus:ring-2 focus:ring-black"
             />
+
+            {/* Asymmetric Message Input Box matching photo 1 */}
             <textarea
               required
               rows={4}
               placeholder="Message"
-              className="w-full resize-none rounded border bg-white px-3 py-2 text-sm"
+              className="w-full resize-none rounded-t-10xl rounded-bl-[3.5rem] rounded-tr-[3.5rem] bg-[#dadada] px-5 py-4 text-sm font-medium text-black placeholder:font-bold placeholder:text-black focus:outline-none focus:ring-2 focus:ring-black"
             />
-            <div className="flex justify-end">
-              <button className="flex items-center gap-2 rounded bg-primary px-5 py-2 text-sm font-bold text-white">
-                Submit <Send className="size-3.5" />
+
+            {/* Submit Pill Button */}
+            <div className="flex justify-end pt-1">
+              <button
+                type="submit"
+                className="inline-flex items-center gap-2 rounded-full bg-[#2a2f3a] px-7 py-2.5 text-xs font-bold text-white shadow-sm transition hover:bg-black"
+              >
+                Submit <ArrowRight className="h-3.5 w-3.5" />
               </button>
             </div>
           </form>
         </div>
-        <div className="flex flex-wrap items-center gap-6 rounded-xl border bg-white p-4 text-sm">
-          <span className="flex items-center gap-2">
-            <Phone className="size-4 text-primary" />
-            +95 969650030
-          </span>
-          <span className="flex items-center gap-2">
-            <Mail className="size-4 text-primary" />
-            healthyandhappygroup2017@gmail.com
-          </span>
-          <span className="flex items-center gap-2">
-            <MapPin className="size-4 text-primary" />
-            Yatanarpon Cyber City, Myanmar
-          </span>
-          <span className="ml-auto flex gap-3 text-primary">
-            <SiFacebook />
-            <SiTiktok />
-            <SiInstagram />
-            <SiWhatsapp />
-          </span>
+
+        {/* Bottom Quick Contact Cards Grid */}
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12">
+          {/* Social Links Card */}
+          <div className="flex flex-col items-center justify-center rounded-2xl bg-[#dadada] p-4 lg:col-span-4">
+            <span className="mb-2 text-xs font-bold text-black">
+              Follow Us On
+            </span>
+            <div className="flex items-center gap-6 text-xl text-black">
+              <a href="#" aria-label="Facebook" className="hover:opacity-80">
+                <SiFacebook />
+              </a>
+              <a href="#" aria-label="WhatsApp" className="hover:opacity-80">
+                <SiWhatsapp />
+              </a>
+              <a href="#" aria-label="TikTok" className="hover:opacity-80">
+                <SiTiktok />
+              </a>
+            </div>
+          </div>
+
+          {/* Call Us Box */}
+          <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-2">
+            <Phone className="h-5 w-5 shrink-0  text-black" />
+            <div className="text-xs">
+              <span className="block font-extrabold text-black">Call Us</span>
+              <span className="font-bold text-black">+95 969650030</span>
+            </div>
+          </div>
+
+          {/* Email Us Box */}
+          <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-3">
+            <Mail className="h-5 w-5 shrink-0  text-black" />
+            <div className="text-xs">
+              <span className="block font-extrabold text-black">Email Us</span>
+              <span className="break-all font-bold text-black">
+                healthyandhappygroup2017@gmail.com
+              </span>
+            </div>
+          </div>
+
+          {/* Location Box */}
+          <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-3">
+            <MapPin className="h-5 w-5 shrink-0  text-black" />
+            <div className="text-xs">
+              <span className="block font-extrabold text-black">Location</span>
+              <span className="font-bold leading-tight text-black">
+                လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
