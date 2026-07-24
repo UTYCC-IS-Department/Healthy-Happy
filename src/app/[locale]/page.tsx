@@ -38,26 +38,77 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <section className="border-y py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
-          <h2 className="mb-6 text-xl font-bold">Feature Categories</h2>
-          <div className="mb-6 flex gap-3 overflow-x-auto pb-1">
-            {[
-              "Protein Bites",
-              "No Sugar Cookies",
-              "Oat Cookies",
-              "Healthy Snacks",
-              "Original Series",
-            ].map((category) => (
-              <div key={category} className="w-28 shrink-0 text-center">
-                <div className="mb-1 h-16 rounded-lg bg-secondary/50" />
-                <span className="text-[11px] font-medium">{category}</span>
-              </div>
-            ))}
-          </div>
-          <ProductCarousel />
+      {/* ----------------- Feature Categories Section ----------------- */}
+<section className="border-y py-10 bg-[#faf8f5]">
+  <div className="mx-auto max-w-5xl px-4">
+    
+    {/* Section Title */}
+    <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-black sm:text-3xl">
+      Feature Categories
+    </h2>
+<div className="mb-10 flex justify-center gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
+  {[
+    { name: "Protein Bites", slug: "protein-bites" },
+    { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
+    { name: "Oat Cookies", slug: "oat-cookies" },
+    { name: "Healthy Snacks", slug: "healthy-snacks" },
+    { name: "Original Series", slug: "original-series" },
+  ].map((category) => (
+    <a
+      key={category.slug}
+      href={`/products?category=${category.slug}`}
+      className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-40"
+    >
+      <div className="relative w-full">
+        <svg
+          viewBox="0 0 160 165"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full drop-shadow-md"
+        >
+          {/* Green Container Shape with Inverted Smooth Curved Corners */}
+          <path
+            d="M 16 0 
+               H 144 
+               A 16 16 0 0 1 160 16 
+               V 108 
+               A 16 16 0 0 1 144 124 
+               A 12 12 0 0 0 132 136 
+               V 149 
+               A 16 16 0 0 1 116 165 
+               H 44 
+               A 16 16 0 0 1 28 149 
+               V 136 
+               A 12 12 0 0 0 16 124 
+               A 16 16 0 0 1 0 108 
+               V 16 
+               A 16 16 0 0 1 16 0 Z"
+            fill="#4cae4f"
+          />
+        </svg>
+        <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
+          <Image
+            src={assets.product}
+            alt={category.name}
+            fill
+            sizes="(max-width: 640px) 144px, 160px"
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
         </div>
-      </section>
+
+        <div className="absolute bottom-[4%] left-0 right-0 flex items-center justify-center px-2">
+          <span className="whitespace-nowrap text-center text-[11px] font-bold text-white sm:text-xs">
+            {category.name}
+          </span>
+        </div>
+      </div>
+    </a>
+  ))}
+</div>
+    <ProductCarousel />
+
+  </div>
+</section>
       <section className="border-b py-12">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-8 md:grid-cols-2 lg:px-12">
           <div>
