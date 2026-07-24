@@ -1,22 +1,23 @@
+import { useTranslations } from "next-intl";
+
 const Sustainability = () => {
+    const t = useTranslations("AboutUs.sustainability");
+
     const buttons = [
-        "Farm to Factory Model",
-        "Farmer Support",
-        "ESG & Community Impact",
-        "SDGs Goals",
+        t("buttons.farm"),
+        t("buttons.farmer"),
+        t("buttons.esg"),
+        t("buttons.sdgs"),
     ];
 
     return (
         <section id="sustainability1" className="bg-[#F8F5EC] py-20">
             <div className="max-w-7xl mx-auto px-6">
-
                 {/* Title */}
                 <h2 className="text-4xl font-bold text-center mb-16">
-                    Sustainability
+                    {t("title")}
                 </h2>
-
                 <div className="grid lg:grid-cols-[320px_1fr] gap-16">
-
                     {/* LEFT */}
                     <div className="flex flex-col justify-between">
 
@@ -45,30 +46,22 @@ const Sustainability = () => {
                                 </button>
                             ))}
                         </div>
-
                         <div className="mt-16 bg-gray-300 p-8 rounded-md min-h-[120px] flex items-center justify-center">
                             <p className="font-semibold">
-                                You can add some text here
+                                {t("description")}
                             </p>
                         </div>
-
                     </div>
-
                     {/* RIGHT */}
                     <div className="relative min-h-[520px]">
-
-                        {/* Top Cards */}
                         <div className="flex justify-center gap-10">
                             <div className="w-56 h-72 bg-pink-100 rounded-2xl"></div>
                             <div className="w-60 h-40 mt-16 bg-pink-100 rounded-2xl"></div>
                         </div>
-
-                        {/* Bottom Card */}
                         <div className="mt-6">
                             <div className="mx-auto w-[75%] h-52 bg-pink-100 rounded-2xl"></div>
                         </div>
-
-                        {/* SVG ARROWS */}
+                        {/* SVG stays the same */}
                         <svg
                             className="absolute inset-0 w-full h-full pointer-events-none"
                             viewBox="0 0 700 500"
@@ -77,7 +70,7 @@ const Sustainability = () => {
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <defs>
-                                {/* Top Arrow */}
+                                {/* Top Arrow Head */}
                                 <marker
                                     id="topCurvedArrowHead"
                                     viewBox="0 0 10 10"
@@ -88,7 +81,7 @@ const Sustainability = () => {
                                     orient="auto"
                                 >
                                     <path
-                                        d="M1 1 L8 5 L1 9"
+                                        d="M 1 1 L 8 5 L 1 9"
                                         fill="none"
                                         stroke="black"
                                         strokeWidth="1.8"
@@ -96,8 +89,7 @@ const Sustainability = () => {
                                         strokeLinejoin="round"
                                     />
                                 </marker>
-
-                                {/* Left Arrow */}
+                                {/* Left Arrow Head */}
                                 <marker
                                     id="leftCurvedArrowHead"
                                     viewBox="0 0 10 10"
@@ -108,7 +100,7 @@ const Sustainability = () => {
                                     orient="auto-start-reverse"
                                 >
                                     <path
-                                        d="M1 1 L9 5 L1 9"
+                                        d="M 1 1 L 9 5 L 1 9"
                                         fill="none"
                                         stroke="black"
                                         strokeWidth="1.8"
@@ -117,28 +109,26 @@ const Sustainability = () => {
                                     />
                                 </marker>
                             </defs>
-
-                            {/* Top Arrow */}
+                            {/* TOP CURVED ARROW */}
                             <path
                                 d="
-                  M350 20
-                  L360 20
-                  C430 20 470 50 470 50
-                "
+                                    M 350 20
+                                    L 360 20
+                                    C 430 20 470 50 470 50
+                                "
                                 stroke="black"
                                 strokeWidth="2.5"
                                 strokeLinecap="round"
                                 fill="none"
                                 markerEnd="url(#topCurvedArrowHead)"
                             />
-
-                            {/* Left Arrow */}
+                            {/* LEFT CURVED ARROW */}
                             <path
                                 d="
-                  M100 120
-                  C10 180 20 250 75 320
-                  C90 335 105 345 125 350
-                "
+                                    M 100 120
+                                    C 10 180 20 250 75 320
+                                    C 90 335 105 345 125 350
+                                    "
                                 stroke="black"
                                 strokeWidth="2.5"
                                 strokeLinecap="round"
@@ -146,7 +136,6 @@ const Sustainability = () => {
                                 markerEnd="url(#leftCurvedArrowHead)"
                             />
                         </svg>
-
                     </div>
                 </div>
             </div>

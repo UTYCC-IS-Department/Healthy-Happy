@@ -66,11 +66,36 @@
       "p3": "Recognizing the prevalence of diabetes and other health conditions in our community, we committed ourselves to making a difference—one nutritious product at a time."
     },
     "teamGrid": {
-      "0": { "alt": "Top Left Team Member", "title": "Co-Founder 1" },
-      "1": { "alt": "Top Right Team Member", "title": "Nutritionist" },
-      "2": { "alt": "Center Focus: Founding Story", "title": "The Mission" },
-      "3": { "alt": "Bottom Left: Mandalay Office", "title": "Operations" },
-      "4": { "alt": "Bottom Right Team Member", "title": "Co-Founder 2" }
+      "0": {
+        "alt": "Top Left Team Member",
+        "title": "Co-Founder 1"
+      },
+      "1": {
+        "alt": "Top Right Team Member",
+        "title": "Nutritionist"
+      },
+      "2": {
+        "alt": "Center Focus: Founding Story",
+        "title": "The Mission"
+      },
+      "3": {
+        "alt": "Bottom Left: Mandalay Office",
+        "title": "Operations"
+      },
+      "4": {
+        "alt": "Bottom Right Team Member",
+        "title": "Co-Founder 2"
+      }
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "buttons": {
+        "farm": "Farm to Factory Model",
+        "farmer": "Farmer Support",
+        "esg": "ESG & Community Impact",
+        "sdgs": "SDGs Goals"
+      },
+      "description": "You can add some text here"
     },
     "WhereCanBuy": {
       "title": "Where Can Buy",
