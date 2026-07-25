@@ -12,7 +12,6 @@ export default function HomePage() {
     <div className="w-full bg-white">
       {/* hero section? */}
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
-
         <div className="max-w-xl">
           <h1 className="mb-8 text-5xl font-extrabold leading-[1.15] tracking-tight text-black md:text-6xl">
             Healthy &amp;
@@ -41,21 +40,70 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <section className="border-y py-10">
-        <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
-          <h2 className="mb-6 text-xl font-bold">Feature Categories</h2>
-          <div className="mb-6 flex gap-3 overflow-x-auto pb-1">
+      {/* ----------------- Feature Categories Section ----------------- */}
+      <section className="border-y py-10 bg-[#faf8f5]">
+        <div className="mx-auto max-w-5xl px-4">
+          {/* Section Title */}
+          <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-black sm:text-3xl">
+            Feature Categories
+          </h2>
+          <div className="mb-10 flex justify-center gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
             {[
-              "Protein Bites",
-              "No Sugar Cookies",
-              "Oat Cookies",
-              "Healthy Snacks",
-              "Original Series",
+              { name: "Protein Bites", slug: "protein-bites" },
+              { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
+              { name: "Oat Cookies", slug: "oat-cookies" },
+              { name: "Healthy Snacks", slug: "healthy-snacks" },
+              { name: "Original Series", slug: "original-series" },
             ].map((category) => (
-              <div key={category} className="w-28 shrink-0 text-center">
-                <div className="mb-1 h-16 rounded-lg bg-secondary/50" />
-                <span className="text-[11px] font-medium">{category}</span>
-              </div>
+              <a
+                key={category.slug}
+                href={`/products?category=${category.slug}`}
+                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-40"
+              >
+                <div className="relative w-full">
+                  <svg
+                    viewBox="0 0 160 165"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full drop-shadow-md"
+                  >
+                    {/* Green Container Shape with Inverted Smooth Curved Corners */}
+                    <path
+                      d="M 16 0 
+               H 144 
+               A 16 16 0 0 1 160 16 
+               V 108 
+               A 16 16 0 0 1 144 124 
+               A 12 12 0 0 0 132 136 
+               V 149 
+               A 16 16 0 0 1 116 165 
+               H 44 
+               A 16 16 0 0 1 28 149 
+               V 136 
+               A 12 12 0 0 0 16 124 
+               A 16 16 0 0 1 0 108 
+               V 16 
+               A 16 16 0 0 1 16 0 Z"
+                      fill="#4cae4f"
+                    />
+                  </svg>
+                  <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
+                    <Image
+                      src={assets.product}
+                      alt={category.name}
+                      fill
+                      sizes="(max-width: 640px) 144px, 160px"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="absolute bottom-[4%] left-0 right-0 flex items-center justify-center px-2">
+                    <span className="whitespace-nowrap text-center text-[11px] font-bold text-white sm:text-xs">
+                      {category.name}
+                    </span>
+                  </div>
+                </div>
+              </a>
             ))}
           </div>
           <ProductCarousel />
@@ -133,13 +181,12 @@ export default function HomePage() {
               Where Our Product Come To Life
             </h2>
             <p className="mt-8 max-w-md text-[15px] leading-7 text-muted">
-              Our flagship products, including Protein Bite Cookies, are
-              meticulously crafted to provide balanced nutrition. Each cookie is
-              made using locally sourced ingredients such as chickpeas, peanuts,
-              and rolled oats ensuring they are both nutritious and delicious.
-              These products are not only suitable for people with diabetes, but
-              also serve as a convenient and healthy snack for anyone seeking to
-              maintain a balanced lifestyle.
+              Our flagship products, including Protein Bite Cookies, are meticulously crafted to
+              provide balanced nutrition. Each cookie is made using locally sourced ingredients such
+              as chickpeas, peanuts, and rolled oats ensuring they are both nutritious and
+              delicious. These products are not only suitable for people with diabetes, but also
+              serve as a convenient and healthy snack for anyone seeking to maintain a balanced
+              lifestyle.
             </p>
             <Link
               href="/en/about#locations"
@@ -151,22 +198,12 @@ export default function HomePage() {
           </div>
           <div className="relative">
             <div className="relative h-full overflow-hidden rounded-3xl bg-[#d9d9d9]">
-              <Image
-                src={assets.product}
-                alt="Production"
-                fill
-                className="object-cover"
-              />
+              <Image src={assets.product} alt="Production" fill className="object-cover" />
             </div>
           </div>
           <div className="flex flex-col justify-between">
             <div className="relative h-[430px] overflow-hidden rounded-3xl bg-[#cbb8a3]">
-              <Image
-                src={assets.map} 
-                alt="Map"
-                fill
-                className="object-cover"
-              />
+              <Image src={assets.map} alt="Map" fill className="object-cover" />
             </div>
 
             <Link
@@ -197,16 +234,13 @@ function ContactSection() {
           {/* Left Gray Container Card */}
           <div className="flex items-center justify-center rounded-2xl bg-[#dadada] p-8 text-center sm:p-12">
             <h3 className="max-w-md text-xl font-extrabold leading-snug text-black sm:text-2xl">
-              Whether you&apos;re curious, dreaming up something custom, or
-              simply want to connect, we&apos;d love to hear from you
+              Whether you&apos;re curious, dreaming up something custom, or simply want to connect,
+              we&apos;d love to hear from you
             </h3>
           </div>
 
           {/* Right Form */}
-          <form
-            className="flex flex-col space-y-4"
-            onSubmit={(event) => event.preventDefault()}
-          >
+          <form className="flex flex-col space-y-4" onSubmit={(event) => event.preventDefault()}>
             <div className="grid grid-cols-2 gap-4">
               <input
                 required
@@ -251,9 +285,7 @@ function ContactSection() {
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-12">
           {/* Social Links Card */}
           <div className="flex flex-col items-center justify-center rounded-2xl bg-[#dadada] p-4 lg:col-span-4">
-            <span className="mb-2 text-xs font-bold text-black">
-              Follow Us On
-            </span>
+            <span className="mb-2 text-xs font-bold text-black">Follow Us On</span>
             <div className="flex items-center gap-6 text-xl text-black">
               <a href="#" aria-label="Facebook" className="hover:opacity-80">
                 <SiFacebook />
@@ -293,7 +325,8 @@ function ContactSection() {
             <div className="text-xs">
               <span className="block font-extrabold text-black">Location</span>
               <span className="font-bold leading-tight text-black">
-                လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
+                လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊
+                မြန်မာ။
               </span>
             </div>
           </div>
