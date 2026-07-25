@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 @import "swiper/css";
 @import "swiper/css/navigation";
 @import "tailwindcss";
@@ -8,9 +9,10 @@
   --card: #fff;
   --muted: #65706c;
   --line: #deded7;
-  --primary: #1eb500;
-  --secondary: #fe0002;
+  --primary: #3d4a2e;
+  --secondary: #b5908a;
 }
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,38 +21,45 @@
   --color-line: var(--line);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --font-sans: Arial, sans-serif;
-  --font-serif: Georgia, serif;
+  --font-sans: 'Roboto', sans-serif;
+  --font-serif: 'Roboto', sans-serif;
 }
+
 * {
   border-color: var(--line);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
 h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
 }
+
 button,
 a,
 input,
 textarea {
   outline-offset: 3px;
 }
+
 button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
   outline: 2px solid var(--secondary);
 }
+
 ::selection {
   background: #d9c1bd;
   color: #27303a;
