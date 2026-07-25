@@ -71,6 +71,14 @@
       "2": { "alt": "Center Focus: Founding Story", "title": "The Mission" },
       "3": { "alt": "Bottom Left: Mandalay Office", "title": "Operations" },
       "4": { "alt": "Bottom Right Team Member", "title": "Co-Founder 2" }
-    }
+    },
+
+    "researchInnovation": {
+      "title": "Research & Innovation",
+      "subtitle": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "desc1": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks",
+      "desc2": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks"
+}
   }
+
 }
