@@ -93,10 +93,7 @@ export const assets = {
   banner: "/healthy-happy/Healthy_and_Happy_Products_(1)_1_1784649192453.png",
   product: productImage1,
   award: "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
-  "Protein Series": productImage1,
-  "Original Series": productImage1,
-  "No Sugar Cookies": productImage1,
-  "Healthy Snacks": productImage1,
+  map: "/healthy-happy/map.jpg"
 } as const;
 
 export const awards = [
