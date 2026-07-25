@@ -8,8 +8,8 @@
   --card: #fff;
   --muted: #65706c;
   --line: #deded7;
-  --primary: #3d4a2e;
-  --secondary: #b5908a;
+  --primary: #1eb500;
+  --secondary: #fe0002;
 }
 @theme inline {
   --color-background: var(--background);

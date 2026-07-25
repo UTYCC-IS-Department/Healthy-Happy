@@ -10,23 +10,26 @@ import { assets } from "@/lib/site-data";
 export default function HomePage() {
   return (
     <div className="w-full bg-white">
+      {/* hero section? */}
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
-        <div>
-          <h1 className="mb-4 text-4xl font-bold leading-tight md:text-5xl">
+
+        <div className="max-w-xl">
+          <h1 className="mb-8 text-5xl font-extrabold leading-[1.15] tracking-tight text-black md:text-6xl">
             Healthy &amp;
             <br />
             Happy Myanmar
           </h1>
-          <p className="mb-8 text-base text-muted">
-            Your Daily Nutrition Partner, Every Step of the Way!
+          <p className="mb-10 text-muted text-md leading-relaxed">
+            Your Daily Nutrition Partner,Every Step of the Way!
           </p>
           <Link
             href="/en/products"
-            className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-bold text-white hover:bg-[#2d3820]"
+            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-8 py-4 text-sm font-bold text-white hover:bg-[#2d3820]"
           >
             Explore our products <ArrowRight className="size-4" />
           </Link>
         </div>
+
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
           <Image
             src={assets.banner}
@@ -38,6 +41,7 @@ export default function HomePage() {
           />
         </div>
       </section>
+
       <section className="border-y py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
           <h2 className="mb-6 text-xl font-bold">Feature Categories</h2>
@@ -119,51 +123,60 @@ export default function HomePage() {
           <AwardCarousel />
         </div>
       </section>
+
+      {/* production place section */}
       <section className="border-b py-12">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
-          <div>
-            <Image
-              src={assets.logo}
-              alt="Healthy & Happy"
-              width={76}
-              height={40}
-              className="mb-3 h-8 w-auto"
-            />
-            <h2 className="mb-4 text-2xl font-bold leading-snug">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[40%_30%_30%] lg:px-10">
+          <div className="flex flex-col justify-center">
+            <h2 className="text-[1.6875rem] font-extrabold leading-tight">
               Production Place
               <br />
               Where Our Product Come To Life
             </h2>
-            <p className="text-sm leading-relaxed text-muted">
-              Our flagship products, including Protein Bite Cookies, are carefully crafted to
-              support balanced nutrition. Every recipe is developed to be nutritious, delicious, and
-              accessible for people with diabetes and anyone seeking a balanced lifestyle.
+            <p className="mt-8 max-w-md text-[15px] leading-7 text-muted">
+              Our flagship products, including Protein Bite Cookies, are
+              meticulously crafted to provide balanced nutrition. Each cookie is
+              made using locally sourced ingredients such as chickpeas, peanuts,
+              and rolled oats ensuring they are both nutritious and delicious.
+              These products are not only suitable for people with diabetes, but
+              also serve as a convenient and healthy snack for anyone seeking to
+              maintain a balanced lifestyle.
             </p>
             <Link
               href="/en/about#locations"
-              className="mt-6 inline-block text-xs font-bold text-primary"
+              className="mt-10 inline-flex w-fit items-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2d3820]"
             >
-              See More →
+              See More
+              <span className="ml-2">→</span>
             </Link>
           </div>
-          <div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
+          <div className="relative">
+            <div className="relative h-full overflow-hidden rounded-3xl bg-[#d9d9d9]">
               <Image
                 src={assets.product}
-                alt="Healthy & Happy production"
+                alt="Production"
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain"
+                className="object-cover"
               />
             </div>
-            <div className="mt-3 text-center">
-              <Link
-                href="/en/contact"
-                className="inline-block rounded-md bg-primary px-4 py-2 text-xs font-bold text-white"
-              >
-                Get Location Detail →
-              </Link>
+          </div>
+          <div className="flex flex-col justify-between">
+            <div className="relative h-[430px] overflow-hidden rounded-3xl bg-[#cbb8a3]">
+              <Image
+                src={assets.map} 
+                alt="Map"
+                fill
+                className="object-cover"
+              />
             </div>
+
+            <Link
+              href="/en/contact"
+              className="mt-8 inline-flex items-center justify-center rounded-2xl bg-primary px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
+            >
+              See Location details
+              <span className="ml-2">→</span>
+            </Link>
           </div>
         </div>
       </section>
