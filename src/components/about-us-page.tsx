@@ -9,7 +9,6 @@ export function AboutUsPage() {
   return (
     <div>
       <Headline/>
-      
       <CoreIdentity/>
       <WhereCanBuy/>
     </div>
