@@ -143,7 +143,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/en/about#locations"
-              className="mt-10 inline-flex w-fit items-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2d3820]"
+              className="mt-10 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2d3820]"
             >
               See More
               <span className="ml-2">→</span>
@@ -171,7 +171,7 @@ export default function HomePage() {
 
             <Link
               href="/en/contact"
-              className="mt-8 inline-flex items-center justify-center rounded-2xl bg-primary px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
+              className="mt-8 inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
             >
               See Location details
               <span className="ml-2">→</span>

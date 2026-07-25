@@ -21,7 +21,7 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   return (
-    <nav className="sticky top-0 z-50 bg-primary text-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-[#2dc100] text-white shadow-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         <Link href="/en" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
@@ -47,7 +47,7 @@ export function SiteHeader() {
               <Link
                 key={href}
                 href={href}
-                className={` py-1 text-sm font-medium transition-colors hover:text-secondary ${pathname === href ? "border-secondary text-secondary" : "border-transparent"}`}
+                className={` py-1 text-sm font-medium transition-colors hover:text-[#fe0002] ${pathname === href ? "border-secondary text-secondary" : "border-transparent"}`}
               >
                 {label}
               </Link>
