@@ -25,7 +25,7 @@ export default function AboutPage() {
       <CoreIdentity/>
       <Sustainability/>
       <ResearchInnovation />
-      <WhereCanBuy/>
+      <WhereCanBuy retailers={retailers} />
     </div>
   );
 }
