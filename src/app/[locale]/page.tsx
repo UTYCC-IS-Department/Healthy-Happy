@@ -2,12 +2,65 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin, Phone, Send } from "lucide-react";
+import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
-import { AwardCarousel, ProductCarousel } from "@/components/home-carousel";
+import PerfectCoverCarousel, { ProductCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
+import { useEffect, useState } from "react";
+
+interface Feature {
+  id: string;
+  label: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  href: string;
+  title: string;
+  content: string;
+}
+
+const JourneyAndHappyFeatures: Feature[] = [
+  {
+    id: "story",
+    label: "Our Story",
+    icon: BookOpen,
+    href: "/en/about",
+    title: "Our Story",
+    content:
+      "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs together with a pioneering nutritionist. Our mission is to revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet while supporting sustainable agricultural practices.",
+  },
+  {
+    id: "products",
+    label: "Our Products",
+    icon: RefreshCcw,
+    href: "/en/products",
+    title: "Our Products",
+    content:
+      "We offer a carefully crafted selection of organic, nutrient-dense snacks and plant-based foods. Made from locally sourced, high-quality ingredients, every product is formulated to support your wellness journey while keeping taste rich and delicious without added artificial preservatives.",
+  },
+  {
+    id: "brands",
+    label: "Our Brands",
+    icon: Award,
+    href: "/en/about",
+    title: "Our Brands",
+    content:
+      "Under Healthy & Happy Myanmar, our signature product lines lead the local health movement. Recognized across major retail channels and health forums, our brand represents reliability, wholesome nutrition, and a firm commitment to clean eating for every household.",
+  },
+];
 
 export default function HomePage() {
+  const [activeTab, setActiveTab] = useState(0);
+
+  // Auto-rotate tabs every 5 seconds (5000 ms)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveTab((prev) => (prev + 1) % JourneyAndHappyFeatures.length);
+    }, 15000); // 15 seconds for each tab
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const currentTab = JourneyAndHappyFeatures[activeTab];
+
   return (
     <div className="w-full bg-white">
       {/* hero section? */}
@@ -110,64 +163,109 @@ export default function HomePage() {
         </div>
       </section>
       <section className="border-b py-12">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-8 md:grid-cols-2 lg:px-12">
-          <div>
-            <Image
-              src={assets.logo}
-              alt="Healthy & Happy"
-              width={76}
-              height={40}
-              className="mb-3 h-8 w-auto"
-            />
-            <h2 className="mb-4 text-2xl font-bold leading-snug">
-              The Journey of
-              <br />
-              Happy &amp; Healthy
-            </h2>
-            <p className="mb-3 text-sm leading-relaxed text-muted">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-5 lg:px-12">
+          <div className="md:col-span-2">
+            <div className="md:mb-6 mb-2 flex items-center gap-3 md:gap-1">
+              <Image
+                src={assets.logo}
+                alt="Healthy & Happy"
+                width={115}
+                height={61}
+                className="mb-3 lg:h-12 md:h-9 w-auto h-10"
+              />
+              <h2 className="md:mb-4 mb-2 lg:text-3xl md:text-2xl text-2xl font-extrabold tracking-wide text-black">
+                The Journey of <span className="inline-block md:hidden">Happy &amp; Healthy</span>
+                <br />
+                <span className="hidden md:block">Happy &amp; Healthy</span>
+              </h2>
+            </div>
+            <p className="mb-3 lg:text-sm md:text-xs text-xs font-medium leading-relaxed text-muted ">
               Healthy &amp; Happy began with a deeply personal story. One of our co-founders
-              experienced the heartbreaking loss of her father to the complications of diabetes,
-              unable to access the nutritional support he needed during his final years.
+              experienced the heartbreak of losing her father to cancer due to a lack of access to
+              nutritious food.
             </p>
-            <p className="mb-5 text-sm leading-relaxed text-muted">
-              This profound loss ignited a passion to make honest, nourishing food accessible to
-              families throughout Myanmar.
+            <p className="md:mb-5 mb-1 lg:text-sm md:text-xs text-xs font-medium leading-relaxed text-muted">
+              This profound loss ignited a passion to ensure that no one else would suffer from
+              preventable health issues caused by poor nutrition. Recognizing the growing prevalence
+              of diabetes and other health conditions in our community, we committed ourselves to
+              making a meaningful difference through accessible, honest, and nourishing food.
             </p>
-            <div className="flex gap-4 text-xs font-bold text-primary">
-              <Link href="/en/about">Our Story</Link>
-              <Link href="/en/products">Our Products</Link>
-              <Link href="/en/about">Our Brands</Link>
-            </div>
           </div>
-          <div className="space-y-3">
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src={assets.banner}
-                alt="Healthy & Happy journey"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
+          <div className="space-y-3 md:col-span-3">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              <div className="md:h-80 grid grid-cols-2 md:grid-cols-1 gap-3">
+                <div className="relative w-full h-37.5 sm:h-45.5 rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                  <Image
+                    src={assets.banner}
+                    alt="Healthy & Happy journey"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-full h-37.5 sm:h-45.5 rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                  <Image
+                    src={assets.banner}
+                    alt="Healthy & Happy journey"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                <Image
+                  src={assets.product}
+                  alt="Healthy & Happy product"
+                  fill
+                  className=" w-full h-full "
+                />
+              </div>
             </div>
-            <div className="relative aspect-[16/6] overflow-hidden rounded-xl bg-[#d9d9d9]">
-              <Image
-                src={assets.product}
-                alt="Healthy & Happy product"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain"
-              />
-            </div>
-            <p className="text-[10px] text-muted">
+            {/* <p className="text-[10px] text-muted">
               Our story is one of family, perseverance, and commitment to the communities we serve.
+            </p> */}
+          </div>
+        </div>
+        <div className="mx-auto grid md:max-w-7xl gap-10 px-4 sm:px-8 lg:grid-cols-6 lg:px-12 mt-7 md:mt-12 lg:mt-7">
+          <div className="flex items-center  gap-2 text-xs font-bold text-primary lg:col-span-2">
+            {JourneyAndHappyFeatures.map((tab, index) => {
+              const Icon = tab.icon;
+              const isActive = index === activeTab;
+
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(index)}
+                  className={`flex items-center gap-2 lg:text-[10px] xl:text-[12px] text-[12px] rounded-full lg:px-2 xl:px-3  px-3 py-2 cursor-pointer transition-all duration-300 ${
+                    isActive
+                      ? "bg-black text-white shadow-md scale-105"
+                      : "bg-gray-200 text-gray-800 hover:bg-amber-50"
+                  }`}
+                >
+                  <Icon className="lg:size-3.5 size-4" />
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
+          <div className="space-y-3  lg:col-span-4 backdrop:blur-sm bg-[#2dc100] p-4 px-5 rounded-3xl text-white shadow-xl shadow-[#2dc100]/30 border border-white/20">
+            {/* title */}
+            <h4 className="text-lg font-bold">{currentTab.title}</h4>
+            <p className="text-[13px] font-medium text-gray-100 leading-4.5 -mt-3 relative">
+              {currentTab.content}
+              <Link
+                href={currentTab.href}
+                className="ml-2 text-white bg-black absolute -bottom-8 right-5 px-4 py-2 rounded-2xl cursor-pointer hover:bg-gray-600 transition-colors text-md font-semibold"
+              >
+                See More
+              </Link>
             </p>
           </div>
         </div>
       </section>
       <section className="border-b bg-[#f5f0ee] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
-          <h2 className="mb-8 text-xl font-bold">Awards &amp; Recognitions</h2>
-          <AwardCarousel />
+          <h2 className=" text-3xl font-bold">Awards &amp; Recognitions</h2>
+          <PerfectCoverCarousel />
         </div>
       </section>
 
