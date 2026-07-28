@@ -65,32 +65,35 @@ export default function HomePage() {
     <div className="w-full bg-white">
 
       {/* hero section? */}
-      <section className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
-        <div className="max-w-xl">
-          <h1 className="mb-8 text-[8rem] font-extrabold leading-[1.15] tracking-tight text-black md:text-6xl">
+      <section className="mx-auto grid max-w-7xl  px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
+        <div className="max-w-xl ">
+          <h1 className="mb-8 text-7xl font-extrabold leading-[1.1] tracking-tight text-black md:text-6xl lg:text-7xl">
             Healthy &amp;
             <br />
             Happy Myanmar
           </h1>
-          <p className="mb-10 text-muted text-md leading-relaxed">
-            Your Daily Nutrition Partner, Every Step of the Way!
+          <p className="mb-8 text-6xl leading-relaxed text-muted md:text-3xl">
+            Your Daily Nutrition Partner,
+            <br className="hidden md:block" />
+            Every Step of the Way!
           </p>
           <Link
             href="/en/products"
-            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-8 py-4 text-sm font-bold text-white hover:bg-[#2d3820]"
+            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-8 py-4 text-sm font-bold text-white hover:bg-green-600 transition-colors shadow-md"
           >
             Explore our products <ArrowRight className="size-4" />
           </Link>
         </div>
 
+        {/* hero video */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
-          <Image
-            src={assets.banner}
-            alt="Healthy & Happy products"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+          <video
+            src="/videos/production.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-cover"
           />
         </div>
       </section>
@@ -302,13 +305,13 @@ export default function HomePage() {
 
           {/* Production Place Carousel */}
           <div className="relative">
-            <div className='relative min-h-[430px]'>
+            <div className='relative min-h-107.5'>
               <ProductionPlaceCarousel />
             </div>
           </div>
 
           {/* Map & Location Button */}
-          <div className="flex h-[430px] flex-col gap-4">
+          <div className="flex h-107.5 flex-col gap-4">
             <div className="relative flex-1 overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.0!2d96.08!3d21.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6e3a7af05de5%3A0x4e1e5e4c5c5a5c5a!2sYatanarpon%20Cyber%20City!5e0!3m2!1sen!2smm!4v1620000000000!5m2!1sen!2smm"
