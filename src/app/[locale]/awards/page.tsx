@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { assets } from "@/lib/site-data";
+import CertificationBlock from "@/components/certification-block";
 const awards = [
   {
     label: "Award-1",
@@ -75,16 +76,13 @@ export default function AwardsPage() {
       </section>
       <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
         <h2 className="mb-8 text-center text-2xl font-bold text-primary">Certifications</h2>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {Array.from({ length: 8 }, (_, index) => (
-            <div
-              key={index}
-              className="flex aspect-[4/3] items-center justify-center rounded-xl border bg-secondary/30 text-xs font-medium text-primary"
-            >
-              Certification {index + 1}
-            </div>
+
+        <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
+          {Array.from({ length: 8 }).map((_, index) => (
+            <CertificationBlock key={index} title={`Certification ${index + 1}`} />
           ))}
         </div>
+
         <div className="mt-8 flex items-center gap-4 rounded-xl border bg-white px-6 py-4 shadow-sm">
           <Image
             src={assets.logo}
