@@ -86,7 +86,7 @@ export function ProductCarousel() {
                   <div className="flex justify-end">
                     <Link
                       href={`/en/products/${product.id}`}
-                      className="rounded-full bg-[#4cae4f] px-6 py-2 text-xs font-bold text-white shadow-md transition-all hover:bg-[#3d9140] hover:shadow-lg active:scale-95 sm:text-sm"
+                      className="rounded-full bg-[#1EB500] px-6 py-2 text-xs font-bold text-white shadow-md transition-all hover:bg-[#3d9140] hover:shadow-lg active:scale-95 sm:text-sm"
                     >
                       Explore &gt;
                     </Link>

@@ -76,7 +76,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/en/products"
-            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-8 py-4 text-sm font-bold text-white hover:bg-[#2d3820]"
+            className="inline-flex items-center gap-2 rounded-full bg-[#1EB500] px-8 py-4 text-sm font-bold text-white hover:bg-[#3d9140]"
           >
             Explore our products <ArrowRight className="size-4" />
           </Link>
@@ -94,74 +94,86 @@ export default function HomePage() {
         </div>
       </section>
       {/* ----------------- Feature Categories Section ----------------- */}
-      <section className="border-y py-10 bg-[#faf8f5]">
-        <div className="mx-auto max-w-5xl px-4">
-          {/* Section Title */}
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-black sm:text-3xl">
-            Feature Categories
-          </h2>
-          <div className="mb-10 flex justify-center gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
-            {[
-              { name: "Protein Bites", slug: "protein-bites" },
-              { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
-              { name: "Oat Cookies", slug: "oat-cookies" },
-              { name: "Healthy Snacks", slug: "healthy-snacks" },
-              { name: "Original Series", slug: "original-series" },
-            ].map((category) => (
-              <a
-                key={category.slug}
-                href={`/products?category=${category.slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-40"
-              >
-                <div className="relative w-full">
-                  <svg
-                    viewBox="0 0 160 165"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-full drop-shadow-md"
-                  >
-                    {/* Green Container Shape with Inverted Smooth Curved Corners */}
-                    <path
-                      d="M 16 0 
-               H 144 
-               A 16 16 0 0 1 160 16 
-               V 108 
-               A 16 16 0 0 1 144 124 
-               A 12 12 0 0 0 132 136 
-               V 149 
-               A 16 16 0 0 1 116 165 
-               H 44 
-               A 16 16 0 0 1 28 149 
-               V 136 
-               A 12 12 0 0 0 16 124 
-               A 16 16 0 0 1 0 108 
-               V 16 
-               A 16 16 0 0 1 16 0 Z"
-                      fill="#4cae4f"
-                    />
-                  </svg>
-                  <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
-                    <Image
-                      src={assets.product}
-                      alt={category.name}
-                      fill
-                      sizes="(max-width: 640px) 144px, 160px"
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                  </div>
+      <section 
+  className="border-y bg-[#faf8f5]"
+  style={{ marginTop: "50px", marginBottom: "50px", paddingTop: "30px", paddingBottom: "30px" }}
+>
+  <div className="mx-auto max-w-6xl px-4">
+    {/* Section Title */}
+    <h2 
+      className="text-center font-bold tracking-tight text-black"
+      style={{ fontSize: "48px", marginBottom: "40px" }}
+    >
+      Feature Categories
+    </h2>
 
-                  <div className="absolute bottom-[4%] left-0 right-0 flex items-center justify-center px-2">
-                    <span className="whitespace-nowrap text-center text-[11px] font-bold text-white sm:text-xs">
-                      {category.name}
-                    </span>
-                  </div>
-                </div>
-              </a>
-            ))}
+    <div 
+      className="flex justify-between gap-3 overflow-x-auto scrollbar-hide sm:gap-6"
+      style={{ marginBottom: "40px", paddingBottom: "16px" }}
+    >
+      {[
+        { name: "Protein Bites", slug: "protein-bites" },
+        { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
+        { name: "Oat Cookies", slug: "oat-cookies" },
+        { name: "Healthy Snacks", slug: "healthy-snacks" },
+        { name: "Original Series", slug: "original-series" },
+      ].map((category) => (
+        <a
+          key={category.slug}
+          href={`/products?category=${category.slug}`}
+          className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-42"
+        >
+          <div className="relative w-full">
+            <svg
+  viewBox="0 0 160 145"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className="w-full drop-shadow-md"
+>
+  {/* Shorter Downward Trend Path */}
+  <path
+    d="M 16 0 
+       H 144 
+       A 16 16 0 0 1 160 16 
+       V 102 
+       A 16 16 0 0 1 144 116 
+       A 10 10 0 0 0 134 124 
+       V 133 
+       A 12 12 0 0 1 122 145 
+       H 38 
+       A 12 12 0 0 1 26 133 
+       V 124 
+       A 10 10 0 0 0 16 116 
+       A 16 16 0 0 1 0 102 
+       V 16 
+       A 16 16 0 0 1 16 0 Z"
+    fill="#1EB500"
+  />
+</svg>
+            
+            <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
+              <Image
+                src={assets.product}
+                alt={category.name}
+                fill
+                sizes="(max-width: 640px) 144px, 160px"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            <div className="absolute bottom-[4%] left-0 right-0 flex items-center justify-center px-2">
+              <span className="whitespace-nowrap text-center text-[11px] font-bold text-white sm:text-xs">
+                {category.name}
+              </span>
+            </div>
           </div>
-          <ProductCarousel />
-        </div>
-      </section>
+        </a>
+      ))}
+    </div>
+
+    <ProductCarousel />
+  </div>
+</section>
       <section className="border-b py-12">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-5 lg:px-12">
           <div className="md:col-span-2">
