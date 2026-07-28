@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
-import PerfectCoverCarousel, { ProductCarousel,ProductionPlaceCarousel } from "@/components/home-carousel";
+import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
 import { useEffect, useState } from "react";
 
@@ -238,11 +238,10 @@ export default function HomePage() {
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(index)}
-                  className={`flex items-center gap-2 lg:text-[10px] xl:text-[12px] text-[12px] rounded-full lg:px-2 xl:px-3  px-3 py-2 cursor-pointer transition-all duration-300 ${
-                    isActive
-                      ? "bg-black text-white shadow-md scale-105"
-                      : "bg-gray-200 text-gray-800 hover:bg-amber-50"
-                  }`}
+                  className={`flex items-center gap-2 lg:text-[10px] xl:text-[12px] text-[12px] rounded-full lg:px-2 xl:px-3  px-3 py-2 cursor-pointer transition-all duration-300 ${isActive
+                    ? "bg-black text-white shadow-md scale-105"
+                    : "bg-gray-200 text-gray-800 hover:bg-amber-50"
+                    }`}
                 >
                   <Icon className="lg:size-3.5 size-4" />
                   {tab.label}
@@ -275,7 +274,9 @@ export default function HomePage() {
 
       {/* production place section */}
       <section className="border-b py-12">
+
         <div className="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[40%_30%_30%] lg:px-10">
+          {/* Content */}
           <div className="flex flex-col justify-center">
             <h2 className="text-[1.6875rem] font-extrabold leading-tight">
               Production Place
@@ -298,27 +299,39 @@ export default function HomePage() {
               <span className="ml-2">→</span>
             </Link>
           </div>
+
+          {/* Production Place Carousel */}
           <div className="relative">
             <div className='relative min-h-[430px]'>
               <ProductionPlaceCarousel />
             </div>
           </div>
-          <div className="flex flex-col justify-between">
-            <div className="relative h-[430px] overflow-hidden rounded-3xl bg-[#cbb8a3]">
-              <Image src={assets.map} alt="Map" fill className="object-cover" />
+
+          {/* Map & Location Button */}
+          <div className="flex h-[430px] flex-col gap-4">
+            <div className="relative flex-1 overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.0!2d96.08!3d21.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6e3a7af05de5%3A0x4e1e5e4c5c5a5c5a!2sYatanarpon%20Cyber%20City!5e0!3m2!1sen!2smm!4v1620000000000!5m2!1sen!2smm"
+                className="absolute inset-0 h-full w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                title="Location map"
+              />
             </div>
 
             <Link
               href="/en/contact"
-              className="mt-8 inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
+              className="inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
             >
               See Location details
               <span className="ml-2">→</span>
             </Link>
           </div>
+
         </div>
       </section>
-      
+
       <ContactSection />
     </div>
   );
