@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
-import PerfectCoverCarousel, { ProductCarousel } from "@/components/home-carousel";
+import PerfectCoverCarousel, { ProductCarousel,ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
 import { useEffect, useState } from "react";
 
@@ -63,16 +63,17 @@ export default function HomePage() {
 
   return (
     <div className="w-full bg-white">
+
       {/* hero section? */}
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
         <div className="max-w-xl">
-          <h1 className="mb-8 text-5xl font-extrabold leading-[1.15] tracking-tight text-black md:text-6xl">
+          <h1 className="mb-8 text-[8rem] font-extrabold leading-[1.15] tracking-tight text-black md:text-6xl">
             Healthy &amp;
             <br />
             Happy Myanmar
           </h1>
           <p className="mb-10 text-muted text-md leading-relaxed">
-            Your Daily Nutrition Partner,Every Step of the Way!
+            Your Daily Nutrition Partner, Every Step of the Way!
           </p>
           <Link
             href="/en/products"
@@ -93,6 +94,7 @@ export default function HomePage() {
           />
         </div>
       </section>
+
       {/* ----------------- Feature Categories Section ----------------- */}
       <section className="border-y py-10 bg-[#faf8f5]">
         <div className="mx-auto max-w-5xl px-4">
@@ -162,6 +164,7 @@ export default function HomePage() {
           <ProductCarousel />
         </div>
       </section>
+
       <section className="border-b py-12">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-5 lg:px-12">
           <div className="md:col-span-2">
@@ -262,6 +265,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       <section className="border-b bg-[#f5f0ee] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
           <h2 className=" text-3xl font-bold">Awards &amp; Recognitions</h2>
@@ -295,8 +299,8 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="relative">
-            <div className="relative h-full overflow-hidden rounded-3xl bg-[#d9d9d9]">
-              <Image src={assets.product} alt="Production" fill className="object-cover" />
+            <div className='relative min-h-[430px]'>
+              <ProductionPlaceCarousel />
             </div>
           </div>
           <div className="flex flex-col justify-between">
@@ -314,6 +318,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
       <ContactSection />
     </div>
   );
