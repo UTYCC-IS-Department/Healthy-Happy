@@ -64,28 +64,34 @@ export default function HomePage() {
   return (
     <div className="w-full bg-white">
 
-      {/* hero section? */}
-      <section className="mx-auto grid max-w-7xl  px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
-        <div className="max-w-xl ">
-          <h1 className="mb-8 text-7xl font-extrabold leading-[1.1] tracking-tight text-black md:text-6xl lg:text-7xl">
+      {/* Hero section */}
+      <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-8 md:grid-cols-2 md:items-center md:gap-8 lg:px-12 lg:py-14">
+
+        {/* Content */}
+        <div className="max-w-xl">
+          <h1 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl md:text-4xl lg:text-7xl">
             Healthy &amp;
             <br />
             Happy Myanmar
           </h1>
-          <p className="mb-8 text-6xl leading-relaxed text-muted md:text-3xl">
+
+          <p className="mb-8 text-xl leading-relaxed text-muted sm:text-1xl md:text-2xl lg:text-4xl">
             Your Daily Nutrition Partner,
-            <br className="hidden md:block" />
+            <br className="hidden sm:block" />
             Every Step of the Way!
           </p>
+
           <Link
             href="/en/products"
-            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-8 py-4 text-sm font-bold text-white hover:bg-green-600 transition-colors shadow-md"
+            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-6 py-3 text-sm font-bold text-white shadow-md transition-colors hover:bg-green-600 sm:px-8 sm:py-4"
           >
-            Explore our products <ArrowRight className="size-4" />
+            Explore our products
+            <ArrowRight className="size-4" />
           </Link>
         </div>
 
-        {/* hero video */}
+
+        {/* Hero video */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
           <video
             src="/videos/production.mp4"
@@ -96,16 +102,27 @@ export default function HomePage() {
             className="h-full w-full object-cover"
           />
         </div>
+
       </section>
 
       {/* ----------------- Feature Categories Section ----------------- */}
-      <section className="border-y py-10 bg-[#faf8f5]">
-        <div className="mx-auto max-w-5xl px-4">
+      <section
+        className="border-y bg-[#faf8f5]"
+        style={{ marginTop: "50px", marginBottom: "50px", paddingTop: "30px", paddingBottom: "30px" }}
+      >
+        <div className="mx-auto max-w-6xl px-4">
           {/* Section Title */}
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-black sm:text-3xl">
+          <h2
+            className="text-center font-bold tracking-tight text-black"
+            style={{ fontSize: "48px", marginBottom: "40px" }}
+          >
             Feature Categories
           </h2>
-          <div className="mb-10 flex justify-center gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
+
+          <div
+            className="flex justify-between gap-3 overflow-x-auto scrollbar-hide sm:gap-6"
+            style={{ marginBottom: "40px", paddingBottom: "16px" }}
+          >
             {[
               { name: "Protein Bites", slug: "protein-bites" },
               { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
@@ -116,35 +133,36 @@ export default function HomePage() {
               <a
                 key={category.slug}
                 href={`/products?category=${category.slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-40"
+                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-42"
               >
                 <div className="relative w-full">
                   <svg
-                    viewBox="0 0 160 165"
+                    viewBox="0 0 160 145"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-full drop-shadow-md"
                   >
-                    {/* Green Container Shape with Inverted Smooth Curved Corners */}
+                    {/* Shorter Downward Trend Path */}
                     <path
                       d="M 16 0 
-               H 144 
-               A 16 16 0 0 1 160 16 
-               V 108 
-               A 16 16 0 0 1 144 124 
-               A 12 12 0 0 0 132 136 
-               V 149 
-               A 16 16 0 0 1 116 165 
-               H 44 
-               A 16 16 0 0 1 28 149 
-               V 136 
-               A 12 12 0 0 0 16 124 
-               A 16 16 0 0 1 0 108 
-               V 16 
-               A 16 16 0 0 1 16 0 Z"
-                      fill="#4cae4f"
+       H 144 
+       A 16 16 0 0 1 160 16 
+       V 102 
+       A 16 16 0 0 1 144 116 
+       A 10 10 0 0 0 134 124 
+       V 133 
+       A 12 12 0 0 1 122 145 
+       H 38 
+       A 12 12 0 0 1 26 133 
+       V 124 
+       A 10 10 0 0 0 16 116 
+       A 16 16 0 0 1 0 102 
+       V 16 
+       A 16 16 0 0 1 16 0 Z"
+                      fill="#1EB500"
                     />
                   </svg>
+
                   <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
                     <Image
                       src={assets.product}
@@ -164,10 +182,10 @@ export default function HomePage() {
               </a>
             ))}
           </div>
+
           <ProductCarousel />
         </div>
       </section>
-
       <section className="border-b py-12">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-5 lg:px-12">
           <div className="md:col-span-2">
@@ -275,61 +293,66 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* production place section */}
+      {/* Production place section */}
       <section className="border-b py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[40%_30%_30%] lg:px-10">
-          {/* Content */}
-          <div className="flex flex-col justify-center">
-            <h2 className="text-[1.6875rem] font-extrabold leading-tight">
-              Production Place
-              <br />
-              Where Our Product Come To Life
-            </h2>
-            <p className="mt-8 max-w-md text-[15px] leading-7 text-muted">
-              Our flagship products, including Protein Bite Cookies, are meticulously crafted to
-              provide balanced nutrition. Each cookie is made using locally sourced ingredients such
-              as chickpeas, peanuts, and rolled oats ensuring they are both nutritious and
-              delicious. These products are not only suitable for people with diabetes, but also
-              serve as a convenient and healthy snack for anyone seeking to maintain a balanced
-              lifestyle.
-            </p>
-            <Link
-              href="/en/about#locations"
-              className="mt-10 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2d3820]"
-            >
-              See More
-              <span className="ml-2">→</span>
-            </Link>
-          </div>
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
 
-          {/* Production Place Carousel */}
-          <div className="relative">
-            <div className='relative min-h-107.5'>
-              <ProductionPlaceCarousel />
-            </div>
-          </div>
+            {/* Content */}
+            <div className="flex flex-col justify-center lg:pr-6">
+              <h2 className="text-2xl font-extrabold leading-tight sm:text-3xl">
+                Production Place
+                <br />
+                Where Our Product Come To Life
+              </h2>
 
-          {/* Map & Location Button */}
-          <div className="flex h-107.5 flex-col gap-4">
-            <div className="relative flex-1 overflow-hidden rounded-3xl border border-gray-200 shadow-xl">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.0!2d96.08!3d21.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6e3a7af05de5%3A0x4e1e5e4c5c5a5c5a!2sYatanarpon%20Cyber%20City!5e0!3m2!1sen!2smm!4v1620000000000!5m2!1sen!2smm"
-                className="absolute inset-0 h-full w-full border-0"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                allowFullScreen
-                title="Location map"
-              />
+              <p className="mt-6 text-sm leading-7 text-muted sm:text-base">
+                Our flagship products, including Protein Bite Cookies, are meticulously crafted to
+                provide balanced nutrition. Each cookie is made using locally sourced ingredients such
+                as chickpeas, peanuts, and rolled oats ensuring they are both nutritious and
+                delicious. These products are not only suitable for people with diabetes, but also
+                serve as a convenient and healthy snack for anyone seeking to maintain a balanced
+                lifestyle.
+              </p>
+
+              <Link
+                href="/en/about#locations"
+                className="mt-8 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white"
+              >
+                See More →
+              </Link>
             </div>
 
-            <Link
-              href="/en/contact"
-              className="inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
-            >
-              See Location details
-              <span className="ml-2">→</span>
-            </Link>
+
+            {/* Carousel */}
+            <div className="w-full overflow-hidden">
+              <div className="h-[380px] sm:h-[480px] lg:h-[520px]">
+                <ProductionPlaceCarousel />
+              </div>
+            </div>
+
+
+            {/* Map */}
+            <div className="flex h-full w-full flex-col">
+
+              <div className="relative h-[300px] w-full overflow-hidden rounded-3xl border shadow-xl sm:h-[380px] lg:h-[430px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.0!2d96.08!3d21.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6e3a7af05de5%3A0x4e1e5e4c5c5a5c5a!2sYatanarpon%20Cyber%20City!5e0!3m2!1sen!2smm!4v1620000000000!5m2!1sen!2smm"
+                  className="absolute inset-0 h-full w-full"
+                  loading="lazy"
+                  title="Location map"
+                />
+              </div>
+
+              <Link
+                href="/en/contact"
+                className="mt-auto inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg"
+              >
+                See Location details →
+              </Link>
+
+            </div>
           </div>
 
         </div>
