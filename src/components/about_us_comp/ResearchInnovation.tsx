@@ -423,15 +423,105 @@ const cssStyles = `
 
   @media (max-width: 480px) {
     .ri-main-heading {
-      font-size: 26px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .ri-section-wrapper {
+      padding: 16px 12px;
     }
 
     .ri-canvas-card {
-      min-width: 250px;
+      min-width: 220px;
+      height: 160px;
     }
 
     .ri-feature-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .ri-feature-box {
+      height: 70px;
+    }
+
+    .ri-top-pill-banner {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+
+    .ri-green-container {
+      padding: 20px 16px;
+      gap: 24px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 70px;
+      height: 70px;
+    }
+
+    .ri-row-title {
+      font-size: 16px;
+    }
+
+    .ri-row-description {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .ri-main-heading {
+      font-size: 20px;
+    }
+
+    .ri-canvas-card {
+      min-width: 200px;
+      height: 150px;
+    }
+
+    .ri-feature-box {
+      height: 60px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ri-row-title {
+      font-size: 15px;
+    }
+
+    .ri-row-description {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .ri-main-heading {
+      font-size: 18px;
+    }
+
+    .ri-canvas-card {
+      min-width: 180px;
+      height: 140px;
+    }
+
+    .ri-feature-box {
+      height: 55px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 55px;
+      height: 55px;
+    }
+
+    .ri-row-title {
+      font-size: 14px;
+    }
+
+    .ri-row-description {
+      font-size: 12px;
     }
   }
 `;

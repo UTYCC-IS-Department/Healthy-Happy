@@ -106,7 +106,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
   }));
 
   return (
-    <div className="bg-[#f8f6ef] py-12 px-4 sm:px-6">
+    <div className="bg-[#f8f6ef] py-8 sm:py-10 md:py-12 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* =================================================
@@ -114,7 +114,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
         ================================================= */}
 
         <motion.h2
-          className="text-3xl sm:text-4xl font-extrabold text-center mb-12 sm:mb-16"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16"
           variants={headingVariants}
           initial="hidden"
           animate="visible"
@@ -126,7 +126,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
             GRID
         ================================================= */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-12 lg:gap-y-14">
 
           {locations.map((item, index) => {
             const active = item.active ?? false;
@@ -174,7 +174,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
                   className="relative"
                 >
 
-                  <div className="relative w-full max-sm:w-[80%] mx-auto">
+                  <div className="relative w-full max-w-[85%] sm:max-w-[80%] mx-auto">
 
                     {/* Background Shadow Badge */}
 
@@ -184,7 +184,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
                         -bottom-3
                         left-11
                         w-10
-                        h-18
+                        h-14 sm:h-16 md:h-18
                         bg-[#3a3437]
                         rounded-br-xl
                         shadow-md
@@ -216,11 +216,11 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
                     <motion.div
                       className="
                         relative
-                        h-40
+                        h-32 sm:h-36 md:h-40
                         w-full
                         rounded-3xl
                         shadow-lg
-                        px-4
+                        px-3 sm:px-4
                         flex
                         items-center
                         justify-center
@@ -250,10 +250,10 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
                       <motion.div
                         className="
                           absolute
-                          -top-8
-                          right-8
-                          w-18
-                          h-18
+                          -top-6 sm:-top-7 md:-top-8
+                          right-6 sm:right-7 md:right-8
+                          w-14 sm:w-16 md:w-18
+                          h-14 sm:h-16 md:h-18
                           rounded-full
                         "
                         initial={{
@@ -320,7 +320,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
                       <motion.p
                         className="
                           font-extrabold
-                          text-base
+                          text-sm sm:text-base
                           leading-tight
                           z-10
                         "
@@ -363,7 +363,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
                           className="
                             relative
                             w-15
-                            h-18
+                            h-14 sm:h-16 md:h-18
                             bg-[#4a4246]
                             rounded-t-4xl
                             rounded-bl-xl
@@ -415,8 +415,8 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
               lg:col-span-3
               bg-[#dcdcdc]
               rounded-2xl
-              px-6
-              py-4
+              px-4 sm:px-6
+              py-3 sm:py-4
               flex
               items-center
               shadow-sm
@@ -426,7 +426,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({
             initial="hidden"
             animate="visible"
           >
-            <span className="text-red-500 text-lg mr-3 flex-shrink-0">
+            <span className="text-red-500 text-base sm:text-lg mr-2 sm:mr-3 shrink-0">
               ◆
             </span>
 

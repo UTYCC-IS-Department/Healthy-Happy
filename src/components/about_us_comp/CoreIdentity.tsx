@@ -124,12 +124,12 @@ const cardVariants: Variants = {
   };
 
   return (
-    <div className="bg-[#f8f6ef] py-16 px-4 sm:px-6">
+    <div className="bg-[#f8f6ef] py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Section Heading */}
         <motion.h2
-          className="text-3xl sm:text-4xl font-extrabold text-center mb-20 text-black tracking-tight"
+          className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mb-12 sm:mb-16 md:mb-20 text-black tracking-tight"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{
             opacity: 1,
@@ -148,7 +148,7 @@ const cardVariants: Variants = {
         </motion.h2>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 justify-items-center items-stretch">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 justify-items-center items-stretch">
 
           {coreIdentityItems.map((item, index) => {
             const headingText = item.heading;
@@ -158,7 +158,7 @@ const cardVariants: Variants = {
             return (
   <motion.div
     key={item.id}
-    className="relative pt-6 pb-12 flex justify-center w-full"
+    className="relative pt-4 sm:pt-6 pb-8 sm:pb-12 flex justify-center w-full"
 
     // SCROLL
     variants={cardVariants}
@@ -181,11 +181,11 @@ const cardVariants: Variants = {
     }}
   >
 
-                <div className="relative w-full max-w-sm md:w-md">
+                <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
 
                   {/* Bottom Elements */}
                   <motion.div
-                    className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-full flex flex-col items-center pointer-events-none z-0"
+                    className="absolute -bottom-4 sm:-bottom-6 left-1/2 -translate-x-1/2 w-full flex flex-col items-center pointer-events-none z-0"
                     variants={bottomVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -200,7 +200,7 @@ const cardVariants: Variants = {
 
                     {/* Dark Blue Background */}
                     <motion.div
-                      className="w-[105%] h-65 bg-[#2c353e] rounded-b-4xl shadow-md translate-y-35"
+                      className="w-[105%] h-48 sm:h-56 md:h-65 bg-[#2c353e] rounded-b-4xl shadow-md translate-y-24 sm:translate-y-28 md:translate-y-35"
                       initial={{
                         opacity: 0,
                         scaleY: 0.5,
@@ -223,7 +223,7 @@ const cardVariants: Variants = {
 
                     {/* Dark Accent */}
                     <motion.div
-                      className="w-48 h-16 bg-[#3a434c] rounded-3xl shadow-md -translate-y-16"
+                      className="w-32 sm:w-40 md:w-48 h-12 sm:h-14 md:h-16 bg-[#3a434c] rounded-3xl shadow-md -translate-y-10 sm:-translate-y-12 md:-translate-y-16"
                       initial={{
                         opacity: 0,
                         scale: 0.7,
@@ -245,7 +245,7 @@ const cardVariants: Variants = {
 
                     {/* Green Bottom Badge */}
                     <motion.div
-                      className="w-48 h-20 bg-[#16b300] rounded-4xl shadow-lg translate-y-5"
+                      className="w-32 sm:w-40 md:w-48 h-16 sm:h-18 md:h-20 bg-[#16b300] rounded-4xl shadow-lg translate-y-3 sm:translate-y-4 md:translate-y-5"
                       initial={{
                         opacity: 0,
                         y: 30,
@@ -270,7 +270,7 @@ const cardVariants: Variants = {
 
                   {/* Main Card */}
                   <motion.div
-                    className="relative w-full h-full bg-[#e6e4dc] rounded-4xl shadow-xl pt-25 pb-12 px-6 flex flex-col justify-between items-center text-center z-10"
+                    className="relative w-full h-full bg-[#e6e4dc] rounded-4xl shadow-xl pt-16 sm:pt-20 md:pt-25 pb-8 sm:pb-10 md:pb-12 px-4 sm:px-6 flex flex-col justify-between items-center text-center z-10"
                     variants={mainCardVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -285,7 +285,7 @@ const cardVariants: Variants = {
 
                     {/* Top Green Banner */}
                     <motion.div
-                      className="absolute -top-5 left-1/2 -translate-x-1/2 w-48 h-12 bg-[#16b300] rounded-t-4xl rounded-b-none shadow-md flex items-center justify-center z-20"
+                      className="absolute -top-3 sm:-top-4 md:-top-5 left-1/2 -translate-x-1/2 w-32 sm:w-40 md:w-48 h-10 sm:h-11 md:h-12 bg-[#16b300] rounded-t-4xl rounded-b-none shadow-md flex items-center justify-center z-20"
                       variants={topTabVariants}
                       initial="hidden"
                       whileInView="visible"
@@ -297,7 +297,7 @@ const cardVariants: Variants = {
                         delay: index * 0.18 + 0.25,
                       }}
                     >
-                      <h3 className="text-white font-extrabold text-xl tracking-wide">
+                      <h3 className="text-white font-extrabold text-base sm:text-lg md:text-xl tracking-wide">
                         {item.title}
                       </h3>
                     </motion.div>
@@ -305,7 +305,7 @@ const cardVariants: Variants = {
                     {/* Content */}
                     {hasContent ? (
                       <motion.div
-                        className="flex flex-col space-y-4 z-10 mt-2 my-auto"
+                        className="flex flex-col space-y-3 sm:space-y-4 z-10 mt-2 my-auto"
                         variants={contentVariants}
                         initial="hidden"
                         whileInView="visible"
@@ -318,19 +318,19 @@ const cardVariants: Variants = {
                         }}
                       >
                         {headingText && (
-                          <h4 className="font-extrabold text-black text-lg leading-snug">
+                          <h4 className="font-extrabold text-black text-sm sm:text-base md:text-lg leading-snug">
                             {headingText}
                           </h4>
                         )}
 
                         {descriptionText && (
-                          <p className="text-gray-800 text-sm font-medium leading-relaxed">
+                          <p className="text-gray-800 text-xs sm:text-sm md:text-sm font-medium leading-relaxed">
                             {descriptionText}
                           </p>
                         )}
                       </motion.div>
                     ) : (
-                      <div className="my-auto h-32 z-10" />
+                      <div className="my-auto h-24 sm:h-28 md:h-32 z-10" />
                     )}
 
                     <div className="w-full h-2" />
