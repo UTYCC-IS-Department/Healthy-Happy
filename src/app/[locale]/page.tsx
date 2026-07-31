@@ -2,52 +2,127 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Mail, MapPin, Phone, Send } from "lucide-react";
+import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
-import { AwardCarousel, ProductCarousel } from "@/components/home-carousel";
+import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
+import { useEffect, useState } from "react";
+
+interface Feature {
+  id: string;
+  label: string;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  href: string;
+  title: string;
+  content: string;
+}
+
+const JourneyAndHappyFeatures: Feature[] = [
+  {
+    id: "story",
+    label: "Our Story",
+    icon: BookOpen,
+    href: "/en/about",
+    title: "Our Story",
+    content:
+      "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs together with a pioneering nutritionist. Our mission is to revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet while supporting sustainable agricultural practices.",
+  },
+  {
+    id: "products",
+    label: "Our Products",
+    icon: RefreshCcw,
+    href: "/en/products",
+    title: "Our Products",
+    content:
+      "We offer a carefully crafted selection of organic, nutrient-dense snacks and plant-based foods. Made from locally sourced, high-quality ingredients, every product is formulated to support your wellness journey while keeping taste rich and delicious without added artificial preservatives.",
+  },
+  {
+    id: "brands",
+    label: "Our Brands",
+    icon: Award,
+    href: "/en/about",
+    title: "Our Brands",
+    content:
+      "Under Healthy & Happy Myanmar, our signature product lines lead the local health movement. Recognized across major retail channels and health forums, our brand represents reliability, wholesome nutrition, and a firm commitment to clean eating for every household.",
+  },
+];
 
 export default function HomePage() {
+  const [activeTab, setActiveTab] = useState(0);
+
+  // Auto-rotate tabs every 5 seconds (5000 ms)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveTab((prev) => (prev + 1) % JourneyAndHappyFeatures.length);
+    }, 15000); // 15 seconds for each tab
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const currentTab = JourneyAndHappyFeatures[activeTab];
+
   return (
     <div className="w-full bg-white">
-      {/* hero section? */}
-      <section className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-8 md:grid-cols-2 md:items-center lg:px-12">
+
+      {/* Hero section */}
+      <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-8 md:grid-cols-2 md:items-center md:gap-8 lg:px-12 lg:py-14">
+
+        {/* Content */}
         <div className="max-w-xl">
-          <h1 className="mb-8 text-5xl font-extrabold leading-[1.15] tracking-tight text-black md:text-6xl">
+          <h1 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-black sm:text-4xl md:text-4xl lg:text-7xl">
             Healthy &amp;
             <br />
             Happy Myanmar
           </h1>
-          <p className="mb-10 text-muted text-md leading-relaxed">
-            Your Daily Nutrition Partner,Every Step of the Way!
+
+          <p className="mb-8 text-xl leading-relaxed text-muted sm:text-1xl md:text-2xl lg:text-4xl">
+            Your Daily Nutrition Partner,
+            <br className="hidden sm:block" />
+            Every Step of the Way!
           </p>
+
           <Link
             href="/en/products"
-            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-8 py-4 text-sm font-bold text-white hover:bg-[#2d3820]"
+            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-6 py-3 text-sm font-bold text-white shadow-md transition-colors hover:bg-green-600 sm:px-8 sm:py-4"
           >
-            Explore our products <ArrowRight className="size-4" />
+            Explore our products
+            <ArrowRight className="size-4" />
           </Link>
         </div>
 
+
+        {/* Hero video */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
-          <Image
-            src={assets.banner}
-            alt="Healthy & Happy products"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-cover"
+          <video
+            src="/videos/production.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-cover"
           />
         </div>
+
       </section>
+
       {/* ----------------- Feature Categories Section ----------------- */}
-      <section className="border-y py-10 bg-[#faf8f5]">
-        <div className="mx-auto max-w-5xl px-4">
+      <section
+        className="border-y bg-[#faf8f5]"
+        style={{ marginTop: "50px", marginBottom: "50px", paddingTop: "30px", paddingBottom: "30px" }}
+      >
+        <div className="mx-auto max-w-6xl px-4">
           {/* Section Title */}
-          <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-black sm:text-3xl">
+          <h2
+            className="text-center font-bold tracking-tight text-black"
+            style={{ fontSize: "48px", marginBottom: "40px" }}
+          >
             Feature Categories
           </h2>
-          <div className="mb-10 flex justify-center gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
+
+          <div
+            className="flex justify-between gap-3 overflow-x-auto scrollbar-hide sm:gap-6"
+            style={{ marginBottom: "40px", paddingBottom: "16px" }}
+          >
             {[
               { name: "Protein Bites", slug: "protein-bites" },
               { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
@@ -58,35 +133,36 @@ export default function HomePage() {
               <a
                 key={category.slug}
                 href={`/products?category=${category.slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-40"
+                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-42"
               >
                 <div className="relative w-full">
                   <svg
-                    viewBox="0 0 160 165"
+                    viewBox="0 0 160 145"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-full drop-shadow-md"
                   >
-                    {/* Green Container Shape with Inverted Smooth Curved Corners */}
+                    {/* Shorter Downward Trend Path */}
                     <path
                       d="M 16 0 
-               H 144 
-               A 16 16 0 0 1 160 16 
-               V 108 
-               A 16 16 0 0 1 144 124 
-               A 12 12 0 0 0 132 136 
-               V 149 
-               A 16 16 0 0 1 116 165 
-               H 44 
-               A 16 16 0 0 1 28 149 
-               V 136 
-               A 12 12 0 0 0 16 124 
-               A 16 16 0 0 1 0 108 
-               V 16 
-               A 16 16 0 0 1 16 0 Z"
-                      fill="#4cae4f"
+       H 144 
+       A 16 16 0 0 1 160 16 
+       V 102 
+       A 16 16 0 0 1 144 116 
+       A 10 10 0 0 0 134 124 
+       V 133 
+       A 12 12 0 0 1 122 145 
+       H 38 
+       A 12 12 0 0 1 26 133 
+       V 124 
+       A 10 10 0 0 0 16 116 
+       A 16 16 0 0 1 0 102 
+       V 16 
+       A 16 16 0 0 1 16 0 Z"
+                      fill="#1EB500"
                     />
                   </svg>
+
                   <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
                     <Image
                       src={assets.product}
@@ -106,116 +182,182 @@ export default function HomePage() {
               </a>
             ))}
           </div>
+
           <ProductCarousel />
         </div>
       </section>
       <section className="border-b py-12">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-8 md:grid-cols-2 lg:px-12">
-          <div>
-            <Image
-              src={assets.logo}
-              alt="Healthy & Happy"
-              width={76}
-              height={40}
-              className="mb-3 h-8 w-auto"
-            />
-            <h2 className="mb-4 text-2xl font-bold leading-snug">
-              The Journey of
-              <br />
-              Happy &amp; Healthy
-            </h2>
-            <p className="mb-3 text-sm leading-relaxed text-muted">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-5 lg:px-12">
+          <div className="md:col-span-2">
+            <div className="md:mb-6 mb-2 flex items-center gap-3 md:gap-1">
+              <Image
+                src={assets.logo}
+                alt="Healthy & Happy"
+                width={115}
+                height={61}
+                className="mb-3 lg:h-12 md:h-9 w-auto h-10"
+              />
+              <h2 className="md:mb-4 mb-2 lg:text-3xl md:text-2xl text-2xl font-extrabold tracking-wide text-black">
+                The Journey of <span className="inline-block md:hidden">Happy &amp; Healthy</span>
+                <br />
+                <span className="hidden md:block">Happy &amp; Healthy</span>
+              </h2>
+            </div>
+            <p className="mb-3 lg:text-sm md:text-xs text-xs font-medium leading-relaxed text-muted ">
               Healthy &amp; Happy began with a deeply personal story. One of our co-founders
-              experienced the heartbreaking loss of her father to the complications of diabetes,
-              unable to access the nutritional support he needed during his final years.
+              experienced the heartbreak of losing her father to cancer due to a lack of access to
+              nutritious food.
             </p>
-            <p className="mb-5 text-sm leading-relaxed text-muted">
-              This profound loss ignited a passion to make honest, nourishing food accessible to
-              families throughout Myanmar.
+            <p className="md:mb-5 mb-1 lg:text-sm md:text-xs text-xs font-medium leading-relaxed text-muted">
+              This profound loss ignited a passion to ensure that no one else would suffer from
+              preventable health issues caused by poor nutrition. Recognizing the growing prevalence
+              of diabetes and other health conditions in our community, we committed ourselves to
+              making a meaningful difference through accessible, honest, and nourishing food.
             </p>
-            <div className="flex gap-4 text-xs font-bold text-primary">
-              <Link href="/en/about">Our Story</Link>
-              <Link href="/en/products">Our Products</Link>
-              <Link href="/en/about">Our Brands</Link>
-            </div>
           </div>
-          <div className="space-y-3">
-            <div className="relative aspect-video overflow-hidden rounded-xl">
-              <Image
-                src={assets.banner}
-                alt="Healthy & Happy journey"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover"
-              />
+          <div className="space-y-3 md:col-span-3">
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
+              <div className="md:h-80 grid grid-cols-2 md:grid-cols-1 gap-3">
+                <div className="relative w-full h-37.5 sm:h-45.5 rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                  <Image
+                    src={assets.banner}
+                    alt="Healthy & Happy journey"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="relative w-full h-37.5 sm:h-45.5 rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                  <Image
+                    src={assets.banner}
+                    alt="Healthy & Happy journey"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div className="relative w-full h-80 sm:h-96 rounded-2xl overflow-hidden bg-[#d9d9d9]">
+                <Image
+                  src={assets.product}
+                  alt="Healthy & Happy product"
+                  fill
+                  className=" w-full h-full "
+                />
+              </div>
             </div>
-            <div className="relative aspect-[16/6] overflow-hidden rounded-xl bg-[#d9d9d9]">
-              <Image
-                src={assets.product}
-                alt="Healthy & Happy product"
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-contain"
-              />
-            </div>
-            <p className="text-[10px] text-muted">
+            {/* <p className="text-[10px] text-muted">
               Our story is one of family, perseverance, and commitment to the communities we serve.
+            </p> */}
+          </div>
+        </div>
+        <div className="mx-auto grid md:max-w-7xl gap-10 px-4 sm:px-8 lg:grid-cols-6 lg:px-12 mt-7 md:mt-12 lg:mt-7">
+          <div className="flex items-center  gap-2 text-xs font-bold text-primary lg:col-span-2">
+            {JourneyAndHappyFeatures.map((tab, index) => {
+              const Icon = tab.icon;
+              const isActive = index === activeTab;
+
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setActiveTab(index)}
+                  className={`flex items-center gap-2 lg:text-[10px] xl:text-[12px] text-[12px] rounded-full lg:px-2 xl:px-3  px-3 py-2 cursor-pointer transition-all duration-300 ${isActive
+                    ? "bg-black text-white shadow-md scale-105"
+                    : "bg-gray-200 text-gray-800 hover:bg-amber-50"
+                    }`}
+                >
+                  <Icon className="lg:size-3.5 size-4" />
+                  {tab.label}
+                </button>
+              );
+            })}
+          </div>
+          <div className="space-y-3  lg:col-span-4 backdrop:blur-sm bg-[#2dc100] p-4 px-5 rounded-3xl text-white shadow-xl shadow-[#2dc100]/30 border border-white/20">
+            {/* title */}
+            <h4 className="text-lg font-bold">{currentTab.title}</h4>
+            <p className="text-[13px] font-medium text-gray-100 leading-4.5 -mt-3 relative">
+              {currentTab.content}
+              <Link
+                href={currentTab.href}
+                className="ml-2 text-white bg-black absolute -bottom-8 right-5 px-4 py-2 rounded-2xl cursor-pointer hover:bg-gray-600 transition-colors text-md font-semibold"
+              >
+                See More
+              </Link>
             </p>
           </div>
         </div>
       </section>
+
       <section className="border-b bg-[#f5f0ee] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
-          <h2 className="mb-8 text-xl font-bold">Awards &amp; Recognitions</h2>
-          <AwardCarousel />
+          <h2 className=" text-3xl font-bold">Awards &amp; Recognitions</h2>
+          <PerfectCoverCarousel />
         </div>
       </section>
 
-      {/* production place section */}
+      {/* Production place section */}
       <section className="border-b py-12">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-[40%_30%_30%] lg:px-10">
-          <div className="flex flex-col justify-center">
-            <h2 className="text-[1.6875rem] font-extrabold leading-tight">
-              Production Place
-              <br />
-              Where Our Product Come To Life
-            </h2>
-            <p className="mt-8 max-w-md text-[15px] leading-7 text-muted">
-              Our flagship products, including Protein Bite Cookies, are meticulously crafted to
-              provide balanced nutrition. Each cookie is made using locally sourced ingredients such
-              as chickpeas, peanuts, and rolled oats ensuring they are both nutritious and
-              delicious. These products are not only suitable for people with diabetes, but also
-              serve as a convenient and healthy snack for anyone seeking to maintain a balanced
-              lifestyle.
-            </p>
-            <Link
-              href="/en/about#locations"
-              className="mt-10 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#2d3820]"
-            >
-              See More
-              <span className="ml-2">→</span>
-            </Link>
-          </div>
-          <div className="relative">
-            <div className="relative h-full overflow-hidden rounded-3xl bg-[#d9d9d9]">
-              <Image src={assets.product} alt="Production" fill className="object-cover" />
-            </div>
-          </div>
-          <div className="flex flex-col justify-between">
-            <div className="relative h-[430px] overflow-hidden rounded-3xl bg-[#cbb8a3]">
-              <Image src={assets.map} alt="Map" fill className="object-cover" />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+
+            {/* Content */}
+            <div className="flex flex-col justify-center lg:pr-6">
+              <h2 className="text-2xl font-extrabold leading-tight sm:text-3xl">
+                Production Place
+                <br />
+                Where Our Product Come To Life
+              </h2>
+
+              <p className="mt-6 text-sm leading-7 text-muted sm:text-base">
+                Our flagship products, including Protein Bite Cookies, are meticulously crafted to
+                provide balanced nutrition. Each cookie is made using locally sourced ingredients such
+                as chickpeas, peanuts, and rolled oats ensuring they are both nutritious and
+                delicious. These products are not only suitable for people with diabetes, but also
+                serve as a convenient and healthy snack for anyone seeking to maintain a balanced
+                lifestyle.
+              </p>
+
+              <Link
+                href="/en/about#locations"
+                className="mt-8 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white"
+              >
+                See More →
+              </Link>
             </div>
 
-            <Link
-              href="/en/contact"
-              className="mt-8 inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg transition hover:bg-green-600"
-            >
-              See Location details
-              <span className="ml-2">→</span>
-            </Link>
+
+            {/* Carousel */}
+            <div className="w-full overflow-hidden">
+              <div className="h-[380px] sm:h-[480px] lg:h-[520px]">
+                <ProductionPlaceCarousel />
+              </div>
+            </div>
+
+
+            {/* Map */}
+            <div className="flex h-full w-full flex-col">
+
+              <div className="relative h-[300px] w-full overflow-hidden rounded-3xl border shadow-xl sm:h-[380px] lg:h-[430px]">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3776.0!2d96.08!3d21.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6e3a7af05de5%3A0x4e1e5e4c5c5a5c5a!2sYatanarpon%20Cyber%20City!5e0!3m2!1sen!2smm!4v1620000000000!5m2!1sen!2smm"
+                  className="absolute inset-0 h-full w-full"
+                  loading="lazy"
+                  title="Location map"
+                />
+              </div>
+
+              <Link
+                href="/en/contact"
+                className="mt-auto inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg"
+              >
+                See Location details →
+              </Link>
+
+            </div>
           </div>
+
         </div>
       </section>
+
       <ContactSection />
     </div>
   );
