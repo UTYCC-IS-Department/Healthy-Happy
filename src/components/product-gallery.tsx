@@ -18,7 +18,7 @@ export function ProductGallery({ product }: { product: Product }) {
           className="object-cover"
         />
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 justify-center items-center">
         {images.map((image, index) => (
           <button
             key={`${image}-${index}`}
