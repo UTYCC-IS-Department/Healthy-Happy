@@ -12,7 +12,7 @@ const links = [
   ["Home", "/en"],
   ["About Us", "/en/about"],
   ["Products", "/en/products"],
-  ["Rewards", "/en/rewards"],
+
   ["Awards", "/en/awards"],
   ["Contact Us", "/en/contact"],
 ] as const;
@@ -23,7 +23,6 @@ export function SiteHeader() {
   return (
     <nav className="sticky top-0 z-50 bg-[#2dc100] text-white shadow-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-
         <Link href="/en" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
           <span className=" p-1">
             <Image
@@ -71,11 +70,8 @@ export function SiteHeader() {
             >
               <span className="fi fi-gb text-1xl"></span>
             </Link>
-
-
           </div>
         </div>
-
 
         <button
           type="button"
@@ -95,10 +91,9 @@ export function SiteHeader() {
               key={href}
               href={href}
               onClick={() => setMobileOpen(false)}
-              className={`block rounded-md px-2 py-3 text-base font-medium ${pathname === href
-                ? "bg-white/10 text-secondary"
-                : "hover:bg-white/10"
-                }`}
+              className={`block rounded-md px-2 py-3 text-base font-medium ${
+                pathname === href ? "bg-white/10 text-secondary" : "hover:bg-white/10"
+              }`}
             >
               {label}
             </Link>
