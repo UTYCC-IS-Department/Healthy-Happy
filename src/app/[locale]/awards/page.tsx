@@ -266,7 +266,7 @@ function DocCard({ description }: { description: string }) {
 /* ── TrophyCard ──────────────────────────────────────────────────
    
 ──────────────────────────────────────────────────────────────── */
-function TrophyCard({ title }: { title: string }) {
+function TrophyCard({ title, awardImage }: { title: string; awardImage: string }) {
   return (
     <div
       style={{
@@ -283,7 +283,7 @@ function TrophyCard({ title }: { title: string }) {
       }}
     >
       <Image
-        src={assets.award}
+        src={awardImage}
         alt={title}
         width={120}
         height={180}
@@ -299,47 +299,68 @@ const awards = [
     title: "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.",
     description:
       "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category.",
+    image: assets.award1,
   },
   {
     label: "Award-2",
     title: "The Most Responsible Business Award 2022",
     description:
       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
+    image: assets.award2,
   },
   {
     label: "Award-3",
     title: "Award Title 3",
     description: "Award description 3.",
+    image: assets.award3,
   },
   {
     label: "Award-4",
     title: "Award Title 4",
     description: "Award description 4.",
+    image: assets.award4,
   },
   {
     label: "Award-5",
     title: "Award Title 5",
     description: "Award description 5.",
+    image: assets.award5,
   },
   {
     label: "Award-6",
     title: "Award Title 6",
     description: "Award description 6.",
+    image: assets.award6,
   },
   {
     label: "Award-7",
     title: "Award Title 7",
     description: "Award description 7.",
+    image: assets.award7,
   },
   {
     label: "Award-8",
     title: "Award Title 8",
     description: "Award description 8.",
+    image: assets.award8,
   },
   {
     label: "Award-9",
     title: "Award Title 9",
     description: "Award description 9.",
+    image: assets.award9,
+  },
+  {
+    label: "Award-10",
+    title: "Award Title 10",
+    description: "Award description 10.",
+    image: assets.award10,
+  },
+  {
+    label: "Award-11",
+    title: "Award Title 11",
+    description: "Award description 11.",
+    image: assets.award11,
   },
 ];
 
@@ -367,7 +388,7 @@ export default function AwardsPage() {
           <div>
             <FolderCard title={award.title}>
               <DocCard description={award.description} />
-              <TrophyCard title={award.title} />
+              <TrophyCard title={award.title} awardImage={award.image} />
             </FolderCard>
           </div>
         </div>
