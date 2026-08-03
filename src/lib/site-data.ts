@@ -12,11 +12,11 @@ export type Product = {
 };
 
 const productImage1 = "/healthy-happy/IMG_0319_1_1784649192457.png";
-const productImage2 = "/healthy-happy/IMG_0319_1_1784649192457.png"; 
-const productImage3 = "/healthy-happy/IMG_0319_1_1784649192457.png"; 
-const productImage4 = "/healthy-happy/IMG_0319_1_1784649192457.png";
-const productImage5 = "/healthy-happy/IMG_0319_1_1784649192457.png"; 
-const productImage6 = "/healthy-happy/IMG_0319_1_1784649192457.png"; 
+const productImage2 = "/healthy-happy/IMG_0382.png"; 
+const productImage3 = "/healthy-happy/Spinach Cookies.png"; 
+const productImage4 = "/healthy-happy/Oat Cookies.png";
+const productImage5 = "/healthy-happy/Peanut Butter (No Sugar).png"; 
+const productImage6 = "/healthy-happy/Protein Bite (Diabetes).png"; 
 
 export const products: Product[] = ([
   [
