@@ -124,9 +124,6 @@ import AwardWheel from "@/components/award-wheel";
 import CertificationBlock from "@/components/certification-block";
 import { assets } from "@/lib/site-data";
 
-/* ================================================================
-
-
 const FOLDER_VB = "0 0 500 285";
 const FOLDER_PATH =
   "M312 0 L460 0 Q480 0 480 20" +
