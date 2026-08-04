@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { getImagePath } from './imageAssets';
 
 // ============================================================================
 // TypeScript Interfaces
@@ -423,15 +424,105 @@ const cssStyles = `
 
   @media (max-width: 480px) {
     .ri-main-heading {
-      font-size: 26px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .ri-section-wrapper {
+      padding: 16px 12px;
     }
 
     .ri-canvas-card {
-      min-width: 250px;
+      min-width: 220px;
+      height: 160px;
     }
 
     .ri-feature-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .ri-feature-box {
+      height: 70px;
+    }
+
+    .ri-top-pill-banner {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+
+    .ri-green-container {
+      padding: 20px 16px;
+      gap: 24px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 70px;
+      height: 70px;
+    }
+
+    .ri-row-title {
+      font-size: 16px;
+    }
+
+    .ri-row-description {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .ri-main-heading {
+      font-size: 20px;
+    }
+
+    .ri-canvas-card {
+      min-width: 200px;
+      height: 150px;
+    }
+
+    .ri-feature-box {
+      height: 60px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ri-row-title {
+      font-size: 15px;
+    }
+
+    .ri-row-description {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .ri-main-heading {
+      font-size: 18px;
+    }
+
+    .ri-canvas-card {
+      min-width: 180px;
+      height: 140px;
+    }
+
+    .ri-feature-box {
+      height: 55px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 55px;
+      height: 55px;
+    }
+
+    .ri-row-title {
+      font-size: 14px;
+    }
+
+    .ri-row-description {
+      font-size: 12px;
     }
   }
 `;
@@ -481,7 +572,7 @@ export const ResearchInnovation: React.FC = () => {
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            {researchInnovationData.leftCards.map((cardItem: LeftCardData) => (
+            {researchInnovationData.leftCards.map((cardItem: LeftCardData, index: number) => (
               <motion.div
                 key={cardItem.id}
                 className="ri-canvas-card"
@@ -491,6 +582,11 @@ export const ResearchInnovation: React.FC = () => {
                   scale: 1.03,
                   boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
                   transition: { type: 'spring', stiffness: 300, damping: 18 },
+                }}
+                style={{
+                  backgroundImage: `url(${getImagePath(`aboutus-0${index + 9}`) || ''})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               />
             ))}
@@ -537,6 +633,11 @@ export const ResearchInnovation: React.FC = () => {
                           variants={circleVariants}
                           initial="hidden"
                           animate={inView ? 'visible' : 'hidden'}
+                          style={{
+                            backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-01' : 'aboutus-02') || ''})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
                         />
                         <div className="ri-row-text-content">
                           <h3 className="ri-row-title">
@@ -582,6 +683,11 @@ export const ResearchInnovation: React.FC = () => {
                         variants={circleVariants}
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
+                        style={{
+                          backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-03' : 'aboutus-04') || ''})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                        }}
                       />
                     </div>
                   );

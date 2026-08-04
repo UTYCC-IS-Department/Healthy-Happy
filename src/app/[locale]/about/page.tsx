@@ -22,10 +22,11 @@ export default function AboutPage() {
   return (
     <div className="w-full">
       <Headline/>
+      <div className="w-full h-60 sm:h-4 md:h-5 bg-[#16b300]" />
       <CoreIdentity/>
       <Sustainability/>
       <ResearchInnovation />
-      <WhereCanBuy/>
+      <WhereCanBuy retailers={retailers} />
     </div>
   );
 }
