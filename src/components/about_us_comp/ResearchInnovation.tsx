@@ -4,6 +4,8 @@ import React from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { getImagePath } from './imageAssets';
+import type { AboutMessages } from "@/i18n/message-types";
+import type { Locale } from "@/i18n/config";
 
 // ============================================================================
 // TypeScript Interfaces
@@ -530,7 +532,7 @@ const cssStyles = `
 // ============================================================================
 // Main React Component
 // ============================================================================
-export const ResearchInnovation: React.FC = () => {
+export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessages["research"] }> = ({ locale, messages }) => {
   const { ref: sectionRef, inView } = useInView({
     threshold: 0.15,
     triggerOnce: true,
@@ -542,7 +544,7 @@ export const ResearchInnovation: React.FC = () => {
       <section
         ref={sectionRef}
         className="ri-section-wrapper"
-        data-lang="en"
+        data-lang={locale}
       >
         <AnimatePresence mode="wait">
           <motion.h1
@@ -559,7 +561,7 @@ export const ResearchInnovation: React.FC = () => {
               animate="animate"
               exit="exit"
             >
-              Research & Innovation
+              {messages.title}
             </motion.span>
           </motion.h1>
         </AnimatePresence>
@@ -609,7 +611,7 @@ export const ResearchInnovation: React.FC = () => {
                   animate="animate"
                   exit="exit"
                 >
-                  {researchInnovationData.topBannerText}
+                  {messages.banner}
                 </motion.span>
               </AnimatePresence>
             </div>
@@ -649,7 +651,7 @@ export const ResearchInnovation: React.FC = () => {
                                 animate="animate"
                                 exit="exit"
                               >
-                                {section.title}
+                                {messages.sections[index].title}
                               </motion.span>
                             </AnimatePresence>
                           </h3>
@@ -662,7 +664,7 @@ export const ResearchInnovation: React.FC = () => {
                                 animate="animate"
                                 exit="exit"
                               >
-                                {section.description}
+                                {messages.sections[index].description}
                               </motion.span>
                             </AnimatePresence>
                           </p>

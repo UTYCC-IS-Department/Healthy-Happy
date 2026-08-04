@@ -7,10 +7,16 @@ import { useEffect, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { assets, products } from "@/lib/site-data";
+import enProduct from "../../messages/en/product.json";
+import { assets, productMedia } from "@/lib/site-data";
 // Swiper Styles
 import "swiper/css";
 import "swiper/css/navigation";
+
+const products = productMedia.map((media) => ({
+  ...media,
+  ...enProduct.products[media.id as keyof typeof enProduct.products],
+}));
 
 export function ProductCarousel() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);

@@ -1,0 +1,39 @@
+{
+  "header": {
+    "brandAlt": "Healthy & Happy Myanmar လိုဂို",
+    "brandName": "Healthy & Happy",
+    "links": { "home": "ပင်မ", "about": "ကျွန်ုပ်တို့အကြောင်း", "products": "ထုတ်ကုန်များ", "awards": "ဆုများ", "contact": "ဆက်သွယ်ရန်" },
+    "languages": { "english": "English", "burmese": "မြန်မာ" },
+    "openNavigation": "လမ်းညွှန်ကို ဖွင့်ရန်",
+    "closeNavigation": "လမ်းညွှန်ကို ပိတ်ရန်"
+  },
+  "footer": {
+    "newsText": "နောက်ဆုံးပြင်ဆင်ထားသော ထုတ်ကုန်သတင်းများကို ကြည့်ရှုပါ",
+    "newsAction": "နောက်ဆုံးသတင်းများ ကြည့်ရန်",
+    "brandAlt": "Healthy & Happy လိုဂို",
+    "tagline": "နေ့စဉ်အာဟာရ မိတ်ဖက်၊ ခြေလှမ်းတိုင်းအတွက်",
+    "description": "အကောင်းဆုံး သဘာဝပါဝင်ပစ္စည်းများဖြင့် မေတ္တာဖြင့် ထုတ်လုပ်ထားပါသည်။ အကိုက်တိုင်းတွင် ကွာခြားမှုကို ခံစားပါ။",
+    "address": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။",
+    "follow": "ကျွန်ုပ်တို့၏ ခရီးစဉ်ကို လိုက်ပါ",
+    "social": { "facebook": "Facebook", "tiktok": "TikTok", "instagram": "Instagram", "whatsapp": "WhatsApp" },
+    "columns": {
+      "company": "ကုမ္ပဏီ",
+      "products": "ထုတ်ကုန်များ",
+      "support": "အကူအညီ"
+    },
+    "links": {
+      "products": "ထုတ်ကုန်များ",
+      "about": "ကျွန်ုပ်တို့အကြောင်း",
+      "awards": "ဆုများနှင့် အသိအမှတ်ပြုလက်မှတ်များ",
+      "contact": "ဆက်သွယ်ရန်",
+      "proteinBites": "ပရိုတင်း အကိုက်များ",
+      "nutCookies": "အခွံမာသီး ဆီးချိုမုန့်",
+      "spinachCookies": "ဟင်းနုနွယ် မုန့်",
+      "help": "အကူအညီဌာန",
+      "productInfo": "ထုတ်ကုန်အချက်အလက်",
+      "faq": "မေးလေ့ရှိသော မေးခွန်းများ"
+    },
+    "productOfMyanmar": "မြန်မာ့ထုတ်ကုန်",
+    "copyright": "မူပိုင်ခွင့် © 2026 Healthy & Happy | မူပိုင်ခွင့်အားလုံး ရရှိပြီး"
+  }
+}

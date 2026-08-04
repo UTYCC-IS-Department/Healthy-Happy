@@ -2,16 +2,12 @@
 
 import React from 'react';
 import { motion, type Variants } from "framer-motion";
+import type { AboutMessages } from "@/i18n/message-types";
 
 interface CoreIdentityItem { id: string; title: string; heading: string; description: string; }
 
-const coreIdentityItems: CoreIdentityItem[] = [
-  { id: 'mission', title: 'Mission', heading: 'Revolutionizing Health & Wellness', description: 'To revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet and support sustainable agricultural practices.' },
-  { id: 'vision', title: 'Vision', heading: 'SEED to NOURISHING RICH SNACKS', description: 'From seed to nourishing rich snacks—we envision a Myanmar where everyone has access to nutritious, delicious food that supports local farmers and builds healthier communities.' },
-  { id: 'motto', title: 'Motto', heading: 'Your Daily Nutrition Partner, Every Step of the Way!', description: 'Your reliable, all-in-one companion designed to guide, track, and support your health and wellness goals, one bite and one step at a time.' },
-];
-
-export const CoreIdentity: React.FC = () => {
+export const CoreIdentity: React.FC<{ messages: AboutMessages["coreIdentity"] }> = ({ messages }) => {
+  const coreIdentityItems: CoreIdentityItem[] = messages.items;
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 80, scale: 0.92 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: "easeOut" } },
@@ -47,7 +43,7 @@ export const CoreIdentity: React.FC = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         >
-          Our Core Identity
+          {messages.title}
         </motion.h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 md:gap-16 justify-items-center items-stretch">

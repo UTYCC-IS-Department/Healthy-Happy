@@ -1,5 +1,6 @@
 import React from 'react';
 import { getImagePath } from './imageAssets';
+import type { AboutMessages } from "@/i18n/message-types";
 
 interface GridImage {
   id: number;
@@ -9,42 +10,42 @@ interface GridImage {
   className: string;
 }
 
-const Headline: React.FC = () => {
+const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages }) => {
 
   const gridImagesData: GridImage[] = [
     {
       id: 1,
       src: getImagePath('aboutus-01') || '/path/to/top-left-img.jpg',
-      alt: 'Top Left Team Member',
-      title: 'Co-Founder 1',
+      alt: messages.grid[0].alt,
+      title: messages.grid[0].title,
       className: 'col-start-1 col-end-3 row-start-1 row-end-3',
     },
     {
       id: 2,
       src: getImagePath('aboutus-02') || '/path/to/top-right-img.jpg',
-      alt: 'Top Right Team Member',
-      title: 'Nutritionist',
+      alt: messages.grid[1].alt,
+      title: messages.grid[1].title,
       className: 'col-start-3 row-start-1 row-end-3',
     },
     {
       id: 3,
       src: getImagePath('aboutus-03') || '/path/to/center-img.jpg',
-      alt: 'Center Focus: Founding Story',
-      title: 'The Mission',
+      alt: messages.grid[2].alt,
+      title: messages.grid[2].title,
       className: 'col-start-2 row-start-2 z-10',
     },
     {
       id: 4,
       src: getImagePath('aboutus-04') || '/path/to/bottom-left-img.jpg',
-      alt: 'Bottom Left: Mandalay Office',
-      title: 'Operations',
+      alt: messages.grid[3].alt,
+      title: messages.grid[3].title,
       className: 'col-start-1 row-start-3',
     },
     {
       id: 5,
       src: getImagePath('aboutus-05') || '/path/to/bottom-right-img.jpg',
-      alt: 'Bottom Right Team Member',
-      title: 'Co-Founder 2',
+      alt: messages.grid[4].alt,
+      title: messages.grid[4].title,
       className: 'col-start-2 col-end-4 row-start-3',
     },
   ];
@@ -56,10 +57,10 @@ const Headline: React.FC = () => {
         {/* Header Section */}
         <header className="relative pt-4 sm:pt-6 md:pt-8 pb-6 sm:pb-8 md:pb-12">
   <span className="absolute left-0 top-0 text-xs sm:text-sm font-semibold text-gray-600">
-    Est. 2017 in Mandalay, Myanmar
+    {messages.established}
   </span>
   <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black tracking-tight leading-tight text-gray-900">
-    Healthy & Happy  Myanmar Co., Ltd.
+    {messages.company}
   </h1>
 </header>
 
@@ -69,43 +70,43 @@ const Headline: React.FC = () => {
             <div className="absolute inset-0 bg-gray-400 rounded-3xl translate-x-2 sm:translate-x-3 md:translate-x-4 translate-y-2 sm:translate-y-3 md:translate-y-4 -z-0 opacity-50"></div>
             <img
               src={getImagePath('wellness-cookies-hero') || ''}
-              alt="Leaf"
+              alt={messages.heroAlt}
               className="relative z-10 w-full h-64 sm:h-80 md:h-96 object-cover rounded-3xl border-2 border-gray-300"
             />
           </div>
           <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
             <p className="font-semibold text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
-              The Healthy Plate is dedicated to promoting a wholesome lifestyle centered around fresh ingredients, balanced nutrition, and overall well-being. Our brand identity reflects vitality, health, and happiness through vibrant green aesthetics and clear nutritional categorization.
+              {messages.intro}
             </p>
 
             <div className="space-y-4 sm:space-y-6">
-              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">Brand Values</h2>
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{messages.valuesTitle}</h2>
 
               <div className="space-y-4 sm:space-y-5">
                 <div>
                   <span className="inline-block bg-white px-4 sm:px-5 py-2 text-sm sm:text-base font-semibold text-gray-800 rounded-lg shadow-sm">
-                    Freshness
+                    {messages.values[0].title}
                   </span>
                   <p className="mt-2 text-sm sm:text-base font-medium text-gray-600 leading-relaxed">
-                    Emphasizing farm-fresh vegetables, fruits, and organic produce
+                    {messages.values[0].description}
                   </p>
                 </div>
 
                 <div>
                   <span className="inline-block bg-white px-4 sm:px-5 py-2 text-sm sm:text-base font-semibold text-gray-800 rounded-lg shadow-sm">
-                    Balance
+                    {messages.values[1].title}
                   </span>
                   <p className="mt-2 text-sm sm:text-base font-medium text-gray-600 leading-relaxed">
-                    Highlighting whole grains, lean proteins, and wholesome nutrition.
+                    {messages.values[1].description}
                   </p>
                 </div>
 
                 <div>
                   <span className="inline-block bg-white px-4 sm:px-5 py-2 text-sm sm:text-base font-semibold text-gray-800 rounded-lg shadow-sm">
-                    Joy & Vitality
+                    {messages.values[2].title}
                   </span>
                   <p className="mt-2 text-sm sm:text-base font-medium text-gray-600 leading-relaxed">
-                    Inspiring a positive, energetic lifestyle summarized by our motto: &quot;Healthy & Happy&quot;
+                    {messages.values[2].description}
                   </p>
                 </div>
               </div>
@@ -118,11 +119,11 @@ const Headline: React.FC = () => {
           <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-green-600 rounded-full border-3 border-yellow-400 flex items-center justify-center text-xs sm:text-sm text-white font-bold shadow-lg">
             <img
               src={getImagePath('brand-logo') || ''}
-              alt="Leaf"
+              alt={messages.heroAlt}
               className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
             />
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Our History</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">{messages.historyTitle}</h2>
         </div>
 
         {/* Bottom Content Grid with 5-Image Layout */}
@@ -131,21 +132,21 @@ const Headline: React.FC = () => {
             <div className="flex items-start space-x-3 sm:space-x-4">
               <span className="text-green-600 text-xl sm:text-2xl mt-1 shrink-0">?</span>
               <p className="text-sm sm:text-base md:text-lg font-medium text-gray-700 leading-relaxed">
-                Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs and a pioneering nutritionist.
+                {messages.history[0]}
               </p>
             </div>
 
             <div className="flex items-start space-x-3 sm:space-x-4">
               <span className="text-green-600 text-xl sm:text-2xl mt-1 shrink-0">?</span>
               <p className="text-sm sm:text-base md:text-lg font-medium text-gray-700 leading-relaxed">
-                Our journey began with a deeply personal story. One of our co-founders experienced the heartbreak of losing her father to cancer due to a lack of access to nutritious food. This profound experience ignited a passion to ensure no one else would suffer from preventable health issues due to poor nutrition.
+                {messages.history[1]}
               </p>
             </div>
 
             <div className="flex items-start space-x-3 sm:space-x-4">
               <span className="text-green-600 text-xl sm:text-2xl mt-1 shrink-0">?</span>
               <p className="text-sm sm:text-base md:text-lg font-medium text-gray-700 leading-relaxed">
-                Recognizing the prevalence of diabetes and other health conditions in our community, we committed ourselves to making a difference—one nutritious product at a time.
+                {messages.history[2]}
               </p>
             </div>
           </div>
