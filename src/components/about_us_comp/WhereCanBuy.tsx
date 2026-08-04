@@ -10,6 +10,8 @@ interface LocationItem {
 }
 interface WhereCanBuyProps {
   retailers: string[];
+  title: string;
+  note: string;
 }
 
 const headingVariants: Variants = {
@@ -42,7 +44,7 @@ const footerVariants: Variants = {
   visible: { opacity: 1, y: 0, transition: { delay: 1.1, duration: 0.6, ease: "easeOut" } },
 };
 
-export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ retailers }) => {
+export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ retailers, title, note }) => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
   const locations: LocationItem[] = retailers.map((name, index) => ({ id: index + 1, name }));
 
@@ -55,7 +57,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ retailers }) => {
           initial="hidden"
           animate="visible"
         >
-          Where Can Buy
+          {title}
         </motion.h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-6 gap-y-10 sm:gap-y-12 lg:gap-y-14">
@@ -161,8 +163,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ retailers }) => {
           >
             <span className="text-red-500 text-base sm:text-lg mr-2 sm:mr-3 shrink-0">◆</span>
             <p className="text-sm font-semibold leading-5 text-gray-800">
-              Apart from major modern trade venues, our products are widely available at prominent
-              regional supermarkets and trusted local retail shops across the country
+              {note}
             </p>
           </motion.div>
         </div>

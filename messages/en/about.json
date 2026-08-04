@@ -1,0 +1,93 @@
+{
+  "headline": {
+    "established": "Est. 2017 in Mandalay, Myanmar",
+    "company": "Healthy & Happy Myanmar Co., Ltd.",
+    "heroAlt": "Leaf",
+    "intro": "The Healthy Plate is dedicated to promoting a wholesome lifestyle centered around fresh ingredients, balanced nutrition, and overall well-being. Our brand identity reflects vitality, health, and happiness through vibrant green aesthetics and clear nutritional categorization.",
+    "valuesTitle": "Brand Values",
+    "values": [
+      {
+        "title": "Freshness",
+        "description": "Emphasizing farm-fresh vegetables, fruits, and organic produce"
+      },
+      {
+        "title": "Balance",
+        "description": "Highlighting whole grains, lean proteins, and wholesome nutrition."
+      },
+      {
+        "title": "Joy & Vitality",
+        "description": "Inspiring a positive, energetic lifestyle summarized by our motto: Healthy & Happy"
+      }
+    ],
+    "historyTitle": "Our History",
+    "history": [
+      "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs and a pioneering nutritionist.",
+      "Our journey began with a deeply personal story. One of our co-founders experienced the heartbreak of losing her father to cancer due to a lack of access to nutritious food. This profound experience ignited a passion to ensure no one else would suffer from preventable health issues due to poor nutrition.",
+      "Recognizing the prevalence of diabetes and other health conditions in our community, we committed ourselves to making a difference—one nutritious product at a time."
+    ],
+    "grid": [
+      { "alt": "Top Left Team Member", "title": "Co-Founder 1" },
+      { "alt": "Top Right Team Member", "title": "Nutritionist" },
+      { "alt": "Center Focus: Founding Story", "title": "The Mission" },
+      { "alt": "Bottom Left: Mandalay Office", "title": "Operations" },
+      { "alt": "Bottom Right Team Member", "title": "Co-Founder 2" }
+    ]
+  },
+  "research": {
+    "title": "Research & Innovation",
+    "banner": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks",
+    "sections": [
+      {
+        "title": "Digital Transformation & Smart Systems",
+        "description": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks"
+      },
+      {
+        "title": "Advanced Materials & Biotechnology",
+        "description": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks"
+      }
+    ]
+  },
+  "coreIdentity": {
+    "title": "Our Core Identity",
+    "items": [
+      {
+        "id": "mission",
+        "title": "Mission",
+        "heading": "Revolutionizing Health & Wellness",
+        "description": "To revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet and support sustainable agricultural practices."
+      },
+      {
+        "id": "vision",
+        "title": "Vision",
+        "heading": "SEED to NOURISHING RICH SNACKS",
+        "description": "From seed to nourishing rich snacks—we envision a Myanmar where everyone has access to nutritious, delicious food that supports local farmers and builds healthier communities."
+      },
+      {
+        "id": "motto",
+        "title": "Motto",
+        "heading": "Your Daily Nutrition Partner, Every Step of the Way!",
+        "description": "Your reliable, all-in-one companion designed to guide, track, and support your health and wellness goals, one bite and one step at a time."
+      }
+    ]
+  },
+  "sustainability": {
+    "title": "Sustainability",
+    "buttons": ["Farm to Factory Model", "Farmer Support", "ESG & Community Impact", "SDGs Goals"],
+    "placeholder": "You can add some text here",
+    "imageAlt": ["Sustainability Card 1", "Sustainability Card 2", "Sustainability Bottom Card"]
+  },
+  "whereCanBuy": {
+    "title": "Where Can Buy",
+    "retailers": [
+      "Grandmother Hospital",
+      "Shan Dila Pharmacy",
+      "Ku Kin Tin Pharmacy",
+      "Market Plaza",
+      "CityMart",
+      "Healthy & Happy Store",
+      "Family Pharmacy",
+      "Local Partners"
+    ],
+    "note": "Apart from major modern trade venues, our products are widely available at prominent regional supermarkets and trusted local retail shops across the country"
+  }
+}

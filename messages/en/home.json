@@ -1,0 +1,69 @@
+{
+  "hero": {
+    "title": "Healthy & Happy Myanmar",
+    "tagline": "Your Daily Nutrition Partner, Every Step of the Way!",
+    "action": "Explore our products"
+  },
+  "categories": {
+    "title": "Feature Categories",
+    "items": [
+      "Protein Bites",
+      "No Sugar Cookies",
+      "Oat Cookies",
+      "Healthy Snacks",
+      "Original Series"
+    ]
+  },
+  "journey": {
+    "logoAlt": "Healthy & Happy",
+    "title": "The Journey of Happy & Healthy",
+    "paragraphs": [
+      "Healthy & Happy began with a deeply personal story. One of our co-founders experienced the heartbreak of losing her father to cancer due to a lack of access to nutritious food.",
+      "This profound loss ignited a passion to ensure that no one else would suffer from preventable health issues caused by poor nutrition. Recognizing the growing prevalence of diabetes and other health conditions in our community, we committed ourselves to making a meaningful difference through accessible, honest, and nourishing food."
+    ],
+    "imageAlt": { "journey": "Healthy & Happy journey", "product": "Healthy & Happy product" },
+    "features": [
+      {
+        "id": "story",
+        "label": "Our Story",
+        "title": "Our Story",
+        "content": "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs together with a pioneering nutritionist. Our mission is to revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet while supporting sustainable agricultural practices."
+      },
+      {
+        "id": "products",
+        "label": "Our Products",
+        "title": "Our Products",
+        "content": "We offer a carefully crafted selection of organic, nutrient-dense snacks and plant-based foods. Made from locally sourced, high-quality ingredients, every product is formulated to support your wellness journey while keeping taste rich and delicious without added artificial preservatives."
+      },
+      {
+        "id": "brands",
+        "label": "Our Brands",
+        "title": "Our Brands",
+        "content": "Under Healthy & Happy Myanmar, our signature product lines lead the local health movement. Recognized across major retail channels and health forums, our brand represents reliability, wholesome nutrition, and a firm commitment to clean eating for every household."
+      }
+    ],
+    "seeMore": "See More"
+  },
+  "awards": { "title": "Awards & Recognitions" },
+  "production": {
+    "title": "Production Place Where Our Products Come To Life",
+    "description": "Our flagship products, including Protein Bite Cookies, are meticulously crafted to provide balanced nutrition. Each cookie is made using locally sourced ingredients such as chickpeas, peanuts, and rolled oats, ensuring they are both nutritious and delicious. These products are not only suitable for people with diabetes, but also serve as a convenient and healthy snack for anyone seeking to maintain a balanced lifestyle.",
+    "seeMore": "See More",
+    "mapTitle": "Location map",
+    "locationAction": "See location details"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "intro": "Whether you're curious, dreaming up something custom, or simply want to connect, we'd love to hear from you.",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message",
+    "submit": "Submit",
+    "follow": "Follow Us On",
+    "call": "Call Us",
+    "emailUs": "Email Us",
+    "location": "Location",
+    "social": { "facebook": "Facebook", "whatsapp": "WhatsApp", "tiktok": "TikTok" }
+  }
+}

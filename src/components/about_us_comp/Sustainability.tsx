@@ -2,14 +2,10 @@
 
 import { motion } from "framer-motion";
 import { getImagePath } from "./imageAssets";
+import type { AboutMessages } from "@/i18n/message-types";
 
-const Sustainability = () => {
-  const buttons = [
-    "Farm to Factory Model",
-    "Farmer Support",
-    "ESG & Community Impact",
-    "SDGs Goals",
-  ];
+const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"] }) => {
+  const buttons = messages.buttons;
 
   return (
     <section id="sustainability1" className="bg-[#F8F5EC] py-12 sm:py-16 lg:py-20">
@@ -22,7 +18,7 @@ const Sustainability = () => {
           viewport={{ once: true }}
           className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-10 sm:mb-12 lg:mb-16"
         >
-          Sustainability
+          {messages.title}
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
@@ -128,7 +124,7 @@ const Sustainability = () => {
                 justify-center
               "
             >
-              <p className="font-semibold text-sm sm:text-base">You can add some text here</p>
+              <p className="font-semibold text-sm sm:text-base">{messages.placeholder}</p>
             </motion.div>
           </motion.div>
 
@@ -176,7 +172,7 @@ const Sustainability = () => {
               >
                 <img
                   src={getImagePath('aboutus-06') || ''}
-                  alt="Sustainability Card 1"
+                  alt={messages.imageAlt[0]}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -203,7 +199,7 @@ const Sustainability = () => {
               >
                 <img
                   src={getImagePath('aboutus-07') || ''}
-                  alt="Sustainability Card 2"
+                  alt={messages.imageAlt[1]}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -242,7 +238,7 @@ const Sustainability = () => {
               >
                 <img
                   src={getImagePath('aboutus-08') || ''}
-                  alt="Sustainability Bottom Card"
+                  alt={messages.imageAlt[2]}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -7,26 +7,23 @@ import ResearchInnovation from "@/components/about_us_comp/ResearchInnovation";
 import WhereCanBuy from "@/components/about_us_comp/WhereCanBuy";
 import Sustainability from "@/components/about_us_comp/Sustainability";
 import CoreIdentity from "@/components/about_us_comp/CoreIdentity";
+import { notFound } from "next/navigation";
+import { hasLocale } from "@/i18n/config";
+import { getMessages } from "@/i18n/get-messages";
+import type { AboutMessages } from "@/i18n/message-types";
 
-const retailers = [
-  "Grandmother Hospital",
-  "Shan Dila Pharmacy",
-  "Ku Kin Tin Pharmacy",
-  "Market Plaza",
-  "CityMart",
-  "Healthy & Happy Store",
-  "Family Pharmacy",
-  "Local Partners",
-];
-export default function AboutPage() {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!hasLocale(locale)) notFound();
+  const messages = await getMessages<AboutMessages>(locale, "about");
   return (
     <div className="w-full">
-      <Headline/>
+      <Headline messages={messages.headline} />
       <div className="w-full h-60 sm:h-4 md:h-5 bg-[#16b300]" />
-      <CoreIdentity/>
-      <Sustainability/>
-      <ResearchInnovation />
-      <WhereCanBuy retailers={retailers} />
+      <CoreIdentity messages={messages.coreIdentity} />
+      <Sustainability messages={messages.sustainability} />
+      <ResearchInnovation locale={locale} messages={messages.research} />
+      <WhereCanBuy retailers={messages.whereCanBuy.retailers} title={messages.whereCanBuy.title} note={messages.whereCanBuy.note} />
     </div>
   );
 }

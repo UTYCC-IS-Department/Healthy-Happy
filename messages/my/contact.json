@@ -1,0 +1,17 @@
+{
+  "title": "ဆက်သွယ်ရန်",
+  "mapTitle": "Healthy & Happy တည်နေရာ",
+  "fields": {
+    "firstName": "အမည်",
+    "lastName": "မျိုးရိုးအမည်",
+    "email": "အီးမေးလ်",
+    "message": "စာတို"
+  },
+  "submit": "ပို့မည်",
+  "follow": "ကျွန်ုပ်တို့ကို လိုက်ရန်",
+  "call": "ဖုန်းဆက်ရန်",
+  "emailUs": "အီးမေးလ်ပို့ရန်",
+  "location": "တည်နေရာ",
+  "address": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။",
+  "social": { "facebook": "Facebook", "whatsapp": "WhatsApp", "tiktok": "TikTok" }
+}

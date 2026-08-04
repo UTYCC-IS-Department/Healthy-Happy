@@ -6,28 +6,38 @@ import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { assets } from "@/lib/site-data";
+import type { Locale } from "@/i18n/config";
+import type { ShellMessages } from "@/i18n/message-types";
 import "flag-icons/css/flag-icons.min.css";
 
-const links = [
-  ["Home", "/en"],
-  ["About Us", "/en/about"],
-  ["Products", "/en/products"],
+function localePath(pathname: string | null, locale: Locale) {
+  if (!pathname) return `/${locale}`;
+  return pathname.replace(/^\/(en|my)(?=\/|$)/, `/${locale}`);
+}
 
-  ["Awards", "/en/awards"],
-  ["Contact Us", "/en/contact"],
-] as const;
+function persistLocale(locale: Locale) {
+  document.cookie = `NEXT_LOCALE=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`;
+}
 
-export function SiteHeader() {
+export function SiteHeader({ locale, messages }: { locale: Locale; messages: ShellMessages["header"] }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+  const links = [
+    [messages.links.home, ""],
+    [messages.links.about, "/about"],
+    [messages.links.products, "/products"],
+    [messages.links.awards, "/awards"],
+    [messages.links.contact, "/contact"],
+  ] as const;
+  const localizedLinks = links.map(([label, suffix]) => [label, `/${locale}${suffix}`] as const);
   return (
     <nav className="sticky top-0 z-50 bg-[#2dc100] text-white shadow-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/en" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
+        <Link href={`/${locale}`} className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
           <span className=" p-1">
             <Image
               src={assets.logo}
-              alt="Healthy & Happy Myanmar Logo"
+              alt={messages.brandAlt}
               width={76}
               height={40}
               className="h-12 w-auto object-contain"
@@ -35,14 +45,14 @@ export function SiteHeader() {
             />
           </span>
           <span className="hidden font-serif text-xl font-bold tracking-wide sm:block">
-            Healthy &amp; Happy
+            {messages.brandName}
           </span>
         </Link>
 
         <div className="hidden items-center lg:flex">
           {/* nav links */}
           <div className="flex items-center gap-6 lg:flex">
-            {links.map(([label, href]) => (
+            {localizedLinks.map(([label, href]) => (
               <Link
                 key={href}
                 href={href}
@@ -56,17 +66,19 @@ export function SiteHeader() {
           {/* Language Switcher */}
           <div className="ml-2 flex items-center gap-1  pl-4">
             <Link
-              href="/mm"
+              href={localePath(pathname, "my")}
+              onClick={() => persistLocale("my")}
               className="rounded transition-transform hover:scale-110"
-              aria-label="Myanmar"
+              aria-label={messages.languages.burmese}
             >
               <span className="fi fi-mm text-1xl"></span>
             </Link>
 
             <Link
-              href="/en"
+              href={localePath(pathname, "en")}
+              onClick={() => persistLocale("en")}
               className="rounded transition-transform hover:scale-110"
-              aria-label="English"
+              aria-label={messages.languages.english}
             >
               <span className="fi fi-gb text-1xl"></span>
             </Link>
@@ -75,7 +87,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
+          aria-label={mobileOpen ? messages.closeNavigation : messages.openNavigation}
           aria-expanded={mobileOpen}
           className="p-2 lg:hidden"
           onClick={() => setMobileOpen((open) => !open)}
@@ -86,7 +98,7 @@ export function SiteHeader() {
 
       {mobileOpen && (
         <div className="border-t border-white/15 px-4 pb-4 pt-2 lg:hidden">
-          {links.map(([label, href]) => (
+          {localizedLinks.map(([label, href]) => (
             <Link
               key={href}
               href={href}
@@ -102,21 +114,21 @@ export function SiteHeader() {
           {/* Language Switcher */}
           <div className="mt-3 border-t border-white/20 pt-3">
             <Link
-              href="/mm"
-              onClick={() => setMobileOpen(false)}
+              href={localePath(pathname, "my")}
+              onClick={() => { persistLocale("my"); setMobileOpen(false); }}
               className="flex items-center gap-3 rounded-md px-2 py-3 hover:bg-white/10"
             >
               <span className="fi fi-mm text-xl"></span>
-              <span className="text-base font-medium">မြန်မာ</span>
+              <span className="text-base font-medium">{messages.languages.burmese}</span>
             </Link>
 
             <Link
-              href="/en"
-              onClick={() => setMobileOpen(false)}
+              href={localePath(pathname, "en")}
+              onClick={() => { persistLocale("en"); setMobileOpen(false); }}
               className="flex items-center gap-3 rounded-md px-2 py-3 hover:bg-white/10"
             >
               <span className="fi fi-gb text-xl"></span>
-              <span className="text-base font-medium">English</span>
+              <span className="text-base font-medium">{messages.languages.english}</span>
             </Link>
           </div>
         </div>
