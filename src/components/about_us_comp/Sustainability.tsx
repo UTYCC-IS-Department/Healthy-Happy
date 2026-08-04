@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { getImagePath } from "./imageAssets";
 
 const Sustainability = () => {
   const buttons = [
@@ -169,10 +170,16 @@ const Sustainability = () => {
                 className="
                   w-32 sm:w-40 md:w-48 lg:w-56
                   h-40 sm:h-48 md:h-56 lg:h-72
-                  bg-pink-100
                   rounded-2xl
+                  overflow-hidden
                 "
-              />
+              >
+                <img
+                  src={getImagePath('aboutus-06') || ''}
+                  alt="Sustainability Card 1"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
 
               {/* Card 2 */}
               <motion.div
@@ -190,10 +197,16 @@ const Sustainability = () => {
                   w-36 sm:w-44 md:w-52 lg:w-60
                   h-24 sm:h-28 md:h-32 lg:h-40
                   mt-8 sm:mt-10 md:mt-12 lg:mt-16
-                  bg-pink-100
                   rounded-2xl
+                  overflow-hidden
                 "
-              />
+              >
+                <img
+                  src={getImagePath('aboutus-07') || ''}
+                  alt="Sustainability Card 2"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
             </div>
 
             {/* Bottom Card */}
@@ -223,10 +236,16 @@ const Sustainability = () => {
                   mx-auto
                   w-[70%] sm:w-[72%] md:w-[74%] lg:w-[75%]
                   h-32 sm:h-36 md:h-44 lg:h-52
-                  bg-pink-100
                   rounded-2xl
+                  overflow-hidden
                 "
-              />
+              >
+                <img
+                  src={getImagePath('aboutus-08') || ''}
+                  alt="Sustainability Bottom Card"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </motion.div>
 
             {/* SVG */}

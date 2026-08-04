@@ -1,4 +1,5 @@
 import React from 'react';
+import { getImagePath } from './imageAssets';
 
 interface GridImage {
   id: number;
@@ -13,35 +14,35 @@ const Headline: React.FC = () => {
   const gridImagesData: GridImage[] = [
     {
       id: 1,
-      src: '/path/to/top-left-img.jpg',
+      src: getImagePath('aboutus-01') || '/path/to/top-left-img.jpg',
       alt: 'Top Left Team Member',
       title: 'Co-Founder 1',
       className: 'col-start-1 col-end-3 row-start-1 row-end-3',
     },
     {
       id: 2,
-      src: '/path/to/top-right-img.jpg',
+      src: getImagePath('aboutus-02') || '/path/to/top-right-img.jpg',
       alt: 'Top Right Team Member',
       title: 'Nutritionist',
       className: 'col-start-3 row-start-1 row-end-3',
     },
     {
       id: 3,
-      src: '/path/to/center-img.jpg',
+      src: getImagePath('aboutus-03') || '/path/to/center-img.jpg',
       alt: 'Center Focus: Founding Story',
       title: 'The Mission',
       className: 'col-start-2 row-start-2 z-10',
     },
     {
       id: 4,
-      src: '/path/to/bottom-left-img.jpg',
+      src: getImagePath('aboutus-04') || '/path/to/bottom-left-img.jpg',
       alt: 'Bottom Left: Mandalay Office',
       title: 'Operations',
       className: 'col-start-1 row-start-3',
     },
     {
       id: 5,
-      src: '/path/to/bottom-right-img.jpg',
+      src: getImagePath('aboutus-05') || '/path/to/bottom-right-img.jpg',
       alt: 'Bottom Right Team Member',
       title: 'Co-Founder 2',
       className: 'col-start-2 col-end-4 row-start-3',
@@ -66,9 +67,11 @@ const Headline: React.FC = () => {
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative flex justify-center order-2 lg:order-1 w-full">
             <div className="absolute inset-0 bg-gray-400 rounded-3xl translate-x-2 sm:translate-x-3 md:translate-x-4 translate-y-2 sm:translate-y-3 md:translate-y-4 -z-0 opacity-50"></div>
-            <div className="relative z-10 w-full h-64 sm:h-80 md:h-96 bg-gray-200 border-2 border-dashed border-gray-300 rounded-3xl flex items-center justify-center text-gray-400 font-medium p-4 text-center">
-              <span className="text-sm sm:text-base">[ Comic / Nepotism Image Placeholder ]</span>
-            </div>
+            <img
+              src={getImagePath('wellness-cookies-hero') || ''}
+              alt="Leaf"
+              className="relative z-10 w-full h-64 sm:h-80 md:h-96 object-cover rounded-3xl border-2 border-gray-300"
+            />
           </div>
           <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
             <p className="font-semibold text-gray-700 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
@@ -113,7 +116,11 @@ const Headline: React.FC = () => {
         {/* Section Divider / History Header */}
         <div className="flex items-center justify-center space-x-3 sm:space-x-4 py-6 sm:py-8 md:py-10">
           <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-green-600 rounded-full border-3 border-yellow-400 flex items-center justify-center text-xs sm:text-sm text-white font-bold shadow-lg">
-            [ Logo ]
+            <img
+              src={getImagePath('brand-logo') || ''}
+              alt="Leaf"
+              className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+            />
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">Our History</h2>
         </div>

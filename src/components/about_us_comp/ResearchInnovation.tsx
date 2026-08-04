@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { getImagePath } from './imageAssets';
 
 // ============================================================================
 // TypeScript Interfaces
@@ -571,7 +572,7 @@ export const ResearchInnovation: React.FC = () => {
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            {researchInnovationData.leftCards.map((cardItem: LeftCardData) => (
+            {researchInnovationData.leftCards.map((cardItem: LeftCardData, index: number) => (
               <motion.div
                 key={cardItem.id}
                 className="ri-canvas-card"
@@ -581,6 +582,11 @@ export const ResearchInnovation: React.FC = () => {
                   scale: 1.03,
                   boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
                   transition: { type: 'spring', stiffness: 300, damping: 18 },
+                }}
+                style={{
+                  backgroundImage: `url(${getImagePath(`aboutus-0${index + 9}`) || ''})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               />
             ))}
@@ -627,6 +633,11 @@ export const ResearchInnovation: React.FC = () => {
                           variants={circleVariants}
                           initial="hidden"
                           animate={inView ? 'visible' : 'hidden'}
+                          style={{
+                            backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-01' : 'aboutus-02') || ''})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
                         />
                         <div className="ri-row-text-content">
                           <h3 className="ri-row-title">
@@ -672,6 +683,11 @@ export const ResearchInnovation: React.FC = () => {
                         variants={circleVariants}
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
+                        style={{
+                          backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-03' : 'aboutus-04') || ''})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                        }}
                       />
                     </div>
                   );
