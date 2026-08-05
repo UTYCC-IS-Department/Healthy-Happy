@@ -1,120 +1,3 @@
-// "use client";
-// import Image from "next/image";
-// import { useState } from "react";
-// import { assets } from "@/lib/site-data";
-// import CertificationBlock from "@/components/certification-block";
-// import AwardWheel from "@/components/award-wheel";
-// const awards = [
-//   {
-//     label: "Award-1",
-//     title: "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.",
-//     description:
-//       "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category.",
-//   },
-//   {
-//     label: "Award-2",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-//   {
-//     label: "Award-3",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-//   {
-//     label: "Award-4",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-//   {
-//     label: "Award-5",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-//   {
-//     label: "Award-6",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-//   {
-//     label: "Award-7",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-//   {
-//     label: "Award-8",
-//     title: "The Most Responsible Business Award 2022",
-//     description:
-//       "An honour celebrating the work of women entrepreneurs creating positive impact for their communities.",
-//   },
-// ];
-// export default function AwardsPage() {
-//   const [activeAward, setActiveAward] = useState(0);
-//   const award = awards[activeAward];
-//   return (
-//     <div className="bg-background pb-24">
-//       <section className="border-b px-4 py-12 text-center">
-//         <h1 className="text-3xl font-bold text-primary md:text-4xl">Awards &amp; Media</h1>
-//       </section>
-//       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-12 lg:grid-cols-[620px_1fr]">
-//         {/* Award Wheel */}
-//         <div className="flex justify-center">
-//           <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
-//         </div>
-
-//         {/* Detail */}
-//         <div>
-//           <article className="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
-//             <h2 className="mb-8 text-2xl font-bold leading-relaxed text-primary">{award.title}</h2>
-
-//             <div className="grid items-center gap-8 lg:grid-cols-2">
-//               <div className="rounded-2xl bg-[#F6F3F1] p-8">
-//                 <p className="leading-8 text-muted">{award.description}</p>
-//               </div>
-
-//               <div className="flex justify-center">
-//                 <Image
-//                   src={assets.award}
-//                   alt={award.title}
-//                   width={260}
-//                   height={340}
-//                   className="h-auto w-56"
-//                 />
-//               </div>
-//             </div>
-//           </article>
-//         </div>
-//       </section>
-//       <section className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-//         <h2 className="mb-8 text-center text-2xl font-bold text-primary">Certifications</h2>
-
-//         <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
-//           {Array.from({ length: 8 }).map((_, index) => (
-//             <CertificationBlock key={index} title={`Certification ${index + 1}`} />
-//           ))}
-//         </div>
-
-//         <div className="mt-8 flex items-center gap-4 rounded-xl border bg-white px-6 py-4 shadow-sm">
-//           <Image
-//             src={assets.logo}
-//             alt="Healthy & Happy"
-//             width={48}
-//             height={48}
-//             className="size-12 rounded-full border object-contain"
-//           />
-//           <div className="h-1 flex-1 rounded-full bg-secondary/20" />
-//         </div>
-//       </section>
-//     </div>
-//   );
-// }
-
 "use client";
 
 import Image from "next/image";
@@ -124,6 +7,83 @@ import AwardWheel from "@/components/award-wheel";
 import CertificationBlock from "@/components/certification-block";
 import { assets } from "@/lib/site-data";
 import type { AwardsMessages } from "@/i18n/message-types";
+import { motion, type Variants } from "framer-motion";
+
+const sectionVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 70,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const leftVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -80,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const rightVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: 80,
+    scale: 0.95,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const certificationsContainer: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.15,
+    },
+  },
+};
+
+const certificationItem: Variants = {
+  hidden: {
+    opacity: 0,
+    y: 40,
+    scale: 0.92,
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
 
 const FOLDER_VB = "0 0 500 285";
 const FOLDER_PATH =
@@ -207,7 +167,7 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
           right: "4%",
           bottom: "8%",
           display: "flex",
-          gap: 12,
+          gap: 24,
           alignItems: "stretch",
         }}
       >
@@ -222,7 +182,13 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
 ──────────────────────────────────────────────────────────────── */
 function DocCard({ description }: { description: string }) {
   return (
-    <div style={{ flex: 1, position: "relative", minWidth: 0 }}>
+    <div
+      style={{
+        flex: "0 0 58%",
+        position: "relative",
+        minWidth: 0,
+      }}
+    >
       {/* SVG backdrop */}
       <svg
         viewBox={DOC_VB}
@@ -271,30 +237,38 @@ function TrophyCard({ title, awardImage }: { title: string; awardImage: string }
   return (
     <div
       style={{
-        width: "30%",
+        width: "38%",
         flexShrink: 0,
         background: "#ffffff",
-        borderRadius: 10,
+        borderRadius: 15,
         border: "2.5px solid #2a2a2a",
         display: "flex",
         alignItems: "center",
+        position: "relative",
         justifyContent: "center",
-        padding: 10,
+        padding: 8,
         boxShadow: "0 2px 14px rgba(0,0,0,0.22)",
       }}
     >
-      <Image
-        src={awardImage}
-        alt={title}
-        width={120}
-        height={180}
-        style={{ width: "100%", height: "auto", objectFit: "contain" }}
-      />
+      {" "}
+      <Image src={awardImage} alt={title} fill style={{ objectFit: "contain", padding: 14 }} />{" "}
     </div>
   );
 }
 
-const awardImages = [assets.award1, assets.award2, assets.award3, assets.award4, assets.award5, assets.award6, assets.award7, assets.award8, assets.award9, assets.award10, assets.award11];
+const awardImages = [
+  assets.award1,
+  assets.award2,
+  assets.award3,
+  assets.award4,
+  assets.award5,
+  assets.award6,
+  assets.award7,
+  assets.award8,
+  assets.award9,
+  assets.award10,
+  assets.award11,
+];
 
 export default function AwardsClient({ messages }: { messages: AwardsMessages }) {
   const [activeAward, setActiveAward] = useState(0);
@@ -304,37 +278,86 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
   return (
     <div className="bg-background pb-24">
       {/* Header */}
-      <section className=" px-4 pt-10 text-center">
+      <motion.section
+        className="px-4 pt-10 text-center"
+        variants={sectionVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.4 }}
+      >
         <h1 className="text-3xl font-bold text-primary md:text-4xl">{messages.title}</h1>
-      </section>
-
+      </motion.section>
       {/* Awards */}
-      <section className="mx-auto  px-4 py-12">
-        <div className="grid items-center justify-between gap-2 lg:grid-cols-[520px_1fr]">
+      <section className="mx-auto px-4 py-12">
+        <div className="grid items-center gap-4 lg:grid-cols-[430px_minmax(0,1fr)]">
           {/* Wheel */}
-          <div className="flex justify-center ">
-            <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
-          </div>
+          <motion.div
+            className="flex justify-center"
+            variants={leftVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <div className="w-[430px]">
+              <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
+            </div>
+          </motion.div>
 
-          {/* Detail — folder shape */}
-          <div>
+          {/* Folder */}
+          <motion.div
+            className="-ml-10 mr-20"
+            variants={rightVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <FolderCard title={award.title}>
               <DocCard description={award.description} />
               <TrophyCard title={award.title} awardImage={award.image} />
             </FolderCard>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Certifications */}
       <section className="mx-auto max-w-7xl px-4 py-12">
-        <h2 className="mb-8 text-center text-3xl font-bold text-primary">{messages.certifications}</h2>
-
-        <div className="grid grid-cols-2 gap-5 sm:grid-cols-4">
+        <motion.h2
+          className="mb-8 text-center text-3xl font-bold text-primary"
+          initial={{ opacity: 0, y: -25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{
+            duration: 0.6,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+        >
+          {messages.certifications}
+        </motion.h2>
+        <motion.div
+          className="grid grid-cols-2 gap-5 sm:grid-cols-4"
+          variants={certificationsContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {messages.certificateLabels.map((label) => (
-            <CertificationBlock key={label} title={label} />
+            <motion.div
+              key={label}
+              variants={certificationItem}
+              whileHover={{
+                y: -8,
+                scale: 1.04,
+                transition: {
+                  type: "spring",
+                  stiffness: 350,
+                  damping: 22,
+                },
+              }}
+            >
+              <CertificationBlock title={label} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         <div className="mt-10 flex items-center gap-4 rounded-2xl border bg-white p-5 shadow-sm">
           <Image
