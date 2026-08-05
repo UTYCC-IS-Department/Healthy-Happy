@@ -269,6 +269,16 @@ const awardImages = [
   assets.award10,
   assets.award11,
 ];
+const certificationImages = [
+  assets.certification1,
+  assets.certification2,
+  assets.certification3,
+  assets.certification4,
+  assets.certification5,
+  assets.certification6,
+  assets.certification7,
+  assets.certification8,
+];
 
 export default function AwardsClient({ messages }: { messages: AwardsMessages }) {
   const [activeAward, setActiveAward] = useState(0);
@@ -289,7 +299,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
       </motion.section>
       {/* Awards */}
       <section className="mx-auto px-4 py-12">
-        <div className="grid items-center gap-4 lg:grid-cols-[430px_minmax(0,1fr)]">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(320px,430px)_1fr]">
           {/* Wheel */}
           <motion.div
             className="flex justify-center"
@@ -298,14 +308,14 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="w-[430px]">
+            <div className="mx-auto w-full max-w-[430px]">
               <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
             </div>
           </motion.div>
 
           {/* Folder */}
           <motion.div
-            className="-ml-10 mr-20"
+            className="mx-auto w-full w-[640px]  lg:-ml-10 lg:mr-20"
             variants={rightVariants}
             initial="hidden"
             whileInView="visible"
@@ -340,9 +350,9 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {messages.certificateLabels.map((label) => (
+          {certificationImages.map((certiImage) => (
             <motion.div
-              key={label}
+              key={certiImage}
               variants={certificationItem}
               whileHover={{
                 y: -8,
@@ -354,7 +364,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
                 },
               }}
             >
-              <CertificationBlock title={label} />
+              <CertificationBlock CertificationImage={certiImage} />
             </motion.div>
           ))}
         </motion.div>
