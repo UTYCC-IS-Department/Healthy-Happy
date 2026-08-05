@@ -15,16 +15,16 @@
   "bestSeller": "Best Seller",
   "products": {
     "iron-enriched-cookies-1": {
-      "name": "Thone Pan Hla - Iron Enriched Cookies",
-      "series": "Original Series",
-      "description": "Iron-rich cookies crafted for daily nutritional support.",
+      "name": "Protein Bite",
+      "series": "Protein Series",
+      "description": "Intend for people who cannot eat well in covid-19 pandemic",
       "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
+      "tags": ["No Sugar", "Low Calories", "Protein Series"]
     },
     "iron-enriched-cookies-2": {
-      "name": "Thone Pan Hla - Iron Enriched Cookies",
+      "name": "Peanut Butter",
       "series": "Protein Series",
-      "description": "Protein-boosted iron cookies for active lifestyles.",
+      "description": "favour for gym trainers and enfocers",
       "price": "5,000 MMK",
       "tags": ["No Sugar", "Low Calories", "Protein Series"]
     },
@@ -36,37 +36,37 @@
       "tags": ["No Sugar", "Low Calories", "Original Series"]
     },
     "iron-enriched-cookies-4": {
-      "name": "Thone Pan Hla - Iron Enriched Cookies",
-      "series": "Original Series",
-      "description": "Crunchy, light, and naturally nutritious daily snack.",
+      "name": "Energy Bar",
+      "series": "Protein Series",
+      "description": "Produce based on the plant-based-protein and grain",
       "price": "5,000 MMK",
       "tags": ["No Sugar", "Low Calories", "Original Series"]
     },
     "spinach-cookies-1": {
-      "name": "Thone Pan Hla - Spinach Cookies",
-      "series": "Protein Series",
-      "description": "Iron and fibre packed cookies for your wellness routine.",
+      "name": "Spinach Diabetes Cookies",
+      "series": "Original Series",
+      "description": "First ever Spinach Cookies in Myanmar",
       "price": "5,000 MMK",
       "tags": ["No Sugar", "Low Calories", "Protein Series"]
     },
     "spinach-cookies-2": {
-      "name": "Thone Pan Hla - Spinach Cookies",
+      "name": "Oak Diabetes Cookies",
       "series": "Original Series",
-      "description": "Green goodness baked to perfection every single time.",
+      "description": "Favour of Gym traniers and person with diabetes",
       "price": "5,000 MMK",
       "tags": ["No Sugar", "Low Calories", "Original Series"]
     },
     "nut-cookies-1": {
-      "name": "Thone Pan Hla - Nut Cookies",
-      "series": "Protein Series",
-      "description": "Nutty, satisfying bites that nourish and energise.",
+      "name": "Cinnamon Cookies",
+      "series": "Original Series",
+      "description": "Fiber-rich cookies for lasting fullness",
       "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Protein Series"]
+      "tags": ["No Sugar", "Low Calories", "Original Series Series"]
     },
     "nut-cookies-2": {
-      "name": "Thone Pan Hla - Nut Cookies",
+      "name": "Beetroot Cookies",
       "series": "Original Series",
-      "description": "Classic nut blend, naturally sweet and deeply satisfying.",
+      "description": "Produce based on Beetroot fruit",
       "price": "5,000 MMK",
       "tags": ["No Sugar", "Low Calories", "Original Series"]
     }
