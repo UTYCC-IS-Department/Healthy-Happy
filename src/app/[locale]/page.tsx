@@ -95,12 +95,12 @@ export default function HomePage() {
       </section>
       {/* ----------------- Feature Categories Section ----------------- */}
       <section className="border-y py-10 bg-[#faf8f5]">
-        <div className="mx-auto max-w-5xl px-4">
+        <div className="mx-auto max-w-6xl px-4">
           {/* Section Title */}
           <h2 className="mb-8 text-center text-2xl font-bold tracking-tight text-black sm:text-3xl">
             Feature Categories
           </h2>
-          <div className="mb-10 flex justify-center gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
+          <div className="mb-10 flex justify-between gap-3 overflow-x-auto pb-6 scrollbar-hide sm:gap-5">
             {[
               { name: "Protein Bites", slug: "protein-bites" },
               { name: "No Sugar Cookies", slug: "no-sugar-cookies" },
@@ -111,35 +111,35 @@ export default function HomePage() {
               <a
                 key={category.slug}
                 href={`/products?category=${category.slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-40"
+                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-50"
               >
                 <div className="relative w-full">
                   <svg
-                    viewBox="0 0 160 165"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-full drop-shadow-md"
-                  >
-                    {/* Green Container Shape with Inverted Smooth Curved Corners */}
-                    <path
-                      d="M 16 0 
-               H 144 
-               A 16 16 0 0 1 160 16 
-               V 108 
-               A 16 16 0 0 1 144 124 
-               A 12 12 0 0 0 132 136 
-               V 149 
-               A 16 16 0 0 1 116 165 
-               H 44 
-               A 16 16 0 0 1 28 149 
-               V 136 
-               A 12 12 0 0 0 16 124 
-               A 16 16 0 0 1 0 108 
-               V 16 
-               A 16 16 0 0 1 16 0 Z"
-                      fill="#4cae4f"
-                    />
-                  </svg>
+  viewBox="0 0 160 145"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  className="w-full drop-shadow-md"
+>
+  {/* Shorter Downward Trend Path */}
+  <path
+    d="M 16 0 
+       H 144 
+       A 16 16 0 0 1 160 16 
+       V 102 
+       A 16 16 0 0 1 144 116 
+       A 10 10 0 0 0 134 124 
+       V 133 
+       A 12 12 0 0 1 122 145 
+       H 38 
+       A 12 12 0 0 1 26 133 
+       V 124 
+       A 10 10 0 0 0 16 116 
+       A 16 16 0 0 1 0 102 
+       V 16 
+       A 16 16 0 0 1 16 0 Z"
+    fill="#10b000"
+  />
+</svg>
                   <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
                     <Image
                       src={assets.product}
