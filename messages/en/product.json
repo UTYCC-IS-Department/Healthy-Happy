@@ -1,0 +1,74 @@
+{
+  "title": "Explore Our Products",
+  "bannerAlt": "Healthy & Happy products",
+  "totalItems": "Total Items",
+  "searchLabel": "Search products",
+  "searchPlaceholder": "Search",
+  "filter": "Filter by category",
+  "allCategories": "All categories",
+  "activeFilters": "Active filters",
+  "clearFilters": "Clear filters",
+  "resultsCount": "{count} products",
+  "noResults": "No products match your search.",
+  "newsText": "Check Out news for last updated products",
+  "newsAction": "Check out updated news",
+  "bestSeller": "Best Seller",
+  "products": {
+    "iron-enriched-cookies-1": {
+      "name": "Thone Pan Hla - Iron Enriched Cookies",
+      "series": "Original Series",
+      "description": "Iron-rich cookies crafted for daily nutritional support.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Original Series"]
+    },
+    "iron-enriched-cookies-2": {
+      "name": "Thone Pan Hla - Iron Enriched Cookies",
+      "series": "Protein Series",
+      "description": "Protein-boosted iron cookies for active lifestyles.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Protein Series"]
+    },
+    "iron-enriched-cookies-3": {
+      "name": "Thone Pan Hla - Iron Enriched Cookies",
+      "series": "Original Series",
+      "description": "Wholesome cookies for everyday balanced nutrition.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Original Series"]
+    },
+    "iron-enriched-cookies-4": {
+      "name": "Thone Pan Hla - Iron Enriched Cookies",
+      "series": "Original Series",
+      "description": "Crunchy, light, and naturally nutritious daily snack.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Original Series"]
+    },
+    "spinach-cookies-1": {
+      "name": "Thone Pan Hla - Spinach Cookies",
+      "series": "Protein Series",
+      "description": "Iron and fibre packed cookies for your wellness routine.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Protein Series"]
+    },
+    "spinach-cookies-2": {
+      "name": "Thone Pan Hla - Spinach Cookies",
+      "series": "Original Series",
+      "description": "Green goodness baked to perfection every single time.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Original Series"]
+    },
+    "nut-cookies-1": {
+      "name": "Thone Pan Hla - Nut Cookies",
+      "series": "Protein Series",
+      "description": "Nutty, satisfying bites that nourish and energise.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Protein Series"]
+    },
+    "nut-cookies-2": {
+      "name": "Thone Pan Hla - Nut Cookies",
+      "series": "Original Series",
+      "description": "Classic nut blend, naturally sweet and deeply satisfying.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Low Calories", "Original Series"]
+    }
+  }
+}

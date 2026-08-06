@@ -7,10 +7,16 @@ import { useEffect, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { assets, products } from "@/lib/site-data";
+import enProduct from "../../messages/en/product.json";
+import { assets, productMedia } from "@/lib/site-data";
 // Swiper Styles
 import "swiper/css";
 import "swiper/css/navigation";
+
+const products = productMedia.map((media) => ({
+  ...media,
+  ...enProduct.products[media.id as keyof typeof enProduct.products],
+}));
 
 export function ProductCarousel() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
@@ -86,7 +92,7 @@ export function ProductCarousel() {
                   <div className="flex justify-end">
                     <Link
                       href={`/en/products/${product.id}`}
-                      className="rounded-full bg-[#4cae4f] px-6 py-2 text-xs font-bold text-white shadow-md transition-all hover:bg-[#3d9140] hover:shadow-lg active:scale-95 sm:text-sm"
+                      className="rounded-full bg-[#1EB500] px-6 py-2 text-xs font-bold text-white shadow-md transition-all hover:bg-[#3d9140] hover:shadow-lg active:scale-95 sm:text-sm"
                     >
                       Explore &gt;
                     </Link>
@@ -191,6 +197,72 @@ export default function PerfectCoverCarousel() {
           entrepreneur network, MILS and USAID in 2023
         </span>
       </div>
+    </div>
+  );
+}
+
+
+
+const PRODUCTION_IMAGES = [
+  { id: 1, src: assets.product, alt: 'Production 1' },
+  { id: 2, src: assets.product, alt: 'Production 2' },
+];
+
+
+// Production Carousel Component
+export function ProductionPlaceCarousel() {
+  const [swiper, setSwiper] = useState<SwiperType | null>(null);
+
+  return (
+    <div className="relative h-full w-full">
+
+      <Swiper
+        modules={[Navigation, Autoplay]}
+        onSwiper={setSwiper}
+        slidesPerView={1}
+        loop
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        className="h-full w-full overflow-hidden rounded-3xl"
+      >
+        {PRODUCTION_IMAGES.map((item) => (
+          <SwiperSlide key={item.id} className="h-full">
+
+            <div className="relative h-full min-h-[300px] w-full sm:min-h-[380px] lg:min-h-[430px]">
+              <Image
+                src={item.src}
+                alt={item.alt}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+
+      {/* Bottom Left Arrow */}
+      <button
+        type="button"
+        aria-label="Previous production image"
+        onClick={() => swiper?.slidePrev()}
+        className="absolute bottom-4 left-4 z-20 rounded-full bg-white/90 p-2 shadow-md transition hover:bg-white"
+      >
+        <ChevronLeft className="size-5 text-black" />
+      </button>
+
+
+      {/* Bottom Right Arrow */}
+      <button
+        type="button"
+        aria-label="Next production image"
+        onClick={() => swiper?.slideNext()}
+        className="absolute bottom-4 right-4 z-20 rounded-full bg-white/90 p-2 shadow-md transition hover:bg-white"
+      >
+        <ChevronRight className="size-5 text-black" />
+      </button>
+
     </div>
   );
 }

@@ -301,7 +301,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col justify-between">
             <div className="relative h-[430px] overflow-hidden rounded-3xl bg-[#cbb8a3]">
-              <Image src={assets.map} alt="Map" fill className="object-cover" />
+              <Image src={assets.banner} alt="Map" fill className="object-cover" />
             </div>
 
             <Link

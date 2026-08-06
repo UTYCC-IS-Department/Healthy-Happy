@@ -3,6 +3,9 @@
 import React from 'react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { getImagePath } from './imageAssets';
+import type { AboutMessages } from "@/i18n/message-types";
+import type { Locale } from "@/i18n/config";
 
 // ============================================================================
 // TypeScript Interfaces
@@ -423,15 +426,105 @@ const cssStyles = `
 
   @media (max-width: 480px) {
     .ri-main-heading {
-      font-size: 26px;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .ri-section-wrapper {
+      padding: 16px 12px;
     }
 
     .ri-canvas-card {
-      min-width: 250px;
+      min-width: 220px;
+      height: 160px;
     }
 
     .ri-feature-grid {
       grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .ri-feature-box {
+      height: 70px;
+    }
+
+    .ri-top-pill-banner {
+      font-size: 13px;
+      padding: 8px 14px;
+    }
+
+    .ri-green-container {
+      padding: 20px 16px;
+      gap: 24px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 70px;
+      height: 70px;
+    }
+
+    .ri-row-title {
+      font-size: 16px;
+    }
+
+    .ri-row-description {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .ri-main-heading {
+      font-size: 20px;
+    }
+
+    .ri-canvas-card {
+      min-width: 200px;
+      height: 150px;
+    }
+
+    .ri-feature-box {
+      height: 60px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ri-row-title {
+      font-size: 15px;
+    }
+
+    .ri-row-description {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .ri-main-heading {
+      font-size: 18px;
+    }
+
+    .ri-canvas-card {
+      min-width: 180px;
+      height: 140px;
+    }
+
+    .ri-feature-box {
+      height: 55px;
+    }
+
+    .ri-small-circle-placeholder {
+      width: 55px;
+      height: 55px;
+    }
+
+    .ri-row-title {
+      font-size: 14px;
+    }
+
+    .ri-row-description {
+      font-size: 12px;
     }
   }
 `;
@@ -439,7 +532,7 @@ const cssStyles = `
 // ============================================================================
 // Main React Component
 // ============================================================================
-export const ResearchInnovation: React.FC = () => {
+export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessages["research"] }> = ({ locale, messages }) => {
   const { ref: sectionRef, inView } = useInView({
     threshold: 0.15,
     triggerOnce: true,
@@ -451,7 +544,7 @@ export const ResearchInnovation: React.FC = () => {
       <section
         ref={sectionRef}
         className="ri-section-wrapper"
-        data-lang="en"
+        data-lang={locale}
       >
         <AnimatePresence mode="wait">
           <motion.h1
@@ -468,7 +561,7 @@ export const ResearchInnovation: React.FC = () => {
               animate="animate"
               exit="exit"
             >
-              Research & Innovation
+              {messages.title}
             </motion.span>
           </motion.h1>
         </AnimatePresence>
@@ -481,7 +574,7 @@ export const ResearchInnovation: React.FC = () => {
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            {researchInnovationData.leftCards.map((cardItem: LeftCardData) => (
+            {researchInnovationData.leftCards.map((cardItem: LeftCardData, index: number) => (
               <motion.div
                 key={cardItem.id}
                 className="ri-canvas-card"
@@ -491,6 +584,11 @@ export const ResearchInnovation: React.FC = () => {
                   scale: 1.03,
                   boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
                   transition: { type: 'spring', stiffness: 300, damping: 18 },
+                }}
+                style={{
+                  backgroundImage: `url(${getImagePath(`aboutus-0${index + 9}`) || ''})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                 }}
               />
             ))}
@@ -513,7 +611,7 @@ export const ResearchInnovation: React.FC = () => {
                   animate="animate"
                   exit="exit"
                 >
-                  {researchInnovationData.topBannerText}
+                  {messages.banner}
                 </motion.span>
               </AnimatePresence>
             </div>
@@ -537,6 +635,11 @@ export const ResearchInnovation: React.FC = () => {
                           variants={circleVariants}
                           initial="hidden"
                           animate={inView ? 'visible' : 'hidden'}
+                          style={{
+                            backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-01' : 'aboutus-02') || ''})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                          }}
                         />
                         <div className="ri-row-text-content">
                           <h3 className="ri-row-title">
@@ -548,7 +651,7 @@ export const ResearchInnovation: React.FC = () => {
                                 animate="animate"
                                 exit="exit"
                               >
-                                {section.title}
+                                {messages.sections[index].title}
                               </motion.span>
                             </AnimatePresence>
                           </h3>
@@ -561,7 +664,7 @@ export const ResearchInnovation: React.FC = () => {
                                 animate="animate"
                                 exit="exit"
                               >
-                                {section.description}
+                                {messages.sections[index].description}
                               </motion.span>
                             </AnimatePresence>
                           </p>
@@ -582,6 +685,11 @@ export const ResearchInnovation: React.FC = () => {
                         variants={circleVariants}
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
+                        style={{
+                          backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-03' : 'aboutus-04') || ''})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center',
+                        }}
                       />
                     </div>
                   );
