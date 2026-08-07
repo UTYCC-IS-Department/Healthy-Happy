@@ -30,43 +30,43 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
             viewport={{ once: true }}
             className="flex flex-col justify-between h-full"
           >
-<div className="space-y-4 sm:space-y-5 max-w-md mx-auto w-full">
+            <div className="space-y-4 sm:space-y-5 max-w-md mx-auto w-full">
 
-  {buttons.map((item, index) => (
+              {buttons.map((item, index) => (
 
-    <motion.button
-      key={item}
+                <motion.button
+                  key={item}
 
-      initial={{
-        opacity: 0,
-        x: -50
-      }}
+                  initial={{
+                    opacity: 0,
+                    x: -50
+                  }}
 
-      whileInView={{
-        opacity: 1,
-        x: 0
-      }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0
+                  }}
 
-      transition={{
-        duration: 0.5,
-        delay: index * 0.15
-      }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.15
+                  }}
 
-      viewport={{
-        once: true
-      }}
+                  viewport={{
+                    once: true
+                  }}
 
-      // Move right on hover
-      whileHover={{
-        x: 50,
-        scale: 1.03
-      }}
+                  // Move right on hover
+                  whileHover={{
+                    x: 50,
+                    scale: 1.03
+                  }}
 
-      whileTap={{
-        scale: 0.97
-      }}
+                  whileTap={{
+                    scale: 0.97
+                  }}
 
-      className="
+                  className="
         w-full
         rounded-full
         bg-lime-500
@@ -81,14 +81,14 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
         hover:shadow-xl
         cursor-pointer
       "
-    >
-      {item}
+                >
+                  {item}
 
-    </motion.button>
+                </motion.button>
 
-  ))}
+              ))}
 
-</div>
+            </div>
 
             {/* Gray Box */}
             <motion.div
@@ -171,9 +171,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-06') || ''}
+                  src={getImagePath('aboutus-14') || ''}
                   alt={messages.imageAlt[0]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
 
@@ -198,9 +198,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-07') || ''}
+                  src={getImagePath('aboutus-15') || ''}
                   alt={messages.imageAlt[1]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
             </div>
@@ -237,9 +237,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-08') || ''}
+                  src={getImagePath('aboutus-13') || ''}
                   alt={messages.imageAlt[2]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </motion.div>

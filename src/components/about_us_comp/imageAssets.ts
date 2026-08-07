@@ -73,6 +73,21 @@ export const aboutUsImages: ImageAsset[] = [
     name: 'About Us Image 12',
     path: '/images/aboutusimg/0-02-06-f80d7eff451ebd0ec9aa531e6f57b44480689deb6b023afdaad61366dc1825e2_613ea79a2d7c6a29.png',
   },
+  {
+    id: 'aboutus-13',
+    name: 'About Us Image 13',
+    path:'/images/aboutusimg/H&H_Vinyl_3.png',
+  },
+  {
+    id: 'aboutus-14',
+    name: 'About Us Image 14',  
+    path:'/images/aboutusimg/mill.jpg',
+  },
+  {
+    id: 'aboutus-15',
+    name: 'About Us Image 15',
+    path:'/images/aboutusimg/peanut.png',
+  }
 ];
 
 // Healthy & Happy Brand Images

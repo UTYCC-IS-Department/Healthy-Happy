@@ -36,28 +36,18 @@ export interface ResearchInnovationData {
 // ============================================================================
 // Static Data
 // ============================================================================
-export const researchInnovationData: ResearchInnovationData = {
-  topBannerText: 'It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks',
+const createResearchData = (messages: AboutMessages["research"]): ResearchInnovationData => ({
+  topBannerText: messages.banner,
   leftCards: [{ id: 'card-1' }, { id: 'card-2' }, { id: 'card-3' }],
-  rightSections: [
-    {
-      id: 'section-1',
-      title: 'Digital Transformation & Smart Systems',
-      description: 'It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks',
-      smallCirclePlaceholderId: 'circle-small-1',
-      largeCirclePlaceholderId: 'circle-large-1',
-      features: [{ id: 'f1-1' }, { id: 'f1-2' }, { id: 'f1-3' }, { id: 'f1-4' }],
-    },
-    {
-      id: 'section-2',
-      title: 'Advanced Materials & Biotechnology',
-      description: 'It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks',
-      smallCirclePlaceholderId: 'circle-small-2',
-      largeCirclePlaceholderId: 'circle-large-2',
-      features: [{ id: 'f2-1' }, { id: 'f2-2' }, { id: 'f2-3' }, { id: 'f2-4' }],
-    },
-  ],
-};
+  rightSections: messages.sections.map((section, index) => ({
+    id: `section-${index + 1}`,
+    title: section.title,
+    description: section.description,
+    smallCirclePlaceholderId: `circle-small-${index + 1}`,
+    largeCirclePlaceholderId: `circle-large-${index + 1}`,
+    features: [{ id: `f${index + 1}-1` }, { id: `f${index + 1}-2` }, { id: `f${index + 1}-3` }, { id: `f${index + 1}-4` }],
+  })),
+});
 
 // ============================================================================
 // Framer Motion Animation Variants
@@ -537,6 +527,8 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
     threshold: 0.15,
     triggerOnce: true,
   });
+
+  const researchInnovationData = createResearchData(messages);
 
   return (
     <>
