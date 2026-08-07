@@ -171,9 +171,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-06') || ''}
+                  src={getImagePath('aboutus-14') || ''}
                   alt={messages.imageAlt[0]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
 
@@ -198,9 +198,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-07') || ''}
+                  src={getImagePath('aboutus-15') || ''}
                   alt={messages.imageAlt[1]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
             </div>
@@ -237,9 +237,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-08') || ''}
+                  src={getImagePath('aboutus-13') || ''}
                   alt={messages.imageAlt[2]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </motion.div>
