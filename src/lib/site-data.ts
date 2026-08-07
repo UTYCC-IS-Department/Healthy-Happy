@@ -5,12 +5,14 @@ export type ProductMedia = {
   isBestSeller?: boolean;
 };
 
-const productImage1 = "/healthy-happy/IMG_0319_1_1784649192457.png";
-const productImage2 = "/healthy-happy/IMG_0382.png";
-const productImage3 = "/healthy-happy/Spinach Cookies.png";
-const productImage4 = "/healthy-happy/Oat Cookies.png";
-const productImage5 = "/healthy-happy/Peanut Butter (No Sugar).png";
-const productImage6 = "/healthy-happy/Protein Bite (Diabetes).png";
+const productImage1 = "/healthy-happy/Protein Bite (Original).png";
+const productImage2 = "/healthy-happy/Peanut Butter (No Sugar).png";
+const productImage3 = "/healthy-happy/IMG_0319_1_1784649192457.png";
+const productImage4 = "/healthy-happy/Energy Bar.JPG";
+const productImage5 = "/healthy-happy/Spinach Cookies.png";
+const productImage6 = "/healthy-happy/Oat Cookies.png";
+const productImage7 = "/healthy-happy/Protein Bite (Diabetes).png";
+const productImage8 = "/healthy-happy/IMG_0382.png";
 
 export const productMedia: ProductMedia[] = [
   ["iron-enriched-cookies-1", productImage1],
@@ -19,8 +21,8 @@ export const productMedia: ProductMedia[] = [
   ["iron-enriched-cookies-4", productImage4],
   ["spinach-cookies-1", productImage5],
   ["spinach-cookies-2", productImage6],
-  ["nut-cookies-1", productImage1],
-  ["nut-cookies-2", productImage1],
+  ["nut-cookies-1", productImage7],
+  ["nut-cookies-2", productImage8],
 ].map(([id, image]) => ({
   id,
   image,
