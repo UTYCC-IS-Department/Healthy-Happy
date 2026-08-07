@@ -27,6 +27,7 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: She
     [messages.links.about, "/about"],
     [messages.links.products, "/products"],
     [messages.links.awards, "/awards"],
+    [messages.links.chat, "/chat"],
     [messages.links.contact, "/contact"],
   ] as const;
   const localizedLinks = links.map(([label, suffix]) => [label, `/${locale}${suffix}`] as const);

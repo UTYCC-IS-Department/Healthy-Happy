@@ -1,0 +1,4442 @@
+{
+  "generatedAt": "2026-08-06T16:09:04.697Z",
+  "chunks": [
+    {
+      "id": "en:about.coreIdentity.items[0].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].description",
+      "sectionId": "about.coreIdentity.items[0].description",
+      "text": "To revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet and support sustainable agricultural practices."
+    },
+    {
+      "id": "en:about.coreIdentity.items[0].heading",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].heading",
+      "sectionId": "about.coreIdentity.items[0].heading",
+      "text": "Revolutionizing Health & Wellness"
+    },
+    {
+      "id": "en:about.coreIdentity.items[0].id",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].id",
+      "sectionId": "about.coreIdentity.items[0].id",
+      "text": "mission"
+    },
+    {
+      "id": "en:about.coreIdentity.items[0].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].title",
+      "sectionId": "about.coreIdentity.items[0].title",
+      "text": "Mission"
+    },
+    {
+      "id": "en:about.coreIdentity.items[1].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].description",
+      "sectionId": "about.coreIdentity.items[1].description",
+      "text": "From seed to nourishing rich snacks—we envision a Myanmar where everyone has access to nutritious, delicious food that supports local farmers and builds healthier communities."
+    },
+    {
+      "id": "en:about.coreIdentity.items[1].heading",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].heading",
+      "sectionId": "about.coreIdentity.items[1].heading",
+      "text": "SEED to NOURISHING RICH SNACKS"
+    },
+    {
+      "id": "en:about.coreIdentity.items[1].id",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].id",
+      "sectionId": "about.coreIdentity.items[1].id",
+      "text": "vision"
+    },
+    {
+      "id": "en:about.coreIdentity.items[1].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].title",
+      "sectionId": "about.coreIdentity.items[1].title",
+      "text": "Vision"
+    },
+    {
+      "id": "en:about.coreIdentity.items[2].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].description",
+      "sectionId": "about.coreIdentity.items[2].description",
+      "text": "Your reliable, all-in-one companion designed to guide, track, and support your health and wellness goals, one bite and one step at a time."
+    },
+    {
+      "id": "en:about.coreIdentity.items[2].heading",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].heading",
+      "sectionId": "about.coreIdentity.items[2].heading",
+      "text": "Your Daily Nutrition Partner, Every Step of the Way!"
+    },
+    {
+      "id": "en:about.coreIdentity.items[2].id",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].id",
+      "sectionId": "about.coreIdentity.items[2].id",
+      "text": "motto"
+    },
+    {
+      "id": "en:about.coreIdentity.items[2].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].title",
+      "sectionId": "about.coreIdentity.items[2].title",
+      "text": "Motto"
+    },
+    {
+      "id": "en:about.coreIdentity.title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.title",
+      "sectionId": "about.coreIdentity.title",
+      "text": "Our Core Identity"
+    },
+    {
+      "id": "en:about.headline.company",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.company",
+      "sectionId": "about.headline.company",
+      "text": "Healthy & Happy Myanmar Co., Ltd."
+    },
+    {
+      "id": "en:about.headline.established",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.established",
+      "sectionId": "about.headline.established",
+      "text": "Est. 2017 in Mandalay, Myanmar"
+    },
+    {
+      "id": "en:about.headline.grid[0].alt",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[0].alt",
+      "sectionId": "about.headline.grid[0].alt",
+      "text": "Top Left Team Member"
+    },
+    {
+      "id": "en:about.headline.grid[0].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[0].title",
+      "sectionId": "about.headline.grid[0].title",
+      "text": "Co-Founder 1"
+    },
+    {
+      "id": "en:about.headline.grid[1].alt",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[1].alt",
+      "sectionId": "about.headline.grid[1].alt",
+      "text": "Top Right Team Member"
+    },
+    {
+      "id": "en:about.headline.grid[1].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[1].title",
+      "sectionId": "about.headline.grid[1].title",
+      "text": "Nutritionist"
+    },
+    {
+      "id": "en:about.headline.grid[2].alt",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[2].alt",
+      "sectionId": "about.headline.grid[2].alt",
+      "text": "Center Focus: Founding Story"
+    },
+    {
+      "id": "en:about.headline.grid[2].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[2].title",
+      "sectionId": "about.headline.grid[2].title",
+      "text": "The Mission"
+    },
+    {
+      "id": "en:about.headline.grid[3].alt",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[3].alt",
+      "sectionId": "about.headline.grid[3].alt",
+      "text": "Bottom Left: Mandalay Office"
+    },
+    {
+      "id": "en:about.headline.grid[3].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[3].title",
+      "sectionId": "about.headline.grid[3].title",
+      "text": "Operations"
+    },
+    {
+      "id": "en:about.headline.grid[4].alt",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[4].alt",
+      "sectionId": "about.headline.grid[4].alt",
+      "text": "Bottom Right Team Member"
+    },
+    {
+      "id": "en:about.headline.grid[4].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[4].title",
+      "sectionId": "about.headline.grid[4].title",
+      "text": "Co-Founder 2"
+    },
+    {
+      "id": "en:about.headline.heroAlt",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.heroAlt",
+      "sectionId": "about.headline.heroAlt",
+      "text": "Leaf"
+    },
+    {
+      "id": "en:about.headline.history[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.history[0]",
+      "sectionId": "about.headline.history[0]",
+      "text": "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs and a pioneering nutritionist."
+    },
+    {
+      "id": "en:about.headline.history[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.history[1]",
+      "sectionId": "about.headline.history[1]",
+      "text": "Our journey began with a deeply personal story. One of our co-founders experienced the heartbreak of losing her father to cancer due to a lack of access to nutritious food. This profound experience ignited a passion to ensure no one else would suffer from preventable health issues due to poor nutrition."
+    },
+    {
+      "id": "en:about.headline.history[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.history[2]",
+      "sectionId": "about.headline.history[2]",
+      "text": "Recognizing the prevalence of diabetes and other health conditions in our community, we committed ourselves to making a difference—one nutritious product at a time."
+    },
+    {
+      "id": "en:about.headline.historyTitle",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.historyTitle",
+      "sectionId": "about.headline.historyTitle",
+      "text": "Our History"
+    },
+    {
+      "id": "en:about.headline.intro",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.intro",
+      "sectionId": "about.headline.intro",
+      "text": "The Healthy Plate is dedicated to promoting a wholesome lifestyle centered around fresh ingredients, balanced nutrition, and overall well-being. Our brand identity reflects vitality, health, and happiness through vibrant green aesthetics and clear nutritional categorization."
+    },
+    {
+      "id": "en:about.headline.values[0].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[0].description",
+      "sectionId": "about.headline.values[0].description",
+      "text": "Emphasizing farm-fresh vegetables, fruits, and organic produce"
+    },
+    {
+      "id": "en:about.headline.values[0].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[0].title",
+      "sectionId": "about.headline.values[0].title",
+      "text": "Freshness"
+    },
+    {
+      "id": "en:about.headline.values[1].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[1].description",
+      "sectionId": "about.headline.values[1].description",
+      "text": "Highlighting whole grains, lean proteins, and wholesome nutrition."
+    },
+    {
+      "id": "en:about.headline.values[1].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[1].title",
+      "sectionId": "about.headline.values[1].title",
+      "text": "Balance"
+    },
+    {
+      "id": "en:about.headline.values[2].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[2].description",
+      "sectionId": "about.headline.values[2].description",
+      "text": "Inspiring a positive, energetic lifestyle summarized by our motto: Healthy & Happy"
+    },
+    {
+      "id": "en:about.headline.values[2].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[2].title",
+      "sectionId": "about.headline.values[2].title",
+      "text": "Joy & Vitality"
+    },
+    {
+      "id": "en:about.headline.valuesTitle",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: headline.valuesTitle",
+      "sectionId": "about.headline.valuesTitle",
+      "text": "Brand Values"
+    },
+    {
+      "id": "en:about.research.banner",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: research.banner",
+      "sectionId": "about.research.banner",
+      "text": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks"
+    },
+    {
+      "id": "en:about.research.sections[0].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[0].description",
+      "sectionId": "about.research.sections[0].description",
+      "text": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks"
+    },
+    {
+      "id": "en:about.research.sections[0].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[0].title",
+      "sectionId": "about.research.sections[0].title",
+      "text": "Digital Transformation & Smart Systems"
+    },
+    {
+      "id": "en:about.research.sections[1].description",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[1].description",
+      "sectionId": "about.research.sections[1].description",
+      "text": "It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks"
+    },
+    {
+      "id": "en:about.research.sections[1].title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[1].title",
+      "sectionId": "about.research.sections[1].title",
+      "text": "Advanced Materials & Biotechnology"
+    },
+    {
+      "id": "en:about.research.title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: research.title",
+      "sectionId": "about.research.title",
+      "text": "Research & Innovation"
+    },
+    {
+      "id": "en:about.sustainability.buttons[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[0]",
+      "sectionId": "about.sustainability.buttons[0]",
+      "text": "Farm to Factory Model"
+    },
+    {
+      "id": "en:about.sustainability.buttons[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[1]",
+      "sectionId": "about.sustainability.buttons[1]",
+      "text": "Farmer Support"
+    },
+    {
+      "id": "en:about.sustainability.buttons[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[2]",
+      "sectionId": "about.sustainability.buttons[2]",
+      "text": "ESG & Community Impact"
+    },
+    {
+      "id": "en:about.sustainability.buttons[3]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[3]",
+      "sectionId": "about.sustainability.buttons[3]",
+      "text": "SDGs Goals"
+    },
+    {
+      "id": "en:about.sustainability.imageAlt[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.imageAlt[0]",
+      "sectionId": "about.sustainability.imageAlt[0]",
+      "text": "Sustainability Card 1"
+    },
+    {
+      "id": "en:about.sustainability.imageAlt[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.imageAlt[1]",
+      "sectionId": "about.sustainability.imageAlt[1]",
+      "text": "Sustainability Card 2"
+    },
+    {
+      "id": "en:about.sustainability.imageAlt[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.imageAlt[2]",
+      "sectionId": "about.sustainability.imageAlt[2]",
+      "text": "Sustainability Bottom Card"
+    },
+    {
+      "id": "en:about.sustainability.placeholder",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.placeholder",
+      "sectionId": "about.sustainability.placeholder",
+      "text": "You can add some text here"
+    },
+    {
+      "id": "en:about.sustainability.title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.title",
+      "sectionId": "about.sustainability.title",
+      "text": "Sustainability"
+    },
+    {
+      "id": "en:about.whereCanBuy.note",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.note",
+      "sectionId": "about.whereCanBuy.note",
+      "text": "Apart from major modern trade venues, our products are widely available at prominent regional supermarkets and trusted local retail shops across the country"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[0]",
+      "sectionId": "about.whereCanBuy.retailers[0]",
+      "text": "Grandmother Hospital"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[1]",
+      "sectionId": "about.whereCanBuy.retailers[1]",
+      "text": "Shan Dila Pharmacy"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[2]",
+      "sectionId": "about.whereCanBuy.retailers[2]",
+      "text": "Ku Kin Tin Pharmacy"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[3]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[3]",
+      "sectionId": "about.whereCanBuy.retailers[3]",
+      "text": "Market Plaza"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[4]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[4]",
+      "sectionId": "about.whereCanBuy.retailers[4]",
+      "text": "CityMart"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[5]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[5]",
+      "sectionId": "about.whereCanBuy.retailers[5]",
+      "text": "Healthy & Happy Store"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[6]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[6]",
+      "sectionId": "about.whereCanBuy.retailers[6]",
+      "text": "Family Pharmacy"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[7]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[7]",
+      "sectionId": "about.whereCanBuy.retailers[7]",
+      "text": "Local Partners"
+    },
+    {
+      "id": "en:about.whereCanBuy.title",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.title",
+      "sectionId": "about.whereCanBuy.title",
+      "text": "Where Can Buy"
+    },
+    {
+      "id": "en:ai-chat.accessibility.conversation",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: accessibility.conversation",
+      "sectionId": "ai-chat.accessibility.conversation",
+      "text": "AI chat conversation"
+    },
+    {
+      "id": "en:ai-chat.accessibility.suggestions",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: accessibility.suggestions",
+      "sectionId": "ai-chat.accessibility.suggestions",
+      "text": "Suggested questions"
+    },
+    {
+      "id": "en:ai-chat.errors.empty",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.empty",
+      "sectionId": "ai-chat.errors.empty",
+      "text": "Please type a question first."
+    },
+    {
+      "id": "en:ai-chat.errors.rateLimited",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.rateLimited",
+      "sectionId": "ai-chat.errors.rateLimited",
+      "text": "Please wait a moment before asking another question."
+    },
+    {
+      "id": "en:ai-chat.errors.tooLong",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.tooLong",
+      "sectionId": "ai-chat.errors.tooLong",
+      "text": "Please keep your question shorter."
+    },
+    {
+      "id": "en:ai-chat.errors.unavailable",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.unavailable",
+      "sectionId": "ai-chat.errors.unavailable",
+      "text": "The AI chat is unavailable right now. Please try again later."
+    },
+    {
+      "id": "en:ai-chat.errors.unknown",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.unknown",
+      "sectionId": "ai-chat.errors.unknown",
+      "text": "Something went wrong. Please try again."
+    },
+    {
+      "id": "en:ai-chat.fallbacks.notGrounded",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: fallbacks.notGrounded",
+      "sectionId": "ai-chat.fallbacks.notGrounded",
+      "text": "I cannot answer that from the current Healthy & Happy project data."
+    },
+    {
+      "id": "en:ai-chat.hero.description",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: hero.description",
+      "sectionId": "ai-chat.hero.description",
+      "text": "This assistant answers from Healthy & Happy project data. It will say when the current data does not contain an answer."
+    },
+    {
+      "id": "en:ai-chat.hero.eyebrow",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: hero.eyebrow",
+      "sectionId": "ai-chat.hero.eyebrow",
+      "text": "Healthy & Happy AI"
+    },
+    {
+      "id": "en:ai-chat.hero.title",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: hero.title",
+      "sectionId": "ai-chat.hero.title",
+      "text": "Ask about our products and wellness story"
+    },
+    {
+      "id": "en:ai-chat.meta.description",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: meta.description",
+      "sectionId": "ai-chat.meta.description",
+      "text": "Ask Healthy & Happy questions grounded in our project content."
+    },
+    {
+      "id": "en:ai-chat.meta.title",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: meta.title",
+      "sectionId": "ai-chat.meta.title",
+      "text": "AI Chat"
+    },
+    {
+      "id": "en:ai-chat.panel.assistantLabel",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.assistantLabel",
+      "sectionId": "ai-chat.panel.assistantLabel",
+      "text": "Healthy & Happy assistant"
+    },
+    {
+      "id": "en:ai-chat.panel.emptyDescription",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.emptyDescription",
+      "sectionId": "ai-chat.panel.emptyDescription",
+      "text": "Ask about products, ingredients, awards, contact details, or the Healthy & Happy brand."
+    },
+    {
+      "id": "en:ai-chat.panel.emptyTitle",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.emptyTitle",
+      "sectionId": "ai-chat.panel.emptyTitle",
+      "text": "Start with a question"
+    },
+    {
+      "id": "en:ai-chat.panel.inputLabel",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.inputLabel",
+      "sectionId": "ai-chat.panel.inputLabel",
+      "text": "Message"
+    },
+    {
+      "id": "en:ai-chat.panel.placeholder",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.placeholder",
+      "sectionId": "ai-chat.panel.placeholder",
+      "text": "Ask about Healthy & Happy..."
+    },
+    {
+      "id": "en:ai-chat.panel.send",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.send",
+      "sectionId": "ai-chat.panel.send",
+      "text": "Send"
+    },
+    {
+      "id": "en:ai-chat.panel.sending",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.sending",
+      "sectionId": "ai-chat.panel.sending",
+      "text": "Sending"
+    },
+    {
+      "id": "en:ai-chat.panel.sourceFallback",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.sourceFallback",
+      "sectionId": "ai-chat.panel.sourceFallback",
+      "text": "Project data"
+    },
+    {
+      "id": "en:ai-chat.panel.sourcesLabel",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.sourcesLabel",
+      "sectionId": "ai-chat.panel.sourcesLabel",
+      "text": "Sources"
+    },
+    {
+      "id": "en:ai-chat.panel.subtitle",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.subtitle",
+      "sectionId": "ai-chat.panel.subtitle",
+      "text": "Grounded answers from site and product content"
+    },
+    {
+      "id": "en:ai-chat.panel.title",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.title",
+      "sectionId": "ai-chat.panel.title",
+      "text": "Project guide"
+    },
+    {
+      "id": "en:ai-chat.panel.userLabel",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.userLabel",
+      "sectionId": "ai-chat.panel.userLabel",
+      "text": "You"
+    },
+    {
+      "id": "en:ai-chat.suggestions[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: suggestions[0]",
+      "sectionId": "ai-chat.suggestions[0]",
+      "text": "Which products are best sellers?"
+    },
+    {
+      "id": "en:ai-chat.suggestions[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: suggestions[1]",
+      "sectionId": "ai-chat.suggestions[1]",
+      "text": "What ingredients are in the cookies?"
+    },
+    {
+      "id": "en:ai-chat.suggestions[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: suggestions[2]",
+      "sectionId": "ai-chat.suggestions[2]",
+      "text": "Where can I contact Healthy & Happy?"
+    },
+    {
+      "id": "en:awards.brandAlt",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: brandAlt",
+      "sectionId": "awards.brandAlt",
+      "text": "Healthy & Happy"
+    },
+    {
+      "id": "en:awards.certificateLabels[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[0]",
+      "sectionId": "awards.certificateLabels[0]",
+      "text": "Certification 1"
+    },
+    {
+      "id": "en:awards.certificateLabels[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[1]",
+      "sectionId": "awards.certificateLabels[1]",
+      "text": "Certification 2"
+    },
+    {
+      "id": "en:awards.certificateLabels[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[2]",
+      "sectionId": "awards.certificateLabels[2]",
+      "text": "Certification 3"
+    },
+    {
+      "id": "en:awards.certificateLabels[3]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[3]",
+      "sectionId": "awards.certificateLabels[3]",
+      "text": "Certification 4"
+    },
+    {
+      "id": "en:awards.certificateLabels[4]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[4]",
+      "sectionId": "awards.certificateLabels[4]",
+      "text": "Certification 5"
+    },
+    {
+      "id": "en:awards.certificateLabels[5]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[5]",
+      "sectionId": "awards.certificateLabels[5]",
+      "text": "Certification 6"
+    },
+    {
+      "id": "en:awards.certificateLabels[6]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[6]",
+      "sectionId": "awards.certificateLabels[6]",
+      "text": "Certification 7"
+    },
+    {
+      "id": "en:awards.certificateLabels[7]",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[7]",
+      "sectionId": "awards.certificateLabels[7]",
+      "text": "Certification 8"
+    },
+    {
+      "id": "en:awards.certifications",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: certifications",
+      "sectionId": "awards.certifications",
+      "text": "Certifications"
+    },
+    {
+      "id": "en:awards.items[0].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[0].description",
+      "sectionId": "awards.items[0].description",
+      "text": "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category."
+    },
+    {
+      "id": "en:awards.items[0].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[0].label",
+      "sectionId": "awards.items[0].label",
+      "text": "Award-1"
+    },
+    {
+      "id": "en:awards.items[0].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[0].title",
+      "sectionId": "awards.items[0].title",
+      "text": "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022."
+    },
+    {
+      "id": "en:awards.items[1].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[1].description",
+      "sectionId": "awards.items[1].description",
+      "text": "An honour celebrating the work of women entrepreneurs creating positive impact for their communities."
+    },
+    {
+      "id": "en:awards.items[1].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[1].label",
+      "sectionId": "awards.items[1].label",
+      "text": "Award-2"
+    },
+    {
+      "id": "en:awards.items[1].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[1].title",
+      "sectionId": "awards.items[1].title",
+      "text": "The Most Responsible Business Award 2022"
+    },
+    {
+      "id": "en:awards.items[10].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[10].description",
+      "sectionId": "awards.items[10].description",
+      "text": "Award description 11."
+    },
+    {
+      "id": "en:awards.items[10].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[10].label",
+      "sectionId": "awards.items[10].label",
+      "text": "Award-11"
+    },
+    {
+      "id": "en:awards.items[10].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[10].title",
+      "sectionId": "awards.items[10].title",
+      "text": "Award Title 11"
+    },
+    {
+      "id": "en:awards.items[2].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[2].description",
+      "sectionId": "awards.items[2].description",
+      "text": "Award description 3."
+    },
+    {
+      "id": "en:awards.items[2].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[2].label",
+      "sectionId": "awards.items[2].label",
+      "text": "Award-3"
+    },
+    {
+      "id": "en:awards.items[2].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[2].title",
+      "sectionId": "awards.items[2].title",
+      "text": "Award Title 3"
+    },
+    {
+      "id": "en:awards.items[3].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[3].description",
+      "sectionId": "awards.items[3].description",
+      "text": "Award description 4."
+    },
+    {
+      "id": "en:awards.items[3].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[3].label",
+      "sectionId": "awards.items[3].label",
+      "text": "Award-4"
+    },
+    {
+      "id": "en:awards.items[3].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[3].title",
+      "sectionId": "awards.items[3].title",
+      "text": "Award Title 4"
+    },
+    {
+      "id": "en:awards.items[4].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[4].description",
+      "sectionId": "awards.items[4].description",
+      "text": "Award description 5."
+    },
+    {
+      "id": "en:awards.items[4].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[4].label",
+      "sectionId": "awards.items[4].label",
+      "text": "Award-5"
+    },
+    {
+      "id": "en:awards.items[4].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[4].title",
+      "sectionId": "awards.items[4].title",
+      "text": "Award Title 5"
+    },
+    {
+      "id": "en:awards.items[5].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[5].description",
+      "sectionId": "awards.items[5].description",
+      "text": "Award description 6."
+    },
+    {
+      "id": "en:awards.items[5].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[5].label",
+      "sectionId": "awards.items[5].label",
+      "text": "Award-6"
+    },
+    {
+      "id": "en:awards.items[5].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[5].title",
+      "sectionId": "awards.items[5].title",
+      "text": "Award Title 6"
+    },
+    {
+      "id": "en:awards.items[6].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[6].description",
+      "sectionId": "awards.items[6].description",
+      "text": "Award description 7."
+    },
+    {
+      "id": "en:awards.items[6].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[6].label",
+      "sectionId": "awards.items[6].label",
+      "text": "Award-7"
+    },
+    {
+      "id": "en:awards.items[6].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[6].title",
+      "sectionId": "awards.items[6].title",
+      "text": "Award Title 7"
+    },
+    {
+      "id": "en:awards.items[7].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[7].description",
+      "sectionId": "awards.items[7].description",
+      "text": "Award description 8."
+    },
+    {
+      "id": "en:awards.items[7].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[7].label",
+      "sectionId": "awards.items[7].label",
+      "text": "Award-8"
+    },
+    {
+      "id": "en:awards.items[7].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[7].title",
+      "sectionId": "awards.items[7].title",
+      "text": "Award Title 8"
+    },
+    {
+      "id": "en:awards.items[8].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[8].description",
+      "sectionId": "awards.items[8].description",
+      "text": "Award description 9."
+    },
+    {
+      "id": "en:awards.items[8].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[8].label",
+      "sectionId": "awards.items[8].label",
+      "text": "Award-9"
+    },
+    {
+      "id": "en:awards.items[8].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[8].title",
+      "sectionId": "awards.items[8].title",
+      "text": "Award Title 9"
+    },
+    {
+      "id": "en:awards.items[9].description",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[9].description",
+      "sectionId": "awards.items[9].description",
+      "text": "Award description 10."
+    },
+    {
+      "id": "en:awards.items[9].label",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[9].label",
+      "sectionId": "awards.items[9].label",
+      "text": "Award-10"
+    },
+    {
+      "id": "en:awards.items[9].title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: items[9].title",
+      "sectionId": "awards.items[9].title",
+      "text": "Award Title 10"
+    },
+    {
+      "id": "en:awards.title",
+      "locale": "en",
+      "sourcePath": "messages/en/awards.json",
+      "contentType": "message",
+      "title": "awards: title",
+      "sectionId": "awards.title",
+      "text": "Awards & Media"
+    },
+    {
+      "id": "en:contact.address",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: address",
+      "sectionId": "contact.address",
+      "text": "Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar."
+    },
+    {
+      "id": "en:contact.call",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: call",
+      "sectionId": "contact.call",
+      "text": "Call Us"
+    },
+    {
+      "id": "en:contact.emailUs",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: emailUs",
+      "sectionId": "contact.emailUs",
+      "text": "Email Us"
+    },
+    {
+      "id": "en:contact.fields.email",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.email",
+      "sectionId": "contact.fields.email",
+      "text": "Email"
+    },
+    {
+      "id": "en:contact.fields.firstName",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.firstName",
+      "sectionId": "contact.fields.firstName",
+      "text": "First Name"
+    },
+    {
+      "id": "en:contact.fields.lastName",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.lastName",
+      "sectionId": "contact.fields.lastName",
+      "text": "Last Name"
+    },
+    {
+      "id": "en:contact.fields.message",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.message",
+      "sectionId": "contact.fields.message",
+      "text": "Message"
+    },
+    {
+      "id": "en:contact.follow",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: follow",
+      "sectionId": "contact.follow",
+      "text": "Follow Us On"
+    },
+    {
+      "id": "en:contact.location",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: location",
+      "sectionId": "contact.location",
+      "text": "Location"
+    },
+    {
+      "id": "en:contact.mapTitle",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: mapTitle",
+      "sectionId": "contact.mapTitle",
+      "text": "Healthy & Happy location"
+    },
+    {
+      "id": "en:contact.social.facebook",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: social.facebook",
+      "sectionId": "contact.social.facebook",
+      "text": "Facebook"
+    },
+    {
+      "id": "en:contact.social.tiktok",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: social.tiktok",
+      "sectionId": "contact.social.tiktok",
+      "text": "TikTok"
+    },
+    {
+      "id": "en:contact.social.whatsapp",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: social.whatsapp",
+      "sectionId": "contact.social.whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "id": "en:contact.submit",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: submit",
+      "sectionId": "contact.submit",
+      "text": "Submit"
+    },
+    {
+      "id": "en:contact.title",
+      "locale": "en",
+      "sourcePath": "messages/en/contact.json",
+      "contentType": "message",
+      "title": "contact: title",
+      "sectionId": "contact.title",
+      "text": "Contact Us"
+    },
+    {
+      "id": "en:home.awards.title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: awards.title",
+      "sectionId": "home.awards.title",
+      "text": "Awards & Recognitions"
+    },
+    {
+      "id": "en:home.categories.items[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[0]",
+      "sectionId": "home.categories.items[0]",
+      "text": "Protein Bites"
+    },
+    {
+      "id": "en:home.categories.items[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[1]",
+      "sectionId": "home.categories.items[1]",
+      "text": "No Sugar Cookies"
+    },
+    {
+      "id": "en:home.categories.items[2]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[2]",
+      "sectionId": "home.categories.items[2]",
+      "text": "Oat Cookies"
+    },
+    {
+      "id": "en:home.categories.items[3]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[3]",
+      "sectionId": "home.categories.items[3]",
+      "text": "Healthy Snacks"
+    },
+    {
+      "id": "en:home.categories.items[4]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[4]",
+      "sectionId": "home.categories.items[4]",
+      "text": "Original Series"
+    },
+    {
+      "id": "en:home.categories.title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: categories.title",
+      "sectionId": "home.categories.title",
+      "text": "Feature Categories"
+    },
+    {
+      "id": "en:home.contact.call",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.call",
+      "sectionId": "home.contact.call",
+      "text": "Call Us"
+    },
+    {
+      "id": "en:home.contact.email",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.email",
+      "sectionId": "home.contact.email",
+      "text": "Email"
+    },
+    {
+      "id": "en:home.contact.emailUs",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.emailUs",
+      "sectionId": "home.contact.emailUs",
+      "text": "Email Us"
+    },
+    {
+      "id": "en:home.contact.firstName",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.firstName",
+      "sectionId": "home.contact.firstName",
+      "text": "First Name"
+    },
+    {
+      "id": "en:home.contact.follow",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.follow",
+      "sectionId": "home.contact.follow",
+      "text": "Follow Us On"
+    },
+    {
+      "id": "en:home.contact.intro",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.intro",
+      "sectionId": "home.contact.intro",
+      "text": "Whether you're curious, dreaming up something custom, or simply want to connect, we'd love to hear from you."
+    },
+    {
+      "id": "en:home.contact.lastName",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.lastName",
+      "sectionId": "home.contact.lastName",
+      "text": "Last Name"
+    },
+    {
+      "id": "en:home.contact.location",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.location",
+      "sectionId": "home.contact.location",
+      "text": "Location"
+    },
+    {
+      "id": "en:home.contact.message",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.message",
+      "sectionId": "home.contact.message",
+      "text": "Message"
+    },
+    {
+      "id": "en:home.contact.social.facebook",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.social.facebook",
+      "sectionId": "home.contact.social.facebook",
+      "text": "Facebook"
+    },
+    {
+      "id": "en:home.contact.social.tiktok",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.social.tiktok",
+      "sectionId": "home.contact.social.tiktok",
+      "text": "TikTok"
+    },
+    {
+      "id": "en:home.contact.social.whatsapp",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.social.whatsapp",
+      "sectionId": "home.contact.social.whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "id": "en:home.contact.submit",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.submit",
+      "sectionId": "home.contact.submit",
+      "text": "Submit"
+    },
+    {
+      "id": "en:home.contact.title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: contact.title",
+      "sectionId": "home.contact.title",
+      "text": "Contact Us"
+    },
+    {
+      "id": "en:home.hero.action",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: hero.action",
+      "sectionId": "home.hero.action",
+      "text": "Explore our products"
+    },
+    {
+      "id": "en:home.hero.tagline",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: hero.tagline",
+      "sectionId": "home.hero.tagline",
+      "text": "Your Daily Nutrition Partner, Every Step of the Way!"
+    },
+    {
+      "id": "en:home.hero.title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: hero.title",
+      "sectionId": "home.hero.title",
+      "text": "Healthy & Happy Myanmar"
+    },
+    {
+      "id": "en:home.journey.features[0].content",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].content",
+      "sectionId": "home.journey.features[0].content",
+      "text": "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs together with a pioneering nutritionist. Our mission is to revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet while supporting sustainable agricultural practices."
+    },
+    {
+      "id": "en:home.journey.features[0].id",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].id",
+      "sectionId": "home.journey.features[0].id",
+      "text": "story"
+    },
+    {
+      "id": "en:home.journey.features[0].label",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].label",
+      "sectionId": "home.journey.features[0].label",
+      "text": "Our Story"
+    },
+    {
+      "id": "en:home.journey.features[0].title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].title",
+      "sectionId": "home.journey.features[0].title",
+      "text": "Our Story"
+    },
+    {
+      "id": "en:home.journey.features[1].content",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].content",
+      "sectionId": "home.journey.features[1].content",
+      "text": "We offer a carefully crafted selection of organic, nutrient-dense snacks and plant-based foods. Made from locally sourced, high-quality ingredients, every product is formulated to support your wellness journey while keeping taste rich and delicious without added artificial preservatives."
+    },
+    {
+      "id": "en:home.journey.features[1].id",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].id",
+      "sectionId": "home.journey.features[1].id",
+      "text": "products"
+    },
+    {
+      "id": "en:home.journey.features[1].label",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].label",
+      "sectionId": "home.journey.features[1].label",
+      "text": "Our Products"
+    },
+    {
+      "id": "en:home.journey.features[1].title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].title",
+      "sectionId": "home.journey.features[1].title",
+      "text": "Our Products"
+    },
+    {
+      "id": "en:home.journey.features[2].content",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].content",
+      "sectionId": "home.journey.features[2].content",
+      "text": "Under Healthy & Happy Myanmar, our signature product lines lead the local health movement. Recognized across major retail channels and health forums, our brand represents reliability, wholesome nutrition, and a firm commitment to clean eating for every household."
+    },
+    {
+      "id": "en:home.journey.features[2].id",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].id",
+      "sectionId": "home.journey.features[2].id",
+      "text": "brands"
+    },
+    {
+      "id": "en:home.journey.features[2].label",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].label",
+      "sectionId": "home.journey.features[2].label",
+      "text": "Our Brands"
+    },
+    {
+      "id": "en:home.journey.features[2].title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].title",
+      "sectionId": "home.journey.features[2].title",
+      "text": "Our Brands"
+    },
+    {
+      "id": "en:home.journey.imageAlt.journey",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.imageAlt.journey",
+      "sectionId": "home.journey.imageAlt.journey",
+      "text": "Healthy & Happy journey"
+    },
+    {
+      "id": "en:home.journey.imageAlt.product",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.imageAlt.product",
+      "sectionId": "home.journey.imageAlt.product",
+      "text": "Healthy & Happy product"
+    },
+    {
+      "id": "en:home.journey.logoAlt",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.logoAlt",
+      "sectionId": "home.journey.logoAlt",
+      "text": "Healthy & Happy"
+    },
+    {
+      "id": "en:home.journey.paragraphs[0]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.paragraphs[0]",
+      "sectionId": "home.journey.paragraphs[0]",
+      "text": "Healthy & Happy began with a deeply personal story. One of our co-founders experienced the heartbreak of losing her father to cancer due to a lack of access to nutritious food."
+    },
+    {
+      "id": "en:home.journey.paragraphs[1]",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.paragraphs[1]",
+      "sectionId": "home.journey.paragraphs[1]",
+      "text": "This profound loss ignited a passion to ensure that no one else would suffer from preventable health issues caused by poor nutrition. Recognizing the growing prevalence of diabetes and other health conditions in our community, we committed ourselves to making a meaningful difference through accessible, honest, and nourishing food."
+    },
+    {
+      "id": "en:home.journey.seeMore",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.seeMore",
+      "sectionId": "home.journey.seeMore",
+      "text": "See More"
+    },
+    {
+      "id": "en:home.journey.title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: journey.title",
+      "sectionId": "home.journey.title",
+      "text": "The Journey of Happy & Healthy"
+    },
+    {
+      "id": "en:home.production.description",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: production.description",
+      "sectionId": "home.production.description",
+      "text": "Our flagship products, including Protein Bite Cookies, are meticulously crafted to provide balanced nutrition. Each cookie is made using locally sourced ingredients such as chickpeas, peanuts, and rolled oats, ensuring they are both nutritious and delicious. These products are not only suitable for people with diabetes, but also serve as a convenient and healthy snack for anyone seeking to maintain a balanced lifestyle."
+    },
+    {
+      "id": "en:home.production.locationAction",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: production.locationAction",
+      "sectionId": "home.production.locationAction",
+      "text": "See location details"
+    },
+    {
+      "id": "en:home.production.mapTitle",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: production.mapTitle",
+      "sectionId": "home.production.mapTitle",
+      "text": "Location map"
+    },
+    {
+      "id": "en:home.production.seeMore",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: production.seeMore",
+      "sectionId": "home.production.seeMore",
+      "text": "See More"
+    },
+    {
+      "id": "en:home.production.title",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: production.title",
+      "sectionId": "home.production.title",
+      "text": "Production Place Where Our Products Come To Life"
+    },
+    {
+      "id": "en:not-found.action",
+      "locale": "en",
+      "sourcePath": "messages/en/not-found.json",
+      "contentType": "message",
+      "title": "not-found: action",
+      "sectionId": "not-found.action",
+      "text": "Return to Home"
+    },
+    {
+      "id": "en:not-found.title",
+      "locale": "en",
+      "sourcePath": "messages/en/not-found.json",
+      "contentType": "message",
+      "title": "not-found: title",
+      "sectionId": "not-found.title",
+      "text": "Page not found"
+    },
+    {
+      "id": "en:shell.footer.address",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.address",
+      "sectionId": "shell.footer.address",
+      "text": "Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar."
+    },
+    {
+      "id": "en:shell.footer.brandAlt",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.brandAlt",
+      "sectionId": "shell.footer.brandAlt",
+      "text": "Healthy & Happy logo"
+    },
+    {
+      "id": "en:shell.footer.columns.company",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.columns.company",
+      "sectionId": "shell.footer.columns.company",
+      "text": "Company"
+    },
+    {
+      "id": "en:shell.footer.columns.products",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.columns.products",
+      "sectionId": "shell.footer.columns.products",
+      "text": "Products"
+    },
+    {
+      "id": "en:shell.footer.columns.support",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.columns.support",
+      "sectionId": "shell.footer.columns.support",
+      "text": "Support"
+    },
+    {
+      "id": "en:shell.footer.copyright",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.copyright",
+      "sectionId": "shell.footer.copyright",
+      "text": "Copyright © 2026 Healthy & Happy | All rights reserved"
+    },
+    {
+      "id": "en:shell.footer.description",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.description",
+      "sectionId": "shell.footer.description",
+      "text": "Made with love, using only the finest natural ingredients. Taste the difference in every bite."
+    },
+    {
+      "id": "en:shell.footer.follow",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.follow",
+      "sectionId": "shell.footer.follow",
+      "text": "Follow Our Journey"
+    },
+    {
+      "id": "en:shell.footer.links.about",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.about",
+      "sectionId": "shell.footer.links.about",
+      "text": "About Us"
+    },
+    {
+      "id": "en:shell.footer.links.awards",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.awards",
+      "sectionId": "shell.footer.links.awards",
+      "text": "Awards & Certifications"
+    },
+    {
+      "id": "en:shell.footer.links.contact",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.contact",
+      "sectionId": "shell.footer.links.contact",
+      "text": "Contact Us"
+    },
+    {
+      "id": "en:shell.footer.links.faq",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.faq",
+      "sectionId": "shell.footer.links.faq",
+      "text": "FAQ"
+    },
+    {
+      "id": "en:shell.footer.links.help",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.help",
+      "sectionId": "shell.footer.links.help",
+      "text": "Help Center"
+    },
+    {
+      "id": "en:shell.footer.links.nutCookies",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.nutCookies",
+      "sectionId": "shell.footer.links.nutCookies",
+      "text": "Nut Diabetes Cookies"
+    },
+    {
+      "id": "en:shell.footer.links.productInfo",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.productInfo",
+      "sectionId": "shell.footer.links.productInfo",
+      "text": "Product Info"
+    },
+    {
+      "id": "en:shell.footer.links.products",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.products",
+      "sectionId": "shell.footer.links.products",
+      "text": "Products"
+    },
+    {
+      "id": "en:shell.footer.links.proteinBites",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.proteinBites",
+      "sectionId": "shell.footer.links.proteinBites",
+      "text": "Protein Bites"
+    },
+    {
+      "id": "en:shell.footer.links.spinachCookies",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.spinachCookies",
+      "sectionId": "shell.footer.links.spinachCookies",
+      "text": "Spinach Cookies"
+    },
+    {
+      "id": "en:shell.footer.newsAction",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.newsAction",
+      "sectionId": "shell.footer.newsAction",
+      "text": "Check out updated news"
+    },
+    {
+      "id": "en:shell.footer.newsText",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.newsText",
+      "sectionId": "shell.footer.newsText",
+      "text": "Check out news for recently updated products"
+    },
+    {
+      "id": "en:shell.footer.productOfMyanmar",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.productOfMyanmar",
+      "sectionId": "shell.footer.productOfMyanmar",
+      "text": "Product of Myanmar"
+    },
+    {
+      "id": "en:shell.footer.social.facebook",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.facebook",
+      "sectionId": "shell.footer.social.facebook",
+      "text": "Facebook"
+    },
+    {
+      "id": "en:shell.footer.social.instagram",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.instagram",
+      "sectionId": "shell.footer.social.instagram",
+      "text": "Instagram"
+    },
+    {
+      "id": "en:shell.footer.social.tiktok",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.tiktok",
+      "sectionId": "shell.footer.social.tiktok",
+      "text": "TikTok"
+    },
+    {
+      "id": "en:shell.footer.social.whatsapp",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.whatsapp",
+      "sectionId": "shell.footer.social.whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "id": "en:shell.footer.tagline",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.tagline",
+      "sectionId": "shell.footer.tagline",
+      "text": "Daily Nutrition Partner, Every Step of the Way"
+    },
+    {
+      "id": "en:shell.header.brandAlt",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.brandAlt",
+      "sectionId": "shell.header.brandAlt",
+      "text": "Healthy & Happy Myanmar logo"
+    },
+    {
+      "id": "en:shell.header.brandName",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.brandName",
+      "sectionId": "shell.header.brandName",
+      "text": "Healthy & Happy"
+    },
+    {
+      "id": "en:shell.header.closeNavigation",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.closeNavigation",
+      "sectionId": "shell.header.closeNavigation",
+      "text": "Close navigation"
+    },
+    {
+      "id": "en:shell.header.languages.burmese",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.languages.burmese",
+      "sectionId": "shell.header.languages.burmese",
+      "text": "Myanmar"
+    },
+    {
+      "id": "en:shell.header.languages.english",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.languages.english",
+      "sectionId": "shell.header.languages.english",
+      "text": "English"
+    },
+    {
+      "id": "en:shell.header.links.about",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.about",
+      "sectionId": "shell.header.links.about",
+      "text": "About Us"
+    },
+    {
+      "id": "en:shell.header.links.awards",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.awards",
+      "sectionId": "shell.header.links.awards",
+      "text": "Awards"
+    },
+    {
+      "id": "en:shell.header.links.chat",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.chat",
+      "sectionId": "shell.header.links.chat",
+      "text": "AI Chat"
+    },
+    {
+      "id": "en:shell.header.links.contact",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.contact",
+      "sectionId": "shell.header.links.contact",
+      "text": "Contact Us"
+    },
+    {
+      "id": "en:shell.header.links.home",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.home",
+      "sectionId": "shell.header.links.home",
+      "text": "Home"
+    },
+    {
+      "id": "en:shell.header.links.products",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.products",
+      "sectionId": "shell.header.links.products",
+      "text": "Products"
+    },
+    {
+      "id": "en:shell.header.openNavigation",
+      "locale": "en",
+      "sourcePath": "messages/en/shell.json",
+      "contentType": "message",
+      "title": "shell: header.openNavigation",
+      "sectionId": "shell.header.openNavigation",
+      "text": "Open navigation"
+    },
+    {
+      "id": "en:product.iron-enriched-cookies-1",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "sectionId": "product.iron-enriched-cookies-1",
+      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Iron-rich cookies crafted for daily nutritional support.\nIngredients: Whole Wheat Flour, Iron Fortified Oats, Stevia\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.iron-enriched-cookies-2",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "sectionId": "product.iron-enriched-cookies-2",
+      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Protein Series\nDescription: Protein-boosted iron cookies for active lifestyles.\nIngredients: Protein Flour, Iron Oats, Monk Fruit, Butter\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.iron-enriched-cookies-3",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "sectionId": "product.iron-enriched-cookies-3",
+      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Wholesome cookies for everyday balanced nutrition.\nIngredients: Whole Wheat, Oat Flour, Natural Sweetener\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.iron-enriched-cookies-4",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "sectionId": "product.iron-enriched-cookies-4",
+      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Crunchy, light, and naturally nutritious daily snack.\nIngredients: Oats, Stevia, Butter, Sea Salt\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.nut-cookies-1",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Nut Cookies",
+      "sectionId": "product.nut-cookies-1",
+      "text": "Name: Thone Pan Hla - Nut Cookies\nSeries: Protein Series\nDescription: Nutty, satisfying bites that nourish and energise.\nIngredients: Almonds, Walnuts, Oat Flour, Stevia\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.nut-cookies-2",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Nut Cookies",
+      "sectionId": "product.nut-cookies-2",
+      "text": "Name: Thone Pan Hla - Nut Cookies\nSeries: Original Series\nDescription: Classic nut blend, naturally sweet and deeply satisfying.\nIngredients: Mixed Nuts, Butter, Cinnamon, Monk Fruit\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.spinach-cookies-1",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Spinach Cookies",
+      "sectionId": "product.spinach-cookies-1",
+      "text": "Name: Thone Pan Hla - Spinach Cookies\nSeries: Protein Series\nDescription: Iron and fibre packed cookies for your wellness routine.\nIngredients: Spinach Extract, Whole Wheat, Olive Oil\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.spinach-cookies-2",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - Spinach Cookies",
+      "sectionId": "product.spinach-cookies-2",
+      "text": "Name: Thone Pan Hla - Spinach Cookies\nSeries: Original Series\nDescription: Green goodness baked to perfection every single time.\nIngredients: Spinach, Oat Flour, Erythritol, Eggs\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:site-data.awards",
+      "locale": "en",
+      "sourcePath": "src/lib/site-data.ts",
+      "contentType": "site-data",
+      "title": "Awards summary",
+      "sectionId": "site-data.awards",
+      "text": "National Healthy Food Award 2023\nBest Organic Snack Brand Excellence\nCertified ISO 22000 Food Safety Standard"
+    },
+    {
+      "id": "my:about.coreIdentity.items[0].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].description",
+      "sectionId": "about.coreIdentity.items[0].description",
+      "text": "မြန်မာနိုင်ငံတွင် မျှတသောအစားအစာနှင့် ရေရှည်တည်တံ့သော စိုက်ပျိုးရေးကို အထောက်အကူပြုမည့် ဆန်းသစ်သော အပင်အခြေပြု အာဟာရထုတ်ကုန်များဖြင့် ကျန်းမာရေးကို မြှင့်တင်ရန် ဖြစ်ပါသည်။"
+    },
+    {
+      "id": "my:about.coreIdentity.items[0].heading",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].heading",
+      "sectionId": "about.coreIdentity.items[0].heading",
+      "text": "ကျန်းမာရေးနှင့် လူနေမှုပုံစံကို မြှင့်တင်ခြင်း"
+    },
+    {
+      "id": "my:about.coreIdentity.items[0].id",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].id",
+      "sectionId": "about.coreIdentity.items[0].id",
+      "text": "mission"
+    },
+    {
+      "id": "my:about.coreIdentity.items[0].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[0].title",
+      "sectionId": "about.coreIdentity.items[0].title",
+      "text": "ရည်မှန်းချက်"
+    },
+    {
+      "id": "my:about.coreIdentity.items[1].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].description",
+      "sectionId": "about.coreIdentity.items[1].description",
+      "text": "လူတိုင်း ဒေသခံလယ်သမားများကို အထောက်အပံ့ပေးပြီး ကျန်းမာသော အသိုက်အဝန်းများတည်ဆောက်နိုင်မည့် အာဟာရပြည့်ဝ၍ အရသာရှိသော အစားအစာကို ရရှိနိုင်သော မြန်မာနိုင်ငံကို မျှော်မှန်းပါသည်။"
+    },
+    {
+      "id": "my:about.coreIdentity.items[1].heading",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].heading",
+      "sectionId": "about.coreIdentity.items[1].heading",
+      "text": "မျိုးစေ့မှ အာဟာရပြည့်ဝသော အဆာပြေများအထိ"
+    },
+    {
+      "id": "my:about.coreIdentity.items[1].id",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].id",
+      "sectionId": "about.coreIdentity.items[1].id",
+      "text": "vision"
+    },
+    {
+      "id": "my:about.coreIdentity.items[1].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[1].title",
+      "sectionId": "about.coreIdentity.items[1].title",
+      "text": "မျှော်မှန်းချက်"
+    },
+    {
+      "id": "my:about.coreIdentity.items[2].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].description",
+      "sectionId": "about.coreIdentity.items[2].description",
+      "text": "သင်၏ ကျန်းမာရေးနှင့် လူနေမှုပုံစံ ရည်မှန်းချက်များကို အကိုက်တိုင်းနှင့် ခြေလှမ်းတိုင်းတွင် လမ်းညွှန်၊ မှတ်တမ်းတင်၊ ပံ့ပိုးပေးရန် ဒီဇိုင်းထုတ်ထားသော ယုံကြည်စိတ်ချရသည့် မိတ်ဖက် ဖြစ်ပါသည်။"
+    },
+    {
+      "id": "my:about.coreIdentity.items[2].heading",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].heading",
+      "sectionId": "about.coreIdentity.items[2].heading",
+      "text": "နေ့စဉ်အာဟာရ မိတ်ဖက်၊ ခြေလှမ်းတိုင်းအတွက်!"
+    },
+    {
+      "id": "my:about.coreIdentity.items[2].id",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].id",
+      "sectionId": "about.coreIdentity.items[2].id",
+      "text": "motto"
+    },
+    {
+      "id": "my:about.coreIdentity.items[2].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.items[2].title",
+      "sectionId": "about.coreIdentity.items[2].title",
+      "text": "ဆောင်ပုဒ်"
+    },
+    {
+      "id": "my:about.coreIdentity.title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: coreIdentity.title",
+      "sectionId": "about.coreIdentity.title",
+      "text": "ကျွန်ုပ်တို့၏ အဓိကအမှတ်လက္ခဏာ"
+    },
+    {
+      "id": "my:about.headline.company",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.company",
+      "sectionId": "about.headline.company",
+      "text": "Healthy & Happy Myanmar Co., Ltd."
+    },
+    {
+      "id": "my:about.headline.established",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.established",
+      "sectionId": "about.headline.established",
+      "text": "မန္တလေး၊ မြန်မာနိုင်ငံတွင် ၂၀၁၇ ခုနှစ် တည်ထောင်"
+    },
+    {
+      "id": "my:about.headline.grid[0].alt",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[0].alt",
+      "sectionId": "about.headline.grid[0].alt",
+      "text": "ဘယ်ဘက်အပေါ် အဖွဲ့ဝင်"
+    },
+    {
+      "id": "my:about.headline.grid[0].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[0].title",
+      "sectionId": "about.headline.grid[0].title",
+      "text": "ပူးတွဲတည်ထောင်သူ ၁"
+    },
+    {
+      "id": "my:about.headline.grid[1].alt",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[1].alt",
+      "sectionId": "about.headline.grid[1].alt",
+      "text": "ညာဘက်အပေါ် အာဟာရပညာရှင်"
+    },
+    {
+      "id": "my:about.headline.grid[1].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[1].title",
+      "sectionId": "about.headline.grid[1].title",
+      "text": "အာဟာရပညာရှင်"
+    },
+    {
+      "id": "my:about.headline.grid[2].alt",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[2].alt",
+      "sectionId": "about.headline.grid[2].alt",
+      "text": "တည်ထောင်မှုဇာတ်လမ်း"
+    },
+    {
+      "id": "my:about.headline.grid[2].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[2].title",
+      "sectionId": "about.headline.grid[2].title",
+      "text": "ရည်မှန်းချက်"
+    },
+    {
+      "id": "my:about.headline.grid[3].alt",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[3].alt",
+      "sectionId": "about.headline.grid[3].alt",
+      "text": "မန္တလေးရုံး"
+    },
+    {
+      "id": "my:about.headline.grid[3].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[3].title",
+      "sectionId": "about.headline.grid[3].title",
+      "text": "လုပ်ငန်းဆောင်ရွက်မှု"
+    },
+    {
+      "id": "my:about.headline.grid[4].alt",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[4].alt",
+      "sectionId": "about.headline.grid[4].alt",
+      "text": "ညာဘက်အောက် အဖွဲ့ဝင်"
+    },
+    {
+      "id": "my:about.headline.grid[4].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.grid[4].title",
+      "sectionId": "about.headline.grid[4].title",
+      "text": "ပူးတွဲတည်ထောင်သူ ၂"
+    },
+    {
+      "id": "my:about.headline.heroAlt",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.heroAlt",
+      "sectionId": "about.headline.heroAlt",
+      "text": "အရွက်"
+    },
+    {
+      "id": "my:about.headline.history[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.history[0]",
+      "sectionId": "about.headline.history[0]",
+      "text": "Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၌ အမျိုးသမီးစွန့်ဦးတီထွင်သူ သုံးဦးနှင့် အာဟာရပညာရှင်တစ်ဦးက တည်ထောင်ခဲ့သည်။"
+    },
+    {
+      "id": "my:about.headline.history[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.history[1]",
+      "sectionId": "about.headline.history[1]",
+      "text": "ကျွန်ုပ်တို့၏ ခရီးစဉ်သည် ကိုယ်ပိုင်ခံစားချက်နက်ရှိုင်းသော ဇာတ်လမ်းမှ စတင်ခဲ့ပါသည်။ အာဟာရပြည့်ဝသော အစားအစာမရရှိခြင်းကြောင့် တည်ထောင်သူတစ်ဦး၏ ဖခင်ကို ဆုံးရှုံးခဲ့ရခြင်းက အပြောင်းအလဲဖန်တီးရန် စိတ်အားထက်သန်စေခဲ့သည်။"
+    },
+    {
+      "id": "my:about.headline.history[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.history[2]",
+      "sectionId": "about.headline.history[2]",
+      "text": "အသိုက်အဝန်းအတွင်း ဆီးချိုနှင့် အခြားကျန်းမာရေးပြဿနာများ ပျံ့နှံ့နေမှုကို သိရှိကာ အာဟာရပြည့်ဝသော ထုတ်ကုန်တစ်ခုချင်းစီဖြင့် အပြောင်းအလဲဖန်တီးရန် ကတိပြုခဲ့ပါသည်။"
+    },
+    {
+      "id": "my:about.headline.historyTitle",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.historyTitle",
+      "sectionId": "about.headline.historyTitle",
+      "text": "ကျွန်ုပ်တို့၏ သမိုင်း"
+    },
+    {
+      "id": "my:about.headline.intro",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.intro",
+      "sectionId": "about.headline.intro",
+      "text": "Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စည်းများ၊ မျှတသောအာဟာရနှင့် အလုံးစုံသော ကျန်းမာရေးကို အခြေခံသည့် လူနေမှုပုံစံကို မြှင့်တင်ရန် ရည်ရွယ်ပါသည်။"
+    },
+    {
+      "id": "my:about.headline.values[0].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[0].description",
+      "sectionId": "about.headline.values[0].description",
+      "text": "လယ်ယာမှ လတ်ဆတ်သော ဟင်းသီးဟင်းရွက်များ၊ သစ်သီးများနှင့် အော်ဂဲနစ်ထွက်ကုန်များကို အလေးထားခြင်း"
+    },
+    {
+      "id": "my:about.headline.values[0].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[0].title",
+      "sectionId": "about.headline.values[0].title",
+      "text": "လတ်ဆတ်မှု"
+    },
+    {
+      "id": "my:about.headline.values[1].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[1].description",
+      "sectionId": "about.headline.values[1].description",
+      "text": "အစေ့အနှံများ၊ ပရိုတင်းဓာတ်နှင့် အာဟာရပြည့်ဝမှုကို အလေးထားခြင်း"
+    },
+    {
+      "id": "my:about.headline.values[1].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[1].title",
+      "sectionId": "about.headline.values[1].title",
+      "text": "မျှတမှု"
+    },
+    {
+      "id": "my:about.headline.values[2].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[2].description",
+      "sectionId": "about.headline.values[2].description",
+      "text": "Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘောဆောင်သော တက်ကြွသည့် လူနေမှုပုံစံကို လှုံ့ဆော်ခြင်း"
+    },
+    {
+      "id": "my:about.headline.values[2].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.values[2].title",
+      "sectionId": "about.headline.values[2].title",
+      "text": "ပျော်ရွှင်မှုနှင့် တက်ကြွမှု"
+    },
+    {
+      "id": "my:about.headline.valuesTitle",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: headline.valuesTitle",
+      "sectionId": "about.headline.valuesTitle",
+      "text": "အမှတ်တံဆိပ်တန်ဖိုးများ"
+    },
+    {
+      "id": "my:about.research.banner",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: research.banner",
+      "sectionId": "about.research.banner",
+      "text": "ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။"
+    },
+    {
+      "id": "my:about.research.sections[0].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[0].description",
+      "sectionId": "about.research.sections[0].description",
+      "text": "ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။"
+    },
+    {
+      "id": "my:about.research.sections[0].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[0].title",
+      "sectionId": "about.research.sections[0].title",
+      "text": "ဒစ်ဂျစ်တယ်ပြောင်းလဲမှုနှင့် စမတ်စနစ်များ"
+    },
+    {
+      "id": "my:about.research.sections[1].description",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[1].description",
+      "sectionId": "about.research.sections[1].description",
+      "text": "ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။"
+    },
+    {
+      "id": "my:about.research.sections[1].title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: research.sections[1].title",
+      "sectionId": "about.research.sections[1].title",
+      "text": "အဆင့်မြင့်ပစ္စည်းများနှင့် ဇီဝနည်းပညာ"
+    },
+    {
+      "id": "my:about.research.title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: research.title",
+      "sectionId": "about.research.title",
+      "text": "သုတေသနနှင့် ဆန်းသစ်တီထွင်မှု"
+    },
+    {
+      "id": "my:about.sustainability.buttons[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[0]",
+      "sectionId": "about.sustainability.buttons[0]",
+      "text": "လယ်ယာမှ စက်ရုံသို့ ပုံစံ"
+    },
+    {
+      "id": "my:about.sustainability.buttons[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[1]",
+      "sectionId": "about.sustainability.buttons[1]",
+      "text": "လယ်သမား အထောက်အပံ့"
+    },
+    {
+      "id": "my:about.sustainability.buttons[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[2]",
+      "sectionId": "about.sustainability.buttons[2]",
+      "text": "ESG နှင့် လူမှုအကျိုးသက်ရောက်မှု"
+    },
+    {
+      "id": "my:about.sustainability.buttons[3]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.buttons[3]",
+      "sectionId": "about.sustainability.buttons[3]",
+      "text": "SDGs ရည်မှန်းချက်များ"
+    },
+    {
+      "id": "my:about.sustainability.imageAlt[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.imageAlt[0]",
+      "sectionId": "about.sustainability.imageAlt[0]",
+      "text": "ရေရှည်တည်တံ့မှု ကတ် ၁"
+    },
+    {
+      "id": "my:about.sustainability.imageAlt[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.imageAlt[1]",
+      "sectionId": "about.sustainability.imageAlt[1]",
+      "text": "ရေရှည်တည်တံ့မှု ကတ် ၂"
+    },
+    {
+      "id": "my:about.sustainability.imageAlt[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.imageAlt[2]",
+      "sectionId": "about.sustainability.imageAlt[2]",
+      "text": "ရေရှည်တည်တံ့မှု အောက်ကတ်"
+    },
+    {
+      "id": "my:about.sustainability.placeholder",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.placeholder",
+      "sectionId": "about.sustainability.placeholder",
+      "text": "ဤနေရာတွင် စာသားထည့်နိုင်ပါသည်"
+    },
+    {
+      "id": "my:about.sustainability.title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: sustainability.title",
+      "sectionId": "about.sustainability.title",
+      "text": "ရေရှည်တည်တံ့မှု"
+    },
+    {
+      "id": "my:about.whereCanBuy.note",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.note",
+      "sectionId": "about.whereCanBuy.note",
+      "text": "အဓိကခေတ်မီ အရောင်းဆိုင်များအပြင် နိုင်ငံတစ်ဝန်းရှိ ဒေသခံစူပါမားကတ်များနှင့် ယုံကြည်စိတ်ချရသော လက်လီဆိုင်များတွင်လည်း ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို ရရှိနိုင်ပါသည်"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[0]",
+      "sectionId": "about.whereCanBuy.retailers[0]",
+      "text": "အဘွားဆေးရုံ"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[1]",
+      "sectionId": "about.whereCanBuy.retailers[1]",
+      "text": "ရှမ်းဒီးလား ဆေးဆိုင်"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[2]",
+      "sectionId": "about.whereCanBuy.retailers[2]",
+      "text": "ကူကင်တင် ဆေးဆိုင်"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[3]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[3]",
+      "sectionId": "about.whereCanBuy.retailers[3]",
+      "text": "Market Plaza"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[4]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[4]",
+      "sectionId": "about.whereCanBuy.retailers[4]",
+      "text": "CityMart"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[5]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[5]",
+      "sectionId": "about.whereCanBuy.retailers[5]",
+      "text": "Healthy & Happy ဆိုင်"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[6]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[6]",
+      "sectionId": "about.whereCanBuy.retailers[6]",
+      "text": "မိသားစု ဆေးဆိုင်"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[7]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[7]",
+      "sectionId": "about.whereCanBuy.retailers[7]",
+      "text": "ဒေသခံ မိတ်ဖက်များ"
+    },
+    {
+      "id": "my:about.whereCanBuy.title",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.title",
+      "sectionId": "about.whereCanBuy.title",
+      "text": "ဘယ်မှာ ဝယ်ယူနိုင်သလဲ"
+    },
+    {
+      "id": "my:ai-chat.accessibility.conversation",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: accessibility.conversation",
+      "sectionId": "ai-chat.accessibility.conversation",
+      "text": "AI စကားပြော အပြန်အလှန်စာသားများ"
+    },
+    {
+      "id": "my:ai-chat.accessibility.suggestions",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: accessibility.suggestions",
+      "sectionId": "ai-chat.accessibility.suggestions",
+      "text": "အကြံပြုမေးခွန်းများ"
+    },
+    {
+      "id": "my:ai-chat.errors.empty",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.empty",
+      "sectionId": "ai-chat.errors.empty",
+      "text": "မေးခွန်းကို အရင်ရေးပါ။"
+    },
+    {
+      "id": "my:ai-chat.errors.rateLimited",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.rateLimited",
+      "sectionId": "ai-chat.errors.rateLimited",
+      "text": "နောက်မေးခွန်းမေးရန် ခဏစောင့်ပါ။"
+    },
+    {
+      "id": "my:ai-chat.errors.tooLong",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.tooLong",
+      "sectionId": "ai-chat.errors.tooLong",
+      "text": "မေးခွန်းကို ပိုတိုအောင် ရေးပါ။"
+    },
+    {
+      "id": "my:ai-chat.errors.unavailable",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.unavailable",
+      "sectionId": "ai-chat.errors.unavailable",
+      "text": "AI စကားပြောကို လောလောဆယ် အသုံးမပြုနိုင်ပါ။ နောက်မှ ထပ်စမ်းပါ။"
+    },
+    {
+      "id": "my:ai-chat.errors.unknown",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: errors.unknown",
+      "sectionId": "ai-chat.errors.unknown",
+      "text": "တစ်ခုခု မှားယွင်းသွားပါသည်။ ထပ်စမ်းပါ။"
+    },
+    {
+      "id": "my:ai-chat.fallbacks.notGrounded",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: fallbacks.notGrounded",
+      "sectionId": "ai-chat.fallbacks.notGrounded",
+      "text": "လက်ရှိ Healthy & Happy ပရောဂျက်ဒေတာမှ ဤမေးခွန်းကို မဖြေနိုင်ပါ။"
+    },
+    {
+      "id": "my:ai-chat.hero.description",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: hero.description",
+      "sectionId": "ai-chat.hero.description",
+      "text": "ဤအကူအညီပေးသူသည် Healthy & Happy ပရောဂျက်အချက်အလက်များမှ ဖြေကြားပါသည်။ လက်ရှိဒေတာတွင် အဖြေမရှိပါက မရှိကြောင်း ပြောပါမည်။"
+    },
+    {
+      "id": "my:ai-chat.hero.eyebrow",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: hero.eyebrow",
+      "sectionId": "ai-chat.hero.eyebrow",
+      "text": "Healthy & Happy AI"
+    },
+    {
+      "id": "my:ai-chat.hero.title",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: hero.title",
+      "sectionId": "ai-chat.hero.title",
+      "text": "ထုတ်ကုန်များနှင့် ကျန်းမာရေးဇာတ်လမ်းအကြောင်း မေးမြန်းပါ"
+    },
+    {
+      "id": "my:ai-chat.meta.description",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: meta.description",
+      "sectionId": "ai-chat.meta.description",
+      "text": "Healthy & Happy ပရောဂျက်အချက်အလက်များအပေါ် အခြေခံပြီး မေးခွန်းများ မေးနိုင်ပါသည်။"
+    },
+    {
+      "id": "my:ai-chat.meta.title",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: meta.title",
+      "sectionId": "ai-chat.meta.title",
+      "text": "AI စကားပြော"
+    },
+    {
+      "id": "my:ai-chat.panel.assistantLabel",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.assistantLabel",
+      "sectionId": "ai-chat.panel.assistantLabel",
+      "text": "Healthy & Happy အကူအညီပေးသူ"
+    },
+    {
+      "id": "my:ai-chat.panel.emptyDescription",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.emptyDescription",
+      "sectionId": "ai-chat.panel.emptyDescription",
+      "text": "ထုတ်ကုန်များ၊ ပါဝင်ပစ္စည်းများ၊ ဆုများ၊ ဆက်သွယ်ရန်အချက်အလက်များ သို့မဟုတ် Healthy & Happy အမှတ်တံဆိပ်အကြောင်း မေးနိုင်ပါသည်။"
+    },
+    {
+      "id": "my:ai-chat.panel.emptyTitle",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.emptyTitle",
+      "sectionId": "ai-chat.panel.emptyTitle",
+      "text": "မေးခွန်းတစ်ခုဖြင့် စတင်ပါ"
+    },
+    {
+      "id": "my:ai-chat.panel.inputLabel",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.inputLabel",
+      "sectionId": "ai-chat.panel.inputLabel",
+      "text": "စာသား"
+    },
+    {
+      "id": "my:ai-chat.panel.placeholder",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.placeholder",
+      "sectionId": "ai-chat.panel.placeholder",
+      "text": "Healthy & Happy အကြောင်း မေးပါ..."
+    },
+    {
+      "id": "my:ai-chat.panel.send",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.send",
+      "sectionId": "ai-chat.panel.send",
+      "text": "ပို့မည်"
+    },
+    {
+      "id": "my:ai-chat.panel.sending",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.sending",
+      "sectionId": "ai-chat.panel.sending",
+      "text": "ပို့နေသည်"
+    },
+    {
+      "id": "my:ai-chat.panel.sourceFallback",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.sourceFallback",
+      "sectionId": "ai-chat.panel.sourceFallback",
+      "text": "ပရောဂျက်ဒေတာ"
+    },
+    {
+      "id": "my:ai-chat.panel.sourcesLabel",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.sourcesLabel",
+      "sectionId": "ai-chat.panel.sourcesLabel",
+      "text": "ရင်းမြစ်များ"
+    },
+    {
+      "id": "my:ai-chat.panel.subtitle",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.subtitle",
+      "sectionId": "ai-chat.panel.subtitle",
+      "text": "ဝက်ဘ်ဆိုက်နှင့် ထုတ်ကုန်အကြောင်းအရာမှ အခြေခံထားသော အဖြေများ"
+    },
+    {
+      "id": "my:ai-chat.panel.title",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.title",
+      "sectionId": "ai-chat.panel.title",
+      "text": "ပရောဂျက်လမ်းညွှန်"
+    },
+    {
+      "id": "my:ai-chat.panel.userLabel",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: panel.userLabel",
+      "sectionId": "ai-chat.panel.userLabel",
+      "text": "သင်"
+    },
+    {
+      "id": "my:ai-chat.suggestions[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: suggestions[0]",
+      "sectionId": "ai-chat.suggestions[0]",
+      "text": "အရောင်းရဆုံး ထုတ်ကုန်တွေက ဘာတွေလဲ။"
+    },
+    {
+      "id": "my:ai-chat.suggestions[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: suggestions[1]",
+      "sectionId": "ai-chat.suggestions[1]",
+      "text": "ကွတ်ကီးတွေမှာ ဘယ်လို ပါဝင်ပစ္စည်းတွေ ပါလဲ။"
+    },
+    {
+      "id": "my:ai-chat.suggestions[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/ai-chat.json",
+      "contentType": "message",
+      "title": "ai-chat: suggestions[2]",
+      "sectionId": "ai-chat.suggestions[2]",
+      "text": "Healthy & Happy ကို ဘယ်လို ဆက်သွယ်ရမလဲ။"
+    },
+    {
+      "id": "my:awards.brandAlt",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: brandAlt",
+      "sectionId": "awards.brandAlt",
+      "text": "Healthy & Happy"
+    },
+    {
+      "id": "my:awards.certificateLabels[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[0]",
+      "sectionId": "awards.certificateLabels[0]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၁"
+    },
+    {
+      "id": "my:awards.certificateLabels[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[1]",
+      "sectionId": "awards.certificateLabels[1]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၂"
+    },
+    {
+      "id": "my:awards.certificateLabels[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[2]",
+      "sectionId": "awards.certificateLabels[2]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၃"
+    },
+    {
+      "id": "my:awards.certificateLabels[3]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[3]",
+      "sectionId": "awards.certificateLabels[3]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၄"
+    },
+    {
+      "id": "my:awards.certificateLabels[4]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[4]",
+      "sectionId": "awards.certificateLabels[4]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၅"
+    },
+    {
+      "id": "my:awards.certificateLabels[5]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[5]",
+      "sectionId": "awards.certificateLabels[5]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၆"
+    },
+    {
+      "id": "my:awards.certificateLabels[6]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[6]",
+      "sectionId": "awards.certificateLabels[6]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၇"
+    },
+    {
+      "id": "my:awards.certificateLabels[7]",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certificateLabels[7]",
+      "sectionId": "awards.certificateLabels[7]",
+      "text": "အသိအမှတ်ပြုလက်မှတ် ၈"
+    },
+    {
+      "id": "my:awards.certifications",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: certifications",
+      "sectionId": "awards.certifications",
+      "text": "အသိအမှတ်ပြုလက်မှတ်များ"
+    },
+    {
+      "id": "my:awards.items[0].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[0].description",
+      "sectionId": "awards.items[0].description",
+      "text": "Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆောင် SME အဖြစ် ထူးချွန်သော ခံနိုင်ရည်နှင့် ခေါင်းဆောင်မှုအတွက် အသိအမှတ်ပြုခံရပါသည်။"
+    },
+    {
+      "id": "my:awards.items[0].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[0].label",
+      "sectionId": "awards.items[0].label",
+      "text": "ဆု-၁"
+    },
+    {
+      "id": "my:awards.items[0].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[0].title",
+      "sectionId": "awards.items[0].title",
+      "text": "UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသမီးဦးဆောင် SME များအတွက် ခံနိုင်ရည်ရှိမှုဆု"
+    },
+    {
+      "id": "my:awards.items[1].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[1].description",
+      "sectionId": "awards.items[1].description",
+      "text": "အသိုက်အဝန်းအတွက် အပြုသဘောဆောင်သော အကျိုးသက်ရောက်မှုဖန်တီးနေသည့် အမျိုးသမီးစွန့်ဦးတီထွင်သူများ၏ လုပ်ဆောင်မှုကို ဂုဏ်ပြုသောဆု ဖြစ်ပါသည်။"
+    },
+    {
+      "id": "my:awards.items[1].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[1].label",
+      "sectionId": "awards.items[1].label",
+      "text": "ဆု-၂"
+    },
+    {
+      "id": "my:awards.items[1].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[1].title",
+      "sectionId": "awards.items[1].title",
+      "text": "၂၀၂၂ ခုနှစ် တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု"
+    },
+    {
+      "id": "my:awards.items[10].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[10].description",
+      "sectionId": "awards.items[10].description",
+      "text": "ဆုဖော်ပြချက် ၁၁"
+    },
+    {
+      "id": "my:awards.items[10].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[10].label",
+      "sectionId": "awards.items[10].label",
+      "text": "ဆု-၁၁"
+    },
+    {
+      "id": "my:awards.items[10].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[10].title",
+      "sectionId": "awards.items[10].title",
+      "text": "ဆုခေါင်းစဉ် ၁၁"
+    },
+    {
+      "id": "my:awards.items[2].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[2].description",
+      "sectionId": "awards.items[2].description",
+      "text": "ဆုဖော်ပြချက် ၃"
+    },
+    {
+      "id": "my:awards.items[2].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[2].label",
+      "sectionId": "awards.items[2].label",
+      "text": "ဆု-၃"
+    },
+    {
+      "id": "my:awards.items[2].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[2].title",
+      "sectionId": "awards.items[2].title",
+      "text": "ဆုခေါင်းစဉ် ၃"
+    },
+    {
+      "id": "my:awards.items[3].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[3].description",
+      "sectionId": "awards.items[3].description",
+      "text": "ဆုဖော်ပြချက် ၄"
+    },
+    {
+      "id": "my:awards.items[3].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[3].label",
+      "sectionId": "awards.items[3].label",
+      "text": "ဆု-၄"
+    },
+    {
+      "id": "my:awards.items[3].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[3].title",
+      "sectionId": "awards.items[3].title",
+      "text": "ဆုခေါင်းစဉ် ၄"
+    },
+    {
+      "id": "my:awards.items[4].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[4].description",
+      "sectionId": "awards.items[4].description",
+      "text": "ဆုဖော်ပြချက် ၅"
+    },
+    {
+      "id": "my:awards.items[4].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[4].label",
+      "sectionId": "awards.items[4].label",
+      "text": "ဆု-၅"
+    },
+    {
+      "id": "my:awards.items[4].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[4].title",
+      "sectionId": "awards.items[4].title",
+      "text": "ဆုခေါင်းစဉ် ၅"
+    },
+    {
+      "id": "my:awards.items[5].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[5].description",
+      "sectionId": "awards.items[5].description",
+      "text": "ဆုဖော်ပြချက် ၆"
+    },
+    {
+      "id": "my:awards.items[5].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[5].label",
+      "sectionId": "awards.items[5].label",
+      "text": "ဆု-၆"
+    },
+    {
+      "id": "my:awards.items[5].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[5].title",
+      "sectionId": "awards.items[5].title",
+      "text": "ဆုခေါင်းစဉ် ၆"
+    },
+    {
+      "id": "my:awards.items[6].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[6].description",
+      "sectionId": "awards.items[6].description",
+      "text": "ဆုဖော်ပြချက် ၇"
+    },
+    {
+      "id": "my:awards.items[6].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[6].label",
+      "sectionId": "awards.items[6].label",
+      "text": "ဆု-၇"
+    },
+    {
+      "id": "my:awards.items[6].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[6].title",
+      "sectionId": "awards.items[6].title",
+      "text": "ဆုခေါင်းစဉ် ၇"
+    },
+    {
+      "id": "my:awards.items[7].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[7].description",
+      "sectionId": "awards.items[7].description",
+      "text": "ဆုဖော်ပြချက် ၈"
+    },
+    {
+      "id": "my:awards.items[7].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[7].label",
+      "sectionId": "awards.items[7].label",
+      "text": "ဆု-၈"
+    },
+    {
+      "id": "my:awards.items[7].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[7].title",
+      "sectionId": "awards.items[7].title",
+      "text": "ဆုခေါင်းစဉ် ၈"
+    },
+    {
+      "id": "my:awards.items[8].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[8].description",
+      "sectionId": "awards.items[8].description",
+      "text": "ဆုဖော်ပြချက် ၉"
+    },
+    {
+      "id": "my:awards.items[8].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[8].label",
+      "sectionId": "awards.items[8].label",
+      "text": "ဆု-၉"
+    },
+    {
+      "id": "my:awards.items[8].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[8].title",
+      "sectionId": "awards.items[8].title",
+      "text": "ဆုခေါင်းစဉ် ၉"
+    },
+    {
+      "id": "my:awards.items[9].description",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[9].description",
+      "sectionId": "awards.items[9].description",
+      "text": "ဆုဖော်ပြချက် ၁၀"
+    },
+    {
+      "id": "my:awards.items[9].label",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[9].label",
+      "sectionId": "awards.items[9].label",
+      "text": "ဆု-၁၀"
+    },
+    {
+      "id": "my:awards.items[9].title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: items[9].title",
+      "sectionId": "awards.items[9].title",
+      "text": "ဆုခေါင်းစဉ် ၁၀"
+    },
+    {
+      "id": "my:awards.title",
+      "locale": "my",
+      "sourcePath": "messages/my/awards.json",
+      "contentType": "message",
+      "title": "awards: title",
+      "sectionId": "awards.title",
+      "text": "ဆုများနှင့် မီဒီယာ"
+    },
+    {
+      "id": "my:contact.address",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: address",
+      "sectionId": "contact.address",
+      "text": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။"
+    },
+    {
+      "id": "my:contact.call",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: call",
+      "sectionId": "contact.call",
+      "text": "ဖုန်းဆက်ရန်"
+    },
+    {
+      "id": "my:contact.emailUs",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: emailUs",
+      "sectionId": "contact.emailUs",
+      "text": "အီးမေးလ်ပို့ရန်"
+    },
+    {
+      "id": "my:contact.fields.email",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.email",
+      "sectionId": "contact.fields.email",
+      "text": "အီးမေးလ်"
+    },
+    {
+      "id": "my:contact.fields.firstName",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.firstName",
+      "sectionId": "contact.fields.firstName",
+      "text": "အမည်"
+    },
+    {
+      "id": "my:contact.fields.lastName",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.lastName",
+      "sectionId": "contact.fields.lastName",
+      "text": "မျိုးရိုးအမည်"
+    },
+    {
+      "id": "my:contact.fields.message",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: fields.message",
+      "sectionId": "contact.fields.message",
+      "text": "စာတို"
+    },
+    {
+      "id": "my:contact.follow",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: follow",
+      "sectionId": "contact.follow",
+      "text": "ကျွန်ုပ်တို့ကို လိုက်ရန်"
+    },
+    {
+      "id": "my:contact.location",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: location",
+      "sectionId": "contact.location",
+      "text": "တည်နေရာ"
+    },
+    {
+      "id": "my:contact.mapTitle",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: mapTitle",
+      "sectionId": "contact.mapTitle",
+      "text": "Healthy & Happy တည်နေရာ"
+    },
+    {
+      "id": "my:contact.social.facebook",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: social.facebook",
+      "sectionId": "contact.social.facebook",
+      "text": "Facebook"
+    },
+    {
+      "id": "my:contact.social.tiktok",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: social.tiktok",
+      "sectionId": "contact.social.tiktok",
+      "text": "TikTok"
+    },
+    {
+      "id": "my:contact.social.whatsapp",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: social.whatsapp",
+      "sectionId": "contact.social.whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "id": "my:contact.submit",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: submit",
+      "sectionId": "contact.submit",
+      "text": "ပို့မည်"
+    },
+    {
+      "id": "my:contact.title",
+      "locale": "my",
+      "sourcePath": "messages/my/contact.json",
+      "contentType": "message",
+      "title": "contact: title",
+      "sectionId": "contact.title",
+      "text": "ဆက်သွယ်ရန်"
+    },
+    {
+      "id": "my:home.awards.title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: awards.title",
+      "sectionId": "home.awards.title",
+      "text": "ဆုများနှင့် အသိအမှတ်ပြုမှုများ"
+    },
+    {
+      "id": "my:home.categories.items[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[0]",
+      "sectionId": "home.categories.items[0]",
+      "text": "ပရိုတင်း အကိုက်များ"
+    },
+    {
+      "id": "my:home.categories.items[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[1]",
+      "sectionId": "home.categories.items[1]",
+      "text": "သကြားမပါ မုန့်များ"
+    },
+    {
+      "id": "my:home.categories.items[2]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[2]",
+      "sectionId": "home.categories.items[2]",
+      "text": "အုတ်မုန့်များ"
+    },
+    {
+      "id": "my:home.categories.items[3]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[3]",
+      "sectionId": "home.categories.items[3]",
+      "text": "ကျန်းမာရေးနှင့်ညီသော အဆာပြေ"
+    },
+    {
+      "id": "my:home.categories.items[4]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: categories.items[4]",
+      "sectionId": "home.categories.items[4]",
+      "text": "မူရင်းစီးရီး"
+    },
+    {
+      "id": "my:home.categories.title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: categories.title",
+      "sectionId": "home.categories.title",
+      "text": "ထူးခြားသော ထုတ်ကုန်အမျိုးအစားများ"
+    },
+    {
+      "id": "my:home.contact.call",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.call",
+      "sectionId": "home.contact.call",
+      "text": "ဖုန်းဆက်ရန်"
+    },
+    {
+      "id": "my:home.contact.email",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.email",
+      "sectionId": "home.contact.email",
+      "text": "အီးမေးလ်"
+    },
+    {
+      "id": "my:home.contact.emailUs",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.emailUs",
+      "sectionId": "home.contact.emailUs",
+      "text": "အီးမေးလ်ပို့ရန်"
+    },
+    {
+      "id": "my:home.contact.firstName",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.firstName",
+      "sectionId": "home.contact.firstName",
+      "text": "အမည်"
+    },
+    {
+      "id": "my:home.contact.follow",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.follow",
+      "sectionId": "home.contact.follow",
+      "text": "ကျွန်ုပ်တို့ကို လိုက်ရန်"
+    },
+    {
+      "id": "my:home.contact.intro",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.intro",
+      "sectionId": "home.contact.intro",
+      "text": "စိတ်ဝင်စားသည်ဖြစ်စေ၊ အထူးလိုအပ်ချက်ရှိသည်ဖြစ်စေ၊ ကျွန်ုပ်တို့နှင့် ဆက်သွယ်လိုသည်ဖြစ်စေ သင့်ထံမှ ကြားလိုပါသည်။"
+    },
+    {
+      "id": "my:home.contact.lastName",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.lastName",
+      "sectionId": "home.contact.lastName",
+      "text": "မျိုးရိုးအမည်"
+    },
+    {
+      "id": "my:home.contact.location",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.location",
+      "sectionId": "home.contact.location",
+      "text": "တည်နေရာ"
+    },
+    {
+      "id": "my:home.contact.message",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.message",
+      "sectionId": "home.contact.message",
+      "text": "စာတို"
+    },
+    {
+      "id": "my:home.contact.social.facebook",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.social.facebook",
+      "sectionId": "home.contact.social.facebook",
+      "text": "Facebook"
+    },
+    {
+      "id": "my:home.contact.social.tiktok",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.social.tiktok",
+      "sectionId": "home.contact.social.tiktok",
+      "text": "TikTok"
+    },
+    {
+      "id": "my:home.contact.social.whatsapp",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.social.whatsapp",
+      "sectionId": "home.contact.social.whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "id": "my:home.contact.submit",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.submit",
+      "sectionId": "home.contact.submit",
+      "text": "ပို့မည်"
+    },
+    {
+      "id": "my:home.contact.title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: contact.title",
+      "sectionId": "home.contact.title",
+      "text": "ဆက်သွယ်ရန်"
+    },
+    {
+      "id": "my:home.hero.action",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: hero.action",
+      "sectionId": "home.hero.action",
+      "text": "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို ကြည့်ရန်"
+    },
+    {
+      "id": "my:home.hero.tagline",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: hero.tagline",
+      "sectionId": "home.hero.tagline",
+      "text": "နေ့စဉ်အာဟာရ မိတ်ဖက်၊ ခြေလှမ်းတိုင်းအတွက်!"
+    },
+    {
+      "id": "my:home.hero.title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: hero.title",
+      "sectionId": "home.hero.title",
+      "text": "Healthy & Happy Myanmar"
+    },
+    {
+      "id": "my:home.journey.features[0].content",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].content",
+      "sectionId": "home.journey.features[0].content",
+      "text": "Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၌ အမျိုးသမီးစွန့်ဦးတီထွင်သူ သုံးဦးနှင့် အာဟာရပညာရှင်တစ်ဦးက တည်ထောင်ခဲ့သည်။ ကျွန်ုပ်တို့၏ ရည်မှန်းချက်မှာ ဆန်းသစ်သော အပင်အခြေပြု အာဟာရထုတ်ကုန်များဖြင့် မြန်မာနိုင်ငံ၏ ကျန်းမာရေးနှင့် လူနေမှုပုံစံကို မြှင့်တင်ရန် ဖြစ်သည်။"
+    },
+    {
+      "id": "my:home.journey.features[0].id",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].id",
+      "sectionId": "home.journey.features[0].id",
+      "text": "story"
+    },
+    {
+      "id": "my:home.journey.features[0].label",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].label",
+      "sectionId": "home.journey.features[0].label",
+      "text": "ကျွန်ုပ်တို့၏ ဇာတ်လမ်း"
+    },
+    {
+      "id": "my:home.journey.features[0].title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[0].title",
+      "sectionId": "home.journey.features[0].title",
+      "text": "ကျွန်ုပ်တို့၏ ဇာတ်လမ်း"
+    },
+    {
+      "id": "my:home.journey.features[1].content",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].content",
+      "sectionId": "home.journey.features[1].content",
+      "text": "ဒေသထွက် အရည်အသွေးမြင့် ပါဝင်ပစ္စည်းများဖြင့် ပြုလုပ်ထားသော အာဟာရပြည့်ဝသည့် အဆာပြေများနှင့် အပင်အခြေပြု အစားအစာများကို သေချာရွေးချယ်ပေးထားပါသည်။"
+    },
+    {
+      "id": "my:home.journey.features[1].id",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].id",
+      "sectionId": "home.journey.features[1].id",
+      "text": "products"
+    },
+    {
+      "id": "my:home.journey.features[1].label",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].label",
+      "sectionId": "home.journey.features[1].label",
+      "text": "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ"
+    },
+    {
+      "id": "my:home.journey.features[1].title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[1].title",
+      "sectionId": "home.journey.features[1].title",
+      "text": "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ"
+    },
+    {
+      "id": "my:home.journey.features[2].content",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].content",
+      "sectionId": "home.journey.features[2].content",
+      "text": "Healthy & Happy Myanmar အောက်ရှိ ကျွန်ုပ်တို့၏ ထုတ်ကုန်လိုင်းများသည် ဒေသတွင်း ကျန်းမာရေးလှုပ်ရှားမှုကို ဦးဆောင်နေပါသည်။ ယုံကြည်စိတ်ချရမှုနှင့် ကောင်းမွန်သော အာဟာရကို ကိုယ်စားပြုပါသည်။"
+    },
+    {
+      "id": "my:home.journey.features[2].id",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].id",
+      "sectionId": "home.journey.features[2].id",
+      "text": "brands"
+    },
+    {
+      "id": "my:home.journey.features[2].label",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].label",
+      "sectionId": "home.journey.features[2].label",
+      "text": "ကျွန်ုပ်တို့၏ အမှတ်တံဆိပ်များ"
+    },
+    {
+      "id": "my:home.journey.features[2].title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.features[2].title",
+      "sectionId": "home.journey.features[2].title",
+      "text": "ကျွန်ုပ်တို့၏ အမှတ်တံဆိပ်များ"
+    },
+    {
+      "id": "my:home.journey.imageAlt.journey",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.imageAlt.journey",
+      "sectionId": "home.journey.imageAlt.journey",
+      "text": "Healthy & Happy ခရီးစဉ်"
+    },
+    {
+      "id": "my:home.journey.imageAlt.product",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.imageAlt.product",
+      "sectionId": "home.journey.imageAlt.product",
+      "text": "Healthy & Happy ထုတ်ကုန်"
+    },
+    {
+      "id": "my:home.journey.logoAlt",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.logoAlt",
+      "sectionId": "home.journey.logoAlt",
+      "text": "Healthy & Happy"
+    },
+    {
+      "id": "my:home.journey.paragraphs[0]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.paragraphs[0]",
+      "sectionId": "home.journey.paragraphs[0]",
+      "text": "Healthy & Happy သည် ကိုယ်ပိုင်ခံစားချက်နက်ရှိုင်းသော ဇာတ်လမ်းမှ စတင်ခဲ့ပါသည်။ တည်ထောင်သူတစ်ဦးသည် အာဟာရပြည့်ဝသော အစားအစာမရရှိခြင်းကြောင့် ဖခင်ကို ကင်ဆာရောဂါဖြင့် ဆုံးရှုံးခဲ့ရသည်။"
+    },
+    {
+      "id": "my:home.journey.paragraphs[1]",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.paragraphs[1]",
+      "sectionId": "home.journey.paragraphs[1]",
+      "text": "ဤဆုံးရှုံးမှုက အာဟာရချို့တဲ့မှုကြောင့် ကာကွယ်နိုင်သော ကျန်းမာရေးပြဿနာများကို မည်သူမျှ မခံစားရစေရန် စိတ်အားထက်သန်စေခဲ့သည်။ ကျွန်ုပ်တို့သည် လက်လှမ်းမီပြီး အာဟာရပြည့်ဝသော အစားအစာဖြင့် အပြောင်းအလဲဖန်တီးရန် ကတိပြုပါသည်။"
+    },
+    {
+      "id": "my:home.journey.seeMore",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.seeMore",
+      "sectionId": "home.journey.seeMore",
+      "text": "အသေးစိတ်ကြည့်ရန်"
+    },
+    {
+      "id": "my:home.journey.title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: journey.title",
+      "sectionId": "home.journey.title",
+      "text": "Happy & Healthy ၏ ခရီးစဉ်"
+    },
+    {
+      "id": "my:home.production.description",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: production.description",
+      "sectionId": "home.production.description",
+      "text": "Protein Bite Cookies အပါအဝင် ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို အာဟာရမျှတစေရန် ဂရုတစိုက် ထုတ်လုပ်ပါသည်။ ကုလားပဲ၊ မြေပဲနှင့် အုတ်စေ့များကဲ့သို့ ဒေသထွက် ပါဝင်ပစ္စည်းများဖြင့် ပြုလုပ်ထားသောကြောင့် အာဟာရပြည့်ဝပြီး အရသာရှိပါသည်။"
+    },
+    {
+      "id": "my:home.production.locationAction",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: production.locationAction",
+      "sectionId": "home.production.locationAction",
+      "text": "တည်နေရာအသေးစိတ်ကြည့်ရန်"
+    },
+    {
+      "id": "my:home.production.mapTitle",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: production.mapTitle",
+      "sectionId": "home.production.mapTitle",
+      "text": "တည်နေရာမြေပုံ"
+    },
+    {
+      "id": "my:home.production.seeMore",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: production.seeMore",
+      "sectionId": "home.production.seeMore",
+      "text": "အသေးစိတ်ကြည့်ရန်"
+    },
+    {
+      "id": "my:home.production.title",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: production.title",
+      "sectionId": "home.production.title",
+      "text": "ကျွန်ုပ်တို့၏ ထုတ်ကုန်များ အသက်ဝင်လာရာ ထုတ်လုပ်ရေးနေရာ"
+    },
+    {
+      "id": "my:not-found.action",
+      "locale": "my",
+      "sourcePath": "messages/my/not-found.json",
+      "contentType": "message",
+      "title": "not-found: action",
+      "sectionId": "not-found.action",
+      "text": "ပင်မစာမျက်နှာသို့ ပြန်ရန်"
+    },
+    {
+      "id": "my:not-found.title",
+      "locale": "my",
+      "sourcePath": "messages/my/not-found.json",
+      "contentType": "message",
+      "title": "not-found: title",
+      "sectionId": "not-found.title",
+      "text": "စာမျက်နှာ မတွေ့ပါ"
+    },
+    {
+      "id": "my:shell.footer.address",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.address",
+      "sectionId": "shell.footer.address",
+      "text": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။"
+    },
+    {
+      "id": "my:shell.footer.brandAlt",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.brandAlt",
+      "sectionId": "shell.footer.brandAlt",
+      "text": "Healthy & Happy လိုဂို"
+    },
+    {
+      "id": "my:shell.footer.columns.company",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.columns.company",
+      "sectionId": "shell.footer.columns.company",
+      "text": "ကုမ္ပဏီ"
+    },
+    {
+      "id": "my:shell.footer.columns.products",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.columns.products",
+      "sectionId": "shell.footer.columns.products",
+      "text": "ထုတ်ကုန်များ"
+    },
+    {
+      "id": "my:shell.footer.columns.support",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.columns.support",
+      "sectionId": "shell.footer.columns.support",
+      "text": "အကူအညီ"
+    },
+    {
+      "id": "my:shell.footer.copyright",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.copyright",
+      "sectionId": "shell.footer.copyright",
+      "text": "မူပိုင်ခွင့် © 2026 Healthy & Happy | မူပိုင်ခွင့်အားလုံး ရရှိပြီး"
+    },
+    {
+      "id": "my:shell.footer.description",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.description",
+      "sectionId": "shell.footer.description",
+      "text": "အကောင်းဆုံး သဘာဝပါဝင်ပစ္စည်းများဖြင့် မေတ္တာဖြင့် ထုတ်လုပ်ထားပါသည်။ အကိုက်တိုင်းတွင် ကွာခြားမှုကို ခံစားပါ။"
+    },
+    {
+      "id": "my:shell.footer.follow",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.follow",
+      "sectionId": "shell.footer.follow",
+      "text": "ကျွန်ုပ်တို့၏ ခရီးစဉ်ကို လိုက်ပါ"
+    },
+    {
+      "id": "my:shell.footer.links.about",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.about",
+      "sectionId": "shell.footer.links.about",
+      "text": "ကျွန်ုပ်တို့အကြောင်း"
+    },
+    {
+      "id": "my:shell.footer.links.awards",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.awards",
+      "sectionId": "shell.footer.links.awards",
+      "text": "ဆုများနှင့် အသိအမှတ်ပြုလက်မှတ်များ"
+    },
+    {
+      "id": "my:shell.footer.links.contact",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.contact",
+      "sectionId": "shell.footer.links.contact",
+      "text": "ဆက်သွယ်ရန်"
+    },
+    {
+      "id": "my:shell.footer.links.faq",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.faq",
+      "sectionId": "shell.footer.links.faq",
+      "text": "မေးလေ့ရှိသော မေးခွန်းများ"
+    },
+    {
+      "id": "my:shell.footer.links.help",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.help",
+      "sectionId": "shell.footer.links.help",
+      "text": "အကူအညီဌာန"
+    },
+    {
+      "id": "my:shell.footer.links.nutCookies",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.nutCookies",
+      "sectionId": "shell.footer.links.nutCookies",
+      "text": "အခွံမာသီး ဆီးချိုမုန့်"
+    },
+    {
+      "id": "my:shell.footer.links.productInfo",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.productInfo",
+      "sectionId": "shell.footer.links.productInfo",
+      "text": "ထုတ်ကုန်အချက်အလက်"
+    },
+    {
+      "id": "my:shell.footer.links.products",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.products",
+      "sectionId": "shell.footer.links.products",
+      "text": "ထုတ်ကုန်များ"
+    },
+    {
+      "id": "my:shell.footer.links.proteinBites",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.proteinBites",
+      "sectionId": "shell.footer.links.proteinBites",
+      "text": "ပရိုတင်း အကိုက်များ"
+    },
+    {
+      "id": "my:shell.footer.links.spinachCookies",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.links.spinachCookies",
+      "sectionId": "shell.footer.links.spinachCookies",
+      "text": "ဟင်းနုနွယ် မုန့်"
+    },
+    {
+      "id": "my:shell.footer.newsAction",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.newsAction",
+      "sectionId": "shell.footer.newsAction",
+      "text": "နောက်ဆုံးသတင်းများ ကြည့်ရန်"
+    },
+    {
+      "id": "my:shell.footer.newsText",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.newsText",
+      "sectionId": "shell.footer.newsText",
+      "text": "နောက်ဆုံးပြင်ဆင်ထားသော ထုတ်ကုန်သတင်းများကို ကြည့်ရှုပါ"
+    },
+    {
+      "id": "my:shell.footer.productOfMyanmar",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.productOfMyanmar",
+      "sectionId": "shell.footer.productOfMyanmar",
+      "text": "မြန်မာ့ထုတ်ကုန်"
+    },
+    {
+      "id": "my:shell.footer.social.facebook",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.facebook",
+      "sectionId": "shell.footer.social.facebook",
+      "text": "Facebook"
+    },
+    {
+      "id": "my:shell.footer.social.instagram",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.instagram",
+      "sectionId": "shell.footer.social.instagram",
+      "text": "Instagram"
+    },
+    {
+      "id": "my:shell.footer.social.tiktok",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.tiktok",
+      "sectionId": "shell.footer.social.tiktok",
+      "text": "TikTok"
+    },
+    {
+      "id": "my:shell.footer.social.whatsapp",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.social.whatsapp",
+      "sectionId": "shell.footer.social.whatsapp",
+      "text": "WhatsApp"
+    },
+    {
+      "id": "my:shell.footer.tagline",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: footer.tagline",
+      "sectionId": "shell.footer.tagline",
+      "text": "နေ့စဉ်အာဟာရ မိတ်ဖက်၊ ခြေလှမ်းတိုင်းအတွက်"
+    },
+    {
+      "id": "my:shell.header.brandAlt",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.brandAlt",
+      "sectionId": "shell.header.brandAlt",
+      "text": "Healthy & Happy Myanmar လိုဂို"
+    },
+    {
+      "id": "my:shell.header.brandName",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.brandName",
+      "sectionId": "shell.header.brandName",
+      "text": "Healthy & Happy"
+    },
+    {
+      "id": "my:shell.header.closeNavigation",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.closeNavigation",
+      "sectionId": "shell.header.closeNavigation",
+      "text": "လမ်းညွှန်ကို ပိတ်ရန်"
+    },
+    {
+      "id": "my:shell.header.languages.burmese",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.languages.burmese",
+      "sectionId": "shell.header.languages.burmese",
+      "text": "မြန်မာ"
+    },
+    {
+      "id": "my:shell.header.languages.english",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.languages.english",
+      "sectionId": "shell.header.languages.english",
+      "text": "English"
+    },
+    {
+      "id": "my:shell.header.links.about",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.about",
+      "sectionId": "shell.header.links.about",
+      "text": "ကျွန်ုပ်တို့အကြောင်း"
+    },
+    {
+      "id": "my:shell.header.links.awards",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.awards",
+      "sectionId": "shell.header.links.awards",
+      "text": "ဆုများ"
+    },
+    {
+      "id": "my:shell.header.links.chat",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.chat",
+      "sectionId": "shell.header.links.chat",
+      "text": "AI စကားပြော"
+    },
+    {
+      "id": "my:shell.header.links.contact",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.contact",
+      "sectionId": "shell.header.links.contact",
+      "text": "ဆက်သွယ်ရန်"
+    },
+    {
+      "id": "my:shell.header.links.home",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.home",
+      "sectionId": "shell.header.links.home",
+      "text": "ပင်မ"
+    },
+    {
+      "id": "my:shell.header.links.products",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.links.products",
+      "sectionId": "shell.header.links.products",
+      "text": "ထုတ်ကုန်များ"
+    },
+    {
+      "id": "my:shell.header.openNavigation",
+      "locale": "my",
+      "sourcePath": "messages/my/shell.json",
+      "contentType": "message",
+      "title": "shell: header.openNavigation",
+      "sectionId": "shell.header.openNavigation",
+      "text": "လမ်းညွှန်ကို ဖွင့်ရန်"
+    },
+    {
+      "id": "my:product.iron-enriched-cookies-1",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "sectionId": "product.iron-enriched-cookies-1",
+      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: နေ့စဉ် အာဟာရအတွက် သံဓာတ်ကြွယ်ဝသော ကွတ်ကီးများ။\nIngredients: ဂျုံကြမ်းမှုန့်၊ သံဓာတ်ဖြည့် အုတ်ဂျုံ၊ စတီဗီးယား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.iron-enriched-cookies-2",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "sectionId": "product.iron-enriched-cookies-2",
+      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: ပရိုတင်းစီးရီး\nDescription: တက်ကြွသောနေ့စဉ်ဘဝအတွက် ပရိုတင်းနှင့် သံဓာတ်ဖြည့် ကွတ်ကီးများ။\nIngredients: ပရိုတင်းမှုန့်၊ သံဓာတ်ပါ အုတ်ဂျုံ၊ မုန့်ချိုသီး၊ ထောပတ်\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.iron-enriched-cookies-3",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "sectionId": "product.iron-enriched-cookies-3",
+      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: နေ့စဉ်ညီမျှသော အာဟာရအတွက် ကောင်းမွန်သည့် ကွတ်ကီးများ။\nIngredients: ဂျုံကြမ်း၊ အုတ်ဂျုံမှုန့်၊ သဘာဝအချိုဓာတ်\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.iron-enriched-cookies-4",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "sectionId": "product.iron-enriched-cookies-4",
+      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: ကြွပ်ရွပြီး ပေါ့ပါးကာ သဘာဝအာဟာရရှိသော နေ့စဉ်မုန့်။\nIngredients: အုတ်ဂျုံ၊ စတီဗီးယား၊ ထောပတ်၊ ပင်လယ်ဆား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.nut-cookies-1",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - အခွံမာသီး ကွတ်ကီး",
+      "sectionId": "product.nut-cookies-1",
+      "text": "Name: Thone Pan Hla - အခွံမာသီး ကွတ်ကီး\nSeries: ပရိုတင်းစီးရီး\nDescription: အာဟာရဖြည့်တင်းပြီး စွမ်းအင်ပေးသော အခွံမာသီး ကွတ်ကီးများ။\nIngredients: ဗာဒံသီး၊ အခွံမာသီး၊ အုတ်ဂျုံမှုန့်၊ စတီဗီးယား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.nut-cookies-2",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - အခွံမာသီး ကွတ်ကီး",
+      "sectionId": "product.nut-cookies-2",
+      "text": "Name: Thone Pan Hla - အခွံမာသီး ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: သဘာဝအချိုအရသာဖြင့် ပြည့်ဝသော အခွံမာသီး ကွတ်ကီးများ။\nIngredients: အခွံမာသီးစုံ၊ ထောပတ်၊ သစ်ကြံပိုးခေါက်၊ မုန့်ချိုသီး\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.spinach-cookies-1",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး",
+      "sectionId": "product.spinach-cookies-1",
+      "text": "Name: Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး\nSeries: ပရိုတင်းစီးရီး\nDescription: ကျန်းမာရေးအတွက် သံဓာတ်နှင့် အမျှင်ဓာတ်ကြွယ်ဝသော ကွတ်ကီးများ။\nIngredients: ဟင်းနုနွယ်အနှစ်၊ ဂျုံကြမ်း၊ သံလွင်ဆီ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.spinach-cookies-2",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး",
+      "sectionId": "product.spinach-cookies-2",
+      "text": "Name: Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: ဟင်းနုနွယ်၏ ကောင်းမြတ်မှုကို အချိန်တိုင်း အရသာရှိစွာ ဖုတ်ထားသော ကွတ်ကီး။\nIngredients: ဟင်းနုနွယ်၊ အုတ်ဂျုံမှုန့်၊ အီရစ်သရစ်တော၊ ဥ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    }
+  ]
+}
