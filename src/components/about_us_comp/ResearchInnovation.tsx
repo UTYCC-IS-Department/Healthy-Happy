@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 import { getImagePath } from './imageAssets';
 import type { AboutMessages } from "@/i18n/message-types";
 import type { Locale } from "@/i18n/config";
-
+//nth//
 // ============================================================================
 // TypeScript Interfaces
 // ============================================================================
