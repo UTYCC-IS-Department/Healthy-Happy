@@ -158,6 +158,46 @@ export const aboutUsImages: ImageAsset[] = [
     name: 'About us',
     path:'/images/aboutusimg/hand1.jpg',
   },
+  {
+    id: 'aboutus-30',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_44_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-31',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_39_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-32',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_0382.jpg',
+  },
+  {
+    id: 'aboutus-33',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_0321.jpg',
+  },
+  {
+    id: 'aboutus-34',
+    name: 'About us',
+    path:'/images/aboutusimg/Millets Iron-Fortified  (4).jpg',
+  },
+  {
+    id: 'aboutus-35',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_48_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-36',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_6975.jpg',
+  },
+  {
+    id: 'aboutus-37',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_1415.jpg',
+  },
 ];
 
 // Healthy & Happy Brand Images

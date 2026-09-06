@@ -56,10 +56,10 @@ const createResearchData = (messages: AboutMessages["research"]): ResearchInnova
     largeCirclePlaceholderId: `circle-large-${index + 1}`,
     largeCircleImage: index === 0 ? 'aboutus-28' : 'aboutus-29',
     features: [
-      { id: `f${index + 1}-1`, image: 'feature-01' },
-      { id: `f${index + 1}-2`, image: 'feature-02' },
-      { id: `f${index + 1}-3`, image: 'feature-03' },
-      { id: `f${index + 1}-4`, image: 'feature-04' },
+      { id: `f${index + 1}-1`, image: index === 0 ? 'aboutus-30' : 'aboutus-34' },
+      { id: `f${index + 1}-2`, image: index === 0 ? 'aboutus-31' : 'aboutus-35' },
+      { id: `f${index + 1}-3`, image: index === 0 ? 'aboutus-32' : 'aboutus-36' },
+      { id: `f${index + 1}-4`, image: index === 0 ? 'aboutus-33' : 'aboutus-37' },
     ],
   })),
 });
@@ -125,6 +125,30 @@ const textFadeVariants: Variants = {
 // ============================================================================
 const cssStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+  /* Container for the feature card */
+  .ri-feature-box {
+    position: relative;
+    overflow: hidden; /* Clips any image overflowing the box boundaries */
+    border-radius: 8px; /* Optional: smooth corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Image styling */
+  .ri-feature-box img {
+    width: 100%;
+    height: 200px; /* Set your desired fixed height */
+    object-fit: cover; /* Maintains aspect ratio without stretching/distorting */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+  }
+
+  /* Optional: Zoom effect on hover */
+  .ri-feature-box:hover img {
+    transform: scale(1.05);
+  }
 
   .ri-section-wrapper {
     width: 100%;
@@ -679,7 +703,14 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                       {/* Feature Grid */}
                       <div className="ri-feature-grid">
                         {section.features.map((feature: FeatureBoxData) => (
-                          <div key={feature.id} className="ri-feature-box" />
+                          <div key={feature.id} className="ri-feature-box">
+                            {feature.image && (
+                              <img 
+                                src={getImagePath(feature.image)} 
+                                alt={feature.image || "Feature image"} 
+                              />
+                            )}
+                          </div>
                         ))}
                       </div>
 
