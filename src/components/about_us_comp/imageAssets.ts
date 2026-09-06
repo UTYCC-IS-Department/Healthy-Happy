@@ -138,6 +138,26 @@ export const aboutUsImages: ImageAsset[] = [
     name: 'About us',
     path:'/images/aboutusimg/snack.jpg',
   },
+  {
+    id: 'aboutus-26',
+    name: 'About us',
+    path:'/images/aboutusimg/hand.jpg',
+  },
+  {
+    id: 'aboutus-27',
+    name: 'About us',
+    path:'/images/aboutusimg/squueze.jpg',
+  },
+  {
+    id: 'aboutus-28',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_24_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-29',
+    name: 'About us',
+    path:'/images/aboutusimg/hand1.jpg',
+  },
 ];
 
 // Healthy & Happy Brand Images

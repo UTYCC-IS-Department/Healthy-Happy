@@ -52,9 +52,9 @@ const createResearchData = (messages: AboutMessages["research"]): ResearchInnova
     title: section.title,
     description: section.description,
     smallCirclePlaceholderId: `circle-small-${index + 1}`,
-    smallCircleImage: index === 0 ? 'aboutus-01' : 'aboutus-02',
+    smallCircleImage: index === 0 ? 'aboutus-26' : 'aboutus-27',
     largeCirclePlaceholderId: `circle-large-${index + 1}`,
-    largeCircleImage: index === 0 ? 'aboutus-03' : 'aboutus-04',
+    largeCircleImage: index === 0 ? 'aboutus-28' : 'aboutus-29',
     features: [
       { id: `f${index + 1}-1`, image: 'feature-01' },
       { id: `f${index + 1}-2`, image: 'feature-02' },
