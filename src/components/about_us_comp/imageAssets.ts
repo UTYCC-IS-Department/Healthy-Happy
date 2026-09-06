@@ -87,7 +87,57 @@ export const aboutUsImages: ImageAsset[] = [
     id: 'aboutus-15',
     name: 'About Us Image 15',
     path:'/images/aboutusimg/peanut.png',
-  }
+  },
+  {
+    id: 'aboutus-16',
+    name: 'About Us Image 16',  
+    path:'/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (5).jpg',
+  },
+  {
+    id: 'aboutus-17',
+    name: 'About Us Image 17',  
+    path:'/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (12).jpg',
+  },
+  {
+    id: 'aboutus-18',
+    name: 'About Us Image 18',  
+    path:'/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (20).jpg',
+  },
+  {
+    id: 'aboutus-19',
+    name: 'About Us Image 19',  
+    path:'/images/aboutusimg/IMG_2915.jpg',
+  },
+  {
+    id: 'aboutus-20',
+    name: 'About Us Image 20',  
+    path:'/images/aboutusimg/photo_45_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-21',
+    name: 'About Us Image 21',  
+    path:'/images/aboutusimg/photo_55_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-22',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_54_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-23',
+    name: 'About us',
+    path:'/images/aboutusimg/vender.jpg',
+  },
+  {
+    id: 'aboutus-24',
+    name: 'About us',
+    path:'/images/aboutusimg/fluid.jpg',
+  },
+  {
+    id: 'aboutus-25',
+    name: 'About us',
+    path:'/images/aboutusimg/snack.jpg',
+  },
 ];
 
 // Healthy & Happy Brand Images
