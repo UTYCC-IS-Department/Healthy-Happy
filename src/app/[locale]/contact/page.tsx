@@ -85,7 +85,7 @@ export default function ContactPage() {
 
       {/* Call Us Box */}
       <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-2">
-        <Phone className="h-5 w-5 shrink-0 fill-black text-black" />
+        <Phone className="h-5 w-5 shrink-0  text-black" />
         <div className="text-xs">
           <span className="block font-bold text-black">Call Us</span>
           <span className="font-medium text-neutral-800">+95 969650030</span>
@@ -94,7 +94,7 @@ export default function ContactPage() {
 
       {/* Email Us Box */}
       <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-3">
-        <Mail className="h-5 w-5 shrink-0 fill-black text-black" />
+        <Mail className="h-5 w-5 shrink-0  text-black" />
         <div className="text-xs">
           <span className="block font-bold text-black">Email Us</span>
           <span className="break-all font-medium text-neutral-800">
@@ -105,11 +105,11 @@ export default function ContactPage() {
 
       {/* Location Box */}
       <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-3">
-        <MapPin className="h-5 w-5 shrink-0 fill-black text-black" />
+        <MapPin className="h-5 w-5 shrink-0 text-black" />
         <div className="text-xs">
           <span className="block font-bold text-black">Location</span>
           <span className="font-medium leading-tight text-neutral-800">
-            လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
+            လိပ်စာ - ၇၅ လမ်း၊ ၁၁၃ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
           </span>
         </div>
       </div>

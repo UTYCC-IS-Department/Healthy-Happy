@@ -61,14 +61,18 @@ export function SiteFooter() {
 
             <p className="max-w-sm text-xs font-extrabold leading-relaxed text-black">
               Made with love, using only the finest natural ingredients. Taste
-              the difference in every bite.
+              the difference in every bite.<br></br><br></br>R&D-Driven Food Manufacturing 
+From Idea to Product. 
+We develop and manufacture innovative, nutrition-focused food products — including OEM & Custom 
+Product Development.
             </p>
 
             <div className="space-y-2 text-xs font-medium text-neutral-700">
               <p className="mt-auto flex items-start gap-2 font-bold">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-black" />
                 <span>
-                  လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
+                  လိပ်စာ - 75th Street, Between 113th  and 114th Street , Pyigyitagon 
+Township , Mandalay , 05051 , Myanmar.
                 </span>
               </p>
               <p className="mt-5 flex items-center gap-2">
@@ -143,21 +147,21 @@ export function SiteFooter() {
           <div className="hidden lg:block" />
 
           {/* Partner Boxes aligned under Company, Products, Support */}
-          <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center sm:gap-4 lg:col-span-2">
+          {/* <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center sm:gap-4 lg:col-span-2">
             <div className="flex h-12 w-full items-center justify-center bg-[#c28e8e] text-sm font-bold text-black sm:w-28">
               UTYCC
             </div>
             <div className="h-12 w-full bg-[#c28e8e] sm:w-28" />
             <div className="h-12 w-full bg-[#c28e8e] sm:w-28" />
             <div className="h-12 w-full bg-[#c28e8e] sm:w-28" />
-          </div>
+          </div> */}
 
           {/* Product of Myanmar aligned on the right */}
-          <div className="text-center md:text-right">
+          {/* <div className="text-center md:text-right">
             <span className="text-xl font-extrabold text-black">
               Product of Myanmar
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright Line */}
