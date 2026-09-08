@@ -1,0 +1,20 @@
+{
+  "returnToProducts": "Return to Products",
+  "price": "Price",
+  "ingredients": "Ingredients",
+  "description": "Description",
+  "orderNow": "Order Now",
+  "newsText": "Check Out news for last updated products",
+  "newsAction": "Check out updated news",
+  "showImage": "Show image {number} of {product}",
+  "products": {
+    "iron-enriched-cookies-1": { "ingredients": "Whole Wheat Flour, Iron Fortified Oats, Stevia" },
+    "iron-enriched-cookies-2": { "ingredients": "Protein Flour, Iron Oats, Monk Fruit, Butter" },
+    "iron-enriched-cookies-3": { "ingredients": "Whole Wheat, Oat Flour, Natural Sweetener" },
+    "iron-enriched-cookies-4": { "ingredients": "Oats, Stevia, Butter, Sea Salt" },
+    "spinach-cookies-1": { "ingredients": "Spinach Extract, Whole Wheat, Olive Oil" },
+    "spinach-cookies-2": { "ingredients": "Spinach, Oat Flour, Erythritol, Eggs" },
+    "nut-cookies-1": { "ingredients": "Almonds, Walnuts, Oat Flour, Stevia" },
+    "nut-cookies-2": { "ingredients": "Mixed Nuts, Butter, Cinnamon, Monk Fruit" }
+  }
+}

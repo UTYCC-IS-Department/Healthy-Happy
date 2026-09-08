@@ -1,12 +1,12 @@
-"use client";
+import { notFound } from "next/navigation";
+import HomeClient from "./home-client";
+import { hasLocale } from "@/i18n/config";
+import { getMessages } from "@/i18n/get-messages";
+import type { HomeMessages } from "@/i18n/message-types";
 
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } from "lucide-react";
-import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
-import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
-import { assets } from "@/lib/site-data";
-import { useEffect, useState } from "react";
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!hasLocale(locale)) notFound();
 
 interface Feature {
   id: string;

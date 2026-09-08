@@ -11,10 +11,10 @@ import {
 } from "lucide-react";
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
 import { assets } from "@/lib/site-data";
+import type { Locale } from "@/i18n/config";
+import type { ShellMessages } from "@/i18n/message-types";
 
-
-
-export function SiteFooter() {
+export function SiteFooter({ locale, messages }: { locale: Locale; messages: ShellMessages["footer"] }) {
   return (
     <footer className="relative w-full bg-white text-neutral-800">
       {/* Connected Floating Green Banner */}
@@ -22,13 +22,13 @@ export function SiteFooter() {
         <div className="mx-auto max-w-5xl px-4 py-2 sm:px-10">
           <div className="flex flex-col items-center justify-between gap-4 rounded-2xl bg-[#15b000] px-6 py-6 shadow-md sm:flex-row sm:px-10 sm:py-9">
             <p className="text-center text-base font-bold text-white sm:text-left sm:text-lg">
-              Check Out news for last updated products
+              {messages.newsText}
             </p>
             <Link
-              href="/en/products"
+              href={`/${locale}/products`}
               className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#6c6c6c] px-5 py-2 text-xs font-semibold text-white transition hover:bg-neutral-800"
             >
-              Check out updated news <ArrowRight className="size-3.5" />
+              {messages.newsAction} <ArrowRight className="size-3.5" />
             </Link>
           </div>
         </div>
@@ -43,7 +43,7 @@ export function SiteFooter() {
               <span className="max-h-50 rounded-md border-none bg-white p-1 max-w-[100px]">
                 <Image
                   src={assets.logo}
-                  alt="Healthy & Happy Logo"
+                  alt={messages.brandAlt}
                   width={80}
                   height={40}
                   className="h-auto w-full object-contain"
@@ -54,7 +54,7 @@ export function SiteFooter() {
                   Healthy &amp; Happy
                 </h3>
                 <p className="mt-3 text-[11px] font-bold text-black">
-                  Daily Nutrition Partner, Every Step of the Way
+                  {messages.tagline}
                 </p>
               </div>
             </div>
@@ -87,19 +87,19 @@ Township , Mandalay , 05051 , Myanmar.
 
             <div className="pt-2">
               <p className="mb-2 text-xs font-bold text-black">
-                Follow Our Journey
+                {messages.follow}
               </p>
               <div className="flex gap-4 text-base text-black">
-                <a aria-label="Facebook" href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.facebook} href="#" className="hover:opacity-75">
                   <SiFacebook />
                 </a>
-                <a aria-label="TikTok" href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.tiktok} href="#" className="hover:opacity-75">
                   <SiTiktok />
                 </a>
-                <a aria-label="Instagram" href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.instagram} href="#" className="hover:opacity-75">
                   <SiInstagram />
                 </a>
-                <a aria-label="WhatsApp" href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.whatsapp} href="#" className="hover:opacity-75">
                   <SiWhatsapp />
                 </a>
               </div>
@@ -108,35 +108,35 @@ Township , Mandalay , 05051 , Myanmar.
 
           {/* Company Links */}
           <FooterColumn
-            title="Company"
+            title={messages.columns.company}
             icon={<Building2 className="size-4 text-black" />}
             links={[
-              ["Products", "/en/products"],
-              ["About Us", "/en/about"],
-              ["Awards & Certifications", "/en/awards"],
-              ["Contact Us", "/en/contact"],
+              [messages.links.products, `/${locale}/products`],
+              [messages.links.about, `/${locale}/about`],
+              [messages.links.awards, `/${locale}/awards`],
+              [messages.links.contact, `/${locale}/contact`],
             ]}
           />
 
           {/* Products Links */}
           <FooterColumn
-            title="Products"
+            title={messages.columns.products}
             icon={<ShoppingBag className="size-4 text-black" />}
             links={[
-              ["Protein Bites", "/en/products"],
-              ["Nut Diabetes Cookies", "/en/products/nut-cookies-1"],
-              ["Spinach Cookies", "/en/products/spinach-cookies-1"],
+              [messages.links.proteinBites, `/${locale}/products`],
+              [messages.links.nutCookies, `/${locale}/products/nut-cookies-1`],
+              [messages.links.spinachCookies, `/${locale}/products/spinach-cookies-1`],
             ]}
           />
 
           {/* Support Links */}
           <FooterColumn
-            title="Support"
+            title={messages.columns.support}
             icon={<HelpCircle className="size-4 text-black" />}
             links={[
-              ["Help Center", "/en/contact"],
-              ["Product Info", "/en/about#info"],
-              ["FAQ", "/en/faq"],
+              [messages.links.help, `/${locale}/contact`],
+              [messages.links.productInfo, `/${locale}/about#info`],
+              [messages.links.faq, `/${locale}/faq`],
             ]}
           />
         </div>
@@ -159,14 +159,14 @@ Township , Mandalay , 05051 , Myanmar.
           {/* Product of Myanmar aligned on the right */}
           {/* <div className="text-center md:text-right">
             <span className="text-xl font-extrabold text-black">
-              Product of Myanmar
+              {messages.productOfMyanmar}
             </span>
           </div> */}
         </div>
 
         {/* Copyright Line */}
         <div className="mt-10 text-center text-xs font-bold text-black sm:mt-16">
-          Copyright © 2026 Healthy &amp; Happy | All rights reserved
+          {messages.copyright}
         </div>
       </div>
     </footer>

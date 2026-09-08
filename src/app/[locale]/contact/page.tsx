@@ -1,8 +1,12 @@
-"use client";
+import { notFound } from "next/navigation";
+import ContactClient from "./contact-client";
+import { hasLocale } from "@/i18n/config";
+import { getMessages } from "@/i18n/get-messages";
+import type { ContactMessages } from "@/i18n/message-types";
 
-import { Mail, MapPin, Phone, Send } from "lucide-react";
-import { SiFacebook, SiTiktok, SiWhatsapp } from "react-icons/si";
-import type { ReactNode } from "react";
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  if (!hasLocale(locale)) notFound();
 
 export default function ContactPage() {
   return (
@@ -116,35 +120,4 @@ export default function ContactPage() {
     </section>
   </div>
 );
-}
-
-function Field({ label, type = "text" }: { label: string; type?: string }) {
-  return (
-    <label className="block w-full">
-      <input
-        required
-        type={type}
-        placeholder={label}
-        className="w-full rounded-2xl bg-[#dadada] px-5 py-3.5 text-sm font-medium text-black placeholder:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-black"
-      />
-    </label>
-  );
-}
-
-function ContactCard({
-  icon,
-  title,
-  text,
-}: {
-  icon: ReactNode;
-  title: string;
-  text: string;
-}) {
-  return (
-    <article className="flex flex-col items-center justify-center rounded-2xl bg-[#dadada] p-5 text-center">
-      <span className="mb-2 flex items-center justify-center text-black">{icon}</span>
-      <h2 className="text-xs font-extrabold text-black">{title}</h2>
-      {text && <p className="mt-1 break-all text-xs font-medium text-neutral-800">{text}</p>}
-    </article>
-  );
 }
