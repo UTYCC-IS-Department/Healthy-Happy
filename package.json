@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "i18n:check": "node scripts/check-message-parity.mjs"
   },
   "dependencies": {
     "flag-icons": "^7.5.0",

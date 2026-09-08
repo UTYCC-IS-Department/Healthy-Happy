@@ -7,10 +7,16 @@ import { useEffect, useState } from "react";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { assets, products } from "@/lib/site-data";
+import enProduct from "../../messages/en/product.json";
+import { assets, productMedia } from "@/lib/site-data";
 // Swiper Styles
 import "swiper/css";
 import "swiper/css/navigation";
+
+const products = productMedia.map((media) => ({
+  ...media,
+  ...enProduct.products[media.id as keyof typeof enProduct.products],
+}));
 
 export function ProductCarousel() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
@@ -111,11 +117,17 @@ export function ProductCarousel() {
   );
 }
 const CAROUSEL_ITEMS = [
-  { id: 1, title: "Product 1", src: assets.product },
-  { id: 2, title: "Product 2", src: assets.product },
-  { id: 3, title: "Product 3", src: assets.product },
-  { id: 4, title: "Product 4", src: assets.product },
-  { id: 5, title: "Product 5", src: assets.product },
+  { id: 1, title: "Healthy & Happy award", src: assets.award1 },
+  { id: 2, title: "Healthy & Happy award", src: assets.award2 },
+  { id: 3, title: "Healthy & Happy award", src: assets.award3 },
+  { id: 4, title: "Healthy & Happy award", src: assets.award4 },
+  { id: 5, title: "Healthy & Happy award", src: assets.award5 },
+  { id: 6, title: "Healthy & Happy award", src: assets.award6 },
+  { id: 7, title: "Healthy & Happy award", src: assets.award7 },
+  { id: 8, title: "Healthy & Happy award", src: assets.award8 },
+  { id: 9, title: "Healthy & Happy award", src: assets.award9 },
+  { id: 10, title: "Healthy & Happy award", src: assets.award10 },
+  { id: 11, title: "Healthy & Happy award", src: assets.award11 },
 ];
 
 export default function PerfectCoverCarousel() {
@@ -161,12 +173,12 @@ export default function PerfectCoverCarousel() {
                   isActive ? "0%" : isLeft ? "-35%" : "35%"
                 }) scale(${isActive ? 1 : 0.85})`,
               }}
-              className={`absolute w-[250px] sm:w-[350px] md:w-[380px] lg:w-[420px] aspect-[362/366] rounded-[32px] cursor-pointer transition-all duration-500 ease-out overflow-hidden shadow-2xl ${
+              className={`absolute w-[250px] sm:w-[350px] md:w-[380px] lg:w-[420px] aspect-[362/366] rounded-[32px] bg-white cursor-pointer transition-all duration-500 ease-out overflow-hidden shadow-2xl ${
                 isActive
                   ? "translate-x-0 scale-100 opacity-100 "
                   : isLeft
-                    ? "-translate-x-[35%] sm:-translate-x-[52%] scale-[0.88] opacity-75 hover:opacity-90 bg-gray-300"
-                    : "translate-x-[35%] sm:translate-x-[52%] scale-[0.88] opacity-75 hover:opacity-90 bg-gray-300"
+                    ? "-translate-x-[35%] sm:-translate-x-[52%] scale-[0.88] opacity-75 hover:opacity-90"
+                    : "translate-x-[35%] sm:translate-x-[52%] scale-[0.88] opacity-75 hover:opacity-90"
               }`}
             >
               {/* Image */}
@@ -175,16 +187,13 @@ export default function PerfectCoverCarousel() {
                 alt={item.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover pointer-events-none"
+                className="object-contain pointer-events-none"
               />
-
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
             </div>
           );
         })}
       </div>
-      <div className="mt-5 text-sm text-gray-700 sm:text-base max-w-3xl mx-auto bg-[#f5f0ee] p-4 rounded-lg shadow-lg">
+      <div className="mt-5 max-w-3xl mx-auto rounded-lg bg-white p-4 text-sm text-gray-700 shadow-lg sm:text-base">
         <p className="font-bold text-left">“The Most Responsible Business Award 2023”</p>
         <span className="text-left text-xs sm:text-sm">
           The most responsible business award in women entrepreneurship program by myanmar women

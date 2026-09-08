@@ -1,0 +1,17 @@
+{
+  "title": "Contact Us",
+  "mapTitle": "Healthy & Happy location",
+  "fields": {
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "message": "Message"
+  },
+  "submit": "Submit",
+  "follow": "Follow Us On",
+  "call": "Call Us",
+  "emailUs": "Email Us",
+  "location": "Location",
+  "address": "Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar.",
+  "social": { "facebook": "Facebook", "whatsapp": "WhatsApp", "tiktok": "TikTok" }
+}

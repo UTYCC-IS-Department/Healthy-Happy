@@ -1,0 +1,39 @@
+{
+  "header": {
+    "brandAlt": "Healthy & Happy Myanmar logo",
+    "brandName": "Healthy & Happy",
+    "links": { "home": "Home", "about": "About Us", "products": "Products", "awards": "Awards", "contact": "Contact Us" },
+    "languages": { "english": "English", "burmese": "Myanmar" },
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation"
+  },
+  "footer": {
+    "newsText": "Check out news for recently updated products",
+    "newsAction": "Check out updated news",
+    "brandAlt": "Healthy & Happy logo",
+    "tagline": "Daily Nutrition Partner, Every Step of the Way",
+    "description": "Made with love, using only the finest natural ingredients. Taste the difference in every bite.",
+    "address": "Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar.",
+    "follow": "Follow Our Journey",
+    "social": { "facebook": "Facebook", "tiktok": "TikTok", "instagram": "Instagram", "whatsapp": "WhatsApp" },
+    "columns": {
+      "company": "Company",
+      "products": "Products",
+      "support": "Support"
+    },
+    "links": {
+      "products": "Products",
+      "about": "About Us",
+      "awards": "Awards & Certifications",
+      "contact": "Contact Us",
+      "proteinBites": "Protein Bites",
+      "nutCookies": "Nut Diabetes Cookies",
+      "spinachCookies": "Spinach Cookies",
+      "help": "Help Center",
+      "productInfo": "Product Info",
+      "faq": "FAQ"
+    },
+    "productOfMyanmar": "Product of Myanmar",
+    "copyright": "Copyright © 2026 Healthy & Happy | All rights reserved"
+  }
+}
