@@ -86,7 +86,7 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
 
       {/* Call Us Box */}
       <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-2">
-        <Phone className="h-5 w-5 shrink-0 fill-black text-black" />
+        <Phone className="h-5 w-5 shrink-0 text-black" />
         <div className="text-xs">
           <span className="block font-bold text-black">{messages.call}</span>
           <span className="font-medium text-neutral-800">+95 969650030</span>
@@ -95,7 +95,7 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
 
       {/* Email Us Box */}
       <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-3">
-        <Mail className="h-5 w-5 shrink-0 fill-black text-black" />
+        <Mail className="h-5 w-5 shrink-0 text-black" />
         <div className="text-xs">
           <span className="block font-bold text-black">{messages.emailUs}</span>
           <span className="break-all font-medium text-neutral-800">
@@ -106,7 +106,7 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
 
       {/* Location Box */}
       <div className="flex items-center gap-3 rounded-2xl bg-[#dadada] p-4 lg:col-span-3">
-        <MapPin className="h-5 w-5 shrink-0 fill-black text-black" />
+        <MapPin className="h-5 w-5 shrink-0 text-black" />
         <div className="text-xs">
           <span className="block font-bold text-black">{messages.location}</span>
           <span className="font-medium leading-tight text-neutral-800">

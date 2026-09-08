@@ -424,7 +424,7 @@ function ContactSection({ messages }: { messages: HomeMessages["contact"] }) {
             <div className="text-xs">
               <span className="block font-extrabold text-black">{messages.location}</span>
               <span className="font-bold leading-tight text-black">
-                လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊
+                လိပ်စာ - ၇၅ လမ်း၊ ၁၁၃ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊
                 မြန်မာ။
               </span>
             </div>
