@@ -282,10 +282,11 @@ export function getImageById(id: string): ImageAsset | undefined {
 // Helper function to get image path by ID
 export function getImagePath(id: string): string | undefined {
   const image = getImageById(id);
-  return image?.path;
+  return image ? cloudinaryImage(image.path) : undefined;
 }
 
 // Helper function to get all images
 export function getAllImages(): ImageAsset[] {
   return [...aboutUsImages, ...healthyHappyImages, ...heroImages];
 }
+import { cloudinaryImage } from "@/lib/cloudinary";
