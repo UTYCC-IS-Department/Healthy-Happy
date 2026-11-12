@@ -87,7 +87,30 @@ export const aboutUsImages: ImageAsset[] = [
     id: 'aboutus-15',
     name: 'About Us Image 15',
     path:'/images/aboutusimg/peanut.png',
-  }
+  },
+  // Retailer logos
+  { id: 'retailer-grand-hantha', name: 'Grand Hantha Hospital', path: '/images/aboutusimg/0-02-06-0081c869d100cea5e8314e68ff3ff8fee68f820a14a8b9160ae2de4316ebba54_8da6e4a081b3780e.png' },
+  { id: 'retailer-ko-han-tin', name: 'Ko Han Tin Pharmacy', path: '/images/aboutusimg/0-02-06-148cb8a4a93783882d617ba16c09fabca8d3fe8737285f5ea48ce83b7cd52b86_c8d94eb471140ef0.png' },
+  { id: 'retailer-marketplace', name: 'Marketplace by City Mart', path: '/images/aboutusimg/0-02-06-9857b2a8076a0fe45062126cd6c1c58a123bff42cf4cecb6dfe822516d92267c_9ff9aa6a8f2a0ce4.png' },
+  { id: 'retailer-citymart', name: 'City Mart Supermarket', path: '/images/aboutusimg/0-02-06-f80d7eff451ebd0ec9aa531e6f57b44480689deb6b023afdaad61366dc1825e2_613ea79a2d7c6a29.png' },
+  { id: 'retailer-ocean', name: 'Ocean Supercenter', path: '/images/aboutusimg/0-02-06-f75cbaaaeae0d9deac685b66e1dba929c589062a683038155fd66dfe18f4c033_2de47d8255b6161.png' },
+  { id: 'retailer-makro', name: 'Makro Myanmar', path: '/images/aboutusimg/0-02-06-0dd40092aef4ecb1563a467854730ff8c79b76e922f8a5d226abefab21049e17_e7f459386a4832d7.png' },
+  { id: 'retailer-healthy-happy', name: 'Healthy & Happy Store', path: '/healthy-happy/Healthy_&_Happy_Myanmar_Logo_1_1784649192455.png' },
+  { id: 'retailer-myanwen', name: 'MYANWEN Network', path: '/images/aboutusimg/0-02-06-4bd3197436d420db6a45da3a703284493ab8859ea3c61b8f146aee9355a87f79_c1507721a36d49e5.png' },
+  // Partner logos
+  { id: 'partner-mahidol', name: 'Mahidol University', path: '/images/aboutusimg/0-02-06-f32ca52d27cf92d32b6573a2a8cbac86e7a50d481a5031b00c90f237e39662cf_d53af37bb8c41c2c.png' },
+  { id: 'partner-fidsl', name: 'FIDSL', path: '/images/aboutusimg/0-02-06-f62677f3e3a73303469d8bd895df2e34c8195ed32e8b176b6f8f2fcbcca11bc9_d2629094ac8a5b98.png' },
+  { id: 'partner-eurofins', name: 'Eurofins', path: '/images/aboutusimg/0-02-06-2a2f70edfd92c6851b6d3307e2988a16386c2ede192bba4241c3b4ed6eb1264f_bab37715059579c3.png' },
+  { id: 'partner-mohas', name: 'Ministry of Health & Sports', path: '/healthy-happy/MOHAS.png' },
+  { id: 'partner-msme', name: 'MSME Myanmar', path: '/images/aboutusimg/0-02-06-787609da3f6218cfa5984e6bc0277a127e0f9f667a9316b14eb84fa644a085e4_c07ee3f094c14cfd.png' },
+  { id: 'partner-umfcci', name: 'UMFCCI', path: '/images/aboutusimg/0-02-06-8e4be1da8644c46ad5cd8607a2716c397f089aa4cb712ce44eaee9ab66c7811a_a4a6475e35ae5f8e.png' },
+  // History milestone images
+  { id: 'history-founder-award', name: 'Founder Award', path: '/healthy-happy/certification1.png' },
+  { id: 'history-nutrition-recipe', name: 'Nutritionist Recipe', path: '/healthy-happy/IMG_0319_1_1784649192457.png' },
+  { id: 'history-mission-trophy', name: 'Mission Trophy', path: '/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png' },
+  { id: 'history-operations', name: 'Operations Photo', path: '/healthy-happy/Screenshot 2024-12-14 115502.png' },
+  { id: 'history-innovation-award', name: 'Innovation Award', path: '/healthy-happy/certification2.jpg' },
+
 ];
 
 // Healthy & Happy Brand Images
@@ -284,6 +307,23 @@ export function getImagePath(id: string): string | undefined {
   const image = getImageById(id);
   return image ? cloudinaryImage(image.path) : undefined;
 }
+
+// Helper to get retailer logo by 1-based index (1..8)
+export function getRetailerLogo(index: number): string | undefined {
+  const retailerIds = [
+    'retailer-grand-hantha',
+    'retailer-ko-han-tin',
+    'retailer-marketplace',
+    'retailer-citymart',
+    'retailer-ocean',
+    'retailer-makro',
+    'retailer-healthy-happy',
+    'retailer-myanwen',
+  ];
+  const id = retailerIds[index - 1];
+  return id ? getImagePath(id) : undefined;
+}
+
 
 // Helper function to get all images
 export function getAllImages(): ImageAsset[] {

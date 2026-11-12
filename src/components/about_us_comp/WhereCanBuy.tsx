@@ -5,7 +5,7 @@
 import React, { useState } from "react";
 
 import { motion, type Variants } from "framer-motion";
-
+import { getRetailerLogo } from "./imageAssets";
 import type { AboutMessages } from "@/i18n/message-types";
 
 
@@ -234,7 +234,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ messages }) => {
 
                       <motion.div
 
-                        className="absolute -top-4 right-10 w-10 h-10 sm:-top-5 sm:right-11 sm:w-12 sm:h-12 md:right-10 md:w-14 md:h-14 lg:-top-6 lg:right-10 lg:w-14 lg:h-14 bg-[#825355] rounded-full z-10"
+                        className="absolute -top-4 right-10 w-10 h-10 sm:-top-5 sm:right-11 sm:w-12 sm:h-12 md:right-10 md:w-14 md:h-14 lg:-top-6 lg:right-10 lg:w-14 lg:h-14 bg-white rounded-full z-10 p-1.5 shadow-md flex items-center justify-center overflow-hidden"
 
                         initial={{ opacity: 0, scale: 0 }}
 
@@ -252,7 +252,15 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ messages }) => {
 
                         }}
 
-                      />
+                      >
+                        {getRetailerLogo(item.id) && (
+                          <img
+                            src={getRetailerLogo(item.id)}
+                            alt={item.name}
+                            className="w-full h-full object-contain"
+                          />
+                        )}
+                      </motion.div>
 
 
 
