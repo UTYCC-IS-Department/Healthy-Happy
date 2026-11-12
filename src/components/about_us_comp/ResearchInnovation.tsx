@@ -566,24 +566,30 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            {researchInnovationData.leftCards.map((cardItem: LeftCardData, index: number) => (
-              <motion.div
-                key={cardItem.id}
-                className="ri-canvas-card"
-                variants={cardVariants}
-                whileHover={{
-                  y: -12,
-                  scale: 1.03,
-                  boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
-                  transition: { type: 'spring', stiffness: 300, damping: 18 },
-                }}
-                style={{
-                  backgroundImage: `url(${getImagePath(`aboutus-0${index + 9}`) || ''})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                }}
-              />
-            ))}
+            {researchInnovationData.leftCards.map((cardItem: LeftCardData, index: number) => {
+              const partnerLeftCardIds = ['partner-mahidol', 'partner-fidsl', 'partner-eurofins'];
+              const partnerId = partnerLeftCardIds[index] || `aboutus-0${index + 9}`;
+              return (
+                <motion.div
+                  key={cardItem.id}
+                  className="ri-canvas-card"
+                  variants={cardVariants}
+                  whileHover={{
+                    y: -12,
+                    scale: 1.03,
+                    boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
+                    transition: { type: 'spring', stiffness: 300, damping: 18 },
+                  }}
+                  style={{
+                    backgroundImage: `url(${getImagePath(partnerId) || ''})`,
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundColor: '#ffffff',
+                  }}
+                />
+              );
+            })}
           </motion.div>
 
           {/* Right Column Container */}
@@ -628,9 +634,11 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                           initial="hidden"
                           animate={inView ? 'visible' : 'hidden'}
                           style={{
-                            backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-01' : 'aboutus-02') || ''})`,
-                            backgroundSize: 'cover',
+                            backgroundImage: `url(${getImagePath(index === 0 ? 'partner-mohas' : 'partner-msme') || ''})`,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
                             backgroundPosition: 'center',
+                            backgroundColor: '#ffffff',
                           }}
                         />
                         <div className="ri-row-text-content">
@@ -678,9 +686,11 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
                         style={{
-                          backgroundImage: `url(${getImagePath(index === 0 ? 'aboutus-03' : 'aboutus-04') || ''})`,
-                          backgroundSize: 'cover',
+                          backgroundImage: `url(${getImagePath(index === 0 ? 'history-innovation-award' : 'partner-umfcci') || ''})`,
+                          backgroundSize: 'contain',
+                          backgroundRepeat: 'no-repeat',
                           backgroundPosition: 'center',
+                          backgroundColor: '#ffffff',
                         }}
                       />
                     </div>
