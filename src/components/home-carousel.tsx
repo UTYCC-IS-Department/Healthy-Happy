@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -131,15 +132,17 @@ const CAROUSEL_ITEMS = [
 
 export default function PerfectCoverCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
 
   // ⏱️ Auto-play loop set to 10 seconds (10,000 ms)
   useEffect(() => {
+    if (shouldReduceMotion) return;
     const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev === CAROUSEL_ITEMS.length - 1 ? 0 : prev + 1));
+      setActiveIndex((prev) => (prev + 1) % CAROUSEL_ITEMS.length);
     }, 10000); // 👈 10 seconds loop time
 
     return () => clearInterval(timer); // Clean up timer on unmount/interaction
-  }, [activeIndex]);
+  }, [shouldReduceMotion]);
 
   return (
     <div className="w-full py-10 px-4 overflow-hidden">
@@ -214,6 +217,7 @@ const PRODUCTION_IMAGES = [
 // Production Carousel Component
 export function ProductionPlaceCarousel() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <div className="relative h-full w-full">
@@ -223,7 +227,7 @@ export function ProductionPlaceCarousel() {
         onSwiper={setSwiper}
         slidesPerView={1}
         loop
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={shouldReduceMotion ? false : { delay: 4000, disableOnInteraction: false }}
         className="h-full w-full overflow-hidden rounded-3xl"
       >
         {PRODUCTION_IMAGES.map((item) => (

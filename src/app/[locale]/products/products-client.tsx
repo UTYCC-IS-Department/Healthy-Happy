@@ -4,8 +4,10 @@ import Image from "next/image";
 import { Search, X } from "lucide-react";
 import { useMemo, useState } from "react";
 import { ProductCard } from "@/components/product-card";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import type { Locale, Product, ProductListMessages } from "@/lib/product-catalog";
 import { assets } from "@/lib/site-data";
+import { motion } from "framer-motion";
 
 export function ProductsClient({
   locale,
@@ -56,11 +58,14 @@ export function ProductsClient({
 
   return (
     <div className="min-h-screen bg-background">
+      <ScrollReveal>
       <header className="px-4 pb-4 pt-8 text-center">
         <h1 className="text-5xl font-bold leading-tight tracking-tight">{messages.title}</h1>
       </header>
+      </ScrollReveal>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative mb-8 h-56 overflow-hidden rounded-3xl sm:h-72 lg:h-80">
+        <ScrollReveal className="mb-8">
+        <div className="relative h-56 overflow-hidden rounded-3xl sm:h-72 lg:h-80">
           <Image
             src={assets.banner}
             alt={messages.bannerAlt}
@@ -71,9 +76,11 @@ export function ProductsClient({
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-black/5 to-transparent" />
         </div>
+        </ScrollReveal>
+        <ScrollReveal className="mb-8" delay={0.05}>
         <section
           aria-label={messages.filter}
-          className="mb-8 rounded-2xl border bg-card p-4 sm:p-5"
+          className="rounded-2xl border bg-card p-4 sm:p-5"
         >
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -108,7 +115,7 @@ export function ProductsClient({
                   type="button"
                   aria-pressed={!activeCategory}
                   onClick={() => setActiveCategory(null)}
-                  className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${!activeCategory ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
+                  className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-95 ${!activeCategory ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
                 >
                   {messages.allCategories}
                 </button>
@@ -118,7 +125,7 @@ export function ProductsClient({
                     type="button"
                     aria-pressed={activeCategory === category}
                     onClick={() => setActiveCategory(category)}
-                    className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${activeCategory === category ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
+                    className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-95 ${activeCategory === category ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
                   >
                     {category}
                   </button>
@@ -140,20 +147,33 @@ export function ProductsClient({
             )}
           </div>
         </section>
+        </ScrollReveal>
         <div className="w-full">
           {filtered.length > 0 ? (
             <div className="mb-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {filtered.map((product) => (
-                <ProductCard
+              {filtered.map((product, index) => (
+                <motion.div
                   key={product.id}
-                  product={product}
-                  locale={locale}
-                  bestSellerLabel={messages.bestSeller}
-                />
+                  layout
+                  initial={{ opacity: 0, y: 24, scale: 0.97 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{
+                    duration: 0.45,
+                    delay: Math.min(index * 0.05, 0.25),
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
+                >
+                  <ProductCard
+                    product={product}
+                    locale={locale}
+                    bestSellerLabel={messages.bestSeller}
+                  />
+                </motion.div>
               ))}
             </div>
           ) : (
-            <div className="mb-12 rounded-3xl border border-dashed bg-card px-6 py-16 text-center">
+            <ScrollReveal className="mb-12">
+            <div className="rounded-3xl border border-dashed bg-card px-6 py-16 text-center">
               <p className="text-base font-semibold text-foreground">{messages.noResults}</p>
               <button
                 type="button"
@@ -163,9 +183,11 @@ export function ProductsClient({
                 {messages.clearFilters}
               </button>
             </div>
+            </ScrollReveal>
           )}
         </div>
-        <div className="mb-12 flex flex-wrap items-center justify-between gap-4 rounded-xl bg-[#e5e5e5] px-6 py-5">
+        <ScrollReveal className="mb-12">
+        <div className="flex flex-wrap items-center justify-between gap-4 rounded-xl bg-[#e5e5e5] px-6 py-5">
           <p className="text-sm font-medium">{messages.newsText}</p>
           <a
             href={`/${locale}/products`}
@@ -174,6 +196,7 @@ export function ProductsClient({
             {messages.newsAction} →
           </a>
         </div>
+        </ScrollReveal>
       </div>
     </div>
   );

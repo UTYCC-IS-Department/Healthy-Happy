@@ -79,14 +79,19 @@
   "whereCanBuy": {
     "title": "Where Can Buy",
     "retailers": [
-      "Grandmother Hospital",
-      "Shan Dila Pharmacy",
-      "Ku Kin Tin Pharmacy",
-      "Market Plaza",
+      "Grand Hantha Hospital",
+      "Shan Ohh Pharmacy",
+      "Ko Hin Tin Pharmacy",
+      "One Stop",
       "CityMart",
-      "Healthy & Happy Store",
-      "Family Pharmacy",
-      "Local Partners"
+      "Oceania Supermarket",
+      "Makro Wholesales",
+      "Foodland Minimart",
+      "DMart",
+      "Life Plus",
+      "Sein Gay Har",
+      "Healthy & Happy Store"
+
     ],
     "note": "Apart from major modern trade venues, our products are widely available at prominent regional supermarkets and trusted local retail shops across the country"
   }

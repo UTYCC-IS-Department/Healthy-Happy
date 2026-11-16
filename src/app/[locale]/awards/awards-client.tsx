@@ -12,7 +12,7 @@ import { motion, type Variants } from "framer-motion";
 const sectionVariants: Variants = {
   hidden: {
     opacity: 0,
-    y: 70,
+    y: 30,
   },
   visible: {
     opacity: 1,
@@ -27,8 +27,8 @@ const sectionVariants: Variants = {
 const leftVariants: Variants = {
   hidden: {
     opacity: 0,
-    x: -80,
-    scale: 0.95,
+    x: -36,
+    scale: 0.97,
   },
   visible: {
     opacity: 1,
@@ -44,8 +44,8 @@ const leftVariants: Variants = {
 const rightVariants: Variants = {
   hidden: {
     opacity: 0,
-    x: 80,
-    scale: 0.95,
+    x: 36,
+    scale: 0.97,
   },
   visible: {
     opacity: 1,
@@ -71,8 +71,8 @@ const certificationsContainer: Variants = {
 const certificationItem: Variants = {
   hidden: {
     opacity: 0,
-    y: 40,
-    scale: 0.92,
+    y: 24,
+    scale: 0.97,
   },
   visible: {
     opacity: 1,
@@ -333,7 +333,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
       <section className="mx-auto max-w-7xl px-4 py-12">
         <motion.h2
           className="mb-8 text-center text-3xl font-bold text-primary"
-          initial={{ opacity: 0, y: -25 }}
+          initial={{ opacity: 0, y: -16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{
@@ -355,8 +355,8 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
               key={certiImage}
               variants={certificationItem}
               whileHover={{
-                y: -8,
-                scale: 1.04,
+                y: -4,
+                scale: 1.02,
                 transition: {
                   type: "spring",
                   stiffness: 350,

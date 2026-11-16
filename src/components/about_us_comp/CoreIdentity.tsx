@@ -9,27 +9,27 @@ interface CoreIdentityItem { id: string; title: string; heading: string; descrip
 export const CoreIdentity: React.FC<{ messages: AboutMessages["coreIdentity"] }> = ({ messages }) => {
   const coreIdentityItems: CoreIdentityItem[] = messages.items;
   const cardVariants: Variants = {
-    hidden: { opacity: 0, y: 80, scale: 0.92 },
+    hidden: { opacity: 0, y: 32, scale: 0.96 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.7, ease: "easeOut" } },
   };
 
   const mainCardVariants: Variants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0, y: 24 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] } },
   };
 
   const topTabVariants: Variants = {
-    hidden: { opacity: 0, y: -25, scale: 0.85 },
+    hidden: { opacity: 0, y: -14, scale: 0.92 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { delay: 0.25, duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
   };
 
   const contentVariants: Variants = {
-    hidden: { opacity: 0, y: 25 },
+    hidden: { opacity: 0, y: 16 },
     visible: { opacity: 1, y: 0, transition: { delay: 0.4, duration: 0.5, ease: "easeOut" } },
   };
 
   const bottomVariants: Variants = {
-    hidden: { opacity: 0, y: 40 },
+    hidden: { opacity: 0, y: 24 },
     visible: { opacity: 1, y: 0, transition: { delay: 0.3, duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
   };
 
@@ -38,7 +38,7 @@ export const CoreIdentity: React.FC<{ messages: AboutMessages["coreIdentity"] }>
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-center mb-12 sm:mb-16 md:mb-20 text-black tracking-tight"
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
@@ -60,7 +60,7 @@ export const CoreIdentity: React.FC<{ messages: AboutMessages["coreIdentity"] }>
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.25 }}
-                whileHover={{ y: -10, scale: 1.02, transition: { type: "spring", stiffness: 500, damping: 25 } }}
+                whileHover={{ y: -5, scale: 1.02, transition: { type: "spring", stiffness: 500, damping: 25 } }}
               >
                 <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
                   <motion.div
@@ -87,7 +87,7 @@ export const CoreIdentity: React.FC<{ messages: AboutMessages["coreIdentity"] }>
                     />
                     <motion.div
                       className="w-32 sm:w-40 md:w-48 h-16 sm:h-18 md:h-20 bg-[#16b300] rounded-4xl shadow-lg translate-y-3 sm:translate-y-4 md:translate-y-5"
-                      initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                      initial={{ opacity: 0, y: 20, scale: 0.9 }}
                       whileInView={{ opacity: 1, y: 0, scale: 1 }}
                       viewport={{ once: true, amount: 0.25 }}
                       transition={{ delay: index * 0.18 + 0.45, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}

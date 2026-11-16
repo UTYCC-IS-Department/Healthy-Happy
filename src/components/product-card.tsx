@@ -14,7 +14,7 @@ export function ProductCard({
   return (
     <Link
       href={`/${locale}/products/${product.id}`}
-      className="group flex h-full flex-col overflow-hidden rounded-3xl border bg-card shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      className="group flex h-full flex-col overflow-hidden rounded-3xl border bg-card shadow-sm transition duration-300 hover:-translate-y-1 hover:scale-[1.015] hover:shadow-xl"
     >
       <div className="relative m-3 aspect-square overflow-hidden rounded-2xl bg-[#eef1e8]">
         {product.isBestSeller && (
