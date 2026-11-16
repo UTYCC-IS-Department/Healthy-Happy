@@ -73,6 +73,131 @@ export const aboutUsImages: ImageAsset[] = [
     name: 'About Us Image 12',
     path: '/images/aboutusimg/0-02-06-f80d7eff451ebd0ec9aa531e6f57b44480689deb6b023afdaad61366dc1825e2_613ea79a2d7c6a29.png',
   },
+  {
+    id: 'aboutus-13',
+    name: 'About Us Image 13',
+    path:'/images/aboutusimg/H&H_Vinyl_3.png',
+  },
+  {
+    id: 'aboutus-14',
+    name: 'About Us Image 14',  
+    path:'/images/aboutusimg/mill.jpg',
+  },
+  {
+    id: 'aboutus-15',
+    name: 'About Us Image 15',
+    path:'/images/aboutusimg/peanut.png',
+  },
+  {
+    id: 'aboutus-16',
+    name: 'About Us Image 16',  
+    path:'/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (5).jpg',
+  },
+  {
+    id: 'aboutus-17',
+    name: 'About Us Image 17',  
+    path:'/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (12).jpg',
+  },
+  {
+    id: 'aboutus-18',
+    name: 'About Us Image 18',  
+    path:'/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (20).jpg',
+  },
+  {
+    id: 'aboutus-19',
+    name: 'About Us Image 19',  
+    path:'/images/aboutusimg/IMG_2915.jpg',
+  },
+  {
+    id: 'aboutus-20',
+    name: 'About Us Image 20',  
+    path:'/images/aboutusimg/photo_45_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-21',
+    name: 'About Us Image 21',  
+    path:'/images/aboutusimg/photo_55_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-22',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_54_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-23',
+    name: 'About us',
+    path:'/images/aboutusimg/vender.jpg',
+  },
+  {
+    id: 'aboutus-24',
+    name: 'About us',
+    path:'/images/aboutusimg/fluid.jpg',
+  },
+  {
+    id: 'aboutus-25',
+    name: 'About us',
+    path:'/images/aboutusimg/snack.jpg',
+  },
+  {
+    id: 'aboutus-26',
+    name: 'About us',
+    path:'/images/aboutusimg/hand.jpg',
+  },
+  {
+    id: 'aboutus-27',
+    name: 'About us',
+    path:'/images/aboutusimg/squueze.jpg',
+  },
+  {
+    id: 'aboutus-28',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_24_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-29',
+    name: 'About us',
+    path:'/images/aboutusimg/hand1.jpg',
+  },
+  {
+    id: 'aboutus-30',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_44_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-31',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_39_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-32',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_0382.jpg',
+  },
+  {
+    id: 'aboutus-33',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_0321.jpg',
+  },
+  {
+    id: 'aboutus-34',
+    name: 'About us',
+    path:'/images/aboutusimg/Millets Iron-Fortified  (4).jpg',
+  },
+  {
+    id: 'aboutus-35',
+    name: 'About us',
+    path:'/images/aboutusimg/photo_48_2026-09-06_21-31-42.jpg',
+  },
+  {
+    id: 'aboutus-36',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_6975.jpg',
+  },
+  {
+    id: 'aboutus-37',
+    name: 'About us',
+    path:'/images/aboutusimg/IMG_1415.jpg',
+  },
 ];
 
 // Healthy & Happy Brand Images
@@ -267,10 +392,28 @@ export function getImageById(id: string): ImageAsset | undefined {
 // Helper function to get image path by ID
 export function getImagePath(id: string): string | undefined {
   const image = getImageById(id);
-  return image?.path;
+  return image ? cloudinaryImage(image.path) : undefined;
 }
+
+// Helper to get retailer logo by 1-based index (1..8)
+export function getRetailerLogo(index: number): string | undefined {
+  const retailerIds = [
+    'retailer-grand-hantha',
+    'retailer-ko-han-tin',
+    'retailer-marketplace',
+    'retailer-citymart',
+    'retailer-ocean',
+    'retailer-makro',
+    'retailer-healthy-happy',
+    'retailer-myanwen',
+  ];
+  const id = retailerIds[index - 1];
+  return id ? getImagePath(id) : undefined;
+}
+
 
 // Helper function to get all images
 export function getAllImages(): ImageAsset[] {
   return [...aboutUsImages, ...healthyHappyImages, ...heroImages];
 }
+import { cloudinaryImage } from "@/lib/cloudinary";

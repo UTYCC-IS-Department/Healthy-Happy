@@ -30,43 +30,41 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
             viewport={{ once: true }}
             className="flex flex-col justify-between h-full"
           >
-<div className="space-y-4 sm:space-y-5 max-w-md mx-auto w-full">
+            <div className="space-y-4 sm:space-y-5 max-w-md mx-auto w-full">
+              {buttons.map((item, index) => (
+                <motion.button
+                  key={item}
 
-  {buttons.map((item, index) => (
+                  initial={{
+                    opacity: 0,
+                    x: -50,
+                  }}
 
-    <motion.button
-      key={item}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                  }}
 
-      initial={{
-        opacity: 0,
-        x: -50
-      }}
+                  transition={{
+                    duration: 0.5,
+                    delay: index * 0.15,
+                  }}
 
-      whileInView={{
-        opacity: 1,
-        x: 0
-      }}
+                  viewport={{
+                    once: true,
+                  }}
 
-      transition={{
-        duration: 0.5,
-        delay: index * 0.15
-      }}
+                  // Move right on hover
+                  whileHover={{
+                    x: 50,
+                    scale: 1.03,
+                  }}
 
-      viewport={{
-        once: true
-      }}
+                  whileTap={{
+                    scale: 0.97,
+                  }}
 
-      // Move right on hover
-      whileHover={{
-        x: 50,
-        scale: 1.03
-      }}
-
-      whileTap={{
-        scale: 0.97
-      }}
-
-      className="
+                  className="
         w-full
         rounded-full
         bg-lime-500
@@ -81,14 +79,11 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
         hover:shadow-xl
         cursor-pointer
       "
-    >
-      {item}
-
-    </motion.button>
-
-  ))}
-
-</div>
+                >
+                  {item}
+                </motion.button>
+              ))}
+            </div>
 
             {/* Gray Box */}
             <motion.div
@@ -171,9 +166,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-06') || ''}
+                  src={getImagePath("aboutus-14") || ""}
                   alt={messages.imageAlt[0]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
 
@@ -198,9 +193,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-07') || ''}
+                  src={getImagePath("aboutus-15") || ""}
                   alt={messages.imageAlt[1]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
             </div>
@@ -237,9 +232,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                 "
               >
                 <img
-                  src={getImagePath('aboutus-08') || ''}
+                  src={getImagePath("aboutus-13") || ""}
                   alt={messages.imageAlt[2]}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </motion.div>
@@ -249,33 +244,30 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
               initial={{
                 opacity: 0,
               }}
-
               whileInView={{
                 opacity: 1,
               }}
-
               transition={{
                 duration: 1,
               }}
-
               viewport={{
                 once: true,
               }}
-
               className="
-                absolute
-                inset-0
-                w-full
-                h-full
-                pointer-events-none
-              "
-
+    absolute
+    inset-0
+    w-full
+    h-full
+    pointer-events-none
+    overflow-visible
+  "
               viewBox="0 0 700 500"
-              preserveAspectRatio="xMidYMid slice"
+              preserveAspectRatio="none"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <defs>
+                {/* Top arrow */}
                 <marker
                   id="topCurvedArrowHead"
                   viewBox="0 0 10 10"
@@ -295,6 +287,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                   />
                 </marker>
 
+                {/* Left arrow */}
                 <marker
                   id="leftCurvedArrowHead"
                   viewBox="0 0 10 10"
@@ -302,7 +295,27 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
                   refY="5"
                   markerWidth="6"
                   markerHeight="6"
-                  orient="auto-start-reverse"
+                  orient="auto"
+                >
+                  <path
+                    d="M 1 1 L 9 5 L 1 9"
+                    fill="none"
+                    stroke="black"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </marker>
+
+                {/* Right arrow */}
+                <marker
+                  id="rightArrowHead"
+                  viewBox="0 0 10 10"
+                  refX="8"
+                  refY="5"
+                  markerWidth="6"
+                  markerHeight="6"
+                  orient="auto"
                 >
                   <path
                     d="M 1 1 L 9 5 L 1 9"
@@ -318,10 +331,9 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
               {/* TOP ARROW */}
               <path
                 d="
-                  M 350 20
-                  L 360 20
-                  C 430 20 470 50 470 50
-                "
+    M 330 20
+    C 365 15 405 22 435 40
+  "
                 stroke="black"
                 strokeWidth="2.5"
                 strokeLinecap="round"
@@ -332,16 +344,30 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
               {/* LEFT ARROW */}
               <path
                 d="
-                  M 30 160
-                  C -10 210 -5 265 30 310
-                  C 40 322 52 330 65 335
-                "
+    M 100 215
+    C 75 245 75 285 100 315
+    C 108 325 118 330 130 335
+  "
                 stroke="black"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 fill="none"
                 markerEnd="url(#leftCurvedArrowHead)"
               />
+
+              {/* RIGHT ARROW */}
+<path
+  d="
+    M 600 265
+    C 625 295 625 335 600 365
+    C 592 375 582 380 570 385
+  "
+  stroke="black"
+  strokeWidth="2.5"
+  strokeLinecap="round"
+  fill="none"
+  markerEnd="url(#rightArrowHead)"
+/>
             </motion.svg>
           </motion.div>
         </div>

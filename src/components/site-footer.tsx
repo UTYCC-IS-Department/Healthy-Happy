@@ -142,21 +142,21 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: She
           <div className="hidden lg:block" />
 
           {/* Partner Boxes aligned under Company, Products, Support */}
-          <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center sm:gap-4 lg:col-span-2">
+          {/* <div className="grid grid-cols-2 gap-3 sm:flex sm:items-center sm:gap-4 lg:col-span-2">
             <div className="flex h-12 w-full items-center justify-center bg-[#c28e8e] text-sm font-bold text-black sm:w-28">
               UTYCC
             </div>
             <div className="h-12 w-full bg-[#c28e8e] sm:w-28" />
             <div className="h-12 w-full bg-[#c28e8e] sm:w-28" />
             <div className="h-12 w-full bg-[#c28e8e] sm:w-28" />
-          </div>
+          </div> */}
 
           {/* Product of Myanmar aligned on the right */}
-          <div className="text-center md:text-right">
+          {/* <div className="text-center md:text-right">
             <span className="text-xl font-extrabold text-black">
               {messages.productOfMyanmar}
             </span>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright Line */}
