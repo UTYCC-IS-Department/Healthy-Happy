@@ -392,10 +392,28 @@ export function getImageById(id: string): ImageAsset | undefined {
 // Helper function to get image path by ID
 export function getImagePath(id: string): string | undefined {
   const image = getImageById(id);
-  return image?.path;
+  return image ? cloudinaryImage(image.path) : undefined;
 }
+
+// Helper to get retailer logo by 1-based index (1..8)
+export function getRetailerLogo(index: number): string | undefined {
+  const retailerIds = [
+    'retailer-grand-hantha',
+    'retailer-ko-han-tin',
+    'retailer-marketplace',
+    'retailer-citymart',
+    'retailer-ocean',
+    'retailer-makro',
+    'retailer-healthy-happy',
+    'retailer-myanwen',
+  ];
+  const id = retailerIds[index - 1];
+  return id ? getImagePath(id) : undefined;
+}
+
 
 // Helper function to get all images
 export function getAllImages(): ImageAsset[] {
   return [...aboutUsImages, ...healthyHappyImages, ...heroImages];
 }
+import { cloudinaryImage } from "@/lib/cloudinary";

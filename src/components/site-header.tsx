@@ -19,7 +19,13 @@ function persistLocale(locale: Locale) {
   document.cookie = `NEXT_LOCALE=${locale}; Path=/; Max-Age=31536000; SameSite=Lax`;
 }
 
-export function SiteHeader({ locale, messages }: { locale: Locale; messages: ShellMessages["header"] }) {
+export function SiteHeader({
+  locale,
+  messages,
+}: {
+  locale: Locale;
+  messages: ShellMessages["header"];
+}) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const links = [
@@ -31,15 +37,19 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: She
   ] as const;
   const localizedLinks = links.map(([label, suffix]) => [label, `/${locale}${suffix}`] as const);
   return (
-    <nav className="sticky top-0 z-50 bg-[#2dc100] text-white shadow-md">
+    <nav className="sticky top-0 z-50 bg-[#3d4a2e] text-white shadow-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href={`/${locale}`} className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
+        <Link
+          href={`/${locale}`}
+          className="flex items-center gap-3"
+          onClick={() => setMobileOpen(false)}
+        >
           <span className=" p-1">
             <Image
               src={assets.logo}
               alt={messages.brandAlt}
-              width={76}
-              height={40}
+              width={90}
+              height={48}
               className="h-12 w-auto object-contain"
               priority
             />
@@ -56,7 +66,7 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: She
               <Link
                 key={href}
                 href={href}
-                className={` py-1 text-sm font-medium transition-colors hover:text-[#fe0002] ${pathname === href ? "border-secondary text-secondary" : "border-transparent"}`}
+                className="py-1 text-sm font-medium hover:underline underline-offset-4"
               >
                 {label}
               </Link>
@@ -115,7 +125,10 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: She
           <div className="mt-3 border-t border-white/20 pt-3">
             <Link
               href={localePath(pathname, "my")}
-              onClick={() => { persistLocale("my"); setMobileOpen(false); }}
+              onClick={() => {
+                persistLocale("my");
+                setMobileOpen(false);
+              }}
               className="flex items-center gap-3 rounded-md px-2 py-3 hover:bg-white/10"
             >
               <span className="fi fi-mm text-xl"></span>
@@ -124,7 +137,10 @@ export function SiteHeader({ locale, messages }: { locale: Locale; messages: She
 
             <Link
               href={localePath(pathname, "en")}
-              onClick={() => { persistLocale("en"); setMobileOpen(false); }}
+              onClick={() => {
+                persistLocale("en");
+                setMobileOpen(false);
+              }}
               className="flex items-center gap-3 rounded-md px-2 py-3 hover:bg-white/10"
             >
               <span className="fi fi-gb text-xl"></span>

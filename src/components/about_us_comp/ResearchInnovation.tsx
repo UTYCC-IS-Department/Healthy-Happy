@@ -668,6 +668,7 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                             backgroundImage: `url(${getImagePath(section.smallCircleImage) || ''})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
+                            backgroundColor: '#ffffff',
                           }}
                         />
                         <div className="ri-row-text-content">
@@ -725,6 +726,7 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                           backgroundImage: `url(${getImagePath(section.largeCircleImage) || ''})`,
                           backgroundSize: 'cover',
                           backgroundPosition: 'center',
+                          backgroundColor: '#ffffff',
                         }}
                       />
                     </div>
