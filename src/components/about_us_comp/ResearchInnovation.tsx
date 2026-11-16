@@ -12,10 +12,12 @@ import type { Locale } from "@/i18n/config";
 // ============================================================================
 export interface LeftCardData {
   id: string;
+  image: string;
 }
 
 export interface FeatureBoxData {
   id: string;
+  image?: string;
 }
 
 export interface ResearchSectionData {
@@ -23,7 +25,9 @@ export interface ResearchSectionData {
   title: string;
   description: string;
   smallCirclePlaceholderId: string;
+  smallCircleImage: string;
   largeCirclePlaceholderId: string;
+  largeCircleImage: string;
   features: FeatureBoxData[];
 }
 
@@ -38,14 +42,25 @@ export interface ResearchInnovationData {
 // ============================================================================
 const createResearchData = (messages: AboutMessages["research"]): ResearchInnovationData => ({
   topBannerText: messages.banner,
-  leftCards: [{ id: 'card-1' }, { id: 'card-2' }, { id: 'card-3' }],
+  leftCards: [
+    { id: 'card-1', image: 'aboutus-23' },
+    { id: 'card-2', image: 'aboutus-24' },
+    { id: 'card-3', image: 'aboutus-25' },
+  ],
   rightSections: messages.sections.map((section, index) => ({
     id: `section-${index + 1}`,
     title: section.title,
     description: section.description,
     smallCirclePlaceholderId: `circle-small-${index + 1}`,
+    smallCircleImage: index === 0 ? 'aboutus-26' : 'aboutus-27',
     largeCirclePlaceholderId: `circle-large-${index + 1}`,
-    features: [{ id: `f${index + 1}-1` }, { id: `f${index + 1}-2` }, { id: `f${index + 1}-3` }, { id: `f${index + 1}-4` }],
+    largeCircleImage: index === 0 ? 'aboutus-28' : 'aboutus-29',
+    features: [
+      { id: `f${index + 1}-1`, image: index === 0 ? 'aboutus-30' : 'aboutus-34' },
+      { id: `f${index + 1}-2`, image: index === 0 ? 'aboutus-31' : 'aboutus-35' },
+      { id: `f${index + 1}-3`, image: index === 0 ? 'aboutus-32' : 'aboutus-36' },
+      { id: `f${index + 1}-4`, image: index === 0 ? 'aboutus-33' : 'aboutus-37' },
+    ],
   })),
 });
 
@@ -111,6 +126,30 @@ const textFadeVariants: Variants = {
 const cssStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
+  /* Container for the feature card */
+  .ri-feature-box {
+    position: relative;
+    overflow: hidden; /* Clips any image overflowing the box boundaries */
+    border-radius: 8px; /* Optional: smooth corners */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Image styling */
+  .ri-feature-box img {
+    width: 100%;
+    height: 200px; /* Set your desired fixed height */
+    object-fit: cover; /* Maintains aspect ratio without stretching/distorting */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+  }
+
+  /* Optional: Zoom effect on hover */
+  .ri-feature-box:hover img {
+    transform: scale(1.05);
+  }
+
   .ri-section-wrapper {
     width: 100%;
     min-height: 100vh;
@@ -157,7 +196,6 @@ const cssStyles = `
     gap: 20px;
   }
 
-  /* Solid Canvas Placeholder Cards */
   .ri-canvas-card {
     width: 100%;
     height: 200px;
@@ -264,7 +302,6 @@ const cssStyles = `
     padding-right: 120px;
   }
 
-  /* Empty Rounded Feature Boxes Matching Canvas */
   .ri-feature-box {
     width: 82px;
     height: 110px;
@@ -559,37 +596,31 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
         </AnimatePresence>
 
         <div className="ri-content-grid">
-          {/* Left Column: 3 Solid Canvas Placeholder Cards */}
+          {/* Left Column Cards */}
           <motion.div
             className="ri-left-stack"
             variants={leftContainerVariants}
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
           >
-            {researchInnovationData.leftCards.map((cardItem: LeftCardData, index: number) => {
-              const partnerLeftCardIds = ['partner-mahidol', 'partner-fidsl', 'partner-eurofins'];
-              const partnerId = partnerLeftCardIds[index] || `aboutus-0${index + 9}`;
-              return (
-                <motion.div
-                  key={cardItem.id}
-                  className="ri-canvas-card"
-                  variants={cardVariants}
-                  whileHover={{
-                    y: -12,
-                    scale: 1.03,
-                    boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
-                    transition: { type: 'spring', stiffness: 300, damping: 18 },
-                  }}
-                  style={{
-                    backgroundImage: `url(${getImagePath(partnerId) || ''})`,
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundColor: '#ffffff',
-                  }}
-                />
-              );
-            })}
+            {researchInnovationData.leftCards.map((cardItem: LeftCardData) => (
+              <motion.div
+                key={cardItem.id}
+                className="ri-canvas-card"
+                variants={cardVariants}
+                whileHover={{
+                  y: -12,
+                  scale: 1.03,
+                  boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
+                  transition: { type: 'spring', stiffness: 300, damping: 18 },
+                }}
+                style={{
+                  backgroundImage: `url(${getImagePath(cardItem.image) || ''})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              />
+            ))}
           </motion.div>
 
           {/* Right Column Container */}
@@ -626,7 +657,7 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                   return (
                     <div key={section.id} className="ri-research-row">
                       <div className="ri-row-top">
-                        {/* Circle Placeholders 1 & 2 (Small left circles) */}
+                        {/* Circle Placeholders (Small left circles) */}
                         <motion.div
                           id={section.smallCirclePlaceholderId}
                           className="ri-image-placeholder ri-small-circle-placeholder"
@@ -634,9 +665,8 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                           initial="hidden"
                           animate={inView ? 'visible' : 'hidden'}
                           style={{
-                            backgroundImage: `url(${getImagePath(index === 0 ? 'partner-mohas' : 'partner-msme') || ''})`,
-                            backgroundSize: 'contain',
-                            backgroundRepeat: 'no-repeat',
+                            backgroundImage: `url(${getImagePath(section.smallCircleImage) || ''})`,
+                            backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundColor: '#ffffff',
                           }}
@@ -671,14 +701,21 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                         </div>
                       </div>
 
-                      {/* 4 Empty Feature Boxes per section matching canvas */}
+                      {/* Feature Grid */}
                       <div className="ri-feature-grid">
                         {section.features.map((feature: FeatureBoxData) => (
-                          <div key={feature.id} className="ri-feature-box" />
+                          <div key={feature.id} className="ri-feature-box">
+                            {feature.image && (
+                              <img 
+                                src={getImagePath(feature.image)} 
+                                alt={feature.image || "Feature image"} 
+                              />
+                            )}
+                          </div>
                         ))}
                       </div>
 
-                      {/* Circle Placeholders 3 & 4 (Large right side edge circles) */}
+                      {/* Circle Placeholders (Large right side edge circles) */}
                       <motion.div
                         id={section.largeCirclePlaceholderId}
                         className={`ri-image-placeholder ri-large-circle-placeholder ${largeCircleClass}`}
@@ -686,9 +723,8 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                         initial="hidden"
                         animate={inView ? 'visible' : 'hidden'}
                         style={{
-                          backgroundImage: `url(${getImagePath(index === 0 ? 'history-innovation-award' : 'partner-umfcci') || ''})`,
-                          backgroundSize: 'contain',
-                          backgroundRepeat: 'no-repeat',
+                          backgroundImage: `url(${getImagePath(section.largeCircleImage) || ''})`,
+                          backgroundSize: 'cover',
                           backgroundPosition: 'center',
                           backgroundColor: '#ffffff',
                         }}
