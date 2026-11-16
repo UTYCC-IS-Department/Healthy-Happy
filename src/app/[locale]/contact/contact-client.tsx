@@ -4,20 +4,24 @@ import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { SiFacebook, SiTiktok, SiWhatsapp } from "react-icons/si";
 import type { ReactNode } from "react";
 import type { ContactMessages } from "@/i18n/message-types";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export default function ContactClient({ messages }: { messages: ContactMessages }) {
   return (
   <div className="bg-[#f4f2eb] pt-8 pb-10 text-black font-sans">
     {/* Title */}
+    <ScrollReveal>
     <section className="px-4 py-6 text-center">
       <h1 className="text-3xl font-extrabold tracking-tight text-black sm:text-4xl">
         {messages.title}
       </h1>
     </section>
+    </ScrollReveal>
 
     {/* Map & Form Grid */}
     <section className="mx-auto grid max-w-6xl gap-6 px-4 py-6 md:grid-cols-2 sm:px-6 lg:px-8">
       {/* Map Container */}
+      <ScrollReveal className="h-full">
       <div className="h-80 min-h-[320px] overflow-hidden rounded-2xl bg-[#dadada] shadow-none md:h-full">
         <iframe
           title={messages.mapTitle}
@@ -29,8 +33,10 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
           referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
+      </ScrollReveal>
 
       {/* Form Container */}
+      <ScrollReveal className="h-full" delay={0.1}>
       <div className="rounded-2xl bg-transparent p-0">
         <form
           className="flex flex-col space-y-4"
@@ -62,9 +68,11 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
           </div>
         </form>
       </div>
+      </ScrollReveal>
     </section>
 
     {/* Cards Section */}
+    <ScrollReveal>
     <section className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 pt-4 pb-6 sm:grid-cols-2 lg:grid-cols-12 sm:px-6 lg:px-8">
       {/* Social Links Box */}
       <div className="flex flex-col items-center justify-center rounded-2xl bg-[#dadada] p-4 lg:col-span-4">
@@ -72,13 +80,13 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
           {messages.follow}
         </span>
         <div className="flex items-center gap-5 text-xl text-black">
-          <a href="#" aria-label={messages.social.facebook} className="hover:opacity-80">
+          <a href="#" aria-label={messages.social.facebook} className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-80">
             <SiFacebook />
           </a>
-          <a href="#" aria-label={messages.social.whatsapp} className="hover:opacity-80">
+          <a href="#" aria-label={messages.social.whatsapp} className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-80">
             <SiWhatsapp />
           </a>
-          <a href="#" aria-label={messages.social.tiktok} className="hover:opacity-80">
+          <a href="#" aria-label={messages.social.tiktok} className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-80">
             <SiTiktok />
           </a>
         </div>
@@ -115,6 +123,7 @@ export default function ContactClient({ messages }: { messages: ContactMessages 
         </div>
       </div>
     </section>
+    </ScrollReveal>
   </div>
 );
 }

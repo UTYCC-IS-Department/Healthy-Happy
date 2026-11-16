@@ -6,9 +6,15 @@ import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } fr
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
 import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
+<<<<<<< HEAD
 import { cloudinaryVideo } from "@/lib/cloudinary";
 import { getMediaUrl } from "@/lib/media-registry";
+=======
+import { cloudinaryImage, cloudinaryVideo } from "@/lib/cloudinary";
+>>>>>>> origin/feature/fix
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import type { Locale } from "@/i18n/config";
 import type { HomeMessages } from "@/i18n/message-types";
 
@@ -30,15 +36,16 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
     href: `/${locale}/${feature.id === "products" ? "products" : "about"}`,
   }));
   const [activeTab, setActiveTab] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
 
-  // Auto-rotate tabs every 5 seconds (5000 ms)
   useEffect(() => {
+    if (shouldReduceMotion) return;
     const timer = setInterval(() => {
       setActiveTab((prev) => (prev + 1) % JourneyAndHappyFeatures.length);
     }, 15000); // 15 seconds for each tab
 
     return () => clearInterval(timer);
-  }, []);
+  }, [JourneyAndHappyFeatures.length, shouldReduceMotion]);
 
   const currentTab = JourneyAndHappyFeatures[activeTab];
 
@@ -46,6 +53,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
     <div className="w-full bg-white">
 
       {/* Hero section */}
+      <ScrollReveal>
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:px-8 md:grid-cols-2 md:items-center md:gap-8 lg:px-12 lg:py-14">
 
         {/* Content */}
@@ -60,7 +68,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
           <Link
             href={`/${locale}/products`}
-            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-6 py-3 text-sm font-bold text-white shadow-md transition-colors hover:bg-green-600 sm:px-8 sm:py-4"
+            className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-6 py-3 text-sm font-bold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:bg-green-600 hover:shadow-lg active:scale-95 sm:px-8 sm:py-4"
           >
             {messages.hero.action}
             <ArrowRight className="size-4" />
@@ -71,9 +79,15 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
         {/* Hero video */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
           <video
+<<<<<<< HEAD
             src={getMediaUrl("site-hero-video") || cloudinaryVideo("/videos/production.mp4")}
             autoPlay
             loop
+=======
+            src={cloudinaryVideo("/videos/production.mp4")}
+            autoPlay={!shouldReduceMotion}
+            loop={!shouldReduceMotion}
+>>>>>>> origin/feature/fix
             muted
             playsInline
             className="h-full w-full object-cover"
@@ -81,8 +95,10 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
         </div>
 
       </section>
+      </ScrollReveal>
 
       {/* ----------------- Feature Categories Section ----------------- */}
+      <ScrollReveal delay={0.05}>
       <section
         className="border-y bg-[#faf8f5]"
         style={{ marginTop: "50px", marginBottom: "50px", paddingTop: "30px", paddingBottom: "30px" }}
@@ -106,7 +122,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
               <a
                 key={slug}
                 href={`/${locale}/products?category=${slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 sm:w-42"
+                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.04] active:scale-95 sm:w-42"
               >
                 <div className="relative w-full">
                   <svg
@@ -138,7 +154,17 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
                   <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
                     <Image
-                      src={assets.product}
+                      src={
+                        slug === "no-sugar-cookies"
+                          ? cloudinaryImage("/healthy-happy/Spinach-Cookies")
+                          : slug === "oat-cookies"
+                            ? cloudinaryImage("/healthy-happy/Oat-Cookies")
+                            : slug === "healthy-snacks"
+                              ? cloudinaryImage("/healthy-happy/Energy-Bar")
+                              : slug === "original-series"
+                                ? cloudinaryImage("/healthy-happy/IMG_0382")
+                                : assets.product
+                      }
                       alt={name}
                       fill
                       sizes="(max-width: 640px) 144px, 160px"
@@ -157,9 +183,11 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
             })}
           </div>
 
-          <ProductCarousel />
+          <ProductCarousel locale={locale} messages={messages.productCarousel} />
         </div>
       </section>
+      </ScrollReveal>
+      <ScrollReveal delay={0.08}>
       <section className="border-b py-12">
         <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-5 lg:px-12">
           <div className="md:col-span-2">
@@ -237,7 +265,15 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
               );
             })}
           </div>
-          <div className="space-y-3  lg:col-span-4 backdrop:blur-sm bg-[#2dc100] p-4 px-5 rounded-3xl text-white shadow-xl shadow-[#2dc100]/30 border border-white/20">
+          <AnimatePresence mode="wait">
+          <motion.div
+            key={currentTab.id}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="space-y-3 lg:col-span-4 backdrop:blur-sm bg-[#2dc100] p-4 px-5 rounded-3xl text-white shadow-xl shadow-[#2dc100]/30 border border-white/20"
+          >
             {/* title */}
             <h4 className="text-lg font-bold">{currentTab.title}</h4>
             <p className="text-[13px] font-medium text-gray-100 leading-4.5 -mt-3 relative">
@@ -249,18 +285,23 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
                 {messages.journey.seeMore}
               </Link>
             </p>
-          </div>
+          </motion.div>
+          </AnimatePresence>
         </div>
       </section>
+      </ScrollReveal>
 
+      <ScrollReveal delay={0.05}>
       <section className="border-b bg-[#f5f0ee] py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-8 lg:px-12">
           <h2 className=" text-3xl font-bold">{messages.awards.title}</h2>
           <PerfectCoverCarousel />
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Production place section */}
+      <ScrollReveal delay={0.05}>
       <section className="border-b py-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
@@ -278,7 +319,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
               <Link
                 href={`/${locale}/about#locations`}
-                className="mt-8 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white"
+                className="mt-8 inline-flex w-fit items-center rounded-full bg-[#2dc100] px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:shadow-lg active:scale-95"
               >
                 {messages.production.seeMore} →
               </Link>
@@ -307,7 +348,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
               <Link
                 href={`/${locale}/contact`}
-                className="mt-auto inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg"
+                className="mt-auto inline-flex items-center justify-center rounded-2xl bg-[#2dc100] px-8 py-4 text-sm font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl active:scale-95"
               >
                 {messages.production.locationAction} →
               </Link>
@@ -317,6 +358,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
         </div>
       </section>
+      </ScrollReveal>
 
       <ContactSection messages={messages.contact} />
     </div>
@@ -324,6 +366,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 }
 function ContactSection({ messages }: { messages: HomeMessages["contact"] }) {
   return (
+    <ScrollReveal>
     <section className="bg-[#f4f2eb] pt-12 pb-16 font-['Roboto',sans-serif]">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Title */}
@@ -434,5 +477,6 @@ function ContactSection({ messages }: { messages: HomeMessages["contact"] }) {
         </div>
       </div>
     </section>
+    </ScrollReveal>
   );
 }

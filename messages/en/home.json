@@ -14,6 +14,11 @@
       "Original Series"
     ]
   },
+  "productCarousel": {
+    "explore": "Explore",
+    "previous": "Previous products",
+    "next": "Next products"
+  },
   "journey": {
     "logoAlt": "Healthy & Happy",
     "title": "The Journey of Happy & Healthy",

@@ -4,29 +4,39 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 import type { Swiper as SwiperType } from "swiper";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import enProduct from "../../messages/en/product.json";
+import myProduct from "../../messages/my/product.json";
 import { assets, productMedia } from "@/lib/site-data";
+import type { Locale } from "@/i18n/config";
+import type { HomeMessages } from "@/i18n/message-types";
 // Swiper Styles
 import "swiper/css";
 import "swiper/css/navigation";
 
-const products = productMedia.map((media) => ({
-  ...media,
-  ...enProduct.products[media.id as keyof typeof enProduct.products],
-}));
-
-export function ProductCarousel() {
+export function ProductCarousel({
+  locale,
+  messages,
+}: {
+  locale: Locale;
+  messages: HomeMessages["productCarousel"];
+}) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const productMessages = locale === "my" ? myProduct : enProduct;
+  const products = productMedia.map((media) => ({
+    ...media,
+    ...productMessages.products[media.id as keyof typeof enProduct.products],
+  }));
 
   return (
     <div className="relative mx-auto max-w-6xl px-4 sm:px-10">
       {/* 1. Left Black Arrow Button */}
       <button
         type="button"
-        aria-label="Previous products"
+        aria-label={messages.previous}
         onClick={() => swiper?.slidePrev()}
         className="absolute -left-2 top-1/2 z-20 -translate-y-1/2 p-2 text-black transition-transform hover:scale-125 focus:outline-none sm:-left-4"
       >
@@ -46,8 +56,6 @@ export function ProductCarousel() {
         className="w-full py-4"
       >
         {products.map((product, index) => {
-          const isDarkCard = index % 2 !== 0;
-
           return (
             <SwiperSlide key={product.id || index}>
               <div className="group relative block h-[340px] w-full overflow-hidden rounded-[2rem] shadow-sm sm:h-[380px]">
@@ -61,40 +69,32 @@ export function ProductCarousel() {
                 />
 
                 <div
-                  className={`absolute inset-0 bg-gradient-to-b ${
-                    isDarkCard
-                      ? "from-black/70 via-black/40 to-black/60"
-                      : "from-white/80 via-white/40 to-transparent"
-                  }`}
+                  className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/25"
                 />
 
                 {/* Content Overlay */}
-                <div className="relative z-10 flex h-full flex-col justify-between p-7 sm:p-8">
-                  <div className="max-w-[85%] sm:max-w-[80%]">
+                <div className="relative z-10 flex h-full flex-col justify-between p-5 sm:p-7">
+                  <div className="max-w-[92%] rounded-2xl border border-white/30 bg-black/20 p-4 shadow-xl shadow-black/20 backdrop-blur-lg sm:max-w-[85%]">
                     <h3
-                      className={`text-xl font-black leading-snug sm:text-2xl ${
-                        isDarkCard ? "text-white" : "text-black"
-                      }`}
+                      className="border-l-4 border-[#2dc100] pl-3 text-xl font-extrabold leading-tight tracking-tight text-white drop-shadow-sm sm:text-2xl"
                     >
                       {product.name}
                     </h3>
                     <p
-                      className={`mt-2.5 line-clamp-5 text-xs font-medium leading-relaxed sm:text-sm ${
-                        isDarkCard ? "text-gray-200" : "text-gray-900"
-                      }`}
+                      className="mt-2 line-clamp-2 text-sm font-medium leading-relaxed text-white/90 drop-shadow-sm"
                     >
-                      {product.description ||
-                        "A pure, health-conscious treat made entirely from organic and wholesome ingredients with no added sugar."}
+                      {product.description}
                     </p>
                   </div>
 
                   {/*Green Explore Button */}
                   <div className="flex justify-end">
                     <Link
-                      href={`/en/products/${product.id}`}
-                      className="rounded-full bg-[#1EB500] px-6 py-2 text-xs font-bold text-white shadow-md transition-all hover:bg-[#3d9140] hover:shadow-lg active:scale-95 sm:text-sm"
+                      href={`/${locale}/products/${product.id}`}
+                      className="inline-flex items-center gap-2 rounded-full bg-[#2dc100] px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-black/20 transition-all hover:bg-green-600 active:scale-95"
                     >
-                      Explore &gt;
+                      {messages.explore}
+                      <ArrowRight className="size-4" />
                     </Link>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ export function ProductCarousel() {
       {/* 3. Right Black Arrow Button */}
       <button
         type="button"
-        aria-label="Next products"
+        aria-label={messages.next}
         onClick={() => swiper?.slideNext()}
         className="absolute -right-2 top-1/2 z-20 -translate-y-1/2 p-2 text-black transition-transform hover:scale-125 focus:outline-none sm:-right-4"
       >
@@ -132,15 +132,17 @@ const CAROUSEL_ITEMS = [
 
 export default function PerfectCoverCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
 
   // ⏱️ Auto-play loop set to 10 seconds (10,000 ms)
   useEffect(() => {
+    if (shouldReduceMotion) return;
     const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev === CAROUSEL_ITEMS.length - 1 ? 0 : prev + 1));
+      setActiveIndex((prev) => (prev + 1) % CAROUSEL_ITEMS.length);
     }, 10000); // 👈 10 seconds loop time
 
     return () => clearInterval(timer); // Clean up timer on unmount/interaction
-  }, [activeIndex]);
+  }, [shouldReduceMotion]);
 
   return (
     <div className="w-full py-10 px-4 overflow-hidden">
@@ -215,6 +217,7 @@ const PRODUCTION_IMAGES = [
 // Production Carousel Component
 export function ProductionPlaceCarousel() {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
     <div className="relative h-full w-full">
@@ -224,7 +227,7 @@ export function ProductionPlaceCarousel() {
         onSwiper={setSwiper}
         slidesPerView={1}
         loop
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={shouldReduceMotion ? false : { delay: 4000, disableOnInteraction: false }}
         className="h-full w-full overflow-hidden rounded-3xl"
       >
         {PRODUCTION_IMAGES.map((item) => (

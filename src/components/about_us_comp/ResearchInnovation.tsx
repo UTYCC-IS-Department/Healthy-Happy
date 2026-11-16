@@ -68,7 +68,7 @@ const createResearchData = (messages: AboutMessages["research"]): ResearchInnova
 // Framer Motion Animation Variants
 // ============================================================================
 const headerVariants: Variants = {
-  hidden: { opacity: 0, y: -40 },
+  hidden: { opacity: 0, y: -22 },
   visible: {
     opacity: 1,
     y: 0,
@@ -88,7 +88,7 @@ const leftContainerVariants: Variants = {
 };
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, x: -40 },
+  hidden: { opacity: 0, x: -24 },
   visible: {
     opacity: 1,
     x: 0,
@@ -97,7 +97,7 @@ const cardVariants: Variants = {
 };
 
 const rightContainerVariants: Variants = {
-  hidden: { opacity: 0, x: 50 },
+  hidden: { opacity: 0, x: 30 },
   visible: {
     opacity: 1,
     x: 0,
@@ -609,10 +609,10 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
                 className="ri-canvas-card"
                 variants={cardVariants}
                 whileHover={{
-                  y: -12,
-                  scale: 1.03,
-                  boxShadow: '0 22px 40px rgba(0,0,0,0.22)',
-                  transition: { type: 'spring', stiffness: 300, damping: 18 },
+                  y: -5,
+                  scale: 1.02,
+                  boxShadow: '0 18px 32px rgba(0,0,0,0.2)',
+                  transition: { type: 'spring', stiffness: 300, damping: 22 },
                 }}
                 style={{
                   backgroundImage: `url(${getImagePath(cardItem.image) || ''})`,

@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import MotionProvider from "@/components/motion-provider";
 import { hasLocale, locales } from "@/i18n/config";
 import { getMessages } from "@/i18n/get-messages";
 import type { ShellMessages } from "@/i18n/message-types";
@@ -26,7 +27,9 @@ export default async function LocaleLayout({
     <div lang={locale} className="flex min-h-screen flex-col">
       <OrganizationJsonLd locale={locale} />
       <SiteHeader locale={locale} messages={messages.header} />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1">
+        <MotionProvider>{children}</MotionProvider>
+      </main>
       <SiteFooter locale={locale} messages={messages.footer} />
     </div>
   );

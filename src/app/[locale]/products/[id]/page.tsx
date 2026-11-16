@@ -3,6 +3,7 @@ import { FileText, Package, ShoppingBag, Tag } from "lucide-react";
 import { notFound } from "next/navigation";
 import type { ReactNode } from "react";
 import { ProductGallery } from "@/components/product-gallery";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import {
   getLocalizedProduct,
   hasLocale,
@@ -103,7 +104,10 @@ export default async function ProductDetailPage({
           ← {detailMessages.returnToProducts}
         </Link>
         <div className="mt-8 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+          <ScrollReveal className="min-w-0">
           <ProductGallery product={product} showImageLabel={detailMessages.showImage} />
+          </ScrollReveal>
+          <ScrollReveal className="min-w-0" delay={0.1}>
           <div className="rounded-3xl border bg-card p-6 shadow-sm sm:p-8">
             <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
               <div>
@@ -151,8 +155,10 @@ export default async function ProductDetailPage({
               <ShoppingBag className="size-6" />
             </div>
           </div>
+          </ScrollReveal>
         </div>
-        <div className="my-12 flex flex-wrap items-center justify-between gap-4 rounded-3xl border bg-[#eef1e8] px-6 py-5">
+        <ScrollReveal className="my-12" delay={0.05}>
+        <div className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border bg-[#eef1e8] px-6 py-5">
           <p className="text-sm font-medium">{detailMessages.newsText}</p>
           <Link
             href={productListPath}
@@ -161,6 +167,7 @@ export default async function ProductDetailPage({
             {detailMessages.newsAction} →
           </Link>
         </div>
+        </ScrollReveal>
       </div>
     </div>
   );
@@ -172,7 +179,7 @@ function Detail({ icon, label, text }: { icon: ReactNode; label: string; text: s
       <span className="mt-0.5 size-5 shrink-0 text-secondary">{icon}</span>
       <p>
         <strong className="text-foreground">{label}</strong>
-        <span className="block pt-1 leading-relaxed text-muted">{text}</span>
+        <span className="block whitespace-pre-line pt-1 leading-relaxed text-muted">{text}</span>
       </p>
     </div>
   );

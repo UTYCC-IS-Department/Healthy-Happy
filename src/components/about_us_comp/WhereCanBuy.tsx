@@ -32,7 +32,7 @@ interface WhereCanBuyProps {
 
 const headingVariants: Variants = {
 
-  hidden: { opacity: 0, y: -30 },
+  hidden: { opacity: 0, y: -18 },
 
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 
@@ -42,7 +42,7 @@ const headingVariants: Variants = {
 
 const cardVariants: Variants = {
 
-  hidden: { opacity: 0, y: 50, scale: 0.9 },
+  hidden: { opacity: 0, y: 28, scale: 0.96 },
 
   visible: (index: number) => ({
 
@@ -62,7 +62,7 @@ const cardVariants: Variants = {
 
 const badgeVariants: Variants = {
 
-  hidden: { opacity: 0, scale: 0.5, rotate: -15 },
+  hidden: { opacity: 0, scale: 0.86, rotate: -8 },
 
   visible: {
 
@@ -82,7 +82,7 @@ const badgeVariants: Variants = {
 
 const footerVariants: Variants = {
 
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 18 },
 
   visible: { opacity: 1, y: 0, transition: { delay: 1.1, duration: 0.6, ease: "easeOut" } },
 
@@ -154,7 +154,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ messages }) => {
 
                 <motion.div
 
-                  animate={{ y: isHovered ? -8 : 0, scale: isHovered ? 1.02 : 1 }}
+                  animate={{ y: isHovered ? -4 : 0, scale: isHovered ? 1.015 : 1 }}
 
                   transition={
 
