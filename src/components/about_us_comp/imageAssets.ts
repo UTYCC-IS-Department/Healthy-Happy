@@ -383,8 +383,19 @@ export const heroImages: ImageAsset[] = [
   },
 ];
 
+import { cloudinaryImage } from "@/lib/cloudinary";
+import { getMediaItem } from "@/lib/media-registry";
+
 // Helper function to get image by ID
 export function getImageById(id: string): ImageAsset | undefined {
+  const registered = getMediaItem(id);
+  if (registered) {
+    return {
+      id: registered.id,
+      name: registered.name,
+      path: registered.path,
+    };
+  }
   const allImages = [...aboutUsImages, ...healthyHappyImages, ...heroImages];
   return allImages.find((img) => img.id === id);
 }
@@ -416,4 +427,3 @@ export function getRetailerLogo(index: number): string | undefined {
 export function getAllImages(): ImageAsset[] {
   return [...aboutUsImages, ...healthyHappyImages, ...heroImages];
 }
-import { cloudinaryImage } from "@/lib/cloudinary";

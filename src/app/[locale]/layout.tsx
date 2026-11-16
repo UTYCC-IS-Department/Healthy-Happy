@@ -5,6 +5,7 @@ import { SiteHeader } from "@/components/site-header";
 import { hasLocale, locales } from "@/i18n/config";
 import { getMessages } from "@/i18n/get-messages";
 import type { ShellMessages } from "@/i18n/message-types";
+import { OrganizationJsonLd } from "@/components/json-ld";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -23,6 +24,7 @@ export default async function LocaleLayout({
 
   return (
     <div lang={locale} className="flex min-h-screen flex-col">
+      <OrganizationJsonLd locale={locale} />
       <SiteHeader locale={locale} messages={messages.header} />
       <main className="flex-1">{children}</main>
       <SiteFooter locale={locale} messages={messages.footer} />

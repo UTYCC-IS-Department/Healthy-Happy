@@ -7,6 +7,7 @@ import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
 import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
 import { cloudinaryVideo } from "@/lib/cloudinary";
+import { getMediaUrl } from "@/lib/media-registry";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import type { HomeMessages } from "@/i18n/message-types";
@@ -70,7 +71,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
         {/* Hero video */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
           <video
-            src={cloudinaryVideo("/videos/production.mp4")}
+            src={getMediaUrl("site-hero-video") || cloudinaryVideo("/videos/production.mp4")}
             autoPlay
             loop
             muted

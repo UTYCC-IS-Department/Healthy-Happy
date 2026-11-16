@@ -159,9 +159,15 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: She
           </div> */}
         </div>
 
-        {/* Copyright Line */}
-        <div className="mt-10 text-center text-xs font-bold text-black sm:mt-16">
-          {messages.copyright}
+        {/* Copyright Line & Panel Link */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-bold text-black sm:mt-16 border-t border-neutral-100 pt-4">
+          <div>{messages.copyright}</div>
+          <Link
+            href="/panel"
+            className="text-[11px] font-medium text-neutral-400 hover:text-[#3d4a2e] transition"
+          >
+            Media Control Panel
+          </Link>
         </div>
       </div>
     </footer>

@@ -11,9 +11,57 @@ import {
 } from "@/lib/product-catalog";
 import { productMedia } from "@/lib/site-data";
 import { getMessages } from "@/i18n/get-messages";
+import { BreadcrumbJsonLd, ProductJsonLd } from "@/components/json-ld";
+import type { Metadata } from "next";
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://healthyandhappymyanmar.com";
 
 export function generateStaticParams() {
   return productMedia.map(({ id }) => ({ id }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; id: string }>;
+}): Promise<Metadata> {
+  const { locale, id } = await params;
+  if (!hasLocale(locale)) return {};
+
+  const [messages, detailMessages] = await Promise.all([
+    getMessages<ProductListMessages>(locale, "product"),
+    getMessages<ProductDetailMessages>(locale, "product-detail"),
+  ]);
+  const product = getLocalizedProduct(messages, detailMessages, id);
+  if (!product) return {};
+
+  const title = product.name;
+  const description = product.description.slice(0, 160);
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/products/${id}`,
+      languages: {
+        en: `${SITE_URL}/en/products/${id}`,
+        my: `${SITE_URL}/my/products/${id}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${SITE_URL}/${locale}/products/${id}`,
+      siteName: "Healthy & Happy Myanmar",
+      images: [
+        {
+          url: product.image,
+          alt: product.name,
+        },
+      ],
+      type: "website",
+    },
+  };
 }
 
 export default async function ProductDetailPage({
@@ -32,8 +80,21 @@ export default async function ProductDetailPage({
   if (!product) notFound();
   const productListPath = `/${locale}/products`;
 
+  const breadcrumbs = [
+    { name: locale === "my" ? "ပင်မစာမျက်နှာ" : "Home", url: `/${locale}` },
+    { name: locale === "my" ? "ထုတ်ကုန်များ" : "Products", url: `/${locale}/products` },
+    { name: product.name, url: `/${locale}/products/${id}` },
+  ];
+
   return (
     <div className="min-h-screen bg-background">
+      <BreadcrumbJsonLd items={breadcrumbs} />
+      <ProductJsonLd
+        name={product.name}
+        description={product.description}
+        image={product.image}
+        url={`/${locale}/products/${id}`}
+      />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <Link
           href={productListPath}
