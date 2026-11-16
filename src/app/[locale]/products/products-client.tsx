@@ -18,9 +18,20 @@ export function ProductsClient({
 }) {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const categories = useMemo(
-    () => [...new Set(products.flatMap((product) => product.tags))],
+  const seriesCategories = useMemo(
+    () => new Set(products.map((product) => product.series)),
     [products],
+  );
+  const categories = useMemo(
+    () => [
+      ...new Set([
+        ...products.flatMap((product) =>
+          product.tags.filter((tag) => !seriesCategories.has(tag)),
+        ),
+        ...seriesCategories,
+      ]),
+    ],
+    [products, seriesCategories],
   );
   const normalizedSearch = search.trim().toLocaleLowerCase();
   const filtered = products.filter((product) => {
@@ -28,7 +39,12 @@ export function ProductsClient({
       !normalizedSearch ||
       product.name.toLocaleLowerCase().includes(normalizedSearch) ||
       product.series.toLocaleLowerCase().includes(normalizedSearch);
-    return matchesSearch && (!activeCategory || product.tags.includes(activeCategory));
+    const matchesCategory =
+      !activeCategory ||
+      (seriesCategories.has(activeCategory)
+        ? product.series === activeCategory
+        : product.tags.includes(activeCategory));
+    return matchesSearch && matchesCategory;
   });
   const hasActiveFilters = Boolean(search.trim() || activeCategory);
   const resultCount = messages.resultsCount.replace("{count}", String(filtered.length));

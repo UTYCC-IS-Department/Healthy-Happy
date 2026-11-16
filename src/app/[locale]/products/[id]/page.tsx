@@ -111,7 +111,7 @@ function Detail({ icon, label, text }: { icon: ReactNode; label: string; text: s
       <span className="mt-0.5 size-5 shrink-0 text-secondary">{icon}</span>
       <p>
         <strong className="text-foreground">{label}</strong>
-        <span className="block pt-1 leading-relaxed text-muted">{text}</span>
+        <span className="block whitespace-pre-line pt-1 leading-relaxed text-muted">{text}</span>
       </p>
     </div>
   );

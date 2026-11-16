@@ -13,9 +13,13 @@ const productImage5 = cloudinaryImage("/healthy-happy/Spinach Cookies.png");
 const productImage6 = cloudinaryImage("/healthy-happy/Oat Cookies.png");
 const productImage7 = cloudinaryImage("/healthy-happy/Protein Bite (Diabetes).png");
 const productImage8 = cloudinaryImage("/healthy-happy/IMG_0382.png");
+const lavashImage = "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/lavash_s7u4xi.jpg";
+const nutsCakeImage = "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/Nut_cakes_y0cwog.jpg";
+const nutsCookiesImage = "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821590/nut_cookies_a4ivnc.jpg";
 
 export const productMedia: ProductMedia[] = [
   ["iron-enriched-cookies-1", productImage1],
+  ["protein-bite-diabetes", productImage1],
   ["iron-enriched-cookies-2", productImage2],
   ["iron-enriched-cookies-3", productImage3],
   ["iron-enriched-cookies-4", productImage4],
@@ -23,6 +27,9 @@ export const productMedia: ProductMedia[] = [
   ["spinach-cookies-2", productImage6],
   ["nut-cookies-1", productImage7],
   ["nut-cookies-2", productImage8],
+  ["nuts-cookies", nutsCookiesImage],
+  ["nuts-cake", nutsCakeImage],
+  ["lavash", lavashImage],
 ].map(([id, image]) => ({
   id,
   image,

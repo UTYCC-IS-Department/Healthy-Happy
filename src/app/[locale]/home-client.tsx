@@ -6,7 +6,7 @@ import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } fr
 import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
 import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
-import { cloudinaryVideo } from "@/lib/cloudinary";
+import { cloudinaryImage, cloudinaryVideo } from "@/lib/cloudinary";
 import { useEffect, useState } from "react";
 import type { Locale } from "@/i18n/config";
 import type { HomeMessages } from "@/i18n/message-types";
@@ -137,7 +137,17 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
                   <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
                     <Image
-                      src={assets.product}
+                      src={
+                        slug === "no-sugar-cookies"
+                          ? cloudinaryImage("/healthy-happy/Spinach-Cookies")
+                          : slug === "oat-cookies"
+                            ? cloudinaryImage("/healthy-happy/Oat-Cookies")
+                            : slug === "healthy-snacks"
+                              ? cloudinaryImage("/healthy-happy/Energy-Bar")
+                              : slug === "original-series"
+                                ? cloudinaryImage("/healthy-happy/IMG_0382")
+                                : assets.product
+                      }
                       alt={name}
                       fill
                       sizes="(max-width: 640px) 144px, 160px"
