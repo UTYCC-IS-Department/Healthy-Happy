@@ -1,0 +1,36 @@
+{
+  "title": "Awards & Media",
+  "certifications": "Certifications",
+  "brandAlt": "Healthy & Happy",
+  "items": [
+    {
+      "label": "Award-1",
+      "title": "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.",
+      "description": "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category."
+    },
+    {
+      "label": "Award-2",
+      "title": "The Most Responsible Business Award 2022",
+      "description": "An honour celebrating the work of women entrepreneurs creating positive impact for their communities."
+    },
+    { "label": "Award-3", "title": "Award Title 3", "description": "Award description 3." },
+    { "label": "Award-4", "title": "Award Title 4", "description": "Award description 4." },
+    { "label": "Award-5", "title": "Award Title 5", "description": "Award description 5." },
+    { "label": "Award-6", "title": "Award Title 6", "description": "Award description 6." },
+    { "label": "Award-7", "title": "Award Title 7", "description": "Award description 7." },
+    { "label": "Award-8", "title": "Award Title 8", "description": "Award description 8." },
+    { "label": "Award-9", "title": "Award Title 9", "description": "Award description 9." },
+    { "label": "Award-10", "title": "Award Title 10", "description": "Award description 10." },
+    { "label": "Award-11", "title": "Award Title 11", "description": "Award description 11." }
+  ],
+  "certificateLabels": [
+    "Certification 1",
+    "Certification 2",
+    "Certification 3",
+    "Certification 4",
+    "Certification 5",
+    "Certification 6",
+    "Certification 7",
+    "Certification 8"
+  ]
+}

@@ -6,19 +6,19 @@ Define localization and Burmese Unicode content guarantees.
 
 ### Requirement: Complete externalized public copy
 
-The system SHALL source all v1 user-facing site-shell and page copy from matching external English and Unicode Burmese message resources, with no hardcoded public copy in page or shared-shell components.
+The system SHALL source all current v1 user-facing public site-shell and page copy—including Home, About, Products, Product Detail, Awards, Contact, and localized not-found copy; product names and attributes; labels, actions, placeholders, alt text, and accessibility labels—from matching external English and Unicode Burmese message resources through the shared project-wide i18n contract, with no hardcoded public copy in route or shared-shell components.
 
-#### Scenario: English messages drive public copy
+#### Scenario: English messages drive all public copy
 
-- **GIVEN** a user visits an English public route
+- **GIVEN** a user visits an English public route, including the English Home, About, Products, Product Detail, Awards, or Contact route
 - **WHEN** the route renders
-- **THEN** its visible user-facing copy is resolved from the English message resource
+- **THEN** its visible user-facing and accessibility copy is resolved from English message resources
 
-#### Scenario: Burmese messages drive public copy
+#### Scenario: Burmese messages drive all public copy
 
-- **GIVEN** a user visits a Burmese public route
+- **GIVEN** a user visits a Burmese public route, including the Burmese Home, About, Products, Product Detail, Awards, or Contact route
 - **WHEN** the route renders
-- **THEN** its visible user-facing copy is resolved from the Unicode Burmese message resource
+- **THEN** its visible user-facing and accessibility copy is resolved from Unicode Burmese message resources
 
 ### Requirement: Unicode Burmese visual support
 

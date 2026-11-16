@@ -43,3 +43,6 @@ next-env.d.ts
 
 #firebase
 .firebase/
+
+#linux nixos shell isolation
+shell.nix
