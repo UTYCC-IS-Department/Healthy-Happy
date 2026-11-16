@@ -166,7 +166,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
             })}
           </div>
 
-          <ProductCarousel />
+          <ProductCarousel locale={locale} messages={messages.productCarousel} />
         </div>
       </section>
       <section className="border-b py-12">
