@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState, type TouchEvent } from "react";
 
 import AwardWheel from "@/components/award-wheel";
 import CertificationBlock from "@/components/certification-block";
@@ -208,9 +208,46 @@ function DocCard({ description }: { description: string }) {
 /* ── TrophyCard ──────────────────────────────────────────────────
    
 ──────────────────────────────────────────────────────────────── */
-function TrophyCard({ title, awardImage }: { title: string; awardImage: string }) {
+function TrophyCard({
+  title,
+  awardImage,
+  onSwipe,
+}: {
+  title: string;
+  awardImage: string;
+  onSwipe: (direction: -1 | 1) => void;
+}) {
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    const touch = event.touches[0];
+    if (touch) touchStart.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start || !window.matchMedia("(max-width: 767px)").matches) return;
+
+    const touch = event.changedTouches[0];
+    if (!touch) return;
+
+    const deltaX = touch.clientX - start.x;
+    const deltaY = touch.clientY - start.y;
+    if (Math.abs(deltaX) < 40 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+
+    onSwipe(deltaX < 0 ? 1 : -1);
+  };
+
   return (
     <div
+      className="touch-pan-y md:touch-auto"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={() => {
+        touchStart.current = null;
+      }}
       style={{
         width: "38%",
         flexShrink: 0,
@@ -318,7 +355,13 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           >
             <FolderCard title={award.title}>
               <DocCard description={award.description} />
-              <TrophyCard title={award.title} awardImage={award.image} />
+              <TrophyCard
+                title={award.title}
+                awardImage={award.image}
+                onSwipe={(direction) =>
+                  setActiveAward((current) => (current + direction + awards.length) % awards.length)
+                }
+              />
             </FolderCard>
           </motion.div>
         </div>
