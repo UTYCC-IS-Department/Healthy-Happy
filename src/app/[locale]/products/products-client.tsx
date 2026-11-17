@@ -115,7 +115,7 @@ export function ProductsClient({
                   type="button"
                   aria-pressed={!activeCategory}
                   onClick={() => setActiveCategory(null)}
-                  className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-95 ${!activeCategory ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
+                  className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors duration-200 active:scale-95 ${!activeCategory ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
                 >
                   {messages.allCategories}
                 </button>
@@ -125,7 +125,7 @@ export function ProductsClient({
                     type="button"
                     aria-pressed={activeCategory === category}
                     onClick={() => setActiveCategory(category)}
-                    className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-all duration-200 hover:scale-[1.03] active:scale-95 ${activeCategory === category ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
+                    className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors duration-200 active:scale-95 ${activeCategory === category ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
                   >
                     {category}
                   </button>

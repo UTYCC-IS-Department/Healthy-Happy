@@ -379,7 +379,7 @@ export const heroImages: ImageAsset[] = [
   {
     id: 'wellness-cookies-hero',
     name: 'Wellness Cookies Hero',
-    path: '/images/wellness-cookies-hero.png',
+    path: '/healthy-happy/Oat Cookies.png',
   },
 ];
 
@@ -408,14 +408,22 @@ export function getImagePath(id: string): string | undefined {
 
 // Helper to get retailer logo by 1-based index (1..8)
 export function getRetailerLogo(index: number): string | undefined {
+  if (index === 12) return getImagePath('site-logo');
+  if (index === 2) return getImageById('retailer-ko-han-tin')?.path;
+  if (index === 4) return getImageById('retailer-healthy-happy')?.path;
+  if (index === 11) return getImageById('retailer-sein-gay-har')?.path;
+  if (index === 10) return getImageById('retailer-life-plus')?.path;
+  if (index === 9) return getImageById('retailer-dmart')?.path;
+  if (index === 8) return getImageById('retailer-foodland')?.path;
+
   const retailerIds = [
     'retailer-grand-hantha',
     'retailer-ko-han-tin',
     'retailer-marketplace',
+    'retailer-healthy-happy',
     'retailer-citymart',
     'retailer-ocean',
     'retailer-makro',
-    'retailer-healthy-happy',
     'retailer-myanwen',
   ];
   const id = retailerIds[index - 1];

@@ -144,7 +144,7 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
         <p
           style={{
             margin: 0,
-            fontSize: "clamp(8px, 1.1vw, 12px)",
+            fontSize: "clamp(12px, 1.5vw, 17px)",
             fontWeight: 700,
             color: "#fff",
             lineHeight: 1.3,
@@ -217,7 +217,7 @@ function DocCard({ description }: { description: string }) {
           style={{
             margin: 0,
             textAlign: "center",
-            fontSize: "clamp(10px,1.3vw,13px)",
+            fontSize: "clamp(14px, 1.7vw, 18px)",
             fontWeight: 500,
             lineHeight: 1.5,
             color: "#f0eae8",
@@ -350,7 +350,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {certificationImages.map((certiImage) => (
+          {certificationImages.slice(0, 4).map((certiImage) => (
             <motion.div
               key={certiImage}
               variants={certificationItem}
@@ -369,13 +369,55 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           ))}
         </motion.div>
 
-        <div className="mt-10 flex items-center gap-4 rounded-2xl border bg-white p-5 shadow-sm">
+        <div className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border bg-white p-5 shadow-sm">
           <Image
             src={assets.fda}
             alt={messages.brandAlt}
             width={48}
             height={48}
             className="size-12 rounded-full border object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-8e4be1da8644c46ad5cd8607a2716c397f089aa4cb712ce44eaee9ab66c7811a_a4a6475e35ae5f8e.png"
+            alt="UMFCCI logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-787609da3f6218cfa5984e6bc0277a127e0f9f667a9316b14eb84fa644a085e4_c07ee3f094c14cfd.png"
+            alt="MSME Myanmar logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-f32ca52d27cf92d32b6573a2a8cbac86e7a50d481a5031b00c90f237e39662cf_d53af37bb8c41c2c.png"
+            alt="Partner organization logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-f62677f3e3a73303469d8bd895df2e34c8195ed32e8b176b6f8f2fcbcca11bc9_d2629094ac8a5b98.png"
+            alt="Food science organization logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/images (6).jpg"
+            alt="University of Technology Yatanarpon Cyber City logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/images (5).png"
+            alt="Information Science and Technology logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
           />
 
           <div className="h-1 flex-1 rounded-full bg-secondary/20" />

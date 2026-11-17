@@ -1,7 +1,7 @@
 'use client';
 
-import React from 'react';
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useReducedMotion, Variants } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { getImagePath } from './imageAssets';
 import type { AboutMessages } from "@/i18n/message-types";
@@ -564,8 +564,29 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
     threshold: 0.15,
     triggerOnce: true,
   });
-
+  const leftStackRef = useRef<HTMLDivElement>(null);
+  const shouldReduceMotion = useReducedMotion();
   const researchInnovationData = createResearchData(messages);
+
+  useEffect(() => {
+    const container = leftStackRef.current;
+    if (!container || shouldReduceMotion) return;
+
+    const timer = window.setInterval(() => {
+      const card = container.querySelector<HTMLElement>('.ri-canvas-card');
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      if (!card || maxScroll <= 0) return;
+
+      const gap = Number.parseFloat(window.getComputedStyle(container).columnGap) || 0;
+      const nextScroll =
+        container.scrollLeft >= maxScroll - 1
+          ? 0
+          : Math.min(container.scrollLeft + card.offsetWidth + gap, maxScroll);
+      container.scrollTo({ left: nextScroll, behavior: 'smooth' });
+    }, 2000);
+
+    return () => window.clearInterval(timer);
+  }, [shouldReduceMotion]);
 
   return (
     <>
@@ -598,6 +619,7 @@ export const ResearchInnovation: React.FC<{ locale: Locale; messages: AboutMessa
         <div className="ri-content-grid">
           {/* Left Column Cards */}
           <motion.div
+            ref={leftStackRef}
             className="ri-left-stack"
             variants={leftContainerVariants}
             initial="hidden"

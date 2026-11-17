@@ -73,18 +73,18 @@
   "sustainability": {
     "title": "Sustainability",
     "buttons": ["Farm to Factory Model", "Farmer Support", "ESG & Community Impact", "SDGs Goals"],
-    "placeholder": "You can add some text here",
+    "placeholder": "Healthy & Happy is committed to sustainability, focusing on responsible sourcing, eco-friendly packaging, and community engagement.",
     "imageAlt": ["Sustainability Card 1", "Sustainability Card 2", "Sustainability Bottom Card"]
   },
   "whereCanBuy": {
     "title": "Where Can Buy",
     "retailers": [
       "Grand Hantha Hospital",
-      "Shan Ohh Pharmacy",
-      "Ko Hin Tin Pharmacy",
-      "One Stop",
+      "Shwe Ohh Pharmacy",
+      "Ko Han Tin Pharmacy",
+      "One Stop Mart",
       "CityMart",
-      "Oceania Supermarket",
+      "Ocean Supermarket",
       "Makro Wholesales",
       "Foodland Minimart",
       "DMart",
