@@ -12,7 +12,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Title */}
         <motion.h2
-          initial={{ opacity: 0, y: -40 }}
+          initial={{ opacity: 0, y: -18 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
@@ -24,7 +24,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
           {/* LEFT */}
           <motion.div
-            initial={{ opacity: 0, x: -80 }}
+            initial={{ opacity: 0, x: -32 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
@@ -37,7 +37,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
 
                   initial={{
                     opacity: 0,
-                    x: -50,
+                    x: -20,
                   }}
 
                   whileInView={{
@@ -56,8 +56,8 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
 
                   // Move right on hover
                   whileHover={{
-                    x: 50,
-                    scale: 1.03,
+                    x: 6,
+                    scale: 1.02,
                   }}
 
                   whileTap={{
@@ -89,7 +89,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
             <motion.div
               initial={{
                 opacity: 0,
-                y: 50,
+                y: 24,
               }}
 
               whileInView={{
@@ -127,7 +127,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
           <motion.div
             initial={{
               opacity: 0,
-              x: 80,
+              x: 32,
             }}
 
             whileInView={{
@@ -148,15 +148,8 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
             <div className="flex justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10">
               {/* Card 1 */}
               <motion.div
-                animate={{
-                  y: [0, -12, 0],
-                }}
-
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                whileHover={{ y: -6, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 24 }}
 
                 className="
                   w-32 sm:w-40 md:w-48 lg:w-56
@@ -174,15 +167,8 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
 
               {/* Card 2 */}
               <motion.div
-                animate={{
-                  y: [0, 12, 0],
-                }}
-
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                whileHover={{ y: -6, scale: 1.02 }}
+                transition={{ type: "spring", stiffness: 300, damping: 24 }}
 
                 className="
                   w-36 sm:w-44 md:w-52 lg:w-60
@@ -204,7 +190,7 @@ const Sustainability = ({ messages }: { messages: AboutMessages["sustainability"
             <motion.div
               initial={{
                 opacity: 0,
-                scale: 0.8,
+                scale: 0.94,
               }}
 
               whileInView={{

@@ -33,6 +33,7 @@ export function SiteHeader({
     [messages.links.about, "/about"],
     [messages.links.products, "/products"],
     [messages.links.awards, "/awards"],
+    // [messages.links.chat, "/chat"],
     [messages.links.contact, "/contact"],
   ] as const;
   const localizedLinks = links.map(([label, suffix]) => [label, `/${locale}${suffix}`] as const);
@@ -66,7 +67,7 @@ export function SiteHeader({
               <Link
                 key={href}
                 href={href}
-                className="py-1 text-sm font-medium hover:underline underline-offset-4"
+                className="py-1 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 hover:text-[#d9c1bd] hover:underline underline-offset-4"
               >
                 {label}
               </Link>
@@ -78,7 +79,7 @@ export function SiteHeader({
             <Link
               href={localePath(pathname, "my")}
               onClick={() => persistLocale("my")}
-              className="rounded transition-transform hover:scale-110"
+              className="rounded transition-transform duration-200 hover:-translate-y-0.5 hover:scale-110"
               aria-label={messages.languages.burmese}
             >
               <span className="fi fi-mm text-1xl"></span>
@@ -87,7 +88,7 @@ export function SiteHeader({
             <Link
               href={localePath(pathname, "en")}
               onClick={() => persistLocale("en")}
-              className="rounded transition-transform hover:scale-110"
+              className="rounded transition-transform duration-200 hover:-translate-y-0.5 hover:scale-110"
               aria-label={messages.languages.english}
             >
               <span className="fi fi-gb text-1xl"></span>
@@ -113,7 +114,7 @@ export function SiteHeader({
               key={href}
               href={href}
               onClick={() => setMobileOpen(false)}
-              className={`block rounded-md px-2 py-3 text-base font-medium ${
+              className={`block rounded-md px-2 py-3 text-base font-medium transition-all duration-200 hover:translate-x-1 ${
                 pathname === href ? "bg-white/10 text-secondary" : "hover:bg-white/10"
               }`}
             >
