@@ -560,7 +560,7 @@ Grand Hantha Hospital
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[1]
 
-Shan Ohh Pharmacy
+Shwe Ohh Pharmacy
 
 ## about: whereCanBuy.retailers[10]
 
@@ -600,7 +600,7 @@ Ko Han Tin Pharmacy
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[3]
 
-One Stop
+One Stop Mart
 
 ## about: whereCanBuy.retailers[4]
 
@@ -1110,7 +1110,7 @@ Award-2
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[1].title
 
-Myanmar MSME Recognition Award
+Myanmar MSME Award
 
 ## awards: items[10].description
 
@@ -1140,7 +1140,7 @@ Award-11
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[10].title
 
-Global Food Industry Award: Industrialization of a Traditional Food
+Global Food Industry Award
 
 ## awards: items[2].description
 
@@ -1170,7 +1170,7 @@ Award-3
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[2].title
 
-Resilience for Women-Led SMEs Award: Capacity Enhancement Fund Winner
+Women-Led SME Resilience Award
 
 ## awards: items[3].description
 
@@ -1200,7 +1200,7 @@ Award-4
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[3].title
 
-China-ASEAN Expo Silver Award
+China-ASEAN Silver Award
 
 ## awards: items[4].description
 
@@ -1230,7 +1230,7 @@ Award-5
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[4].title
 
-Myanmar MSME Achievement Award
+MSME Achievement Award
 
 ## awards: items[5].description
 
@@ -1260,7 +1260,7 @@ Award-6
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[5].title
 
-The Most Responsible Business Award
+Responsible Business Award
 
 ## awards: items[6].description
 
@@ -1290,7 +1290,7 @@ Award-7
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[6].title
 
-Myanmar MSME Development Award
+MSME Development Award
 
 ## awards: items[7].description
 
@@ -1320,7 +1320,7 @@ Award-8
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[7].title
 
-Most Promising Award: Thone Pan Hla Cookies
+Most Promising Cookie Award
 
 ## awards: items[8].description
 
@@ -1350,7 +1350,7 @@ Award-9
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[8].title
 
-ASEAN Business Awards: SME Food and Beverages Sector
+ASEAN SME Food Award
 
 ## awards: items[9].description
 
@@ -3816,7 +3816,7 @@ ASEAN Business Award
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[1].title
 
-မြန်မာ MSME အသိအမှတ်ပြုဆု
+မြန်မာ MSME ဆု
 
 ## awards: items[10].description
 
@@ -3846,7 +3846,7 @@ Healthy & Happy Myanmar သည် ရိုးရာအစားအစာ စက
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[10].title
 
-ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award
+Global Food Industry Award
 
 ## awards: items[2].description
 
@@ -3876,7 +3876,7 @@ UNDP နှင့် UN Women တို့က Healthy & Happy Myanmar ကို 
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[2].title
 
-အမျိုးသမီးဦးဆောင် SME များ၏ ကြံ့ကြံ့ခံနိုင်မှုဆု - Capacity Enhancement Fund ဆုရရှိသူ
+အမျိုးသမီးဦးဆောင် SME ကြံ့ကြံ့ခံနိုင်မှုဆု
 
 ## awards: items[3].description
 
@@ -3906,7 +3906,7 @@ Healthy & Happy Myanmar သည် China-ASEAN Expo တွင် ငွေတံ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[3].title
 
-China-ASEAN Expo ငွေတံဆိပ်ဆု
+China-ASEAN ငွေတံဆိပ်ဆု
 
 ## awards: items[4].description
 
@@ -3936,7 +3936,7 @@ China-ASEAN Expo ငွေတံဆိပ်ဆု
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[4].title
 
-မြန်မာ MSME ထူးချွန်ဆု
+MSME ထူးချွန်ဆု
 
 ## awards: items[5].description
 
@@ -3966,7 +3966,7 @@ Women Entrepreneurship Program က Healthy & Happy Myanmar ၏ တာဝန်�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[5].title
 
-တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု
+တာဝန်ယူမှုရှိသော စီးပွားရေးဆု
 
 ## awards: items[6].description
 
@@ -3996,7 +3996,7 @@ Women Entrepreneurship Program က Healthy & Happy Myanmar ၏ တာဝန်�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[6].title
 
-မြန်မာ MSME ဖွံ့ဖြိုးတိုးတက်မှုဆု
+MSME ဖွံ့ဖြိုးရေးဆု
 
 ## awards: items[7].description
 
@@ -4026,7 +4026,7 @@ Thone Pan Hla ကွတ်ကီးများသည် ASEAN-India Grassroots 
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[7].title
 
-Thone Pan Hla ကွတ်ကီးများ၏ အလားအလာအကောင်းဆုံးဆု
+အလားအလာအကောင်းဆုံး ကွတ်ကီးဆု
 
 ## awards: items[8].description
 
@@ -4056,7 +4056,7 @@ Healthy & Happy Myanmar သည် Priority Integration Sector အောက်ရ
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[8].title
 
-ASEAN Business Awards: SME အစားအသောက်နှင့် အဖျော်ယမကာကဏ္ဍ
+ASEAN SME အစားအသောက်ဆု
 
 ## awards: items[9].description
 
