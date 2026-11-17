@@ -112,7 +112,7 @@ const DOC_PATH =
 ──────────────────────────────────────────────────────────────── */
 function FolderCard({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div style={{ position: "relative", paddingBottom: "57%" }}>
+    <div className="relative w-full pb-[57%]">
       {/* SVG backdrop */}
       <svg
         viewBox={FOLDER_VB}
@@ -129,8 +129,8 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
           position: "absolute",
           left: "5%",
           top: "-2%",
-          right: "44%",
-          height: "11%",
+          right: "25%",
+          height: "14%",
           display: "flex",
           alignItems: "center",
           border: "1.5px solid #2dc100",
@@ -167,7 +167,7 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
           right: "4%",
           bottom: "8%",
           display: "flex",
-          gap: 24,
+          gap: "2%",
           alignItems: "stretch",
         }}
       >
@@ -299,7 +299,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
       </motion.section>
       {/* Awards */}
       <section className="mx-auto px-4 py-12">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(320px,430px)_1fr]">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)] lg:gap-10">
           {/* Wheel */}
           <motion.div
             className="flex justify-center"
@@ -308,14 +308,14 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="mx-auto w-full max-w-[430px]">
+            <div className="mx-auto w-full max-w-[520px]">
               <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
             </div>
           </motion.div>
 
           {/* Folder */}
           <motion.div
-            className="mx-auto w-full w-[640px]  lg:-ml-10 lg:mr-20"
+            className="mx-auto w-full max-w-[640px] min-w-0"
             variants={rightVariants}
             initial="hidden"
             whileInView="visible"

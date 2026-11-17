@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, type WheelEvent } from "react";
+import { useEffect, useMemo, useRef } from "react";
 
 type Award = {
   label: string;
@@ -23,6 +23,7 @@ const END_ANGLE = 82;
 
 export default function AwardWheel({ awards, activeAward, onSelect }: AwardWheelProps) {
   const visible = Math.min(7, awards.length);
+  const wheelRef = useRef<HTMLDivElement>(null);
   const lastWheelChange = useRef(0);
 
   const wheel = useMemo(() => {
@@ -43,25 +44,33 @@ export default function AwardWheel({ awards, activeAward, onSelect }: AwardWheel
     });
   }, [awards, activeAward, visible]);
 
-  const handleWheel = (event: WheelEvent<HTMLDivElement>) => {
-    if (event.deltaY === 0 || awards.length === 0) return;
-    event.preventDefault();
+  useEffect(() => {
+    const wheelElement = wheelRef.current;
+    if (!wheelElement) return;
 
-    const now = Date.now();
-    if (now - lastWheelChange.current < 250) return;
-    lastWheelChange.current = now;
+    const handleWheel = (event: globalThis.WheelEvent) => {
+      if (event.deltaY === 0 || awards.length === 0) return;
+      event.preventDefault();
 
-    const direction = event.deltaY > 0 ? 1 : -1;
-    onSelect((activeAward + direction + awards.length) % awards.length);
-  };
+      const now = Date.now();
+      if (now - lastWheelChange.current < 250) return;
+      lastWheelChange.current = now;
+
+      const direction = event.deltaY > 0 ? 1 : -1;
+      onSelect((activeAward + direction + awards.length) % awards.length);
+    };
+
+    wheelElement.addEventListener("wheel", handleWheel, { passive: false });
+    return () => wheelElement.removeEventListener("wheel", handleWheel);
+  }, [activeAward, awards.length, onSelect]);
 
   return (
-    <div className="relative h-[650px] w-[650px]" onWheel={handleWheel}>
+    <div ref={wheelRef} className="relative aspect-square w-full max-w-[650px]">
       <svg
         viewBox={`0 0 ${SIZE} ${SIZE}`}
         className="h-full w-full  overflow-visible"
         style={{
-          transform: "translateX(-70px)",
+          transform: "translateX(-10.9375%)",
         }}
       >
         <defs>
@@ -154,10 +163,10 @@ export default function AwardWheel({ awards, activeAward, onSelect }: AwardWheel
       </svg>
 
       {/* Vertical Title */}
-      <div className=" absolute left-[85px] top-1/2 -translate-y-1/2 flex h-[220px] w-[120px] items-center justify-center pointer-events-none ">
+      <div className="pointer-events-none absolute left-[13.28%] top-1/2 flex h-[34%] w-[18.75%] -translate-y-1/2 items-center justify-center">
         {" "}
         <span
-          className="select-none text-4xl font-bold tracking-wide text-white"
+          className="select-none text-[clamp(1rem,5vw,2.25rem)] font-bold tracking-wide text-white"
           style={{ writingMode: "vertical-lr", transform: "rotate(0deg)" }}
         >
           {" "}

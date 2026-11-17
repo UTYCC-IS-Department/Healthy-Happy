@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T04:07:15.752Z",
+  "generatedAt": "2026-11-17T05:31:46.454Z",
   "chunks": [
     {
       "id": "en:about.coreIdentity.items[0].description",
@@ -503,7 +503,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[1]",
       "sectionId": "about.whereCanBuy.retailers[1]",
-      "text": "Shan Ohh Pharmacy"
+      "text": "Shwe Ohh Pharmacy"
     },
     {
       "id": "en:about.whereCanBuy.retailers[10]",
@@ -539,7 +539,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[3]",
       "sectionId": "about.whereCanBuy.retailers[3]",
-      "text": "One Stop"
+      "text": "One Stop Mart"
     },
     {
       "id": "en:about.whereCanBuy.retailers[4]",
@@ -998,7 +998,7 @@
       "contentType": "message",
       "title": "awards: items[1].title",
       "sectionId": "awards.items[1].title",
-      "text": "Myanmar MSME Recognition Award"
+      "text": "Myanmar MSME Award"
     },
     {
       "id": "en:awards.items[10].description",
@@ -1025,7 +1025,7 @@
       "contentType": "message",
       "title": "awards: items[10].title",
       "sectionId": "awards.items[10].title",
-      "text": "Global Food Industry Award: Industrialization of a Traditional Food"
+      "text": "Global Food Industry Award"
     },
     {
       "id": "en:awards.items[2].description",
@@ -1052,7 +1052,7 @@
       "contentType": "message",
       "title": "awards: items[2].title",
       "sectionId": "awards.items[2].title",
-      "text": "Resilience for Women-Led SMEs Award: Capacity Enhancement Fund Winner"
+      "text": "Women-Led SME Resilience Award"
     },
     {
       "id": "en:awards.items[3].description",
@@ -1079,7 +1079,7 @@
       "contentType": "message",
       "title": "awards: items[3].title",
       "sectionId": "awards.items[3].title",
-      "text": "China-ASEAN Expo Silver Award"
+      "text": "China-ASEAN Silver Award"
     },
     {
       "id": "en:awards.items[4].description",
@@ -1106,7 +1106,7 @@
       "contentType": "message",
       "title": "awards: items[4].title",
       "sectionId": "awards.items[4].title",
-      "text": "Myanmar MSME Achievement Award"
+      "text": "MSME Achievement Award"
     },
     {
       "id": "en:awards.items[5].description",
@@ -1133,7 +1133,7 @@
       "contentType": "message",
       "title": "awards: items[5].title",
       "sectionId": "awards.items[5].title",
-      "text": "The Most Responsible Business Award"
+      "text": "Responsible Business Award"
     },
     {
       "id": "en:awards.items[6].description",
@@ -1160,7 +1160,7 @@
       "contentType": "message",
       "title": "awards: items[6].title",
       "sectionId": "awards.items[6].title",
-      "text": "Myanmar MSME Development Award"
+      "text": "MSME Development Award"
     },
     {
       "id": "en:awards.items[7].description",
@@ -1187,7 +1187,7 @@
       "contentType": "message",
       "title": "awards: items[7].title",
       "sectionId": "awards.items[7].title",
-      "text": "Most Promising Award: Thone Pan Hla Cookies"
+      "text": "Most Promising Cookie Award"
     },
     {
       "id": "en:awards.items[8].description",
@@ -1214,7 +1214,7 @@
       "contentType": "message",
       "title": "awards: items[8].title",
       "sectionId": "awards.items[8].title",
-      "text": "ASEAN Business Awards: SME Food and Beverages Sector"
+      "text": "ASEAN SME Food Award"
     },
     {
       "id": "en:awards.items[9].description",
@@ -3320,7 +3320,7 @@
       "contentType": "message",
       "title": "awards: items[1].title",
       "sectionId": "awards.items[1].title",
-      "text": "မြန်မာ MSME အသိအမှတ်ပြုဆု"
+      "text": "မြန်မာ MSME ဆု"
     },
     {
       "id": "my:awards.items[10].description",
@@ -3347,7 +3347,7 @@
       "contentType": "message",
       "title": "awards: items[10].title",
       "sectionId": "awards.items[10].title",
-      "text": "ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award"
+      "text": "Global Food Industry Award"
     },
     {
       "id": "my:awards.items[2].description",
@@ -3374,7 +3374,7 @@
       "contentType": "message",
       "title": "awards: items[2].title",
       "sectionId": "awards.items[2].title",
-      "text": "အမျိုးသမီးဦးဆောင် SME များ၏ ကြံ့ကြံ့ခံနိုင်မှုဆု - Capacity Enhancement Fund ဆုရရှိသူ"
+      "text": "အမျိုးသမီးဦးဆောင် SME ကြံ့ကြံ့ခံနိုင်မှုဆု"
     },
     {
       "id": "my:awards.items[3].description",
@@ -3401,7 +3401,7 @@
       "contentType": "message",
       "title": "awards: items[3].title",
       "sectionId": "awards.items[3].title",
-      "text": "China-ASEAN Expo ငွေတံဆိပ်ဆု"
+      "text": "China-ASEAN ငွေတံဆိပ်ဆု"
     },
     {
       "id": "my:awards.items[4].description",
@@ -3428,7 +3428,7 @@
       "contentType": "message",
       "title": "awards: items[4].title",
       "sectionId": "awards.items[4].title",
-      "text": "မြန်မာ MSME ထူးချွန်ဆု"
+      "text": "MSME ထူးချွန်ဆု"
     },
     {
       "id": "my:awards.items[5].description",
@@ -3455,7 +3455,7 @@
       "contentType": "message",
       "title": "awards: items[5].title",
       "sectionId": "awards.items[5].title",
-      "text": "တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု"
+      "text": "တာဝန်ယူမှုရှိသော စီးပွားရေးဆု"
     },
     {
       "id": "my:awards.items[6].description",
@@ -3482,7 +3482,7 @@
       "contentType": "message",
       "title": "awards: items[6].title",
       "sectionId": "awards.items[6].title",
-      "text": "မြန်မာ MSME ဖွံ့ဖြိုးတိုးတက်မှုဆု"
+      "text": "MSME ဖွံ့ဖြိုးရေးဆု"
     },
     {
       "id": "my:awards.items[7].description",
@@ -3509,7 +3509,7 @@
       "contentType": "message",
       "title": "awards: items[7].title",
       "sectionId": "awards.items[7].title",
-      "text": "Thone Pan Hla ကွတ်ကီးများ၏ အလားအလာအကောင်းဆုံးဆု"
+      "text": "အလားအလာအကောင်းဆုံး ကွတ်ကီးဆု"
     },
     {
       "id": "my:awards.items[8].description",
@@ -3536,7 +3536,7 @@
       "contentType": "message",
       "title": "awards: items[8].title",
       "sectionId": "awards.items[8].title",
-      "text": "ASEAN Business Awards: SME အစားအသောက်နှင့် အဖျော်ယမကာကဏ္ဍ"
+      "text": "ASEAN SME အစားအသောက်ဆု"
     },
     {
       "id": "my:awards.items[9].description",
