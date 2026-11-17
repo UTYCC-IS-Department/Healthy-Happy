@@ -29,16 +29,17 @@ export async function generateMetadata({
     },
     description,
     alternates: {
-      canonical: `${SITE_URL}/${locale}`,
+      canonical: `${SITE_URL}/${locale}/`,
       languages: {
-        en: `${SITE_URL}/en`,
-        my: `${SITE_URL}/my`,
+        en: `${SITE_URL}/en/`,
+        my: `${SITE_URL}/my/`,
+        "x-default": `${SITE_URL}/en/`,
       },
     },
     openGraph: {
       title,
       description,
-      url: `${SITE_URL}/${locale}`,
+      url: `${SITE_URL}/${locale}/`,
       siteName: "Healthy & Happy Myanmar",
       images: [
         {
