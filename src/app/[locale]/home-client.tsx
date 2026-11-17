@@ -2,16 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw, Send } from "lucide-react";
-import { SiFacebook, SiInstagram, SiTiktok, SiWhatsapp } from "react-icons/si";
+import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw } from "lucide-react";
+import { SiFacebook, SiTiktok, SiWhatsapp } from "react-icons/si";
 import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
-<<<<<<< HEAD
-import { cloudinaryVideo } from "@/lib/cloudinary";
-import { getMediaUrl } from "@/lib/media-registry";
-=======
 import { cloudinaryImage, cloudinaryVideo } from "@/lib/cloudinary";
->>>>>>> origin/feature/fix
+import { getMediaUrl } from "@/lib/media-registry";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -79,15 +75,9 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
         {/* Hero video */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-[#d9d9d9]">
           <video
-<<<<<<< HEAD
             src={getMediaUrl("site-hero-video") || cloudinaryVideo("/videos/production.mp4")}
             autoPlay
             loop
-=======
-            src={cloudinaryVideo("/videos/production.mp4")}
-            autoPlay={!shouldReduceMotion}
-            loop={!shouldReduceMotion}
->>>>>>> origin/feature/fix
             muted
             playsInline
             className="h-full w-full object-cover"

@@ -12,7 +12,6 @@ export type ProductMedia = {
   isBestSeller?: boolean;
 };
 
-<<<<<<< HEAD
 const productImage1 = mediaUrl("product-1", "/healthy-happy/Protein Bite (Original).png");
 const productImage2 = mediaUrl("product-2", "/healthy-happy/Peanut Butter (No Sugar).png");
 const productImage3 = mediaUrl("product-3", "/healthy-happy/IMG_0319_1_1784649192457.png");
@@ -21,19 +20,9 @@ const productImage5 = mediaUrl("product-5", "/healthy-happy/Spinach Cookies.png"
 const productImage6 = mediaUrl("product-6", "/healthy-happy/Oat Cookies.png");
 const productImage7 = mediaUrl("product-7", "/healthy-happy/Protein Bite (Diabetes).png");
 const productImage8 = mediaUrl("product-8", "/healthy-happy/IMG_0382.png");
-=======
-const productImage1 = cloudinaryImage("/healthy-happy/Protein Bite (Original).png");
-const productImage2 = cloudinaryImage("/healthy-happy/Peanut Butter (No Sugar).png");
-const productImage3 = cloudinaryImage("/healthy-happy/IMG_0319_1_1784649192457.png");
-const productImage4 = cloudinaryImage("/healthy-happy/Energy Bar.JPG");
-const productImage5 = cloudinaryImage("/healthy-happy/Spinach Cookies.png");
-const productImage6 = cloudinaryImage("/healthy-happy/Oat Cookies.png");
-const productImage7 = cloudinaryImage("/healthy-happy/Protein Bite (Diabetes).png");
-const productImage8 = cloudinaryImage("/healthy-happy/IMG_0382.png");
-const lavashImage = "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/lavash_s7u4xi.jpg";
-const nutsCakeImage = "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/Nut_cakes_y0cwog.jpg";
-const nutsCookiesImage = "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821590/nut_cookies_a4ivnc.jpg";
->>>>>>> origin/feature/fix
+const lavashImage = mediaUrl("product-lavash", "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/lavash_s7u4xi.jpg");
+const nutsCakeImage = mediaUrl("product-nuts-cake", "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/Nut_cakes_y0cwog.jpg");
+const nutsCookiesImage = mediaUrl("product-nuts-cookies", "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821590/nut_cookies_a4ivnc.jpg");
 
 export const productMedia: ProductMedia[] = [
   ["iron-enriched-cookies-1", productImage1],
