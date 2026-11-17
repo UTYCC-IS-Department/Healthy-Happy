@@ -160,16 +160,7 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
 
       {/* ── Cards row — DocCard + Troph */}
       <div
-        style={{
-          position: "absolute",
-          top: "30%",
-          left: "4%",
-          right: "4%",
-          bottom: "8%",
-          display: "flex",
-          gap: "2%",
-          alignItems: "stretch",
-        }}
+        className="absolute inset-x-[4%] top-[22%] bottom-[5%] flex items-stretch gap-[2%] sm:top-[30%] sm:bottom-[8%]"
       >
         {children}
       </div>
@@ -202,26 +193,10 @@ function DocCard({ description }: { description: string }) {
 
       {/* Description text */}
       <div
-        style={{
-          position: "absolute",
-          top: "25%",
-          left: "6%",
-          right: "6%",
-          bottom: "21%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+        className="absolute inset-x-[6%] top-[6%] bottom-[6%] flex items-center justify-center sm:top-[25%] sm:bottom-[21%]"
       >
         <p
-          style={{
-            margin: 0,
-            textAlign: "center",
-            fontSize: "clamp(14px, 1.7vw, 18px)",
-            fontWeight: 500,
-            lineHeight: 1.5,
-            color: "#f0eae8",
-          }}
+          className="m-0 text-center text-[clamp(11px,3vw,14px)] font-medium leading-[1.2] text-[#f0eae8] sm:text-[clamp(14px,1.7vw,18px)] sm:leading-[1.5]"
         >
           {description}
         </p>
@@ -300,7 +275,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
       {/* Awards */}
       <section className="mx-auto px-4 py-12">
         <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)] lg:gap-10">
-          {/* Wheel */}
+          {/* Award selector */}
           <motion.div
             className="flex justify-center"
             variants={leftVariants}
@@ -308,9 +283,29 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="mx-auto w-full max-w-[520px]">
+            <div className="mx-auto hidden w-full max-w-[520px] md:block">
               <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
             </div>
+            <nav className="w-full md:hidden" aria-label={messages.title}>
+              <div className="flex snap-x snap-mandatory gap-2 overflow-x-auto px-1 pb-3 [scrollbar-width:thin]">
+                {awards.map((item, index) => (
+                  <button
+                    key={item.label}
+                    type="button"
+                    aria-label={`${item.label}: ${item.title}`}
+                    aria-pressed={activeAward === index}
+                    onClick={() => setActiveAward(index)}
+                    className={`shrink-0 snap-start rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+                      activeAward === index
+                        ? "border-primary bg-primary text-white"
+                        : "border-border bg-white text-foreground"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </nav>
           </motion.div>
 
           {/* Folder */}
