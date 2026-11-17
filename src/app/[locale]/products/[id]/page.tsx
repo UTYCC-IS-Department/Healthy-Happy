@@ -43,16 +43,17 @@ export async function generateMetadata({
     title,
     description,
     alternates: {
-      canonical: `${SITE_URL}/${locale}/products/${id}`,
+      canonical: `${SITE_URL}/${locale}/products/${id}/`,
       languages: {
-        en: `${SITE_URL}/en/products/${id}`,
-        my: `${SITE_URL}/my/products/${id}`,
+        en: `${SITE_URL}/en/products/${id}/`,
+        my: `${SITE_URL}/my/products/${id}/`,
+        "x-default": `${SITE_URL}/en/products/${id}/`,
       },
     },
     openGraph: {
       title,
       description,
-      url: `${SITE_URL}/${locale}/products/${id}`,
+      url: `${SITE_URL}/${locale}/products/${id}/`,
       siteName: "Healthy & Happy Myanmar",
       images: [
         {
@@ -82,9 +83,9 @@ export default async function ProductDetailPage({
   const productListPath = `/${locale}/products`;
 
   const breadcrumbs = [
-    { name: locale === "my" ? "ပင်မစာမျက်နှာ" : "Home", url: `/${locale}` },
-    { name: locale === "my" ? "ထုတ်ကုန်များ" : "Products", url: `/${locale}/products` },
-    { name: product.name, url: `/${locale}/products/${id}` },
+    { name: locale === "my" ? "ပင်မစာမျက်နှာ" : "Home", url: `/${locale}/` },
+    { name: locale === "my" ? "ထုတ်ကုန်များ" : "Products", url: `/${locale}/products/` },
+    { name: product.name, url: `/${locale}/products/${id}/` },
   ];
 
   return (
@@ -94,7 +95,7 @@ export default async function ProductDetailPage({
         name={product.name}
         description={product.description}
         image={product.image}
-        url={`/${locale}/products/${id}`}
+        url={`/${locale}/products/${id}/`}
       />
       <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
         <Link

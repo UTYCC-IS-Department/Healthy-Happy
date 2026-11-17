@@ -1,52 +1,147 @@
 import type { MetadataRoute } from "next";
-import { locales } from "@/i18n/config";
-import { productMedia } from "@/lib/site-data";
+import { defaultLocale, locales } from "@/i18n/config";
+import { assets, productMedia } from "@/lib/site-data";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://healthyandhappymyanmar.com";
 
+function buildLocalizedUrl(siteUrl: string, locale: string, path = ""): string {
+  const normalizedPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+  const base = `${siteUrl}/${locale}${normalizedPath}`;
+  return base.endsWith("/") ? base : `${base}/`;
+}
+
+function buildAlternateLanguages(siteUrl: string, path = ""): Record<string, string> {
+  return {
+    en: buildLocalizedUrl(siteUrl, "en", path),
+    my: buildLocalizedUrl(siteUrl, "my", path),
+    "x-default": buildLocalizedUrl(siteUrl, defaultLocale, path),
+  };
+}
+
+function toAbsoluteUrl(url: string, siteUrl: string): string {
+  if (!url) return "";
+  if (url.startsWith("http://") || url.startsWith("https://")) {
+    return url;
+  }
+  const cleanPath = url.startsWith("/") ? url : `/${url}`;
+  return `${siteUrl}${cleanPath}`;
+}
+
+function sanitizeImages(images: (string | undefined)[], siteUrl: string): string[] {
+  const seen = new Set<string>();
+  const result: string[] = [];
+  for (const img of images) {
+    if (!img) continue;
+    const abs = toAbsoluteUrl(img, siteUrl);
+    if (abs && !seen.has(abs)) {
+      seen.add(abs);
+      result.push(abs);
+    }
+  }
+  return result;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
+  // Top products image URLs for the products overview page
+  const featuredProductImages = sanitizeImages(
+    productMedia.slice(0, 6).map((p) => p.image),
+    SITE_URL
+  );
+
+  // Core static routes
   const routes = [
-    { path: "", changeFrequency: "daily" as const, priority: 1.0 },
-    { path: "/about", changeFrequency: "weekly" as const, priority: 0.9 },
-    { path: "/products", changeFrequency: "daily" as const, priority: 0.9 },
-    { path: "/awards", changeFrequency: "monthly" as const, priority: 0.8 },
-    { path: "/contact", changeFrequency: "monthly" as const, priority: 0.7 },
-    { path: "/chat", changeFrequency: "monthly" as const, priority: 0.6 },
+    {
+      path: "",
+      changeFrequency: "daily" as const,
+      priority: 1.0,
+      images: sanitizeImages([assets.banner, assets.logo, assets.product], SITE_URL),
+    },
+    {
+      path: "/products",
+      changeFrequency: "daily" as const,
+      priority: 0.9,
+      images: sanitizeImages([assets.banner, ...featuredProductImages], SITE_URL),
+    },
+    {
+      path: "/about",
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+      images: sanitizeImages([assets.banner], SITE_URL),
+    },
+    {
+      path: "/awards",
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+      images: sanitizeImages(
+        [
+          assets.award1,
+          assets.award2,
+          assets.award3,
+          assets.award4,
+          assets.award5,
+          assets.award6,
+          assets.award7,
+          assets.award8,
+          assets.fda,
+        ],
+        SITE_URL
+      ),
+    },
+    {
+      path: "/contact",
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+      images: sanitizeImages(
+        ["https://res.cloudinary.com/dh6jges3r/image/upload/f_auto/q_auto/c_limit,w_1600/healthy-happy-site/images/healthy-happy/contact_us_1784649192452"],
+        SITE_URL
+      ),
+    },
+    {
+      path: "/chat",
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+      images: sanitizeImages([assets.banner], SITE_URL),
+    },
   ];
 
-  const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
   // Generate localized pages
-  routes.forEach(({ path, changeFrequency, priority }) => {
+  routes.forEach(({ path, changeFrequency, priority, images }) => {
     locales.forEach((locale) => {
       entries.push({
-        url: `${SITE_URL}/${locale}${path}`,
+        url: buildLocalizedUrl(SITE_URL, locale, path),
         lastModified: now,
         changeFrequency,
         priority,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((l) => [l, `${SITE_URL}/${l}${path}`])
-          ),
+          languages: buildAlternateLanguages(SITE_URL, path),
         },
+        images,
       });
     });
   });
 
   // Generate individual product detail pages
-  productMedia.forEach(({ id }) => {
+  productMedia.forEach((product) => {
+    const productImages = sanitizeImages(
+      [product.image, ...(product.thumbnails || [])],
+      SITE_URL
+    );
+    const productPath = `/products/${product.id}`;
+
     locales.forEach((locale) => {
       entries.push({
-        url: `${SITE_URL}/${locale}/products/${id}`,
+        url: buildLocalizedUrl(SITE_URL, locale, productPath),
         lastModified: now,
         changeFrequency: "weekly",
         priority: 0.85,
         alternates: {
-          languages: Object.fromEntries(
-            locales.map((l) => [l, `${SITE_URL}/${l}/products/${id}`])
-          ),
+          languages: buildAlternateLanguages(SITE_URL, productPath),
         },
+        images: productImages,
       });
     });
   });
