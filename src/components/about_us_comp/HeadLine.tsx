@@ -1,5 +1,6 @@
 import React from 'react';
 import { getImagePath } from './imageAssets';
+import { ScrollReveal } from "@/components/scroll-reveal";
 import type { AboutMessages } from "@/i18n/message-types";
 
 interface GridImage {
@@ -15,35 +16,35 @@ const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages 
   const gridImagesData: GridImage[] = [
     {
       id: 1,
-      src: getImagePath('history-founder-award') || '/path/to/top-left-img.jpg',
+      src: getImagePath('aboutus-18') || '/path/to/top-left-img.jpg',
       alt: messages.grid[0].alt,
       title: messages.grid[0].title,
       className: 'col-start-1 col-end-3 row-start-1 row-end-3',
     },
     {
       id: 2,
-      src: getImagePath('history-nutrition-recipe') || '/path/to/top-right-img.jpg',
+      src: getImagePath('aboutus-20') || '/path/to/top-right-img.jpg',
       alt: messages.grid[1].alt,
       title: messages.grid[1].title,
       className: 'col-start-3 row-start-1 row-end-3',
     },
     {
       id: 3,
-      src: getImagePath('history-mission-trophy') || '/path/to/center-img.jpg',
+      src: getImagePath('aboutus-16') || '/path/to/center-img.jpg',
       alt: messages.grid[2].alt,
       title: messages.grid[2].title,
       className: 'col-start-2 row-start-2 z-10',
     },
     {
       id: 4,
-      src: getImagePath('history-operations') || '/path/to/bottom-left-img.jpg',
+      src: getImagePath('aboutus-19') || '/path/to/bottom-left-img.jpg',
       alt: messages.grid[3].alt,
       title: messages.grid[3].title,
       className: 'col-start-1 row-start-3',
     },
     {
       id: 5,
-      src: getImagePath('history-innovation-award') || '/path/to/bottom-right-img.jpg',
+      src: getImagePath('aboutus-17') || '/path/to/bottom-right-img.jpg',
       alt: messages.grid[4].alt,
       title: messages.grid[4].title,
       className: 'col-start-2 col-end-4 row-start-3',
@@ -55,6 +56,7 @@ const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages 
       <div className="max-w-7xl mx-auto space-y-8 sm:space-y-12 lg:space-y-16">
         
         {/* Header Section */}
+        <ScrollReveal>
         <header className="relative pt-4 sm:pt-6 md:pt-8 pb-6 sm:pb-8 md:pb-12">
   <span className="absolute left-0 top-0 text-xs sm:text-sm font-semibold text-gray-600">
     {messages.established}
@@ -63,8 +65,10 @@ const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages 
     {messages.company}
   </h1>
 </header>
+        </ScrollReveal>
 
         {/* Top Content Grid */}
+        <ScrollReveal delay={0.05}>
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative flex justify-center order-2 lg:order-1 w-full">
             <div className="absolute inset-0 bg-gray-400 rounded-3xl translate-x-2 sm:translate-x-3 md:translate-x-4 translate-y-2 sm:translate-y-3 md:translate-y-4 -z-0 opacity-50"></div>
@@ -113,8 +117,10 @@ const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages 
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
         {/* Section Divider / History Header */}
+        <ScrollReveal delay={0.05}>
         <div className="flex items-center justify-center space-x-3 sm:space-x-4 py-6 sm:py-8 md:py-10">
           <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-green-600 rounded-full border-3 border-yellow-400 flex items-center justify-center text-xs sm:text-sm text-white font-bold shadow-lg">
             <img
@@ -125,8 +131,10 @@ const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages 
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900">{messages.historyTitle}</h2>
         </div>
+        </ScrollReveal>
 
         {/* Bottom Content Grid with 5-Image Layout */}
+        <ScrollReveal delay={0.05}>
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
             <div className="flex items-start space-x-3 sm:space-x-4">
@@ -172,6 +180,7 @@ const Headline: React.FC<{ messages: AboutMessages["headline"] }> = ({ messages 
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
       </div>
     </div>

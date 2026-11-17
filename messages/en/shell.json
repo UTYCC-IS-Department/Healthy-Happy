@@ -2,7 +2,7 @@
   "header": {
     "brandAlt": "Healthy & Happy Myanmar logo",
     "brandName": "Healthy & Happy",
-    "links": { "home": "Home", "about": "About Us", "products": "Products", "awards": "Awards", "contact": "Contact Us" },
+    "links": { "home": "Home", "about": "About Us", "products": "Products", "awards": "Awards", "chat": "AI Chat", "contact": "Contact Us" },
     "languages": { "english": "English", "burmese": "Myanmar" },
     "openNavigation": "Open navigation",
     "closeNavigation": "Close navigation"

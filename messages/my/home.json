@@ -14,6 +14,11 @@
       "မူရင်းစီးရီး"
     ]
   },
+  "productCarousel": {
+    "explore": "အသေးစိတ်ကြည့်ရန်",
+    "previous": "ယခင်ထုတ်ကုန်များ",
+    "next": "နောက်ထုတ်ကုန်များ"
+  },
   "journey": {
     "logoAlt": "Healthy & Happy",
     "title": "Happy & Healthy ၏ ခရီးစဉ်",

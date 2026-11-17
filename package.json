@@ -10,7 +10,10 @@
     "lint": "eslint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "i18n:check": "node scripts/check-message-parity.mjs"
+    "i18n:check": "node scripts/check-message-parity.mjs",
+    "ai:corpus": "node scripts/generate-ai-corpus.mjs",
+    "ai:check-corpus": "node scripts/check-ai-corpus.mjs",
+    "ai:evaluate": "node scripts/evaluate-ai-chat.mjs"
   },
   "dependencies": {
     "flag-icons": "^7.5.0",

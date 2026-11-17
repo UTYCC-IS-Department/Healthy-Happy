@@ -2,7 +2,7 @@
   "header": {
     "brandAlt": "Healthy & Happy Myanmar လိုဂို",
     "brandName": "Healthy & Happy",
-    "links": { "home": "ပင်မ", "about": "ကျွန်ုပ်တို့အကြောင်း", "products": "ထုတ်ကုန်များ", "awards": "ဆုများ", "contact": "ဆက်သွယ်ရန်" },
+    "links": { "home": "ပင်မ", "about": "ကျွန်ုပ်တို့အကြောင်း", "products": "ထုတ်ကုန်များ", "awards": "ဆုများ", "chat": "AI စကားပြော", "contact": "ဆက်သွယ်ရန်" },
     "languages": { "english": "English", "burmese": "မြန်မာ" },
     "openNavigation": "လမ်းညွှန်ကို ဖွင့်ရန်",
     "closeNavigation": "လမ်းညွှန်ကို ပိတ်ရန်"

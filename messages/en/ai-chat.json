@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "AI Chat",
+    "description": "Ask Healthy & Happy questions grounded in our project content."
+  },
+  "hero": {
+    "eyebrow": "Healthy & Happy AI",
+    "title": "Ask about our products and wellness story",
+    "description": "This assistant answers from Healthy & Happy project data. It will say when the current data does not contain an answer."
+  },
+  "panel": {
+    "title": "Project guide",
+    "subtitle": "Grounded answers from site and product content",
+    "emptyTitle": "Start with a question",
+    "emptyDescription": "Ask about products, ingredients, awards, contact details, or the Healthy & Happy brand.",
+    "inputLabel": "Message",
+    "placeholder": "Ask about Healthy & Happy...",
+    "send": "Send",
+    "sending": "Sending",
+    "assistantLabel": "Healthy & Happy assistant",
+    "userLabel": "You",
+    "sourcesLabel": "Sources",
+    "sourceFallback": "Project data"
+  },
+  "suggestions": [
+    "Which products are best sellers?",
+    "What ingredients are in the cookies?",
+    "Where can I contact Healthy & Happy?"
+  ],
+  "errors": {
+    "empty": "Please type a question first.",
+    "tooLong": "Please keep your question shorter.",
+    "unavailable": "The AI chat is unavailable right now. Please try again later.",
+    "rateLimited": "Please wait a moment before asking another question.",
+    "unknown": "Something went wrong. Please try again."
+  },
+  "fallbacks": {
+    "notGrounded": "I cannot answer that from the current Healthy & Happy project data."
+  },
+  "accessibility": {
+    "conversation": "AI chat conversation",
+    "suggestions": "Suggested questions"
+  }
+}

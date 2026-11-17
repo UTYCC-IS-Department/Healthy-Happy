@@ -26,7 +26,7 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: She
             </p>
             <Link
               href={`/${locale}/products`}
-              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#6c6c6c] px-5 py-2 text-xs font-semibold text-white transition hover:bg-neutral-800"
+              className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#6c6c6c] px-5 py-2 text-xs font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:bg-neutral-800 hover:shadow-lg active:scale-95"
             >
               {messages.newsAction} <ArrowRight className="size-3.5" />
             </Link>
@@ -85,16 +85,16 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: She
                 {messages.follow}
               </p>
               <div className="flex gap-4 text-base text-black">
-                <a aria-label={messages.social.facebook} href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.facebook} href="#" className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-75">
                   <SiFacebook />
                 </a>
-                <a aria-label={messages.social.tiktok} href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.tiktok} href="#" className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-75">
                   <SiTiktok />
                 </a>
-                <a aria-label={messages.social.instagram} href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.instagram} href="#" className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-75">
                   <SiInstagram />
                 </a>
-                <a aria-label={messages.social.whatsapp} href="#" className="hover:opacity-75">
+                <a aria-label={messages.social.whatsapp} href="#" className="transition-transform duration-200 hover:-translate-y-1 hover:scale-110 hover:opacity-75">
                   <SiWhatsapp />
                 </a>
               </div>
@@ -159,9 +159,15 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: She
           </div> */}
         </div>
 
-        {/* Copyright Line */}
-        <div className="mt-10 text-center text-xs font-bold text-black sm:mt-16">
-          {messages.copyright}
+        {/* Copyright Line & Panel Link */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs font-bold text-black sm:mt-16 border-t border-neutral-100 pt-4">
+          <div>{messages.copyright}</div>
+          <Link
+            href="/panel"
+            className="text-[11px] font-medium text-neutral-400 hover:text-[#3d4a2e] transition"
+          >
+            Media Control Panel
+          </Link>
         </div>
       </div>
     </footer>
@@ -186,7 +192,7 @@ function FooterColumn({
       <ul className="space-y-2 text-xs font-semibold text-neutral-800">
         {links.map(([label, href]) => (
           <li key={label}>
-            <Link href={href} className="transition hover:underline">
+            <Link href={href} className="inline-block transition-all duration-200 hover:translate-x-1 hover:text-primary hover:underline">
               {label}
             </Link>
           </li>
