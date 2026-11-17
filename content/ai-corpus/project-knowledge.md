@@ -520,7 +520,7 @@ Sustainability Bottom Card
 - sourcePath: messages/en/about.json
 - sectionId: about.sustainability.placeholder
 
-You can add some text here
+Healthy & Happy is committed to sustainability, focusing on responsible sourcing, eco-friendly packaging, and community engagement.
 
 ## about: sustainability.title
 
@@ -550,7 +550,7 @@ Apart from major modern trade venues, our products are widely available at promi
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[0]
 
-Grandmother Hospital
+Grand Hantha Hospital
 
 ## about: whereCanBuy.retailers[1]
 
@@ -560,7 +560,27 @@ Grandmother Hospital
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[1]
 
-Shan Dila Pharmacy
+Shan Ohh Pharmacy
+
+## about: whereCanBuy.retailers[10]
+
+- id: en:about.whereCanBuy.retailers[10]
+- locale: en
+- contentType: message
+- sourcePath: messages/en/about.json
+- sectionId: about.whereCanBuy.retailers[10]
+
+Sein Gay Har
+
+## about: whereCanBuy.retailers[11]
+
+- id: en:about.whereCanBuy.retailers[11]
+- locale: en
+- contentType: message
+- sourcePath: messages/en/about.json
+- sectionId: about.whereCanBuy.retailers[11]
+
+Healthy & Happy Store
 
 ## about: whereCanBuy.retailers[2]
 
@@ -570,7 +590,7 @@ Shan Dila Pharmacy
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[2]
 
-Ku Kin Tin Pharmacy
+Ko Han Tin Pharmacy
 
 ## about: whereCanBuy.retailers[3]
 
@@ -580,7 +600,7 @@ Ku Kin Tin Pharmacy
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[3]
 
-Market Plaza
+One Stop
 
 ## about: whereCanBuy.retailers[4]
 
@@ -600,7 +620,7 @@ CityMart
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[5]
 
-Healthy & Happy Store
+Ocean Supermarket
 
 ## about: whereCanBuy.retailers[6]
 
@@ -610,7 +630,7 @@ Healthy & Happy Store
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[6]
 
-Family Pharmacy
+Makro Wholesales
 
 ## about: whereCanBuy.retailers[7]
 
@@ -620,7 +640,27 @@ Family Pharmacy
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[7]
 
-Local Partners
+Foodland Minimart
+
+## about: whereCanBuy.retailers[8]
+
+- id: en:about.whereCanBuy.retailers[8]
+- locale: en
+- contentType: message
+- sourcePath: messages/en/about.json
+- sectionId: about.whereCanBuy.retailers[8]
+
+DMart
+
+## about: whereCanBuy.retailers[9]
+
+- id: en:about.whereCanBuy.retailers[9]
+- locale: en
+- contentType: message
+- sourcePath: messages/en/about.json
+- sectionId: about.whereCanBuy.retailers[9]
+
+Life Plus
 
 ## about: whereCanBuy.title
 
@@ -1020,7 +1060,7 @@ Certifications
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[0].description
 
-Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category.
+The Myanmar Women Entrepreneurs Network recognized May Hnin Wai of Healthy & Happy Myanmar for her achievement.
 
 ## awards: items[0].label
 
@@ -1040,7 +1080,7 @@ Award-1
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[0].title
 
-RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.
+ASEAN Business Award
 
 ## awards: items[1].description
 
@@ -1050,7 +1090,7 @@ RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[1].description
 
-An honour celebrating the work of women entrepreneurs creating positive impact for their communities.
+A Myanmar-language trophy recognizing achievement in the micro, small, and medium enterprise sector.
 
 ## awards: items[1].label
 
@@ -1070,7 +1110,7 @@ Award-2
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[1].title
 
-The Most Responsible Business Award 2022
+Myanmar MSME Recognition Award
 
 ## awards: items[10].description
 
@@ -1080,7 +1120,7 @@ The Most Responsible Business Award 2022
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[10].description
 
-Award description 11.
+Healthy & Happy Myanmar won the Global Food Industry Award for Industrialization of a Traditional Food.
 
 ## awards: items[10].label
 
@@ -1100,7 +1140,7 @@ Award-11
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[10].title
 
-Award Title 11
+Global Food Industry Award: Industrialization of a Traditional Food
 
 ## awards: items[2].description
 
@@ -1110,7 +1150,7 @@ Award Title 11
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[2].description
 
-Award description 3.
+UNDP and UN Women recognized Healthy & Happy Myanmar as a winner in the Capacity Enhancement Fund category of the Resilience for Women-Led SMEs Award.
 
 ## awards: items[2].label
 
@@ -1130,7 +1170,7 @@ Award-3
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[2].title
 
-Award Title 3
+Resilience for Women-Led SMEs Award: Capacity Enhancement Fund Winner
 
 ## awards: items[3].description
 
@@ -1140,7 +1180,7 @@ Award Title 3
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[3].description
 
-Award description 4.
+Healthy & Happy Myanmar received the Silver Award at the China-ASEAN Expo.
 
 ## awards: items[3].label
 
@@ -1160,7 +1200,7 @@ Award-4
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[3].title
 
-Award Title 4
+China-ASEAN Expo Silver Award
 
 ## awards: items[4].description
 
@@ -1170,7 +1210,7 @@ Award Title 4
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[4].description
 
-Award description 5.
+This Myanmar-language award recognizes achievement in the micro, small, and medium enterprise sector.
 
 ## awards: items[4].label
 
@@ -1190,7 +1230,7 @@ Award-5
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[4].title
 
-Award Title 5
+Myanmar MSME Achievement Award
 
 ## awards: items[5].description
 
@@ -1200,7 +1240,7 @@ Award Title 5
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[5].description
 
-Award description 6.
+The Women Entrepreneurship Program recognized Healthy & Happy Myanmar for responsible business leadership.
 
 ## awards: items[5].label
 
@@ -1220,7 +1260,7 @@ Award-6
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[5].title
 
-Award Title 6
+The Most Responsible Business Award
 
 ## awards: items[6].description
 
@@ -1230,7 +1270,7 @@ Award Title 6
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[6].description
 
-Award description 7.
+This award recognizes achievement in Myanmar's micro, small, and medium enterprise sector.
 
 ## awards: items[6].label
 
@@ -1250,7 +1290,7 @@ Award-7
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[6].title
 
-Award Title 7
+Myanmar MSME Development Award
 
 ## awards: items[7].description
 
@@ -1260,7 +1300,7 @@ Award Title 7
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[7].description
 
-Award description 8.
+Thone Pan Hla Cookies received the Most Promising Award at the ASEAN-India Grassroots Innovation Forum for its nutritional benefits.
 
 ## awards: items[7].label
 
@@ -1280,7 +1320,7 @@ Award-8
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[7].title
 
-Award Title 8
+Most Promising Award: Thone Pan Hla Cookies
 
 ## awards: items[8].description
 
@@ -1290,7 +1330,7 @@ Award Title 8
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[8].description
 
-Award description 9.
+Healthy & Happy Myanmar was recognized in the SME Food and Beverages Sector under the Priority Integration Sector.
 
 ## awards: items[8].label
 
@@ -1310,7 +1350,7 @@ Award-9
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[8].title
 
-Award Title 9
+ASEAN Business Awards: SME Food and Beverages Sector
 
 ## awards: items[9].description
 
@@ -1320,7 +1360,7 @@ Award Title 9
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[9].description
 
-Award description 10.
+The UMFCCI recognized Healthy & Happy Myanmar with the SME Outstanding Award.
 
 ## awards: items[9].label
 
@@ -1340,7 +1380,7 @@ Award-10
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[9].title
 
-Award Title 10
+SME Outstanding Award
 
 ## awards: title
 
@@ -1360,7 +1400,7 @@ Awards & Media
 - sourcePath: messages/en/contact.json
 - sectionId: contact.address
 
-Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar.
+Address - Between 113th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar.
 
 ## contact: call
 
@@ -1932,6 +1972,36 @@ See More
 
 The Journey of Happy & Healthy
 
+## home: productCarousel.explore
+
+- id: en:home.productCarousel.explore
+- locale: en
+- contentType: message
+- sourcePath: messages/en/home.json
+- sectionId: home.productCarousel.explore
+
+Explore
+
+## home: productCarousel.next
+
+- id: en:home.productCarousel.next
+- locale: en
+- contentType: message
+- sourcePath: messages/en/home.json
+- sectionId: home.productCarousel.next
+
+Next products
+
+## home: productCarousel.previous
+
+- id: en:home.productCarousel.previous
+- locale: en
+- contentType: message
+- sourcePath: messages/en/home.json
+- sectionId: home.productCarousel.previous
+
+Previous products
+
 ## home: production.description
 
 - id: en:home.production.description
@@ -2010,7 +2080,7 @@ Page not found
 - sourcePath: messages/en/shell.json
 - sectionId: shell.footer.address
 
-Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar.
+Address - Between 113th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar.
 
 ## shell: footer.brandAlt
 
@@ -2382,7 +2452,7 @@ Products
 
 Open navigation
 
-## Thone Pan Hla - Iron Enriched Cookies
+## Protein Bite
 
 - id: en:product.iron-enriched-cookies-1
 - locale: en
@@ -2390,14 +2460,14 @@ Open navigation
 - sourcePath: messages/en/product.json
 - sectionId: product.iron-enriched-cookies-1
 
-Name: Thone Pan Hla - Iron Enriched Cookies
-Series: Original Series
-Description: Iron-rich cookies crafted for daily nutritional support.
-Ingredients: Whole Wheat Flour, Iron Fortified Oats, Stevia
-Tags: No Sugar, Low Calories, Original Series
+Name: Protein Bite
+Series: Protein Series
+Description: Intend for people who cannot eat well in covid-19 pandemic
+Ingredients: Peanuts, oats, whole wheat, chickpeas
+Tags: No Sugar, Low Calories, Protein Series
 Price: 5,000 MMK
 
-## Thone Pan Hla - Iron Enriched Cookies
+## Peanut Butter
 
 - id: en:product.iron-enriched-cookies-2
 - locale: en
@@ -2405,9 +2475,13 @@ Price: 5,000 MMK
 - sourcePath: messages/en/product.json
 - sectionId: product.iron-enriched-cookies-2
 
-Name: Thone Pan Hla - Iron Enriched Cookies
+Name: Peanut Butter
 Series: Protein Series
-Description: Protein-boosted iron cookies for active lifestyles.
+Description: Whether you need an extra source of protein, want to fuel your pre- or post-workout nutrition, or simply crave a satisfying snack any time of day, Healthy & Happy Sugar-Free Peanut Butter is a convenient and delicious choice. As Myanmar’s first sugar-free peanut butter, it offers a naturally nutty treat without added sugar, making it a suitable option for people managing their blood sugar levels, including those living with diabetes and cancer patients, including children.
+
+Made from locally sourced peanuts, Healthy & Happy  Peanut Butter delivers 7 g of plant-based protein per tablespoon while preserving the peanuts’ natural aroma, flavor, and color. Crafted under the supervision of a nutritionist, it contains no artificial sweeteners or thickeners and supports local farmers by creating additional income opportunities.
+
+Nutritional value per tablespoon is provided on the product label.
 Ingredients: Protein Flour, Iron Oats, Monk Fruit, Butter
 Tags: No Sugar, Low Calories, Protein Series
 Price: 5,000 MMK
@@ -2422,12 +2496,18 @@ Price: 5,000 MMK
 
 Name: Thone Pan Hla - Iron Enriched Cookies
 Series: Original Series
-Description: Wholesome cookies for everyday balanced nutrition.
+Description: Made primarily from two valuable traditional grains, common millet and Italian millet, cultivated in Myanmar’s dry zone and mountainous regions, Healthy & Happy Thone Pan Hal Cookies were specially developed to help meet the nutritional needs of pregnant women, breastfeeding mothers, and young children in Myanmar.
+
+Developed under the supervision of a nutritionist, Healthy & Happy Thone Pan Hla Cookies combine common millet and Italian millet, two valuable locally grown grains from Myanmar, with chickpeas and cashew nuts to create a tasty, nourishing snack, thoughtfully crafted to help provide iron and protein, designing  with the nutritional needs of pregnant women, breastfeeding mothers, young children, and people living with diabetes or cancer.
+
+Beyond nutrition, every cookie supports a meaningful purpose by creating better employment and income opportunities for local farmers.
+
+Nutrition value per piece is provided on packaging.
 Ingredients: Whole Wheat, Oat Flour, Natural Sweetener
 Tags: No Sugar, Low Calories, Original Series
 Price: 5,000 MMK
 
-## Thone Pan Hla - Iron Enriched Cookies
+## Energy Bar
 
 - id: en:product.iron-enriched-cookies-4
 - locale: en
@@ -2435,14 +2515,39 @@ Price: 5,000 MMK
 - sourcePath: messages/en/product.json
 - sectionId: product.iron-enriched-cookies-4
 
-Name: Thone Pan Hla - Iron Enriched Cookies
-Series: Original Series
-Description: Crunchy, light, and naturally nutritious daily snack.
+Name: Energy Bar
+Series: Protein Series
+Description: Whether busy with work and have irregular meal times, traveling, looking for a boost in stamina and focus during your workouts, or searching for a protein-rich snack to keep you feeling full while managing your weight, those who often feel hungry, want a nutritious snack, or concerned about blood sugar spikes, Healthy & Happy Energy Bar is the perfect easy to store, easy to carry, and easy to enjoy, on-the-go choice.
+
+Developed from nutrient-rich nuts and seeds, such as ............., under the supervision of a nutritionist, each bar delivers 7 g of plant-based protein to help keep you feeling satisfied for up to 6 hours. It’s a nourishing choice for those who tend to feel hungry frequently or are looking to manage their weight.
+
+With no added sugar, artificial sweeteners, or preservatives, it’s a mindful snacking option for anyone seeking to reduce sugar intake and embrace healthier eating habits.
+
+Nutritional value for each bar is provided on the packaging.
 Ingredients: Oats, Stevia, Butter, Sea Salt
 Tags: No Sugar, Low Calories, Original Series
 Price: 5,000 MMK
 
-## Thone Pan Hla - Nut Cookies
+## Lavash
+
+- id: en:product.lavash
+- locale: en
+- contentType: product
+- sourcePath: messages/en/product.json
+- sectionId: product.lavash
+
+Name: Lavash
+Series: Original Series
+Description: Whether munching for fun or satisfying hunger, enjoy that irresistible crunch day or night without worrying about weight gain or blood sugar spikes, with Healthy & Happy Lavash—your guilt-free snack choice for pure crunch, pure enjoyment.
+
+Made primarily with whole wheat and sesame, Healthy & Happy Lavash are crafted under the supervision of nutritionist, with no added sugar or preservatives. At just 15 calories per piece, they offer a deliciously crispy, potato-chip-like crunch with nourishing goodness in every bite—an appealing snack option for those managing their weight or seeking to make more mindful food choices.
+
+Nutrition value per piece is provided on packaging.
+Ingredients: Whole wheat, sesame
+Tags: No Sugar, Low Calories, Original Series
+Price: 5,000 MMK
+
+## Cinnamon Cookies
 
 - id: en:product.nut-cookies-1
 - locale: en
@@ -2450,14 +2555,20 @@ Price: 5,000 MMK
 - sourcePath: messages/en/product.json
 - sectionId: product.nut-cookies-1
 
-Name: Thone Pan Hla - Nut Cookies
-Series: Protein Series
-Description: Nutty, satisfying bites that nourish and energise.
+Name: Cinnamon Cookies
+Series: Original Series
+Description: Our Healthy & Happy's Cinnamon Cookies bring together the distinctive flavor of cinnamon and wholesome ingredients to give you "the full feeling of goodness, healthiness, and balanced nutrition" in every bite, to create a delicious snack for those who want to make healthier choices.
+
+Carefully crafted under the supervision of a nutritionist, our cookies are made primarily with whole wheat flour, oats, cinnamon powder, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives.
+
+Designed with calorie-conscious snacking in mind, every bite delivers a naturally rich flavor, a warm cinnamon aroma, and a satisfying crunch, making healthy-minded snacking a little more enjoyable for health-conscious individuals and families alike.
+
+Nutritional value per cookie is clearly stated on the product packaging.
 Ingredients: Almonds, Walnuts, Oat Flour, Stevia
-Tags: No Sugar, Low Calories, Protein Series
+Tags: No Sugar, Low Calories, Original Series
 Price: 5,000 MMK
 
-## Thone Pan Hla - Nut Cookies
+## Beetroot Cookies
 
 - id: en:product.nut-cookies-2
 - locale: en
@@ -2465,14 +2576,83 @@ Price: 5,000 MMK
 - sourcePath: messages/en/product.json
 - sectionId: product.nut-cookies-2
 
-Name: Thone Pan Hla - Nut Cookies
+Name: Beetroot Cookies
 Series: Original Series
-Description: Classic nut blend, naturally sweet and deeply satisfying.
+Description: With its vibrant reddish-purple color and distinctive flavor, our Healthy & Happy Beetroot Cookies stand out from typical cookies and are a delicious choice for those who want to enjoy a tasty snack while getting the nutritional benefits of vegetables, managing their weight, making healthier food choices, and being mindful of their blood sugar levels.
+
+With the earthy aroma of beetroot carefully balanced, Healthy & Happy Beetroot Cookies combine the subtly sweet, nutty flavor of oats with whole wheat flour and unsalted butter, and crafted under the supervision of nutritionist, each bite delivers a satisfyingly crisp and crunchy texture that keeps you coming back for more.
+
+Rich in dietary fiber, these cookies are a convenient choice for those managing their weight and looking for a more satisfying snack. Made without added sugar, artificial sweeteners, or preservatives, they are a thoughtful option for health-conscious individuals like diabetics and cancer patients and even children to enjoy as part of a balanced diet.
+
+Nutrition value per cookie is provided on packaging.
 Ingredients: Mixed Nuts, Butter, Cinnamon, Monk Fruit
 Tags: No Sugar, Low Calories, Original Series
 Price: 5,000 MMK
 
-## Thone Pan Hla - Spinach Cookies
+## Nuts Cake
+
+- id: en:product.nuts-cake
+- locale: en
+- contentType: product
+- sourcePath: messages/en/product.json
+- sectionId: product.nuts-cake
+
+Name: Nuts Cake
+Series: Original Series
+Description: Craving a little cake but worried about blood sugar, weight gain, or coughing? Our Healthy & Happy Nuts Cake, made with absolutely no added sugar, is here to satisfy your conflicting cravings and ease your concerns, so you can enjoy every bite with greater peace of mind without worrying about blood sugar, weight gain or coughing.
+
+Although made primarily with whole wheat flour, our team has carefully crafted this cake to avoid the usual dryness and rough texture of whole wheat baked goods, making it smooth and easy to enjoy. Developed under the supervision of a nutritionist, each slice contains just 96 calories, allowing you to enjoy a delicious treat while being mindful of your calorie intake.
+
+Thanks to the crushed ground nuts and seeds, every bite delivers a naturally sweet, rich, and nutty flavor reminiscent of a heavenly fruitcake, offering a delightful treat for those who are mindful of their sugar intake.
+
+Nutrition value per slice is provided on packaging.
+Ingredients: Whole wheat flour, ground nuts, seeds
+Tags: No Sugar, Low Calories, Original Series
+Price: 5,000 MMK
+
+## Nuts Cookies
+
+- id: en:product.nuts-cookies
+- locale: en
+- contentType: product
+- sourcePath: messages/en/product.json
+- sectionId: product.nuts-cookies
+
+Name: Nuts Cookies
+Series: Original Series
+Description: Known as a nutrient powerhouse, from Healthy & Happy Nuts Cookies bring together the naturally rich aroma and satisfying taste of nuts in every bite—making your everyday snack a little more delightful with healthy fats, protein, fiber, vitamins, and minerals.
+
+Crafted under the supervision of a nutritionist, Healthy & Happy Nuts Cookies combine the naturally rich, nutty sweetness of nuts with whole wheat flour and unsalted butter for a delightfully crisp and crumbly texture in every bite.
+
+Made without added sugar, artificial sweeteners, or preservatives, they are a thoughtful snack choice for those who prioritize healthier eating, as well as families looking for enjoyable treats for their children.
+
+Nutritional value per cookie is clearly stated on the product packaging.
+Ingredients: Nuts, whole wheat flour, unsalted butter
+Tags: No Sugar, Original Series
+Price: 5,000 MMK
+
+## Protein Bite (Diabetes)
+
+- id: en:product.protein-bite-diabetes
+- locale: en
+- contentType: product
+- sourcePath: messages/en/product.json
+- sectionId: product.protein-bite-diabetes
+
+Name: Protein Bite (Diabetes)
+Series: Protein Series
+Description: Whether concerned about blood sugar spikes due to frequent hunger, including as a protein source in your pre- or post-workout meal plan, avoiding sugar for health reasons, hitting the gym, following a vegetarian diet, managing your weight and seeking extra protein, or recovering from illness and needing additional nourishment, Healthy & Happy Protein Bite (Diabetes) makes meeting your daily protein needs easy and convenient—no calculations or meal prep required. Created with a heartfelt mission to support the nutritional needs of people across Myanmar.
+
+Each Healthy & Happy Protein Bite (Diabetes) delivers 4 g of plant-based protein from locally sourced ingredients, including peanuts, oats, whole wheat, and chickpeas. Created under the guidance of a nutrition professional, these cookies provide a simple and convenient way to boost your daily protein intake without the hassle of cooking or preparing meals.
+
+With its warm, inviting peanut aroma that feels like coming home, every bite offers a naturally rich, nutty flavor that leaves you feeling satisfied, nourished, and comfortably full.
+
+Nutritional value per cookie is clearly stated on the product packaging.
+Ingredients: Peanuts, oats, whole wheat, chickpeas
+Tags: No Sugar, Low Calories, Protein Series
+Price: 5,000 MMK
+
+## Spinach Diabetes Cookies
 
 - id: en:product.spinach-cookies-1
 - locale: en
@@ -2480,14 +2660,20 @@ Price: 5,000 MMK
 - sourcePath: messages/en/product.json
 - sectionId: product.spinach-cookies-1
 
-Name: Thone Pan Hla - Spinach Cookies
-Series: Protein Series
-Description: Iron and fibre packed cookies for your wellness routine.
+Name: Spinach Diabetes Cookies
+Series: Original Series
+Description: Made with real spinach, our innovative spinach cookies transform an everyday vegetable into a delicious, value-added snack.
+
+Carefully Crafted under the supervision of a nutritionist, our cookies are thoughtfully developed  with whole wheat, oats, real spinach, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives for health-conscious consumers, as well as families looking for more wholesome treats for their children.
+
+Designed with calorie-conscious snacking in mind, every bite delivers a naturally delicious aroma, a delightful crunch, and the benefits of vegetables in one tasty bite.
+
+Nutrition value per cookie is clearly stated on the product packaging.
 Ingredients: Spinach Extract, Whole Wheat, Olive Oil
 Tags: No Sugar, Low Calories, Protein Series
 Price: 5,000 MMK
 
-## Thone Pan Hla - Spinach Cookies
+## Oat Diabetes Cookies
 
 - id: en:product.spinach-cookies-2
 - locale: en
@@ -2495,9 +2681,17 @@ Price: 5,000 MMK
 - sourcePath: messages/en/product.json
 - sectionId: product.spinach-cookies-2
 
-Name: Thone Pan Hla - Spinach Cookies
+Name: Oat Diabetes Cookies
 Series: Original Series
-Description: Green goodness baked to perfection every single time.
+Description: For those who want to feel fuller with smaller portions while managing their weight, enjoy delicious treats without sacrificing taste, snack mindfully without feeling guilty, and choose a fiber-rich snack to help stay full longer, Healthy & Happy Oat Cookies are a deliciously satisfying and smarter way to snack.
+
+Not only with the simple goodness of oats with a gentle sweetness and a rich, buttery taste, but also made with whole wheat and unsalted butter under the supervision of a nutritionist, every bite delivers a uniquely crispy crunch that keeps you coming back for more.
+
+packed with fibers to help you feel fuller for longer, these cookies are the perfect choice for mindful snackers who want to manage their portions and enjoy delicious treats without compromising on taste.
+
+Even better, they contain no added sugar, artificial sweeteners, or preservatives, making them a thoughtful snack choice for health-conscious individuals and families, including children.
+
+Nutritional value per cookie is clearly stated on the product packaging.
 Ingredients: Spinach, Oat Flour, Erythritol, Eggs
 Tags: No Sugar, Low Calories, Original Series
 Price: 5,000 MMK
@@ -2522,7 +2716,7 @@ Certified ISO 22000 Food Safety Standard
 - sourcePath: messages/my/about.json
 - sectionId: about.coreIdentity.items[0].description
 
-မြန်မာနိုင်ငံတွင် မျှတသောအစားအစာနှင့် ရေရှည်တည်တံ့သော စိုက်ပျိုးရေးကို အထောက်အကူပြုမည့် ဆန်းသစ်သော အပင်အခြေပြု အာဟာရထုတ်ကုန်များဖြင့် ကျန်းမာရေးကို မြှင့်တင်ရန် ဖြစ်ပါသည်။
+မြန်မာနိုင်ငံတွင် မျှတသော အစားအသောက်ပုံစံနှင့် ရေရှည်တည်တံ့သော စိုက်ပျိုးရေးကို အထောက်အကူပြုမည့် သဘာဝအပင်အခြေပြု အာဟာရထုတ်ကုန်များဖြင့် လူတိုင်း၏ ကျန်းမာရေးကို မြှင့်တင်ပေးရန်ဖြစ်ပါသည်။
 
 ## about: coreIdentity.items[0].heading
 
@@ -2532,7 +2726,7 @@ Certified ISO 22000 Food Safety Standard
 - sourcePath: messages/my/about.json
 - sectionId: about.coreIdentity.items[0].heading
 
-ကျန်းမာရေးနှင့် လူနေမှုပုံစံကို မြှင့်တင်ခြင်း
+ကျန်းမာရေးနှင့် လူနေမှုပုံစံ မြှင့်တင်ပေးခြင်း
 
 ## about: coreIdentity.items[0].id
 
@@ -2562,7 +2756,7 @@ mission
 - sourcePath: messages/my/about.json
 - sectionId: about.coreIdentity.items[1].description
 
-လူတိုင်း ဒေသခံလယ်သမားများကို အထောက်အပံ့ပေးပြီး ကျန်းမာသော အသိုက်အဝန်းများတည်ဆောက်နိုင်မည့် အာဟာရပြည့်ဝ၍ အရသာရှိသော အစားအစာကို ရရှိနိုင်သော မြန်မာနိုင်ငံကို မျှော်မှန်းပါသည်။
+ဒေသခံတောင်သူများကို ပံ့ပိုးပေးရင်း စိတ္ချယုံကြည်ရသည့် အာဟာရပြည့်ဝသော အစားအစာများကို လူတိုင်း လွယ်ကူစွာ ဝယ်ယူစားသုံးနိုင်မည့် ကျန်းမာကြံ့ခိုင်သော လူ့အသိုက်အဝန်းတစ်ခု ဖန်တီးရန် မျှော်မှန်းပါသည်။
 
 ## about: coreIdentity.items[1].heading
 
@@ -2572,7 +2766,7 @@ mission
 - sourcePath: messages/my/about.json
 - sectionId: about.coreIdentity.items[1].heading
 
-မျိုးစေ့မှ အာဟာရပြည့်ဝသော အဆာပြေများအထိ
+စိုက်ပျိုးသူများထံမှ အာဟာရပြည့်ဝသော အစားအစာများဆီသို့
 
 ## about: coreIdentity.items[1].id
 
@@ -2602,7 +2796,7 @@ vision
 - sourcePath: messages/my/about.json
 - sectionId: about.coreIdentity.items[2].description
 
-သင်၏ ကျန်းမာရေးနှင့် လူနေမှုပုံစံ ရည်မှန်းချက်များကို အကိုက်တိုင်းနှင့် ခြေလှမ်းတိုင်းတွင် လမ်းညွှန်၊ မှတ်တမ်းတင်၊ ပံ့ပိုးပေးရန် ဒီဇိုင်းထုတ်ထားသော ယုံကြည်စိတ်ချရသည့် မိတ်ဖက် ဖြစ်ပါသည်။
+သင်၏ ကျန်းမာရေးနှင့် လူနေမှုပုံစံ ရည်မှန်းချက်များ အောင်မြင်စေရန် အကိုက်တိုင်း၊ ခြေလှမ်းတိုင်းတွင် အမြဲမပြတ် ပံ့ပိုးကူညီပေးမည့် ယုံကြည်စိတ်ချရသော မိတ်ဖက် ဖြစ်ပါသည်။
 
 ## about: coreIdentity.items[2].heading
 
@@ -2642,7 +2836,7 @@ motto
 - sourcePath: messages/my/about.json
 - sectionId: about.coreIdentity.title
 
-ကျွန်ုပ်တို့၏ အဓိကအမှတ်လက္ခဏာ
+ကျွန်ုပ်တို့၏ ပင်မအမှတ်တံဆိပ်
 
 ## about: headline.company
 
@@ -2662,7 +2856,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.established
 
-မန္တလေး၊ မြန်မာနိုင်ငံတွင် ၂၀၁၇ ခုနှစ် တည်ထောင်
+၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၊ မြန်မာနိုင်ငံ၌ စတင်တည်ထောင်ခဲ့သည်။
 
 ## about: headline.grid[0].alt
 
@@ -2672,7 +2866,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[0].alt
 
-ဘယ်ဘက်အပေါ် အဖွဲ့ဝင်
+ပူးတွဲတည်ထောင်သူ ၁
 
 ## about: headline.grid[0].title
 
@@ -2682,7 +2876,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[0].title
 
-ပူးတွဲတည်ထောင်သူ ၁
+ပူးတွဲတည်ထောင်သူ (၁)
 
 ## about: headline.grid[1].alt
 
@@ -2692,7 +2886,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[1].alt
 
-ညာဘက်အပေါ် အာဟာရပညာရှင်
+အာဟာရဗေဒပညာရှင်
 
 ## about: headline.grid[1].title
 
@@ -2702,7 +2896,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[1].title
 
-အာဟာရပညာရှင်
+အာဟာရဗေဒပညာရှင်
 
 ## about: headline.grid[2].alt
 
@@ -2712,7 +2906,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[2].alt
 
-တည်ထောင်မှုဇာတ်လမ်း
+တည်ထောင်မှု သမိုင်းကြောင်း
 
 ## about: headline.grid[2].title
 
@@ -2732,7 +2926,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[3].alt
 
-မန္တလေးရုံး
+မန္တလေးရုံးခွဲ
 
 ## about: headline.grid[3].title
 
@@ -2752,7 +2946,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[4].alt
 
-ညာဘက်အောက် အဖွဲ့ဝင်
+ပူးတွဲတည်ထောင်သူ ၂
 
 ## about: headline.grid[4].title
 
@@ -2762,7 +2956,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.grid[4].title
 
-ပူးတွဲတည်ထောင်သူ ၂
+ပူးတွဲတည်ထောင်သူ (၂)
 
 ## about: headline.heroAlt
 
@@ -2772,7 +2966,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.heroAlt
 
-အရွက်
+သဘာဝအရွက်များ
 
 ## about: headline.history[0]
 
@@ -2782,7 +2976,7 @@ Healthy & Happy Myanmar Co., Ltd.
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.history[0]
 
-Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၌ အမျိုးသမီးစွန့်ဦးတီထွင်သူ သုံးဦးနှင့် အာဟာရပညာရှင်တစ်ဦးက တည်ထောင်ခဲ့သည်။
+Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၌ အမျိုးသမီး စွန့်ဦးတီထွင်သူ (၃) ဦးနှင့် အာဟာရဗေဒပညာရှင်တစ်ဦးတို့ စုစည်း၍ တည်ထောင်ခဲ့ပါသည်။
 
 ## about: headline.history[1]
 
@@ -2792,7 +2986,7 @@ Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.history[1]
 
-ကျွန်ုပ်တို့၏ ခရီးစဉ်သည် ကိုယ်ပိုင်ခံစားချက်နက်ရှိုင်းသော ဇာတ်လမ်းမှ စတင်ခဲ့ပါသည်။ အာဟာရပြည့်ဝသော အစားအစာမရရှိခြင်းကြောင့် တည်ထောင်သူတစ်ဦး၏ ဖခင်ကို ဆုံးရှုံးခဲ့ရခြင်းက အပြောင်းအလဲဖန်တီးရန် စိတ်အားထက်သန်စေခဲ့သည်။
+ကျွန်ုပ်တို့၏ ခရီးစဉ်သည် စိတ်မကောင်းဖွယ် ကိုယ်တွေ့အတွေ့အကြုံတစ်ခုမှ စတင်ခဲ့ခြင်းဖြစ်ပါသည်။ အာဟာရပြည့်ဝသော အစားအစာ လုံလောက်စွာ မရရှိခဲ့ခြင်းကြောင့် တည်ထောင်သူတစ်ဦး၏ ဖခင်ဖြစ်သူ ဆုံးရှုံးခဲ့ရမှုမှအစပြု၍ အသိုက်အဝန်းအတွင်း အပြုသဘောဆောင်သော အပြောင်းအလဲများ ဖန်တီးပေးရန် စိတ်အားထက်သန်ခဲ့ကြပါသည်။
 
 ## about: headline.history[2]
 
@@ -2802,7 +2996,7 @@ Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.history[2]
 
-အသိုက်အဝန်းအတွင်း ဆီးချိုနှင့် အခြားကျန်းမာရေးပြဿနာများ ပျံ့နှံ့နေမှုကို သိရှိကာ အာဟာရပြည့်ဝသော ထုတ်ကုန်တစ်ခုချင်းစီဖြင့် အပြောင်းအလဲဖန်တီးရန် ကတိပြုခဲ့ပါသည်။
+လူထုအတွင်း ဆီးချိုနှင့် အခြားနာတာရှည် ကျန်းမာရေးပြဿနာများ ပျံ့နှံ့နေမှုကို သတိပြုမိပြီး အာဟာရပြည့်ဝသော ထုတ်ကုန်တစ်ခုချင်းစီဖြင့် လူထုကျန်းမာရေးကို မြှင့်တင်ပေးရန် သန္နိဋ္ဌာန်ချမှတ်ခဲ့ပါသည်။
 
 ## about: headline.historyTitle
 
@@ -2812,7 +3006,7 @@ Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.historyTitle
 
-ကျွန်ုပ်တို့၏ သမိုင်း
+ကျွန်ုပ်တို့၏ သမိုင်းကြောင်း
 
 ## about: headline.intro
 
@@ -2822,7 +3016,7 @@ Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.intro
 
-Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စည်းများ၊ မျှတသောအာဟာရနှင့် အလုံးစုံသော ကျန်းမာရေးကို အခြေခံသည့် လူနေမှုပုံစံကို မြှင့်တင်ရန် ရည်ရွယ်ပါသည်။
+Healthy Plate သည် လတ်ဆတ်သော သဘာဝပါဝင်ပစ္စည်းများ၊ မျှတသောအာဟာရနှင့် ဘက်စုံကျန်းမာရေးကို ရှေးရှုသော လူနေမှုပုံစံကို မြှင့်တင်ပေးရန် ရည်ရွယ်ပါသည်။
 
 ## about: headline.values[0].description
 
@@ -2832,7 +3026,7 @@ Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.values[0].description
 
-လယ်ယာမှ လတ်ဆတ်သော ဟင်းသီးဟင်းရွက်များ၊ သစ်သီးများနှင့် အော်ဂဲနစ်ထွက်ကုန်များကို အလေးထားခြင်း
+စိုက်ခင်းမှ တိုက်ရိုက်ရရှိသော လတ်ဆတ်သည့် ဟင်းသီးဟင်းရွက်၊ သစ်သီးဝလံများနှင့် အော်ဂဲနစ်ထွက်ကုန်များကို ဦးစားပေးခြင်း
 
 ## about: headline.values[0].title
 
@@ -2842,7 +3036,7 @@ Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.values[0].title
 
-လတ်ဆတ်မှု
+လတ်ဆတ်ဆန်းသစ်မှု
 
 ## about: headline.values[1].description
 
@@ -2852,7 +3046,7 @@ Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.values[1].description
 
-အစေ့အနှံများ၊ ပရိုတင်းဓာတ်နှင့် အာဟာရပြည့်ဝမှုကို အလေးထားခြင်း
+အစေ့အဆန်များ၊ သဘာဝပရိုတင်းနှင့် အာဟာရဓာတ် ပြည့်ဝစုံလင်မှုကို အဓိကထားခြင်း
 
 ## about: headline.values[1].title
 
@@ -2862,7 +3056,7 @@ Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.values[1].title
 
-မျှတမှု
+မျှတသောအာဟာရ
 
 ## about: headline.values[2].description
 
@@ -2872,7 +3066,7 @@ Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စ�
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.values[2].description
 
-Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘောဆောင်သော တက်ကြွသည့် လူနေမှုပုံစံကို လှုံ့ဆော်ခြင်း
+'Healthy & Happy' ဆောင်ပုဒ်နှင့်အညီ အပြုသဘောဆောင်ပြီး တက်ကြွကျန်းမာသော လူနေမှုပုံစံကို လှုံ့ဆော်ပေးခြင်း
 
 ## about: headline.values[2].title
 
@@ -2882,7 +3076,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.values[2].title
 
-ပျော်ရွှင်မှုနှင့် တက်ကြွမှု
+ပျော်ရွှင်တက်ကြွမှု
 
 ## about: headline.valuesTitle
 
@@ -2892,7 +3086,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.headline.valuesTitle
 
-အမှတ်တံဆိပ်တန်ဖိုးများ
+အမှတ်တံဆိပ်၏ မူဝါဒနှင့် တန်ဖိုးများ
 
 ## about: research.banner
 
@@ -2902,7 +3096,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.research.banner
 
-ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။
+ခေတ်ကာလများ ပြောင်းလဲတိုးတက်လာသော်လည်း သဘာဝအဆီအနှစ်နှင့် ကျန်းမာရေးအတွက် မူလအခြေခံ အနှစ်သာရကို မပြောင်းလဲဘဲ မူရင်းအတိုင်း ထိန်းသိမ်းထားပါသည်။
 
 ## about: research.sections[0].description
 
@@ -2912,7 +3106,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.research.sections[0].description
 
-ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။
+ခေတ်ကာလများ ပြောင်းလဲတိုးတက်လာသော်လည်း သဘာဝအဆီအနှစ်နှင့် ကျန်းမာရေးအတွက် မူလအခြေခံ အနှစ်သာရကို မပြောင်းလဲဘဲ မူရင်းအတိုင်း ထိန်းသိမ်းထားပါသည်။
 
 ## about: research.sections[0].title
 
@@ -2922,7 +3116,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.research.sections[0].title
 
-ဒစ်ဂျစ်တယ်ပြောင်းလဲမှုနှင့် စမတ်စနစ်များ
+ဒစ်ဂျစ်တယ် နည်းပညာနှင့် စမတ်စနစ်များ
 
 ## about: research.sections[1].description
 
@@ -2932,7 +3126,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.research.sections[1].description
 
-ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။
+ခေတ်ကာလများ ပြောင်းလဲတိုးတက်လာသော်လည်း သဘာဝအဆီအနှစ်နှင့် ကျန်းမာရေးအတွက် မူလအခြေခံ အနှစ်သာရကို မပြောင်းလဲဘဲ မူရင်းအတိုင်း ထိန်းသိမ်းထားပါသည်။
 
 ## about: research.sections[1].title
 
@@ -2942,7 +3136,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.research.sections[1].title
 
-အဆင့်မြင့်ပစ္စည်းများနှင့် ဇီဝနည်းပညာ
+အဆင့်မြင့် ပါဝင်ပစ္စည်းများနှင့် ဇီဝနည်းပညာ
 
 ## about: research.title
 
@@ -2952,7 +3146,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.research.title
 
-သုတေသနနှင့် ဆန်းသစ်တီထွင်မှု
+သုတေသနနှင့် နည်းပညာဆန်းသစ်မှု
 
 ## about: sustainability.buttons[0]
 
@@ -2962,7 +3156,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.buttons[0]
 
-လယ်ယာမှ စက်ရုံသို့ ပုံစံ
+စိုက်ခင်းမှ စက်ရုံသို့ ပုံစံ
 
 ## about: sustainability.buttons[1]
 
@@ -2972,7 +3166,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.buttons[1]
 
-လယ်သမား အထောက်အပံ့
+တောင်သူလယ်သမားများ ပံ့ပိုးမှု
 
 ## about: sustainability.buttons[2]
 
@@ -2982,7 +3176,7 @@ Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘေ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.buttons[2]
 
-ESG နှင့် လူမှုအကျိုးသက်ရောက်မှု
+ESG နှင့် လူမှုအကျိုးပြု လုပ်ငန်းများ
 
 ## about: sustainability.buttons[3]
 
@@ -3002,7 +3196,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.imageAlt[0]
 
-ရေရှည်တည်တံ့မှု ကတ် ၁
+ရေရှည်တည်တံ့မှုဆိုင်ရာ ကတ် (၁)
 
 ## about: sustainability.imageAlt[1]
 
@@ -3012,7 +3206,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.imageAlt[1]
 
-ရေရှည်တည်တံ့မှု ကတ် ၂
+ရေရှည်တည်တံ့မှုဆိုင်ရာ ကတ် (၂)
 
 ## about: sustainability.imageAlt[2]
 
@@ -3022,7 +3216,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.imageAlt[2]
 
-ရေရှည်တည်တံ့မှု အောက်ကတ်
+ရေရှည်တည်တံ့မှုဆိုင်ရာ အောက်ခြေကတ်
 
 ## about: sustainability.placeholder
 
@@ -3032,7 +3226,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.sustainability.placeholder
 
-ဤနေရာတွင် စာသားထည့်နိုင်ပါသည်
+အသေးစိတ် အချက်အလက်များကို ဤနေရာတွင် ကြည့်ရှုနိုင်ပါသည်။
 
 ## about: sustainability.title
 
@@ -3052,7 +3246,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.note
 
-အဓိကခေတ်မီ အရောင်းဆိုင်များအပြင် နိုင်ငံတစ်ဝန်းရှိ ဒေသခံစူပါမားကတ်များနှင့် ယုံကြည်စိတ်ချရသော လက်လီဆိုင်များတွင်လည်း ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို ရရှိနိုင်ပါသည်
+အဓိက စူပါမားကတ်ကြီးများအပြင် နိုင်ငံတစ်ဝန်းရှိ ဒေသခံစူပါမားကတ်များနှင့် ယုံကြည်စိတ်ချရသော လက်လီဆိုင်များတွင်လည်း ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို ဝယ်ယူရရှိနိုင်ပါသည်။
 
 ## about: whereCanBuy.retailers[0]
 
@@ -3062,7 +3256,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[0]
 
-အဘွားဆေးရုံ
+ဂရင်းဟံသာ ဆေးရုံ
 
 ## about: whereCanBuy.retailers[1]
 
@@ -3072,7 +3266,27 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[1]
 
-ရှမ်းဒီးလား ဆေးဆိုင်
+ရှမ်းအိုး ဆေးဆိုင်
+
+## about: whereCanBuy.retailers[10]
+
+- id: my:about.whereCanBuy.retailers[10]
+- locale: my
+- contentType: message
+- sourcePath: messages/my/about.json
+- sectionId: about.whereCanBuy.retailers[10]
+
+စိန်ဂေဟာ
+
+## about: whereCanBuy.retailers[11]
+
+- id: my:about.whereCanBuy.retailers[11]
+- locale: my
+- contentType: message
+- sourcePath: messages/my/about.json
+- sectionId: about.whereCanBuy.retailers[11]
+
+Healthy & Happy အရောင်းဆိုင်
 
 ## about: whereCanBuy.retailers[2]
 
@@ -3082,7 +3296,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[2]
 
-ကူကင်တင် ဆေးဆိုင်
+ကိုဟင်တင် ဆေးဆိုင်
 
 ## about: whereCanBuy.retailers[3]
 
@@ -3092,7 +3306,7 @@ SDGs ရည်မှန်းချက်များ
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[3]
 
-Market Plaza
+One Stop
 
 ## about: whereCanBuy.retailers[4]
 
@@ -3102,7 +3316,7 @@ Market Plaza
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[4]
 
-CityMart
+City Mart
 
 ## about: whereCanBuy.retailers[5]
 
@@ -3112,7 +3326,7 @@ CityMart
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[5]
 
-Healthy & Happy ဆိုင်
+Oceania Supermarket
 
 ## about: whereCanBuy.retailers[6]
 
@@ -3122,7 +3336,7 @@ Healthy & Happy ဆိုင်
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[6]
 
-မိသားစု ဆေးဆိုင်
+Makro Wholesales
 
 ## about: whereCanBuy.retailers[7]
 
@@ -3132,7 +3346,27 @@ Healthy & Happy ဆိုင်
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.retailers[7]
 
-ဒေသခံ မိတ်ဖက်များ
+Foodland Minimart
+
+## about: whereCanBuy.retailers[8]
+
+- id: my:about.whereCanBuy.retailers[8]
+- locale: my
+- contentType: message
+- sourcePath: messages/my/about.json
+- sectionId: about.whereCanBuy.retailers[8]
+
+DMart
+
+## about: whereCanBuy.retailers[9]
+
+- id: my:about.whereCanBuy.retailers[9]
+- locale: my
+- contentType: message
+- sourcePath: messages/my/about.json
+- sectionId: about.whereCanBuy.retailers[9]
+
+Life Plus
 
 ## about: whereCanBuy.title
 
@@ -3142,7 +3376,7 @@ Healthy & Happy ဆိုင်
 - sourcePath: messages/my/about.json
 - sectionId: about.whereCanBuy.title
 
-ဘယ်မှာ ဝယ်ယူနိုင်သလဲ
+ဝယ်ယူရရှိနိုင်သောနေရာများ
 
 ## ai-chat: accessibility.conversation
 
@@ -3532,7 +3766,7 @@ Healthy & Happy
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[0].description
 
-Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆောင် SME အဖြစ် ထူးချွန်သော ခံနိုင်ရည်နှင့် ခေါင်းဆောင်မှုအတွက် အသိအမှတ်ပြုခံရပါသည်။
+Myanmar Women Entrepreneurs Network က Healthy & Happy Myanmar မှ May Hnin Wai ၏ အောင်မြင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။
 
 ## awards: items[0].label
 
@@ -3552,7 +3786,7 @@ Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆော�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[0].title
 
-UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသမီးဦးဆောင် SME များအတွက် ခံနိုင်ရည်ရှိမှုဆု
+ASEAN Business Award
 
 ## awards: items[1].description
 
@@ -3562,7 +3796,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[1].description
 
-အသိုက်အဝန်းအတွက် အပြုသဘောဆောင်သော အကျိုးသက်ရောက်မှုဖန်တီးနေသည့် အမျိုးသမီးစွန့်ဦးတီထွင်သူများ၏ လုပ်ဆောင်မှုကို ဂုဏ်ပြုသောဆု ဖြစ်ပါသည်။
+အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သည့် မြန်မာဘာသာဖြင့် ရေးသားထားသော ဆုတံဆိပ်ဖြစ်ပါသည်။
 
 ## awards: items[1].label
 
@@ -3582,7 +3816,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[1].title
 
-၂၀၂၂ ခုနှစ် တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု
+မြန်မာ MSME အသိအမှတ်ပြုဆု
 
 ## awards: items[10].description
 
@@ -3592,7 +3826,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[10].description
 
-ဆုဖော်ပြချက် ၁၁
+Healthy & Happy Myanmar သည် ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award ရရှိခဲ့ပါသည်။
 
 ## awards: items[10].label
 
@@ -3612,7 +3846,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[10].title
 
-ဆုခေါင်းစဉ် ၁၁
+ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award
 
 ## awards: items[2].description
 
@@ -3622,7 +3856,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[2].description
 
-ဆုဖော်ပြချက် ၃
+UNDP နှင့် UN Women တို့က Healthy & Happy Myanmar ကို Resilience for Women-Led SMEs Award ၏ Capacity Enhancement Fund အမျိုးအစားတွင် ဆုရရှိသူအဖြစ် အသိအမှတ်ပြုခဲ့ပါသည်။
 
 ## awards: items[2].label
 
@@ -3642,7 +3876,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[2].title
 
-ဆုခေါင်းစဉ် ၃
+အမျိုးသမီးဦးဆောင် SME များ၏ ကြံ့ကြံ့ခံနိုင်မှုဆု - Capacity Enhancement Fund ဆုရရှိသူ
 
 ## awards: items[3].description
 
@@ -3652,7 +3886,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[3].description
 
-ဆုဖော်ပြချက် ၄
+Healthy & Happy Myanmar သည် China-ASEAN Expo တွင် ငွေတံဆိပ်ဆု ရရှိခဲ့ပါသည်။
 
 ## awards: items[3].label
 
@@ -3672,7 +3906,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[3].title
 
-ဆုခေါင်းစဉ် ၄
+China-ASEAN Expo ငွေတံဆိပ်ဆု
 
 ## awards: items[4].description
 
@@ -3682,7 +3916,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[4].description
 
-ဆုဖော်ပြချက် ၅
+အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သော မြန်မာဘာသာ ဆုဖြစ်ပါသည်။
 
 ## awards: items[4].label
 
@@ -3702,7 +3936,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[4].title
 
-ဆုခေါင်းစဉ် ၅
+မြန်မာ MSME ထူးချွန်ဆု
 
 ## awards: items[5].description
 
@@ -3712,7 +3946,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[5].description
 
-ဆုဖော်ပြချက် ၆
+Women Entrepreneurship Program က Healthy & Happy Myanmar ၏ တာဝန်ယူမှုရှိသော စီးပွားရေးလုပ်ဆောင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။
 
 ## awards: items[5].label
 
@@ -3732,7 +3966,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[5].title
 
-ဆုခေါင်းစဉ် ၆
+တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု
 
 ## awards: items[6].description
 
@@ -3742,7 +3976,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[6].description
 
-ဆုဖော်ပြချက် ၇
+မြန်မာနိုင်ငံ၏ အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုကို အသိအမှတ်ပြုသည့် ဆုဖြစ်ပါသည်။
 
 ## awards: items[6].label
 
@@ -3762,7 +3996,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[6].title
 
-ဆုခေါင်းစဉ် ၇
+မြန်မာ MSME ဖွံ့ဖြိုးတိုးတက်မှုဆု
 
 ## awards: items[7].description
 
@@ -3772,7 +4006,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[7].description
 
-ဆုဖော်ပြချက် ၈
+Thone Pan Hla ကွတ်ကီးများသည် ASEAN-India Grassroots Innovation Forum တွင် Most Promising Award ရရှိခဲ့ပါသည်။
 
 ## awards: items[7].label
 
@@ -3792,7 +4026,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[7].title
 
-ဆုခေါင်းစဉ် ၈
+Thone Pan Hla ကွတ်ကီးများ၏ အလားအလာအကောင်းဆုံးဆု
 
 ## awards: items[8].description
 
@@ -3802,7 +4036,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[8].description
 
-ဆုဖော်ပြချက် ၉
+Healthy & Happy Myanmar သည် Priority Integration Sector အောက်ရှိ SME Food and Beverages Sector ကဏ္ဍတွင် အသိအမှတ်ပြုခံခဲ့ရပါသည်။
 
 ## awards: items[8].label
 
@@ -3822,7 +4056,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[8].title
 
-ဆုခေါင်းစဉ် ၉
+ASEAN Business Awards: SME အစားအသောက်နှင့် အဖျော်ယမကာကဏ္ဍ
 
 ## awards: items[9].description
 
@@ -3832,7 +4066,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[9].description
 
-ဆုဖော်ပြချက် ၁၀
+UMFCCI က Healthy & Happy Myanmar အား SME Outstanding Award ချီးမြှင့်ခဲ့ပါသည်။
 
 ## awards: items[9].label
 
@@ -3852,7 +4086,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[9].title
 
-ဆုခေါင်းစဉ် ၁၀
+SME ထူးချွန်ဆု
 
 ## awards: title
 
@@ -3872,7 +4106,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/contact.json
 - sectionId: contact.address
 
-လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
+လိပ်စာ - ၇၅ လမ်း၊ ၁၁၃ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
 
 ## contact: call
 
@@ -4444,6 +4678,36 @@ Healthy & Happy သည် ကိုယ်ပိုင်ခံစားချက
 
 Happy & Healthy ၏ ခရီးစဉ်
 
+## home: productCarousel.explore
+
+- id: my:home.productCarousel.explore
+- locale: my
+- contentType: message
+- sourcePath: messages/my/home.json
+- sectionId: home.productCarousel.explore
+
+အသေးစိတ်ကြည့်ရန်
+
+## home: productCarousel.next
+
+- id: my:home.productCarousel.next
+- locale: my
+- contentType: message
+- sourcePath: messages/my/home.json
+- sectionId: home.productCarousel.next
+
+နောက်ထုတ်ကုန်များ
+
+## home: productCarousel.previous
+
+- id: my:home.productCarousel.previous
+- locale: my
+- contentType: message
+- sourcePath: messages/my/home.json
+- sectionId: home.productCarousel.previous
+
+ယခင်ထုတ်ကုန်များ
+
 ## home: production.description
 
 - id: my:home.production.description
@@ -4522,7 +4786,7 @@ Protein Bite Cookies အပါအဝင် ကျွန်ုပ်တို့�
 - sourcePath: messages/my/shell.json
 - sectionId: shell.footer.address
 
-လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
+လိပ်စာ - ၇၅ လမ်း၊ ၁၁၃ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။
 
 ## shell: footer.brandAlt
 
@@ -4894,7 +5158,7 @@ AI စကားပြော
 
 လမ်းညွှန်ကို ဖွင့်ရန်
 
-## Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
+## ပရိုတင်းဗိုက်
 
 - id: my:product.iron-enriched-cookies-1
 - locale: my
@@ -4902,14 +5166,14 @@ AI စကားပြော
 - sourcePath: messages/my/product.json
 - sectionId: product.iron-enriched-cookies-1
 
-Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
-Series: မူရင်းစီးရီး
-Description: နေ့စဉ် အာဟာရအတွက် သံဓာတ်ကြွယ်ဝသော ကွတ်ကီးများ။
-Ingredients: ဂျုံကြမ်းမှုန့်၊ သံဓာတ်ဖြည့် အုတ်ဂျုံ၊ စတီဗီးယား
-Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
+Name: ပရိုတင်းဗိုက်
+Series: ပရိုတင်းစီးရီး
+Description: Covid ရောဂါဖြစ်ပွားသည့် အချိန်တွင် အစားမစားနိုင်သောသူများအတွက်ရည်ရွယ်
+Ingredients: မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲ
+Tags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
+## မြေပဲထောပတ်
 
 - id: my:product.iron-enriched-cookies-2
 - locale: my
@@ -4917,14 +5181,18 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.iron-enriched-cookies-2
 
-Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
+Name: မြေပဲထောပတ်
 Series: ပရိုတင်းစီးရီး
-Description: တက်ကြွသောနေ့စဉ်ဘဝအတွက် ပရိုတင်းနှင့် သံဓာတ်ဖြည့် ကွတ်ကီးများ။
+Description: အသားဓာတ်လိုအပ်လို့ဖြစ်စေ၊ Pre/ Post Workout meal တွေမှာ အသားဓာတ်ဖြည့်တင်းချင်လို့ဖြစ်စေ၊ နံနက်ခင်း/ နေ့လည်ခင်း/ ညခင်းတွေမှာ အဆာပြေအနေနဲ့စားချင်လို့ဖြစ်စေ အလွယ်တကူသုံးဆောင်နိုင်မယ့်အပြင် ဆီးချို၊ ကင်ဆာဝေဒနာရှင်တွေအထိပါ စိတ်ချလက်ချ စားနိုင်တဲ့ မြန်မာပြည်ရဲ့ ပထမဆုံးသော Healthy & Happy Sugar Free Peanut Butter
+
+တောင်သူတွေတဖက်တလမ်းကနေ အလုပ်အကိုင်အခွင့်အလမ်း၊ ဝင်ငွေအခွင့်အလမ်းတိုးစေဖို့ တောင်သူတွေဆီက မြေပဲကို artificial sweetner, thickener, မြေပဲရဲ့ သဘာဝအတိုင်းရနံ့၊ အရသာ၊ အရောင်အသွေးပြောင်းလဲသွားခြင်းမရှိစေဘဲ ထမင်းစားဇွန်း (၁) ဇွန်းစားတိုင်းမှာ Plant-based Protein 7 g အပြည့်ရအောင် အာဟာရဆရာဝန််ကြီးကြပ်မှုနဲ့ ဖန်တီးထားပါတယ်။
+
+တစ်ဇွန်း၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။
 Ingredients: ပရိုတင်းမှုန့်၊ သံဓာတ်ပါ အုတ်ဂျုံ၊ မုန့်ချိုသီး၊ ထောပတ်
 Tags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
+## Thone Pan Hla - သံဓာတ်ဖြည့်ကွက်ကီး
 
 - id: my:product.iron-enriched-cookies-3
 - locale: my
@@ -4932,14 +5200,18 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.iron-enriched-cookies-3
 
-Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
+Name: Thone Pan Hla - သံဓာတ်ဖြည့်ကွက်ကီး
 Series: မူရင်းစီးရီး
-Description: နေ့စဉ်ညီမျှသော အာဟာရအတွက် ကောင်းမွန်သည့် ကွတ်ကီးများ။
+Description: မြန်မာနိုင်ငံရဲ့ မိုးပါးရေရှားရပ်ဝန်းဒေသတွေနဲ့ တောင်ပေါ်ဒေသတွေမှာ စိုက်ပျိုးကြတဲ့ အဖိုးတန်သီးနှံဖြစ်တဲ့ လူး နဲ့ ဆပ် (နှံစားပြောင်း) ကို အဓိကအသုံးပြုထားပြီး မြန််မာနိုင်ငံက ကိုယ်ဝန်ဆောင်၊ နို့တိုက်မိခင်နဲ့ ကလေးငယ်တွေအတွက် အာဟာရလိုအပ်ချက်ကို ဖြည့်ဆည်းပေးဖို့ ရည်ရွယ်ချက်နဲ့ ဖန်တီးထားတဲ့ Healthy & Happy သုံးပန်လှကွတ်ကီး။
+
+အာဟာရဆရာဝန်ရဲ့ ကြီးကြပ်မှုနဲ့ ကိုယ်ဝန်ဆောင်၊ နို့တိုက်မိခင်၊ ကလေးငယ်တွေနဲ့ ဆီးချို/ ကင်ဆာဝေဒနာရှင်တွေအတွက် မြန်မာ့ဒေသထွက် အဖိုးတန်သီးနှံလူး၊ဆပ်ကို ကုလားပဲနဲ့ သီဟိုဠ်စေ့တို့ကို ပေါင်းစပ်ပြီး အရသာရှိရှိစားရင်း သံဓာတ်ဖြည့်တင်းဖို့နဲ့ အသားဓာတ်ဖြည့်တင်းဖို့အပြင် တောင်သူတွေရဲ့ အလုပ်အကိုင်နဲ့ဝင်ငွေအခွင့်အလမ်းတိုးတတ်ဖို့ရည်ရွယ်ချက်ကောင်းတွေနဲ့ ဖန််တီးထားတဲ့ ကွတ်ကီးအမျိုးအစားဖြစ်ပါတယ်။
+
+တစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။
 Ingredients: ဂျုံကြမ်း၊ အုတ်ဂျုံမှုန့်၊ သဘာဝအချိုဓာတ်
 Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
+## Energy Bar
 
 - id: my:product.iron-enriched-cookies-4
 - locale: my
@@ -4947,14 +5219,37 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.iron-enriched-cookies-4
 
-Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး
-Series: မူရင်းစီးရီး
-Description: ကြွပ်ရွပြီး ပေါ့ပါးကာ သဘာဝအာဟာရရှိသော နေ့စဉ်မုန့်။
+Name: Energy Bar
+Series: ပရိုတင်းစီးရီး
+Description: အလုပ်များပြီး စားသောက်ချိန်မမှန်လို့ဖြစ်စေ၊ ခရီးသွားတဲ့အခါဖြစ်စေ၊ Workout တွေမှာ stamina, focus ကောင်းဖို့ Pre/ Post workout meal plan မှာ ထည့်သွင်းစားသုံးချင်တဲ့အခါဖြစ်စေ၊ ဝိတ်ထိန်းနေလို့ အသားဓာတ်များပြီး အဆာခံမယ့် snack မျိုးရှာနေလို့ဖြစ်စေ၊ မကြာခဏဗိုက်ဆာတတ်လို့ဖြစ်ဖြစ်၊ အဆာလွန်လို့ သွေးတွင်းသကြားတတ် တတ်/ကျမှာ စိုးရိမ်လို့ဖြစ်စေ၊ အသားဓာတ်များများပါပြီး အာဟာရပြည့်ဝတဲ့ snack မျိုးရှာဖွေနေလို့ဖြစ်စေ သိမ်းရလွယ်၊ သယ်ရလွယ််၊ စားရလွယ််စေမှာ Healthy & Happy Energy Bar ပါ။
+
+အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ......... လိုအစေ့အဆန်တွေနေ ဖန်တီးထားပြီး တစ်ချောင်းစားလိုက်တိုင်းမှာ Plant-based Protein 7 g နဲ့အတူ ၆ နာရီကြာ အဆာခံစေလို့  မကြာခဏဆာလောင်တတ်သူ၊ ဝိတ်ထိန်းနေသူတွေအတွက် အဆင်ပြေစေမယ့်အပြင် အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ အချိုကြောင့် ကျန်းမာရေးနောက်ဆက်တွဲပြဿနာတွေကို စိုးရိမ်သူတွေ၊ ကင်ဆာဝေနာရှင်တွေအထိပါအဆင်ပြေစေပါတယ်။
+
+တစ်ချောင်းချင်းစီ၏ အာဟာရတန်ဖိုးအား အိတ်ခွံတွင် ဖော်ပြပေးထားပါသည်။
 Ingredients: အုတ်ဂျုံ၊ စတီဗီးယား၊ ထောပတ်၊ ပင်လယ်ဆား
+Tags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး
+Price: ၅,၀၀၀ ကျပ်
+
+## နှမ်းမုန့်ကြွပ်
+
+- id: my:product.lavash
+- locale: my
+- contentType: product
+- sourcePath: messages/my/product.json
+- sectionId: product.lavash
+
+Name: နှမ်းမုန့်ကြွပ်
+Series: မူရင်းစီးရီး
+Description: အပျင်းပြေစားစား၊ အဆာပြေစားစား၊ နေ့နေ့ညည တကြွပ်ကြွပ်ဝါးရင်း ဝိတ်တက်မှာ၊ ဆီးချိုတတ်မှာ လုံးဝစိုးရိမ်စရာမလိုတဲ့ အဆာပြေမုန့်မျိုးဆို Healthy & Happy နှမ်းမုန့်ကြွပ်ပါပဲ။
+
+ဂျုံကြမ်း၊နှမ်းကိုသာ အဓိကအသုံးပြုထားပြီး အာဟာရဆရာဝန်ကြီးကြပ်မှုနဲ့ အချို၊ ကြာရှည်ခံဆေးမသုံးဘဲ ဖန်တီးထားတာကြောင့် တချပ်လုံးစားမှ ၁၅ ကယ်လိုရီပဲပါလို့ ဆီးချို၊ ကင်ဆာ၊ ဝိတ်ထိန်းနေသူတွေ စိုးရိမ်စရာလုံးဝမလိုဘဲ အာလူးကြော်တမျှ ကြွပ်ရွတဲ့ ထိမိမှုမျိုးကို အာဟာရပြည့်ဝတဲ့ ခံစားချက်ကို ထိထိမိမိ စားနိုင်ပါတယ်။
+
+တစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။
+Ingredients: ဂျုံကြမ်း၊ နှမ်း
 Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - အခွံမာသီး ကွတ်ကီး
+## သစ်ကြံပိုးလွတ်ကွတ်ကီး
 
 - id: my:product.nut-cookies-1
 - locale: my
@@ -4962,14 +5257,18 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.nut-cookies-1
 
-Name: Thone Pan Hla - အခွံမာသီး ကွတ်ကီး
-Series: ပရိုတင်းစီးရီး
-Description: အာဟာရဖြည့်တင်းပြီး စွမ်းအင်ပေးသော အခွံမာသီး ကွတ်ကီးများ။
+Name: သစ်ကြံပိုးလွတ်ကွတ်ကီး
+Series: မူရင်းစီးရီး
+Description: ကျန်းမာရေးကြောင့် အချို၊ သကြားရှောင်နေရသော်ငြား တစ်ချပ်စား တကိုက် ကိုက်လိုက်တိုင်းမှာ "ဆေးဖက်ဝင်တယ်၊ ကျန်းမာရေးနဲ့ညီညွတ်တယ်၊ အာဟာရပြည့်ဝမျှတယ်" ဆိုတဲ့ ခံစားချက််မျိုးအပြည့်ရစေဖို့ ကွတ်ကီးထဲမှာ သစ်ကြံပိုးမှုန့်ကိုထည့်သွင်းဖန်တီးထားတဲ့ သစ်ကြံပိုးကွတ်ကီး...။
+
+နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ဖို့ အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမထည့်ထားဘဲ Calories အနည်းဆုံးဖြစ်အောင် အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဂျုံကြမ်း၊ အုတ်၊ သစ်ကြံပိုးမှုန့်၊ ဆားမပါတဲ့ထောပတ်ကိုသာအဓိကထားပြီးဖန်တီးထားတာဖြစ်လို့ စားလိုက်တိုင်းမှာ သစ်ကြံပိုးရဲ့ နွေးနွေးထွေးထွေးရနံ့မွှေးမွှေးနဲ့အတူ သဘာဝဆန်တဲ့ အရသာ၊ ကြွပ်မွမှုကို ခံစားရစေမှာပါ။
+
+ကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။
 Ingredients: ဗာဒံသီး၊ အခွံမာသီး၊ အုတ်ဂျုံမှုန့်၊ စတီဗီးယား
-Tags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး
+Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - အခွံမာသီး ကွတ်ကီး
+## သကြားမုန်လာကွတ်ကီး
 
 - id: my:product.nut-cookies-2
 - locale: my
@@ -4977,14 +5276,77 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.nut-cookies-2
 
-Name: Thone Pan Hla - အခွံမာသီး ကွတ်ကီး
+Name: သကြားမုန်လာကွတ်ကီး
 Series: မူရင်းစီးရီး
-Description: သဘာဝအချိုအရသာဖြင့် ပြည့်ဝသော အခွံမာသီး ကွတ်ကီးများ။
+Description: Beetroot ရဲ့ နီနီဆွေးဆွေးအရောင်အသွေးနဲ့ ထူးကဲတဲ့အရသာကြောင့် ပုံမှန်စားနေကျ ကွတ်ကီးတွေနဲ့မတူ ကွဲထွက်နေပြီး အဆာပြေကွတ်ကီးစားရင်း ဟင်းသီးဟင်းရွက်ရဲ့ အာဟာရကိုပါ တပြိုင်တည်းရယူလိုသူ၊ ဝိတ်လည်းမတတ်ချင်သူ၊ ကျန်းမာရေးနဲ့လည်းညီညွတ်ချင်သူ၊ ဆီးချိုတတ်မှာစိုးရိမ်သူတွေအတွက် Healthy & Happy Beetroot Cookies။
+
+Beetroot ရဲ့ စိမ်းရွှေရွှေရနံ့ကို ဖျောက်ထားပေးပြီး အုတ်ဂျုံဖတ်လေးတွေရဲ့ ချိုတိုတို စိမ့်တိမ့်တိမ့်အရသာကိုမှ ဂျုံကြမ်း၊ ဆားမပါထောပတ်တွေကို အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဖန်တီးထားတာဖြစ်လို့ တစ်ချက် တစ်ကိုက် ဝါးလိုက်တိုင်းမှာ သပ်သပ်ရပ်ရပ်ကြွပ်မွတဲ့ အရသာမျိုးနဲ့ စားပြီးရင်းစားချင်စိတ်ကိုတောင် ကြွယ်ဝတဲ့အမျှင်ဓာတ်တွေက တားဆီးပေးတာကြောင့် ဝိတ်ထိန်းနေသူတွေအတွက် အဆင်ပြေလွန်းရုံမက အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ပါတယ်။
+
+တစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။
 Ingredients: အခွံမာသီးစုံ၊ ထောပတ်၊ သစ်ကြံပိုးခေါက်၊ မုန့်ချိုသီး
 Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး
+## အစေ့အဆန်ကိတ်
+
+- id: my:product.nuts-cake
+- locale: my
+- contentType: product
+- sourcePath: messages/my/product.json
+- sectionId: product.nuts-cake
+
+Name: အစေ့အဆန်ကိတ်
+Series: မူရင်းစီးရီး
+Description: ကိတ်မုန့်လေးလည်း စားချင်တယ်...ဆီးချိုတတ်မှာလည်းကြောက်တယ်၊ ဝိတ်တက်မှာလည်းစိုးရိမ်တယ်၊ ချောင်းဆိုးမှာလည်း စိတ်ပူတယ် ဆိုတဲ့ ဝေခွဲမရ သောက စိတ်ဆန္ဒတွေကို ဖြည့်ဆည်းပေးဖို့ အချိုလုံးဝမပါလို့ ဆီးချိုတတ်မှာ ချောင်းဆိုးမှာ စိတ်ပူစရာမလိုရုံမက ဝိတ်တက်မှာပါအထိ စိုးရိမ်စရာမလိုတဲ့ အစေ့အဆန်ကိတ်။
+
+ဂျုံကြမ်းကိုအဓိကထားသုံးထားပေမယ့် Healthy & Happy Bakery Team ရဲ့ ဖန်တီးမှုကြောင့် ကြမ်းတမ်းခြောက်သွေ့စားရမခက်ဘဲ ပါးစပ်ထဲလျှောလျှောရှူရှူဝင်သွားမယ့်အပြင် အာဟာရဆရာဝန်ကြီးကြပ်မှုနဲ့ တချပ်လုံးစားမှ ၉၆ cal ပဲပါအောင် ဖန်တီးပေးထားတာကြောင့် ဝိတ်တက်မှာလည်း စိုးရိမ်စရာမလို၊ ခြေမွထည့်ထားတဲ့ အစေ့အဆန်လေးတွေကြောင့် သဘာဝကျကျ ချိုချိုစိမ့်စိမ့်အရသာလေးက ဆီးချိုဝေဒနာရှင်တွေအတွက် သီးစုံကိတ်အလား နတ်သုဒ္ဓါတမျှအရသာကို ခံစားရစေမှာပါ။
+
+တစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။
+Ingredients: ဂျုံကြမ်း၊ အစေ့အဆန်များ
+Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
+Price: ၅,၀၀၀ ကျပ်
+
+## အစေ့အဆန်ကွတ်ကီး
+
+- id: my:product.nuts-cookies
+- locale: my
+- contentType: product
+- sourcePath: messages/my/product.json
+- sectionId: product.nuts-cookies
+
+Name: အစေ့အဆန်ကွတ်ကီး
+Series: မူရင်းစီးရီး
+Description: Nutrient Powerhouse လို့တောင် တင်စားရတဲ့ (         )အစေ့အဆန််တွေရဲ့ Healthy Fats, အသားဓာတ်၊ အမျှင်ဓာတ်၊ ဗီတာမင်နဲ့ သတ္ထုဓာတ်တွေကို တစ်ချပ် တစ်ကိုက် ကိုက်ရုံနဲ့တင်် တစုတစည်းတည်းရယူချင်တယ်ဆိုရင် အစေ့အဆန်တွေရဲ့ မွှေးမွှေးစိမ့်စိမ့်ရနံ့၊ အရသာနဲ့ Healthy & Happy Nuts Cookies
+
+အစေ့အဆန်တွေရဲ့ ချိုချိုစိမ့်စိမ့်အရသာကိုမှ ဂျုံကြမ်း၊ ဆားမပါထောပတ်တွေကို အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဖန်တီးထားတာဖြစ်လို့ တစ်ကိုက် ဝါးလိုက်တိုင်းမှာ ကြွပ်မွတဲ့ခံစားချက််မျိုးနဲ့ အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ပါတယ်။
+
+ကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။
+Ingredients: အစေ့အဆန်များ၊ ဂျုံကြမ်းမှုန့်၊ ဆားမပါသောထောပတ်
+Tags: သကြားမပါ, မူရင်းစီးရီး
+Price: ၅,၀၀၀ ကျပ်
+
+## ပရိုတင်းဗိုက် (ဆီးချို)
+
+- id: my:product.protein-bite-diabetes
+- locale: my
+- contentType: product
+- sourcePath: messages/my/product.json
+- sectionId: product.protein-bite-diabetes
+
+Name: ပရိုတင်းဗိုက် (ဆီးချို)
+Series: ပရိုတင်းစီးရီး
+Description: မကြာခဏဗိုက်ဆာတတ်တဲ့အကျင့်ကြောင့် သွေးတွင်းသကြားဓာတ် ထိုးတတ်/ကျသွားမှာ စိုးရိမ်လို့ဖြစ်စေ၊ ကျန်းမာရေးကြောင့် အချိုရှောင်နေရလို့ဖြစ်စေ၊ Gym ကစားနေလို့ဖြစ်စေ၊ သားသတ်လွတ်စားနေလို့ဖြစ်စေ၊ ဝိတ်ထိန်းနေလို့ အသားဓာတ်ပိုလိုအပ်လို့ဖြစ်စေ၊ နေမကောင်း မကျန်းမာ နာလန်ထူကာစမို့လို့ အသားဓာတ်လိုအပ်နေလို့ဖြစ်စေ တနေ့တာလိုအပ်တဲ့အသားဓာတ်ကို တွက်ချက်စရာမလို ချက်ပြုတ်ပြင်ဆင်စရာမလို အလွယ်တကူဖြည့်ဆည်းပေးဖို့ဆို မြန်မာပြည်သူတွေရဲ့ အာဟာရလိုအပ်ချက်ကို တထောင့်တနေရာကနေဖြည့်ဆည်းပေးဖို့ ရည်ရွယ်ချက်အပြည့်နဲ့ ဖန်တီးထားတဲ့ Healthy & Happy Protein Bite (Diabetes)
+
+ပြည်တွင်းကုန်ကြမ်းတွေဖြစ်တဲ့ မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲတွေကို အဓိကအသုံးပြုထားပြီး တချပ်စားလိုက်တိုင်းမှာ Plant-based Protein 4 g၊ (၃) ချပ်စားလိုက်တိုင်းမှာ ထမင်းတစ်ပန်းကန်၊ အသား (၂) တုံးနဲ့ညီမျှတဲ့ အာဟာရကိုအလွယ်တကူရနိုင်အောင် အာဟာရဆရာဝန်ကြီးကြပ်ထားပြီး
+
+မြေပဲရနံ့သင်းသင်းမွှေးမွှေးလေးကြောင့် အိမ်ပြန်ရောက်သွားသလို နွေးထွေးသွားစေမယ့် ခံစားချက်နဲ့အတူ သဘာဝအတိုင်းအစိမ့်အရသာကြောင့် အဆာခံကျေနပ် ပြည့်ဝတင်းတိမ်ကျေနပ်စေမှာပါ။
+
+ကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။
+Ingredients: မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲ
+Tags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး
+Price: ၅,၀၀၀ ကျပ်
+
+## ဟင်းနုနွယ်ကွက်ကီး
 
 - id: my:product.spinach-cookies-1
 - locale: my
@@ -4992,14 +5354,18 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.spinach-cookies-1
 
-Name: Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး
-Series: ပရိုတင်းစီးရီး
-Description: ကျန်းမာရေးအတွက် သံဓာတ်နှင့် အမျှင်ဓာတ်ကြွယ်ဝသော ကွတ်ကီးများ။
+Name: ဟင်းနုနွယ်ကွက်ကီး
+Series: မူရင်းစီးရီး
+Description: စျေးကွက်ထဲမှာ လွယ်လင့်တကူဝယ်ယူနိုင်တဲ့ ဟင်းနုနွယ်ရွက်အစစ်ကို Value-added ဖြစ်အောင် ကွတ်ကီးထဲမှာထည့်သွင်းဖန်တီးထားတဲ့ မြန်မာနိုင်ငံရဲ့ ပထမဆုံးသော ဟင်းနုနွယ်ကွတ်ကီး။
+
+နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ဖို့ အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမထည့်ထားဘဲ Calories အနည်းဆုံးဖြစ်အောင် အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဂျုံကြမ်း၊ အုတ်၊ ဟင်းနုနွယ်ရွက်၊ ဆားမပါတဲ့ထောပတ်ကိုသာအဓိကထားပြီးဖန်တီးထားတာဖြစ်လို့ စားလိုက်တိုင်းမှာ သဘာဝဆန်တဲ့ရနံ့၊ အရသာ၊ ကြွပ်မွမှုနဲ့ အဆာပြေစားရင်း ဟင်းသီးဟင်းရွက်ရဲ့ အာဟာရကိုပါ တပြိုင်တည်းရစေမှာပါ။
+
+ကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။
 Ingredients: ဟင်းနုနွယ်အနှစ်၊ ဂျုံကြမ်း၊ သံလွင်ဆီ
-Tags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး
+Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်
 
-## Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး
+## အုတ်ကွတ်ကီး
 
 - id: my:product.spinach-cookies-2
 - locale: my
@@ -5007,9 +5373,13 @@ Price: ၅,၀၀၀ ကျပ်
 - sourcePath: messages/my/product.json
 - sectionId: product.spinach-cookies-2
 
-Name: Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး
+Name: အုတ်ကွတ်ကီး
 Series: မူရင်းစီးရီး
-Description: ဟင်းနုနွယ်၏ ကောင်းမြတ်မှုကို အချိန်တိုင်း အရသာရှိစွာ ဖုတ်ထားသော ကွတ်ကီး။
+Description: ဝိတ်ထိန်းနေတဲ့အတွက် နည်းနည်းစားလိုက်ရုံနဲ့ ဗိုက်ပြည့်သွားတဲ့ ခံစားချက်မျိုးရချင်တယ်။ အရသာရှိရှိလည်းစားချင်တယ်။ တဇွတ်ဇွတ် စားမိရင်တောင် နောင်တမရချင်ဘူး။မကြာခဏဗိုက်ပြန်ဆာတာမျိုးလည်းမကြိုက်လို့ အမျှင်ဓာတ်များများပါတဲ့ အဆာပြေမုန့်မျိုးစားချင််သူတွေအတွက် အုတ်ဂျုံကွတ်ကီး။
+
+အုတ်ဂျုံဖတ်လေးတွေရဲ့ ရိုးရိုးရှင်းရှင်း ချိုတိုတို စိမ့်တိမ့်တိမ့်အရသာကိုမှ ဂျုံကြမ်း၊ ဆားမပါထောပတ်တွေကို အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဖန်တီးထားတာဖြစ်လို့ တစ်ချက် တစ်ကိုက် ဝါးလိုက်တိုင်းမှာ သူမတူတဲ့ ကြွပ်မွမှုမျိုးနဲ့ စားပြီးရင်းစားချင်စိတ်ကိုတောင် ကြွယ်ဝတဲ့အမျှင်ဓာတ်တွေက တားဆီးပေးတာကြောင့် ဝိတ်ထိန်းနေသူတွေအတွက် အဆင်ပြေလွန်းရုံမက အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ပါတယ်။
+
+ကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။
 Ingredients: ဟင်းနုနွယ်၊ အုတ်ဂျုံမှုန့်၊ အီရစ်သရစ်တော၊ ဥ
 Tags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး
 Price: ၅,၀၀၀ ကျပ်

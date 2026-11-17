@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T16:09:04.697Z",
+  "generatedAt": "2026-11-17T04:07:15.752Z",
   "chunks": [
     {
       "id": "en:about.coreIdentity.items[0].description",
@@ -467,7 +467,7 @@
       "contentType": "message",
       "title": "about: sustainability.placeholder",
       "sectionId": "about.sustainability.placeholder",
-      "text": "You can add some text here"
+      "text": "Healthy & Happy is committed to sustainability, focusing on responsible sourcing, eco-friendly packaging, and community engagement."
     },
     {
       "id": "en:about.sustainability.title",
@@ -494,7 +494,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[0]",
       "sectionId": "about.whereCanBuy.retailers[0]",
-      "text": "Grandmother Hospital"
+      "text": "Grand Hantha Hospital"
     },
     {
       "id": "en:about.whereCanBuy.retailers[1]",
@@ -503,7 +503,25 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[1]",
       "sectionId": "about.whereCanBuy.retailers[1]",
-      "text": "Shan Dila Pharmacy"
+      "text": "Shan Ohh Pharmacy"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[10]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[10]",
+      "sectionId": "about.whereCanBuy.retailers[10]",
+      "text": "Sein Gay Har"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[11]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[11]",
+      "sectionId": "about.whereCanBuy.retailers[11]",
+      "text": "Healthy & Happy Store"
     },
     {
       "id": "en:about.whereCanBuy.retailers[2]",
@@ -512,7 +530,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[2]",
       "sectionId": "about.whereCanBuy.retailers[2]",
-      "text": "Ku Kin Tin Pharmacy"
+      "text": "Ko Han Tin Pharmacy"
     },
     {
       "id": "en:about.whereCanBuy.retailers[3]",
@@ -521,7 +539,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[3]",
       "sectionId": "about.whereCanBuy.retailers[3]",
-      "text": "Market Plaza"
+      "text": "One Stop"
     },
     {
       "id": "en:about.whereCanBuy.retailers[4]",
@@ -539,7 +557,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[5]",
       "sectionId": "about.whereCanBuy.retailers[5]",
-      "text": "Healthy & Happy Store"
+      "text": "Ocean Supermarket"
     },
     {
       "id": "en:about.whereCanBuy.retailers[6]",
@@ -548,7 +566,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[6]",
       "sectionId": "about.whereCanBuy.retailers[6]",
-      "text": "Family Pharmacy"
+      "text": "Makro Wholesales"
     },
     {
       "id": "en:about.whereCanBuy.retailers[7]",
@@ -557,7 +575,25 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[7]",
       "sectionId": "about.whereCanBuy.retailers[7]",
-      "text": "Local Partners"
+      "text": "Foodland Minimart"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[8]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[8]",
+      "sectionId": "about.whereCanBuy.retailers[8]",
+      "text": "DMart"
+    },
+    {
+      "id": "en:about.whereCanBuy.retailers[9]",
+      "locale": "en",
+      "sourcePath": "messages/en/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[9]",
+      "sectionId": "about.whereCanBuy.retailers[9]",
+      "text": "Life Plus"
     },
     {
       "id": "en:about.whereCanBuy.title",
@@ -917,7 +953,7 @@
       "contentType": "message",
       "title": "awards: items[0].description",
       "sectionId": "awards.items[0].description",
-      "text": "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category."
+      "text": "The Myanmar Women Entrepreneurs Network recognized May Hnin Wai of Healthy & Happy Myanmar for her achievement."
     },
     {
       "id": "en:awards.items[0].label",
@@ -935,7 +971,7 @@
       "contentType": "message",
       "title": "awards: items[0].title",
       "sectionId": "awards.items[0].title",
-      "text": "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022."
+      "text": "ASEAN Business Award"
     },
     {
       "id": "en:awards.items[1].description",
@@ -944,7 +980,7 @@
       "contentType": "message",
       "title": "awards: items[1].description",
       "sectionId": "awards.items[1].description",
-      "text": "An honour celebrating the work of women entrepreneurs creating positive impact for their communities."
+      "text": "A Myanmar-language trophy recognizing achievement in the micro, small, and medium enterprise sector."
     },
     {
       "id": "en:awards.items[1].label",
@@ -962,7 +998,7 @@
       "contentType": "message",
       "title": "awards: items[1].title",
       "sectionId": "awards.items[1].title",
-      "text": "The Most Responsible Business Award 2022"
+      "text": "Myanmar MSME Recognition Award"
     },
     {
       "id": "en:awards.items[10].description",
@@ -971,7 +1007,7 @@
       "contentType": "message",
       "title": "awards: items[10].description",
       "sectionId": "awards.items[10].description",
-      "text": "Award description 11."
+      "text": "Healthy & Happy Myanmar won the Global Food Industry Award for Industrialization of a Traditional Food."
     },
     {
       "id": "en:awards.items[10].label",
@@ -989,7 +1025,7 @@
       "contentType": "message",
       "title": "awards: items[10].title",
       "sectionId": "awards.items[10].title",
-      "text": "Award Title 11"
+      "text": "Global Food Industry Award: Industrialization of a Traditional Food"
     },
     {
       "id": "en:awards.items[2].description",
@@ -998,7 +1034,7 @@
       "contentType": "message",
       "title": "awards: items[2].description",
       "sectionId": "awards.items[2].description",
-      "text": "Award description 3."
+      "text": "UNDP and UN Women recognized Healthy & Happy Myanmar as a winner in the Capacity Enhancement Fund category of the Resilience for Women-Led SMEs Award."
     },
     {
       "id": "en:awards.items[2].label",
@@ -1016,7 +1052,7 @@
       "contentType": "message",
       "title": "awards: items[2].title",
       "sectionId": "awards.items[2].title",
-      "text": "Award Title 3"
+      "text": "Resilience for Women-Led SMEs Award: Capacity Enhancement Fund Winner"
     },
     {
       "id": "en:awards.items[3].description",
@@ -1025,7 +1061,7 @@
       "contentType": "message",
       "title": "awards: items[3].description",
       "sectionId": "awards.items[3].description",
-      "text": "Award description 4."
+      "text": "Healthy & Happy Myanmar received the Silver Award at the China-ASEAN Expo."
     },
     {
       "id": "en:awards.items[3].label",
@@ -1043,7 +1079,7 @@
       "contentType": "message",
       "title": "awards: items[3].title",
       "sectionId": "awards.items[3].title",
-      "text": "Award Title 4"
+      "text": "China-ASEAN Expo Silver Award"
     },
     {
       "id": "en:awards.items[4].description",
@@ -1052,7 +1088,7 @@
       "contentType": "message",
       "title": "awards: items[4].description",
       "sectionId": "awards.items[4].description",
-      "text": "Award description 5."
+      "text": "This Myanmar-language award recognizes achievement in the micro, small, and medium enterprise sector."
     },
     {
       "id": "en:awards.items[4].label",
@@ -1070,7 +1106,7 @@
       "contentType": "message",
       "title": "awards: items[4].title",
       "sectionId": "awards.items[4].title",
-      "text": "Award Title 5"
+      "text": "Myanmar MSME Achievement Award"
     },
     {
       "id": "en:awards.items[5].description",
@@ -1079,7 +1115,7 @@
       "contentType": "message",
       "title": "awards: items[5].description",
       "sectionId": "awards.items[5].description",
-      "text": "Award description 6."
+      "text": "The Women Entrepreneurship Program recognized Healthy & Happy Myanmar for responsible business leadership."
     },
     {
       "id": "en:awards.items[5].label",
@@ -1097,7 +1133,7 @@
       "contentType": "message",
       "title": "awards: items[5].title",
       "sectionId": "awards.items[5].title",
-      "text": "Award Title 6"
+      "text": "The Most Responsible Business Award"
     },
     {
       "id": "en:awards.items[6].description",
@@ -1106,7 +1142,7 @@
       "contentType": "message",
       "title": "awards: items[6].description",
       "sectionId": "awards.items[6].description",
-      "text": "Award description 7."
+      "text": "This award recognizes achievement in Myanmar's micro, small, and medium enterprise sector."
     },
     {
       "id": "en:awards.items[6].label",
@@ -1124,7 +1160,7 @@
       "contentType": "message",
       "title": "awards: items[6].title",
       "sectionId": "awards.items[6].title",
-      "text": "Award Title 7"
+      "text": "Myanmar MSME Development Award"
     },
     {
       "id": "en:awards.items[7].description",
@@ -1133,7 +1169,7 @@
       "contentType": "message",
       "title": "awards: items[7].description",
       "sectionId": "awards.items[7].description",
-      "text": "Award description 8."
+      "text": "Thone Pan Hla Cookies received the Most Promising Award at the ASEAN-India Grassroots Innovation Forum for its nutritional benefits."
     },
     {
       "id": "en:awards.items[7].label",
@@ -1151,7 +1187,7 @@
       "contentType": "message",
       "title": "awards: items[7].title",
       "sectionId": "awards.items[7].title",
-      "text": "Award Title 8"
+      "text": "Most Promising Award: Thone Pan Hla Cookies"
     },
     {
       "id": "en:awards.items[8].description",
@@ -1160,7 +1196,7 @@
       "contentType": "message",
       "title": "awards: items[8].description",
       "sectionId": "awards.items[8].description",
-      "text": "Award description 9."
+      "text": "Healthy & Happy Myanmar was recognized in the SME Food and Beverages Sector under the Priority Integration Sector."
     },
     {
       "id": "en:awards.items[8].label",
@@ -1178,7 +1214,7 @@
       "contentType": "message",
       "title": "awards: items[8].title",
       "sectionId": "awards.items[8].title",
-      "text": "Award Title 9"
+      "text": "ASEAN Business Awards: SME Food and Beverages Sector"
     },
     {
       "id": "en:awards.items[9].description",
@@ -1187,7 +1223,7 @@
       "contentType": "message",
       "title": "awards: items[9].description",
       "sectionId": "awards.items[9].description",
-      "text": "Award description 10."
+      "text": "The UMFCCI recognized Healthy & Happy Myanmar with the SME Outstanding Award."
     },
     {
       "id": "en:awards.items[9].label",
@@ -1205,7 +1241,7 @@
       "contentType": "message",
       "title": "awards: items[9].title",
       "sectionId": "awards.items[9].title",
-      "text": "Award Title 10"
+      "text": "SME Outstanding Award"
     },
     {
       "id": "en:awards.title",
@@ -1223,7 +1259,7 @@
       "contentType": "message",
       "title": "contact: address",
       "sectionId": "contact.address",
-      "text": "Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar."
+      "text": "Address - Between 113th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar."
     },
     {
       "id": "en:contact.call",
@@ -1739,6 +1775,33 @@
       "text": "The Journey of Happy & Healthy"
     },
     {
+      "id": "en:home.productCarousel.explore",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: productCarousel.explore",
+      "sectionId": "home.productCarousel.explore",
+      "text": "Explore"
+    },
+    {
+      "id": "en:home.productCarousel.next",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: productCarousel.next",
+      "sectionId": "home.productCarousel.next",
+      "text": "Next products"
+    },
+    {
+      "id": "en:home.productCarousel.previous",
+      "locale": "en",
+      "sourcePath": "messages/en/home.json",
+      "contentType": "message",
+      "title": "home: productCarousel.previous",
+      "sectionId": "home.productCarousel.previous",
+      "text": "Previous products"
+    },
+    {
       "id": "en:home.production.description",
       "locale": "en",
       "sourcePath": "messages/en/home.json",
@@ -1808,7 +1871,7 @@
       "contentType": "message",
       "title": "shell: footer.address",
       "sectionId": "shell.footer.address",
-      "text": "Address - Between 111th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar."
+      "text": "Address - Between 113th and 114th Streets, 75th Street, Pyigyitagon Township, Mandalay Region, Myanmar."
     },
     {
       "id": "en:shell.footer.brandAlt",
@@ -2148,18 +2211,18 @@
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "title": "Protein Bite",
       "sectionId": "product.iron-enriched-cookies-1",
-      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Iron-rich cookies crafted for daily nutritional support.\nIngredients: Whole Wheat Flour, Iron Fortified Oats, Stevia\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+      "text": "Name: Protein Bite\nSeries: Protein Series\nDescription: Intend for people who cannot eat well in covid-19 pandemic\nIngredients: Peanuts, oats, whole wheat, chickpeas\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.iron-enriched-cookies-2",
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "title": "Peanut Butter",
       "sectionId": "product.iron-enriched-cookies-2",
-      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Protein Series\nDescription: Protein-boosted iron cookies for active lifestyles.\nIngredients: Protein Flour, Iron Oats, Monk Fruit, Butter\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
+      "text": "Name: Peanut Butter\nSeries: Protein Series\nDescription: Whether you need an extra source of protein, want to fuel your pre- or post-workout nutrition, or simply crave a satisfying snack any time of day, Healthy & Happy Sugar-Free Peanut Butter is a convenient and delicious choice. As Myanmar’s first sugar-free peanut butter, it offers a naturally nutty treat without added sugar, making it a suitable option for people managing their blood sugar levels, including those living with diabetes and cancer patients, including children.\n\nMade from locally sourced peanuts, Healthy & Happy  Peanut Butter delivers 7 g of plant-based protein per tablespoon while preserving the peanuts’ natural aroma, flavor, and color. Crafted under the supervision of a nutritionist, it contains no artificial sweeteners or thickeners and supports local farmers by creating additional income opportunities.\n\nNutritional value per tablespoon is provided on the product label.\nIngredients: Protein Flour, Iron Oats, Monk Fruit, Butter\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.iron-enriched-cookies-3",
@@ -2168,52 +2231,88 @@
       "contentType": "product",
       "title": "Thone Pan Hla - Iron Enriched Cookies",
       "sectionId": "product.iron-enriched-cookies-3",
-      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Wholesome cookies for everyday balanced nutrition.\nIngredients: Whole Wheat, Oat Flour, Natural Sweetener\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Made primarily from two valuable traditional grains, common millet and Italian millet, cultivated in Myanmar’s dry zone and mountainous regions, Healthy & Happy Thone Pan Hal Cookies were specially developed to help meet the nutritional needs of pregnant women, breastfeeding mothers, and young children in Myanmar.\n\nDeveloped under the supervision of a nutritionist, Healthy & Happy Thone Pan Hla Cookies combine common millet and Italian millet, two valuable locally grown grains from Myanmar, with chickpeas and cashew nuts to create a tasty, nourishing snack, thoughtfully crafted to help provide iron and protein, designing  with the nutritional needs of pregnant women, breastfeeding mothers, young children, and people living with diabetes or cancer.\n\nBeyond nutrition, every cookie supports a meaningful purpose by creating better employment and income opportunities for local farmers.\n\nNutrition value per piece is provided on packaging.\nIngredients: Whole Wheat, Oat Flour, Natural Sweetener\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.iron-enriched-cookies-4",
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Iron Enriched Cookies",
+      "title": "Energy Bar",
       "sectionId": "product.iron-enriched-cookies-4",
-      "text": "Name: Thone Pan Hla - Iron Enriched Cookies\nSeries: Original Series\nDescription: Crunchy, light, and naturally nutritious daily snack.\nIngredients: Oats, Stevia, Butter, Sea Salt\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+      "text": "Name: Energy Bar\nSeries: Protein Series\nDescription: Whether busy with work and have irregular meal times, traveling, looking for a boost in stamina and focus during your workouts, or searching for a protein-rich snack to keep you feeling full while managing your weight, those who often feel hungry, want a nutritious snack, or concerned about blood sugar spikes, Healthy & Happy Energy Bar is the perfect easy to store, easy to carry, and easy to enjoy, on-the-go choice.\n\nDeveloped from nutrient-rich nuts and seeds, such as ............., under the supervision of a nutritionist, each bar delivers 7 g of plant-based protein to help keep you feeling satisfied for up to 6 hours. It’s a nourishing choice for those who tend to feel hungry frequently or are looking to manage their weight.\n\nWith no added sugar, artificial sweeteners, or preservatives, it’s a mindful snacking option for anyone seeking to reduce sugar intake and embrace healthier eating habits.\n\nNutritional value for each bar is provided on the packaging.\nIngredients: Oats, Stevia, Butter, Sea Salt\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.lavash",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Lavash",
+      "sectionId": "product.lavash",
+      "text": "Name: Lavash\nSeries: Original Series\nDescription: Whether munching for fun or satisfying hunger, enjoy that irresistible crunch day or night without worrying about weight gain or blood sugar spikes, with Healthy & Happy Lavash—your guilt-free snack choice for pure crunch, pure enjoyment.\n\nMade primarily with whole wheat and sesame, Healthy & Happy Lavash are crafted under the supervision of nutritionist, with no added sugar or preservatives. At just 15 calories per piece, they offer a deliciously crispy, potato-chip-like crunch with nourishing goodness in every bite—an appealing snack option for those managing their weight or seeking to make more mindful food choices.\n\nNutrition value per piece is provided on packaging.\nIngredients: Whole wheat, sesame\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.nut-cookies-1",
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Nut Cookies",
+      "title": "Cinnamon Cookies",
       "sectionId": "product.nut-cookies-1",
-      "text": "Name: Thone Pan Hla - Nut Cookies\nSeries: Protein Series\nDescription: Nutty, satisfying bites that nourish and energise.\nIngredients: Almonds, Walnuts, Oat Flour, Stevia\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
+      "text": "Name: Cinnamon Cookies\nSeries: Original Series\nDescription: Our Healthy & Happy's Cinnamon Cookies bring together the distinctive flavor of cinnamon and wholesome ingredients to give you \"the full feeling of goodness, healthiness, and balanced nutrition\" in every bite, to create a delicious snack for those who want to make healthier choices.\n\nCarefully crafted under the supervision of a nutritionist, our cookies are made primarily with whole wheat flour, oats, cinnamon powder, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives.\n\nDesigned with calorie-conscious snacking in mind, every bite delivers a naturally rich flavor, a warm cinnamon aroma, and a satisfying crunch, making healthy-minded snacking a little more enjoyable for health-conscious individuals and families alike.\n\nNutritional value per cookie is clearly stated on the product packaging.\nIngredients: Almonds, Walnuts, Oat Flour, Stevia\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.nut-cookies-2",
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Nut Cookies",
+      "title": "Beetroot Cookies",
       "sectionId": "product.nut-cookies-2",
-      "text": "Name: Thone Pan Hla - Nut Cookies\nSeries: Original Series\nDescription: Classic nut blend, naturally sweet and deeply satisfying.\nIngredients: Mixed Nuts, Butter, Cinnamon, Monk Fruit\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+      "text": "Name: Beetroot Cookies\nSeries: Original Series\nDescription: With its vibrant reddish-purple color and distinctive flavor, our Healthy & Happy Beetroot Cookies stand out from typical cookies and are a delicious choice for those who want to enjoy a tasty snack while getting the nutritional benefits of vegetables, managing their weight, making healthier food choices, and being mindful of their blood sugar levels.\n\nWith the earthy aroma of beetroot carefully balanced, Healthy & Happy Beetroot Cookies combine the subtly sweet, nutty flavor of oats with whole wheat flour and unsalted butter, and crafted under the supervision of nutritionist, each bite delivers a satisfyingly crisp and crunchy texture that keeps you coming back for more.\n\nRich in dietary fiber, these cookies are a convenient choice for those managing their weight and looking for a more satisfying snack. Made without added sugar, artificial sweeteners, or preservatives, they are a thoughtful option for health-conscious individuals like diabetics and cancer patients and even children to enjoy as part of a balanced diet.\n\nNutrition value per cookie is provided on packaging.\nIngredients: Mixed Nuts, Butter, Cinnamon, Monk Fruit\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.nuts-cake",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Nuts Cake",
+      "sectionId": "product.nuts-cake",
+      "text": "Name: Nuts Cake\nSeries: Original Series\nDescription: Craving a little cake but worried about blood sugar, weight gain, or coughing? Our Healthy & Happy Nuts Cake, made with absolutely no added sugar, is here to satisfy your conflicting cravings and ease your concerns, so you can enjoy every bite with greater peace of mind without worrying about blood sugar, weight gain or coughing.\n\nAlthough made primarily with whole wheat flour, our team has carefully crafted this cake to avoid the usual dryness and rough texture of whole wheat baked goods, making it smooth and easy to enjoy. Developed under the supervision of a nutritionist, each slice contains just 96 calories, allowing you to enjoy a delicious treat while being mindful of your calorie intake.\n\nThanks to the crushed ground nuts and seeds, every bite delivers a naturally sweet, rich, and nutty flavor reminiscent of a heavenly fruitcake, offering a delightful treat for those who are mindful of their sugar intake.\n\nNutrition value per slice is provided on packaging.\nIngredients: Whole wheat flour, ground nuts, seeds\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.nuts-cookies",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Nuts Cookies",
+      "sectionId": "product.nuts-cookies",
+      "text": "Name: Nuts Cookies\nSeries: Original Series\nDescription: Known as a nutrient powerhouse, from Healthy & Happy Nuts Cookies bring together the naturally rich aroma and satisfying taste of nuts in every bite—making your everyday snack a little more delightful with healthy fats, protein, fiber, vitamins, and minerals.\n\nCrafted under the supervision of a nutritionist, Healthy & Happy Nuts Cookies combine the naturally rich, nutty sweetness of nuts with whole wheat flour and unsalted butter for a delightfully crisp and crumbly texture in every bite.\n\nMade without added sugar, artificial sweeteners, or preservatives, they are a thoughtful snack choice for those who prioritize healthier eating, as well as families looking for enjoyable treats for their children.\n\nNutritional value per cookie is clearly stated on the product packaging.\nIngredients: Nuts, whole wheat flour, unsalted butter\nTags: No Sugar, Original Series\nPrice: 5,000 MMK"
+    },
+    {
+      "id": "en:product.protein-bite-diabetes",
+      "locale": "en",
+      "sourcePath": "messages/en/product.json",
+      "contentType": "product",
+      "title": "Protein Bite (Diabetes)",
+      "sectionId": "product.protein-bite-diabetes",
+      "text": "Name: Protein Bite (Diabetes)\nSeries: Protein Series\nDescription: Whether concerned about blood sugar spikes due to frequent hunger, including as a protein source in your pre- or post-workout meal plan, avoiding sugar for health reasons, hitting the gym, following a vegetarian diet, managing your weight and seeking extra protein, or recovering from illness and needing additional nourishment, Healthy & Happy Protein Bite (Diabetes) makes meeting your daily protein needs easy and convenient—no calculations or meal prep required. Created with a heartfelt mission to support the nutritional needs of people across Myanmar.\n\nEach Healthy & Happy Protein Bite (Diabetes) delivers 4 g of plant-based protein from locally sourced ingredients, including peanuts, oats, whole wheat, and chickpeas. Created under the guidance of a nutrition professional, these cookies provide a simple and convenient way to boost your daily protein intake without the hassle of cooking or preparing meals.\n\nWith its warm, inviting peanut aroma that feels like coming home, every bite offers a naturally rich, nutty flavor that leaves you feeling satisfied, nourished, and comfortably full.\n\nNutritional value per cookie is clearly stated on the product packaging.\nIngredients: Peanuts, oats, whole wheat, chickpeas\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.spinach-cookies-1",
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Spinach Cookies",
+      "title": "Spinach Diabetes Cookies",
       "sectionId": "product.spinach-cookies-1",
-      "text": "Name: Thone Pan Hla - Spinach Cookies\nSeries: Protein Series\nDescription: Iron and fibre packed cookies for your wellness routine.\nIngredients: Spinach Extract, Whole Wheat, Olive Oil\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
+      "text": "Name: Spinach Diabetes Cookies\nSeries: Original Series\nDescription: Made with real spinach, our innovative spinach cookies transform an everyday vegetable into a delicious, value-added snack.\n\nCarefully Crafted under the supervision of a nutritionist, our cookies are thoughtfully developed  with whole wheat, oats, real spinach, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives for health-conscious consumers, as well as families looking for more wholesome treats for their children.\n\nDesigned with calorie-conscious snacking in mind, every bite delivers a naturally delicious aroma, a delightful crunch, and the benefits of vegetables in one tasty bite.\n\nNutrition value per cookie is clearly stated on the product packaging.\nIngredients: Spinach Extract, Whole Wheat, Olive Oil\nTags: No Sugar, Low Calories, Protein Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:product.spinach-cookies-2",
       "locale": "en",
       "sourcePath": "messages/en/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - Spinach Cookies",
+      "title": "Oat Diabetes Cookies",
       "sectionId": "product.spinach-cookies-2",
-      "text": "Name: Thone Pan Hla - Spinach Cookies\nSeries: Original Series\nDescription: Green goodness baked to perfection every single time.\nIngredients: Spinach, Oat Flour, Erythritol, Eggs\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
+      "text": "Name: Oat Diabetes Cookies\nSeries: Original Series\nDescription: For those who want to feel fuller with smaller portions while managing their weight, enjoy delicious treats without sacrificing taste, snack mindfully without feeling guilty, and choose a fiber-rich snack to help stay full longer, Healthy & Happy Oat Cookies are a deliciously satisfying and smarter way to snack.\n\nNot only with the simple goodness of oats with a gentle sweetness and a rich, buttery taste, but also made with whole wheat and unsalted butter under the supervision of a nutritionist, every bite delivers a uniquely crispy crunch that keeps you coming back for more.\n\npacked with fibers to help you feel fuller for longer, these cookies are the perfect choice for mindful snackers who want to manage their portions and enjoy delicious treats without compromising on taste.\n\nEven better, they contain no added sugar, artificial sweeteners, or preservatives, making them a thoughtful snack choice for health-conscious individuals and families, including children.\n\nNutritional value per cookie is clearly stated on the product packaging.\nIngredients: Spinach, Oat Flour, Erythritol, Eggs\nTags: No Sugar, Low Calories, Original Series\nPrice: 5,000 MMK"
     },
     {
       "id": "en:site-data.awards",
@@ -2231,7 +2330,7 @@
       "contentType": "message",
       "title": "about: coreIdentity.items[0].description",
       "sectionId": "about.coreIdentity.items[0].description",
-      "text": "မြန်မာနိုင်ငံတွင် မျှတသောအစားအစာနှင့် ရေရှည်တည်တံ့သော စိုက်ပျိုးရေးကို အထောက်အကူပြုမည့် ဆန်းသစ်သော အပင်အခြေပြု အာဟာရထုတ်ကုန်များဖြင့် ကျန်းမာရေးကို မြှင့်တင်ရန် ဖြစ်ပါသည်။"
+      "text": "မြန်မာနိုင်ငံတွင် မျှတသော အစားအသောက်ပုံစံနှင့် ရေရှည်တည်တံ့သော စိုက်ပျိုးရေးကို အထောက်အကူပြုမည့် သဘာဝအပင်အခြေပြု အာဟာရထုတ်ကုန်များဖြင့် လူတိုင်း၏ ကျန်းမာရေးကို မြှင့်တင်ပေးရန်ဖြစ်ပါသည်။"
     },
     {
       "id": "my:about.coreIdentity.items[0].heading",
@@ -2240,7 +2339,7 @@
       "contentType": "message",
       "title": "about: coreIdentity.items[0].heading",
       "sectionId": "about.coreIdentity.items[0].heading",
-      "text": "ကျန်းမာရေးနှင့် လူနေမှုပုံစံကို မြှင့်တင်ခြင်း"
+      "text": "ကျန်းမာရေးနှင့် လူနေမှုပုံစံ မြှင့်တင်ပေးခြင်း"
     },
     {
       "id": "my:about.coreIdentity.items[0].id",
@@ -2267,7 +2366,7 @@
       "contentType": "message",
       "title": "about: coreIdentity.items[1].description",
       "sectionId": "about.coreIdentity.items[1].description",
-      "text": "လူတိုင်း ဒေသခံလယ်သမားများကို အထောက်အပံ့ပေးပြီး ကျန်းမာသော အသိုက်အဝန်းများတည်ဆောက်နိုင်မည့် အာဟာရပြည့်ဝ၍ အရသာရှိသော အစားအစာကို ရရှိနိုင်သော မြန်မာနိုင်ငံကို မျှော်မှန်းပါသည်။"
+      "text": "ဒေသခံတောင်သူများကို ပံ့ပိုးပေးရင်း စိတ္ချယုံကြည်ရသည့် အာဟာရပြည့်ဝသော အစားအစာများကို လူတိုင်း လွယ်ကူစွာ ဝယ်ယူစားသုံးနိုင်မည့် ကျန်းမာကြံ့ခိုင်သော လူ့အသိုက်အဝန်းတစ်ခု ဖန်တီးရန် မျှော်မှန်းပါသည်။"
     },
     {
       "id": "my:about.coreIdentity.items[1].heading",
@@ -2276,7 +2375,7 @@
       "contentType": "message",
       "title": "about: coreIdentity.items[1].heading",
       "sectionId": "about.coreIdentity.items[1].heading",
-      "text": "မျိုးစေ့မှ အာဟာရပြည့်ဝသော အဆာပြေများအထိ"
+      "text": "စိုက်ပျိုးသူများထံမှ အာဟာရပြည့်ဝသော အစားအစာများဆီသို့"
     },
     {
       "id": "my:about.coreIdentity.items[1].id",
@@ -2303,7 +2402,7 @@
       "contentType": "message",
       "title": "about: coreIdentity.items[2].description",
       "sectionId": "about.coreIdentity.items[2].description",
-      "text": "သင်၏ ကျန်းမာရေးနှင့် လူနေမှုပုံစံ ရည်မှန်းချက်များကို အကိုက်တိုင်းနှင့် ခြေလှမ်းတိုင်းတွင် လမ်းညွှန်၊ မှတ်တမ်းတင်၊ ပံ့ပိုးပေးရန် ဒီဇိုင်းထုတ်ထားသော ယုံကြည်စိတ်ချရသည့် မိတ်ဖက် ဖြစ်ပါသည်။"
+      "text": "သင်၏ ကျန်းမာရေးနှင့် လူနေမှုပုံစံ ရည်မှန်းချက်များ အောင်မြင်စေရန် အကိုက်တိုင်း၊ ခြေလှမ်းတိုင်းတွင် အမြဲမပြတ် ပံ့ပိုးကူညီပေးမည့် ယုံကြည်စိတ်ချရသော မိတ်ဖက် ဖြစ်ပါသည်။"
     },
     {
       "id": "my:about.coreIdentity.items[2].heading",
@@ -2339,7 +2438,7 @@
       "contentType": "message",
       "title": "about: coreIdentity.title",
       "sectionId": "about.coreIdentity.title",
-      "text": "ကျွန်ုပ်တို့၏ အဓိကအမှတ်လက္ခဏာ"
+      "text": "ကျွန်ုပ်တို့၏ ပင်မအမှတ်တံဆိပ်"
     },
     {
       "id": "my:about.headline.company",
@@ -2357,7 +2456,7 @@
       "contentType": "message",
       "title": "about: headline.established",
       "sectionId": "about.headline.established",
-      "text": "မန္တလေး၊ မြန်မာနိုင်ငံတွင် ၂၀၁၇ ခုနှစ် တည်ထောင်"
+      "text": "၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၊ မြန်မာနိုင်ငံ၌ စတင်တည်ထောင်ခဲ့သည်။"
     },
     {
       "id": "my:about.headline.grid[0].alt",
@@ -2366,7 +2465,7 @@
       "contentType": "message",
       "title": "about: headline.grid[0].alt",
       "sectionId": "about.headline.grid[0].alt",
-      "text": "ဘယ်ဘက်အပေါ် အဖွဲ့ဝင်"
+      "text": "ပူးတွဲတည်ထောင်သူ ၁"
     },
     {
       "id": "my:about.headline.grid[0].title",
@@ -2375,7 +2474,7 @@
       "contentType": "message",
       "title": "about: headline.grid[0].title",
       "sectionId": "about.headline.grid[0].title",
-      "text": "ပူးတွဲတည်ထောင်သူ ၁"
+      "text": "ပူးတွဲတည်ထောင်သူ (၁)"
     },
     {
       "id": "my:about.headline.grid[1].alt",
@@ -2384,7 +2483,7 @@
       "contentType": "message",
       "title": "about: headline.grid[1].alt",
       "sectionId": "about.headline.grid[1].alt",
-      "text": "ညာဘက်အပေါ် အာဟာရပညာရှင်"
+      "text": "အာဟာရဗေဒပညာရှင်"
     },
     {
       "id": "my:about.headline.grid[1].title",
@@ -2393,7 +2492,7 @@
       "contentType": "message",
       "title": "about: headline.grid[1].title",
       "sectionId": "about.headline.grid[1].title",
-      "text": "အာဟာရပညာရှင်"
+      "text": "အာဟာရဗေဒပညာရှင်"
     },
     {
       "id": "my:about.headline.grid[2].alt",
@@ -2402,7 +2501,7 @@
       "contentType": "message",
       "title": "about: headline.grid[2].alt",
       "sectionId": "about.headline.grid[2].alt",
-      "text": "တည်ထောင်မှုဇာတ်လမ်း"
+      "text": "တည်ထောင်မှု သမိုင်းကြောင်း"
     },
     {
       "id": "my:about.headline.grid[2].title",
@@ -2420,7 +2519,7 @@
       "contentType": "message",
       "title": "about: headline.grid[3].alt",
       "sectionId": "about.headline.grid[3].alt",
-      "text": "မန္တလေးရုံး"
+      "text": "မန္တလေးရုံးခွဲ"
     },
     {
       "id": "my:about.headline.grid[3].title",
@@ -2438,7 +2537,7 @@
       "contentType": "message",
       "title": "about: headline.grid[4].alt",
       "sectionId": "about.headline.grid[4].alt",
-      "text": "ညာဘက်အောက် အဖွဲ့ဝင်"
+      "text": "ပူးတွဲတည်ထောင်သူ ၂"
     },
     {
       "id": "my:about.headline.grid[4].title",
@@ -2447,7 +2546,7 @@
       "contentType": "message",
       "title": "about: headline.grid[4].title",
       "sectionId": "about.headline.grid[4].title",
-      "text": "ပူးတွဲတည်ထောင်သူ ၂"
+      "text": "ပူးတွဲတည်ထောင်သူ (၂)"
     },
     {
       "id": "my:about.headline.heroAlt",
@@ -2456,7 +2555,7 @@
       "contentType": "message",
       "title": "about: headline.heroAlt",
       "sectionId": "about.headline.heroAlt",
-      "text": "အရွက်"
+      "text": "သဘာဝအရွက်များ"
     },
     {
       "id": "my:about.headline.history[0]",
@@ -2465,7 +2564,7 @@
       "contentType": "message",
       "title": "about: headline.history[0]",
       "sectionId": "about.headline.history[0]",
-      "text": "Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၌ အမျိုးသမီးစွန့်ဦးတီထွင်သူ သုံးဦးနှင့် အာဟာရပညာရှင်တစ်ဦးက တည်ထောင်ခဲ့သည်။"
+      "text": "Healthy & Happy Myanmar Co., Ltd. ကို ၂၀၁၇ ခုနှစ်တွင် မန္တလေးမြို့၌ အမျိုးသမီး စွန့်ဦးတီထွင်သူ (၃) ဦးနှင့် အာဟာရဗေဒပညာရှင်တစ်ဦးတို့ စုစည်း၍ တည်ထောင်ခဲ့ပါသည်။"
     },
     {
       "id": "my:about.headline.history[1]",
@@ -2474,7 +2573,7 @@
       "contentType": "message",
       "title": "about: headline.history[1]",
       "sectionId": "about.headline.history[1]",
-      "text": "ကျွန်ုပ်တို့၏ ခရီးစဉ်သည် ကိုယ်ပိုင်ခံစားချက်နက်ရှိုင်းသော ဇာတ်လမ်းမှ စတင်ခဲ့ပါသည်။ အာဟာရပြည့်ဝသော အစားအစာမရရှိခြင်းကြောင့် တည်ထောင်သူတစ်ဦး၏ ဖခင်ကို ဆုံးရှုံးခဲ့ရခြင်းက အပြောင်းအလဲဖန်တီးရန် စိတ်အားထက်သန်စေခဲ့သည်။"
+      "text": "ကျွန်ုပ်တို့၏ ခရီးစဉ်သည် စိတ်မကောင်းဖွယ် ကိုယ်တွေ့အတွေ့အကြုံတစ်ခုမှ စတင်ခဲ့ခြင်းဖြစ်ပါသည်။ အာဟာရပြည့်ဝသော အစားအစာ လုံလောက်စွာ မရရှိခဲ့ခြင်းကြောင့် တည်ထောင်သူတစ်ဦး၏ ဖခင်ဖြစ်သူ ဆုံးရှုံးခဲ့ရမှုမှအစပြု၍ အသိုက်အဝန်းအတွင်း အပြုသဘောဆောင်သော အပြောင်းအလဲများ ဖန်တီးပေးရန် စိတ်အားထက်သန်ခဲ့ကြပါသည်။"
     },
     {
       "id": "my:about.headline.history[2]",
@@ -2483,7 +2582,7 @@
       "contentType": "message",
       "title": "about: headline.history[2]",
       "sectionId": "about.headline.history[2]",
-      "text": "အသိုက်အဝန်းအတွင်း ဆီးချိုနှင့် အခြားကျန်းမာရေးပြဿနာများ ပျံ့နှံ့နေမှုကို သိရှိကာ အာဟာရပြည့်ဝသော ထုတ်ကုန်တစ်ခုချင်းစီဖြင့် အပြောင်းအလဲဖန်တီးရန် ကတိပြုခဲ့ပါသည်။"
+      "text": "လူထုအတွင်း ဆီးချိုနှင့် အခြားနာတာရှည် ကျန်းမာရေးပြဿနာများ ပျံ့နှံ့နေမှုကို သတိပြုမိပြီး အာဟာရပြည့်ဝသော ထုတ်ကုန်တစ်ခုချင်းစီဖြင့် လူထုကျန်းမာရေးကို မြှင့်တင်ပေးရန် သန္နိဋ္ဌာန်ချမှတ်ခဲ့ပါသည်။"
     },
     {
       "id": "my:about.headline.historyTitle",
@@ -2492,7 +2591,7 @@
       "contentType": "message",
       "title": "about: headline.historyTitle",
       "sectionId": "about.headline.historyTitle",
-      "text": "ကျွန်ုပ်တို့၏ သမိုင်း"
+      "text": "ကျွန်ုပ်တို့၏ သမိုင်းကြောင်း"
     },
     {
       "id": "my:about.headline.intro",
@@ -2501,7 +2600,7 @@
       "contentType": "message",
       "title": "about: headline.intro",
       "sectionId": "about.headline.intro",
-      "text": "Healthy Plate သည် လတ်ဆတ်သော ပါဝင်ပစ္စည်းများ၊ မျှတသောအာဟာရနှင့် အလုံးစုံသော ကျန်းမာရေးကို အခြေခံသည့် လူနေမှုပုံစံကို မြှင့်တင်ရန် ရည်ရွယ်ပါသည်။"
+      "text": "Healthy Plate သည် လတ်ဆတ်သော သဘာဝပါဝင်ပစ္စည်းများ၊ မျှတသောအာဟာရနှင့် ဘက်စုံကျန်းမာရေးကို ရှေးရှုသော လူနေမှုပုံစံကို မြှင့်တင်ပေးရန် ရည်ရွယ်ပါသည်။"
     },
     {
       "id": "my:about.headline.values[0].description",
@@ -2510,7 +2609,7 @@
       "contentType": "message",
       "title": "about: headline.values[0].description",
       "sectionId": "about.headline.values[0].description",
-      "text": "လယ်ယာမှ လတ်ဆတ်သော ဟင်းသီးဟင်းရွက်များ၊ သစ်သီးများနှင့် အော်ဂဲနစ်ထွက်ကုန်များကို အလေးထားခြင်း"
+      "text": "စိုက်ခင်းမှ တိုက်ရိုက်ရရှိသော လတ်ဆတ်သည့် ဟင်းသီးဟင်းရွက်၊ သစ်သီးဝလံများနှင့် အော်ဂဲနစ်ထွက်ကုန်များကို ဦးစားပေးခြင်း"
     },
     {
       "id": "my:about.headline.values[0].title",
@@ -2519,7 +2618,7 @@
       "contentType": "message",
       "title": "about: headline.values[0].title",
       "sectionId": "about.headline.values[0].title",
-      "text": "လတ်ဆတ်မှု"
+      "text": "လတ်ဆတ်ဆန်းသစ်မှု"
     },
     {
       "id": "my:about.headline.values[1].description",
@@ -2528,7 +2627,7 @@
       "contentType": "message",
       "title": "about: headline.values[1].description",
       "sectionId": "about.headline.values[1].description",
-      "text": "အစေ့အနှံများ၊ ပရိုတင်းဓာတ်နှင့် အာဟာရပြည့်ဝမှုကို အလေးထားခြင်း"
+      "text": "အစေ့အဆန်များ၊ သဘာဝပရိုတင်းနှင့် အာဟာရဓာတ် ပြည့်ဝစုံလင်မှုကို အဓိကထားခြင်း"
     },
     {
       "id": "my:about.headline.values[1].title",
@@ -2537,7 +2636,7 @@
       "contentType": "message",
       "title": "about: headline.values[1].title",
       "sectionId": "about.headline.values[1].title",
-      "text": "မျှတမှု"
+      "text": "မျှတသောအာဟာရ"
     },
     {
       "id": "my:about.headline.values[2].description",
@@ -2546,7 +2645,7 @@
       "contentType": "message",
       "title": "about: headline.values[2].description",
       "sectionId": "about.headline.values[2].description",
-      "text": "Healthy & Happy ဆောင်ပုဒ်ဖြင့် အပြုသဘောဆောင်သော တက်ကြွသည့် လူနေမှုပုံစံကို လှုံ့ဆော်ခြင်း"
+      "text": "'Healthy & Happy' ဆောင်ပုဒ်နှင့်အညီ အပြုသဘောဆောင်ပြီး တက်ကြွကျန်းမာသော လူနေမှုပုံစံကို လှုံ့ဆော်ပေးခြင်း"
     },
     {
       "id": "my:about.headline.values[2].title",
@@ -2555,7 +2654,7 @@
       "contentType": "message",
       "title": "about: headline.values[2].title",
       "sectionId": "about.headline.values[2].title",
-      "text": "ပျော်ရွှင်မှုနှင့် တက်ကြွမှု"
+      "text": "ပျော်ရွှင်တက်ကြွမှု"
     },
     {
       "id": "my:about.headline.valuesTitle",
@@ -2564,7 +2663,7 @@
       "contentType": "message",
       "title": "about: headline.valuesTitle",
       "sectionId": "about.headline.valuesTitle",
-      "text": "အမှတ်တံဆိပ်တန်ဖိုးများ"
+      "text": "အမှတ်တံဆိပ်၏ မူဝါဒနှင့် တန်ဖိုးများ"
     },
     {
       "id": "my:about.research.banner",
@@ -2573,7 +2672,7 @@
       "contentType": "message",
       "title": "about: research.banner",
       "sectionId": "about.research.banner",
-      "text": "ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။"
+      "text": "ခေတ်ကာလများ ပြောင်းလဲတိုးတက်လာသော်လည်း သဘာဝအဆီအနှစ်နှင့် ကျန်းမာရေးအတွက် မူလအခြေခံ အနှစ်သာရကို မပြောင်းလဲဘဲ မူရင်းအတိုင်း ထိန်းသိမ်းထားပါသည်။"
     },
     {
       "id": "my:about.research.sections[0].description",
@@ -2582,7 +2681,7 @@
       "contentType": "message",
       "title": "about: research.sections[0].description",
       "sectionId": "about.research.sections[0].description",
-      "text": "ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။"
+      "text": "ခေတ်ကာလများ ပြောင်းလဲတိုးတက်လာသော်လည်း သဘာဝအဆီအနှစ်နှင့် ကျန်းမာရေးအတွက် မူလအခြေခံ အနှစ်သာရကို မပြောင်းလဲဘဲ မူရင်းအတိုင်း ထိန်းသိမ်းထားပါသည်။"
     },
     {
       "id": "my:about.research.sections[0].title",
@@ -2591,7 +2690,7 @@
       "contentType": "message",
       "title": "about: research.sections[0].title",
       "sectionId": "about.research.sections[0].title",
-      "text": "ဒစ်ဂျစ်တယ်ပြောင်းလဲမှုနှင့် စမတ်စနစ်များ"
+      "text": "ဒစ်ဂျစ်တယ် နည်းပညာနှင့် စမတ်စနစ်များ"
     },
     {
       "id": "my:about.research.sections[1].description",
@@ -2600,7 +2699,7 @@
       "contentType": "message",
       "title": "about: research.sections[1].description",
       "sectionId": "about.research.sections[1].description",
-      "text": "ဆယ်စုနှစ်များစွာ ကျော်လွန်ပြီး အီလက်ထရွန်းနစ်စာစီခြင်းသို့ ရောက်ရှိလာသော်လည်း အခြေခံအနှစ်သာရ မပြောင်းလဲဘဲ ရှိနေပါသည်။"
+      "text": "ခေတ်ကာလများ ပြောင်းလဲတိုးတက်လာသော်လည်း သဘာဝအဆီအနှစ်နှင့် ကျန်းမာရေးအတွက် မူလအခြေခံ အနှစ်သာရကို မပြောင်းလဲဘဲ မူရင်းအတိုင်း ထိန်းသိမ်းထားပါသည်။"
     },
     {
       "id": "my:about.research.sections[1].title",
@@ -2609,7 +2708,7 @@
       "contentType": "message",
       "title": "about: research.sections[1].title",
       "sectionId": "about.research.sections[1].title",
-      "text": "အဆင့်မြင့်ပစ္စည်းများနှင့် ဇီဝနည်းပညာ"
+      "text": "အဆင့်မြင့် ပါဝင်ပစ္စည်းများနှင့် ဇီဝနည်းပညာ"
     },
     {
       "id": "my:about.research.title",
@@ -2618,7 +2717,7 @@
       "contentType": "message",
       "title": "about: research.title",
       "sectionId": "about.research.title",
-      "text": "သုတေသနနှင့် ဆန်းသစ်တီထွင်မှု"
+      "text": "သုတေသနနှင့် နည်းပညာဆန်းသစ်မှု"
     },
     {
       "id": "my:about.sustainability.buttons[0]",
@@ -2627,7 +2726,7 @@
       "contentType": "message",
       "title": "about: sustainability.buttons[0]",
       "sectionId": "about.sustainability.buttons[0]",
-      "text": "လယ်ယာမှ စက်ရုံသို့ ပုံစံ"
+      "text": "စိုက်ခင်းမှ စက်ရုံသို့ ပုံစံ"
     },
     {
       "id": "my:about.sustainability.buttons[1]",
@@ -2636,7 +2735,7 @@
       "contentType": "message",
       "title": "about: sustainability.buttons[1]",
       "sectionId": "about.sustainability.buttons[1]",
-      "text": "လယ်သမား အထောက်အပံ့"
+      "text": "တောင်သူလယ်သမားများ ပံ့ပိုးမှု"
     },
     {
       "id": "my:about.sustainability.buttons[2]",
@@ -2645,7 +2744,7 @@
       "contentType": "message",
       "title": "about: sustainability.buttons[2]",
       "sectionId": "about.sustainability.buttons[2]",
-      "text": "ESG နှင့် လူမှုအကျိုးသက်ရောက်မှု"
+      "text": "ESG နှင့် လူမှုအကျိုးပြု လုပ်ငန်းများ"
     },
     {
       "id": "my:about.sustainability.buttons[3]",
@@ -2663,7 +2762,7 @@
       "contentType": "message",
       "title": "about: sustainability.imageAlt[0]",
       "sectionId": "about.sustainability.imageAlt[0]",
-      "text": "ရေရှည်တည်တံ့မှု ကတ် ၁"
+      "text": "ရေရှည်တည်တံ့မှုဆိုင်ရာ ကတ် (၁)"
     },
     {
       "id": "my:about.sustainability.imageAlt[1]",
@@ -2672,7 +2771,7 @@
       "contentType": "message",
       "title": "about: sustainability.imageAlt[1]",
       "sectionId": "about.sustainability.imageAlt[1]",
-      "text": "ရေရှည်တည်တံ့မှု ကတ် ၂"
+      "text": "ရေရှည်တည်တံ့မှုဆိုင်ရာ ကတ် (၂)"
     },
     {
       "id": "my:about.sustainability.imageAlt[2]",
@@ -2681,7 +2780,7 @@
       "contentType": "message",
       "title": "about: sustainability.imageAlt[2]",
       "sectionId": "about.sustainability.imageAlt[2]",
-      "text": "ရေရှည်တည်တံ့မှု အောက်ကတ်"
+      "text": "ရေရှည်တည်တံ့မှုဆိုင်ရာ အောက်ခြေကတ်"
     },
     {
       "id": "my:about.sustainability.placeholder",
@@ -2690,7 +2789,7 @@
       "contentType": "message",
       "title": "about: sustainability.placeholder",
       "sectionId": "about.sustainability.placeholder",
-      "text": "ဤနေရာတွင် စာသားထည့်နိုင်ပါသည်"
+      "text": "အသေးစိတ် အချက်အလက်များကို ဤနေရာတွင် ကြည့်ရှုနိုင်ပါသည်။"
     },
     {
       "id": "my:about.sustainability.title",
@@ -2708,7 +2807,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.note",
       "sectionId": "about.whereCanBuy.note",
-      "text": "အဓိကခေတ်မီ အရောင်းဆိုင်များအပြင် နိုင်ငံတစ်ဝန်းရှိ ဒေသခံစူပါမားကတ်များနှင့် ယုံကြည်စိတ်ချရသော လက်လီဆိုင်များတွင်လည်း ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို ရရှိနိုင်ပါသည်"
+      "text": "အဓိက စူပါမားကတ်ကြီးများအပြင် နိုင်ငံတစ်ဝန်းရှိ ဒေသခံစူပါမားကတ်များနှင့် ယုံကြည်စိတ်ချရသော လက်လီဆိုင်များတွင်လည်း ကျွန်ုပ်တို့၏ ထုတ်ကုန်များကို ဝယ်ယူရရှိနိုင်ပါသည်။"
     },
     {
       "id": "my:about.whereCanBuy.retailers[0]",
@@ -2717,7 +2816,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[0]",
       "sectionId": "about.whereCanBuy.retailers[0]",
-      "text": "အဘွားဆေးရုံ"
+      "text": "ဂရင်းဟံသာ ဆေးရုံ"
     },
     {
       "id": "my:about.whereCanBuy.retailers[1]",
@@ -2726,7 +2825,25 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[1]",
       "sectionId": "about.whereCanBuy.retailers[1]",
-      "text": "ရှမ်းဒီးလား ဆေးဆိုင်"
+      "text": "ရှမ်းအိုး ဆေးဆိုင်"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[10]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[10]",
+      "sectionId": "about.whereCanBuy.retailers[10]",
+      "text": "စိန်ဂေဟာ"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[11]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[11]",
+      "sectionId": "about.whereCanBuy.retailers[11]",
+      "text": "Healthy & Happy အရောင်းဆိုင်"
     },
     {
       "id": "my:about.whereCanBuy.retailers[2]",
@@ -2735,7 +2852,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[2]",
       "sectionId": "about.whereCanBuy.retailers[2]",
-      "text": "ကူကင်တင် ဆေးဆိုင်"
+      "text": "ကိုဟင်တင် ဆေးဆိုင်"
     },
     {
       "id": "my:about.whereCanBuy.retailers[3]",
@@ -2744,7 +2861,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[3]",
       "sectionId": "about.whereCanBuy.retailers[3]",
-      "text": "Market Plaza"
+      "text": "One Stop"
     },
     {
       "id": "my:about.whereCanBuy.retailers[4]",
@@ -2753,7 +2870,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[4]",
       "sectionId": "about.whereCanBuy.retailers[4]",
-      "text": "CityMart"
+      "text": "City Mart"
     },
     {
       "id": "my:about.whereCanBuy.retailers[5]",
@@ -2762,7 +2879,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[5]",
       "sectionId": "about.whereCanBuy.retailers[5]",
-      "text": "Healthy & Happy ဆိုင်"
+      "text": "Oceania Supermarket"
     },
     {
       "id": "my:about.whereCanBuy.retailers[6]",
@@ -2771,7 +2888,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[6]",
       "sectionId": "about.whereCanBuy.retailers[6]",
-      "text": "မိသားစု ဆေးဆိုင်"
+      "text": "Makro Wholesales"
     },
     {
       "id": "my:about.whereCanBuy.retailers[7]",
@@ -2780,7 +2897,25 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[7]",
       "sectionId": "about.whereCanBuy.retailers[7]",
-      "text": "ဒေသခံ မိတ်ဖက်များ"
+      "text": "Foodland Minimart"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[8]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[8]",
+      "sectionId": "about.whereCanBuy.retailers[8]",
+      "text": "DMart"
+    },
+    {
+      "id": "my:about.whereCanBuy.retailers[9]",
+      "locale": "my",
+      "sourcePath": "messages/my/about.json",
+      "contentType": "message",
+      "title": "about: whereCanBuy.retailers[9]",
+      "sectionId": "about.whereCanBuy.retailers[9]",
+      "text": "Life Plus"
     },
     {
       "id": "my:about.whereCanBuy.title",
@@ -2789,7 +2924,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.title",
       "sectionId": "about.whereCanBuy.title",
-      "text": "ဘယ်မှာ ဝယ်ယူနိုင်သလဲ"
+      "text": "ဝယ်ယူရရှိနိုင်သောနေရာများ"
     },
     {
       "id": "my:ai-chat.accessibility.conversation",
@@ -3140,7 +3275,7 @@
       "contentType": "message",
       "title": "awards: items[0].description",
       "sectionId": "awards.items[0].description",
-      "text": "Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆောင် SME အဖြစ် ထူးချွန်သော ခံနိုင်ရည်နှင့် ခေါင်းဆောင်မှုအတွက် အသိအမှတ်ပြုခံရပါသည်။"
+      "text": "Myanmar Women Entrepreneurs Network က Healthy & Happy Myanmar မှ May Hnin Wai ၏ အောင်မြင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[0].label",
@@ -3158,7 +3293,7 @@
       "contentType": "message",
       "title": "awards: items[0].title",
       "sectionId": "awards.items[0].title",
-      "text": "UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသမီးဦးဆောင် SME များအတွက် ခံနိုင်ရည်ရှိမှုဆု"
+      "text": "ASEAN Business Award"
     },
     {
       "id": "my:awards.items[1].description",
@@ -3167,7 +3302,7 @@
       "contentType": "message",
       "title": "awards: items[1].description",
       "sectionId": "awards.items[1].description",
-      "text": "အသိုက်အဝန်းအတွက် အပြုသဘောဆောင်သော အကျိုးသက်ရောက်မှုဖန်တီးနေသည့် အမျိုးသမီးစွန့်ဦးတီထွင်သူများ၏ လုပ်ဆောင်မှုကို ဂုဏ်ပြုသောဆု ဖြစ်ပါသည်။"
+      "text": "အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သည့် မြန်မာဘာသာဖြင့် ရေးသားထားသော ဆုတံဆိပ်ဖြစ်ပါသည်။"
     },
     {
       "id": "my:awards.items[1].label",
@@ -3185,7 +3320,7 @@
       "contentType": "message",
       "title": "awards: items[1].title",
       "sectionId": "awards.items[1].title",
-      "text": "၂၀၂၂ ခုနှစ် တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု"
+      "text": "မြန်မာ MSME အသိအမှတ်ပြုဆု"
     },
     {
       "id": "my:awards.items[10].description",
@@ -3194,7 +3329,7 @@
       "contentType": "message",
       "title": "awards: items[10].description",
       "sectionId": "awards.items[10].description",
-      "text": "ဆုဖော်ပြချက် ၁၁"
+      "text": "Healthy & Happy Myanmar သည် ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award ရရှိခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[10].label",
@@ -3212,7 +3347,7 @@
       "contentType": "message",
       "title": "awards: items[10].title",
       "sectionId": "awards.items[10].title",
-      "text": "ဆုခေါင်းစဉ် ၁၁"
+      "text": "ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award"
     },
     {
       "id": "my:awards.items[2].description",
@@ -3221,7 +3356,7 @@
       "contentType": "message",
       "title": "awards: items[2].description",
       "sectionId": "awards.items[2].description",
-      "text": "ဆုဖော်ပြချက် ၃"
+      "text": "UNDP နှင့် UN Women တို့က Healthy & Happy Myanmar ကို Resilience for Women-Led SMEs Award ၏ Capacity Enhancement Fund အမျိုးအစားတွင် ဆုရရှိသူအဖြစ် အသိအမှတ်ပြုခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[2].label",
@@ -3239,7 +3374,7 @@
       "contentType": "message",
       "title": "awards: items[2].title",
       "sectionId": "awards.items[2].title",
-      "text": "ဆုခေါင်းစဉ် ၃"
+      "text": "အမျိုးသမီးဦးဆောင် SME များ၏ ကြံ့ကြံ့ခံနိုင်မှုဆု - Capacity Enhancement Fund ဆုရရှိသူ"
     },
     {
       "id": "my:awards.items[3].description",
@@ -3248,7 +3383,7 @@
       "contentType": "message",
       "title": "awards: items[3].description",
       "sectionId": "awards.items[3].description",
-      "text": "ဆုဖော်ပြချက် ၄"
+      "text": "Healthy & Happy Myanmar သည် China-ASEAN Expo တွင် ငွေတံဆိပ်ဆု ရရှိခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[3].label",
@@ -3266,7 +3401,7 @@
       "contentType": "message",
       "title": "awards: items[3].title",
       "sectionId": "awards.items[3].title",
-      "text": "ဆုခေါင်းစဉ် ၄"
+      "text": "China-ASEAN Expo ငွေတံဆိပ်ဆု"
     },
     {
       "id": "my:awards.items[4].description",
@@ -3275,7 +3410,7 @@
       "contentType": "message",
       "title": "awards: items[4].description",
       "sectionId": "awards.items[4].description",
-      "text": "ဆုဖော်ပြချက် ၅"
+      "text": "အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သော မြန်မာဘာသာ ဆုဖြစ်ပါသည်။"
     },
     {
       "id": "my:awards.items[4].label",
@@ -3293,7 +3428,7 @@
       "contentType": "message",
       "title": "awards: items[4].title",
       "sectionId": "awards.items[4].title",
-      "text": "ဆုခေါင်းစဉ် ၅"
+      "text": "မြန်မာ MSME ထူးချွန်ဆု"
     },
     {
       "id": "my:awards.items[5].description",
@@ -3302,7 +3437,7 @@
       "contentType": "message",
       "title": "awards: items[5].description",
       "sectionId": "awards.items[5].description",
-      "text": "ဆုဖော်ပြချက် ၆"
+      "text": "Women Entrepreneurship Program က Healthy & Happy Myanmar ၏ တာဝန်ယူမှုရှိသော စီးပွားရေးလုပ်ဆောင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[5].label",
@@ -3320,7 +3455,7 @@
       "contentType": "message",
       "title": "awards: items[5].title",
       "sectionId": "awards.items[5].title",
-      "text": "ဆုခေါင်းစဉ် ၆"
+      "text": "တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု"
     },
     {
       "id": "my:awards.items[6].description",
@@ -3329,7 +3464,7 @@
       "contentType": "message",
       "title": "awards: items[6].description",
       "sectionId": "awards.items[6].description",
-      "text": "ဆုဖော်ပြချက် ၇"
+      "text": "မြန်မာနိုင်ငံ၏ အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုကို အသိအမှတ်ပြုသည့် ဆုဖြစ်ပါသည်။"
     },
     {
       "id": "my:awards.items[6].label",
@@ -3347,7 +3482,7 @@
       "contentType": "message",
       "title": "awards: items[6].title",
       "sectionId": "awards.items[6].title",
-      "text": "ဆုခေါင်းစဉ် ၇"
+      "text": "မြန်မာ MSME ဖွံ့ဖြိုးတိုးတက်မှုဆု"
     },
     {
       "id": "my:awards.items[7].description",
@@ -3356,7 +3491,7 @@
       "contentType": "message",
       "title": "awards: items[7].description",
       "sectionId": "awards.items[7].description",
-      "text": "ဆုဖော်ပြချက် ၈"
+      "text": "Thone Pan Hla ကွတ်ကီးများသည် ASEAN-India Grassroots Innovation Forum တွင် Most Promising Award ရရှိခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[7].label",
@@ -3374,7 +3509,7 @@
       "contentType": "message",
       "title": "awards: items[7].title",
       "sectionId": "awards.items[7].title",
-      "text": "ဆုခေါင်းစဉ် ၈"
+      "text": "Thone Pan Hla ကွတ်ကီးများ၏ အလားအလာအကောင်းဆုံးဆု"
     },
     {
       "id": "my:awards.items[8].description",
@@ -3383,7 +3518,7 @@
       "contentType": "message",
       "title": "awards: items[8].description",
       "sectionId": "awards.items[8].description",
-      "text": "ဆုဖော်ပြချက် ၉"
+      "text": "Healthy & Happy Myanmar သည် Priority Integration Sector အောက်ရှိ SME Food and Beverages Sector ကဏ္ဍတွင် အသိအမှတ်ပြုခံခဲ့ရပါသည်။"
     },
     {
       "id": "my:awards.items[8].label",
@@ -3401,7 +3536,7 @@
       "contentType": "message",
       "title": "awards: items[8].title",
       "sectionId": "awards.items[8].title",
-      "text": "ဆုခေါင်းစဉ် ၉"
+      "text": "ASEAN Business Awards: SME အစားအသောက်နှင့် အဖျော်ယမကာကဏ္ဍ"
     },
     {
       "id": "my:awards.items[9].description",
@@ -3410,7 +3545,7 @@
       "contentType": "message",
       "title": "awards: items[9].description",
       "sectionId": "awards.items[9].description",
-      "text": "ဆုဖော်ပြချက် ၁၀"
+      "text": "UMFCCI က Healthy & Happy Myanmar အား SME Outstanding Award ချီးမြှင့်ခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[9].label",
@@ -3428,7 +3563,7 @@
       "contentType": "message",
       "title": "awards: items[9].title",
       "sectionId": "awards.items[9].title",
-      "text": "ဆုခေါင်းစဉ် ၁၀"
+      "text": "SME ထူးချွန်ဆု"
     },
     {
       "id": "my:awards.title",
@@ -3446,7 +3581,7 @@
       "contentType": "message",
       "title": "contact: address",
       "sectionId": "contact.address",
-      "text": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။"
+      "text": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၃ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။"
     },
     {
       "id": "my:contact.call",
@@ -3962,6 +4097,33 @@
       "text": "Happy & Healthy ၏ ခရီးစဉ်"
     },
     {
+      "id": "my:home.productCarousel.explore",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: productCarousel.explore",
+      "sectionId": "home.productCarousel.explore",
+      "text": "အသေးစိတ်ကြည့်ရန်"
+    },
+    {
+      "id": "my:home.productCarousel.next",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: productCarousel.next",
+      "sectionId": "home.productCarousel.next",
+      "text": "နောက်ထုတ်ကုန်များ"
+    },
+    {
+      "id": "my:home.productCarousel.previous",
+      "locale": "my",
+      "sourcePath": "messages/my/home.json",
+      "contentType": "message",
+      "title": "home: productCarousel.previous",
+      "sectionId": "home.productCarousel.previous",
+      "text": "ယခင်ထုတ်ကုန်များ"
+    },
+    {
       "id": "my:home.production.description",
       "locale": "my",
       "sourcePath": "messages/my/home.json",
@@ -4031,7 +4193,7 @@
       "contentType": "message",
       "title": "shell: footer.address",
       "sectionId": "shell.footer.address",
-      "text": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၁ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။"
+      "text": "လိပ်စာ - ၇၅ လမ်း၊ ၁၁၃ နှင့် ၁၁၄ ကြား၊ ပြည်ကြီးတံခွန်မြို့နယ်၊ မန္တလေးတိုင်းဒေသကြီး၊ မြန်မာ။"
     },
     {
       "id": "my:shell.footer.brandAlt",
@@ -4371,72 +4533,108 @@
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "title": "ပရိုတင်းဗိုက်",
       "sectionId": "product.iron-enriched-cookies-1",
-      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: နေ့စဉ် အာဟာရအတွက် သံဓာတ်ကြွယ်ဝသော ကွတ်ကီးများ။\nIngredients: ဂျုံကြမ်းမှုန့်၊ သံဓာတ်ဖြည့် အုတ်ဂျုံ၊ စတီဗီးယား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: ပရိုတင်းဗိုက်\nSeries: ပရိုတင်းစီးရီး\nDescription: Covid ရောဂါဖြစ်ပွားသည့် အချိန်တွင် အစားမစားနိုင်သောသူများအတွက်ရည်ရွယ်\nIngredients: မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.iron-enriched-cookies-2",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "title": "မြေပဲထောပတ်",
       "sectionId": "product.iron-enriched-cookies-2",
-      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: ပရိုတင်းစီးရီး\nDescription: တက်ကြွသောနေ့စဉ်ဘဝအတွက် ပရိုတင်းနှင့် သံဓာတ်ဖြည့် ကွတ်ကီးများ။\nIngredients: ပရိုတင်းမှုန့်၊ သံဓာတ်ပါ အုတ်ဂျုံ၊ မုန့်ချိုသီး၊ ထောပတ်\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: မြေပဲထောပတ်\nSeries: ပရိုတင်းစီးရီး\nDescription: အသားဓာတ်လိုအပ်လို့ဖြစ်စေ၊ Pre/ Post Workout meal တွေမှာ အသားဓာတ်ဖြည့်တင်းချင်လို့ဖြစ်စေ၊ နံနက်ခင်း/ နေ့လည်ခင်း/ ညခင်းတွေမှာ အဆာပြေအနေနဲ့စားချင်လို့ဖြစ်စေ အလွယ်တကူသုံးဆောင်နိုင်မယ့်အပြင် ဆီးချို၊ ကင်ဆာဝေဒနာရှင်တွေအထိပါ စိတ်ချလက်ချ စားနိုင်တဲ့ မြန်မာပြည်ရဲ့ ပထမဆုံးသော Healthy & Happy Sugar Free Peanut Butter\n\nတောင်သူတွေတဖက်တလမ်းကနေ အလုပ်အကိုင်အခွင့်အလမ်း၊ ဝင်ငွေအခွင့်အလမ်းတိုးစေဖို့ တောင်သူတွေဆီက မြေပဲကို artificial sweetner, thickener, မြေပဲရဲ့ သဘာဝအတိုင်းရနံ့၊ အရသာ၊ အရောင်အသွေးပြောင်းလဲသွားခြင်းမရှိစေဘဲ ထမင်းစားဇွန်း (၁) ဇွန်းစားတိုင်းမှာ Plant-based Protein 7 g အပြည့်ရအောင် အာဟာရဆရာဝန််ကြီးကြပ်မှုနဲ့ ဖန်တီးထားပါတယ်။\n\nတစ်ဇွန်း၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: ပရိုတင်းမှုန့်၊ သံဓာတ်ပါ အုတ်ဂျုံ၊ မုန့်ချိုသီး၊ ထောပတ်\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.iron-enriched-cookies-3",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "title": "Thone Pan Hla - သံဓာတ်ဖြည့်ကွက်ကီး",
       "sectionId": "product.iron-enriched-cookies-3",
-      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: နေ့စဉ်ညီမျှသော အာဟာရအတွက် ကောင်းမွန်သည့် ကွတ်ကီးများ။\nIngredients: ဂျုံကြမ်း၊ အုတ်ဂျုံမှုန့်၊ သဘာဝအချိုဓာတ်\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့်ကွက်ကီး\nSeries: မူရင်းစီးရီး\nDescription: မြန်မာနိုင်ငံရဲ့ မိုးပါးရေရှားရပ်ဝန်းဒေသတွေနဲ့ တောင်ပေါ်ဒေသတွေမှာ စိုက်ပျိုးကြတဲ့ အဖိုးတန်သီးနှံဖြစ်တဲ့ လူး နဲ့ ဆပ် (နှံစားပြောင်း) ကို အဓိကအသုံးပြုထားပြီး မြန််မာနိုင်ငံက ကိုယ်ဝန်ဆောင်၊ နို့တိုက်မိခင်နဲ့ ကလေးငယ်တွေအတွက် အာဟာရလိုအပ်ချက်ကို ဖြည့်ဆည်းပေးဖို့ ရည်ရွယ်ချက်နဲ့ ဖန်တီးထားတဲ့ Healthy & Happy သုံးပန်လှကွတ်ကီး။\n\nအာဟာရဆရာဝန်ရဲ့ ကြီးကြပ်မှုနဲ့ ကိုယ်ဝန်ဆောင်၊ နို့တိုက်မိခင်၊ ကလေးငယ်တွေနဲ့ ဆီးချို/ ကင်ဆာဝေဒနာရှင်တွေအတွက် မြန်မာ့ဒေသထွက် အဖိုးတန်သီးနှံလူး၊ဆပ်ကို ကုလားပဲနဲ့ သီဟိုဠ်စေ့တို့ကို ပေါင်းစပ်ပြီး အရသာရှိရှိစားရင်း သံဓာတ်ဖြည့်တင်းဖို့နဲ့ အသားဓာတ်ဖြည့်တင်းဖို့အပြင် တောင်သူတွေရဲ့ အလုပ်အကိုင်နဲ့ဝင်ငွေအခွင့်အလမ်းတိုးတတ်ဖို့ရည်ရွယ်ချက်ကောင်းတွေနဲ့ ဖန််တီးထားတဲ့ ကွတ်ကီးအမျိုးအစားဖြစ်ပါတယ်။\n\nတစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။\nIngredients: ဂျုံကြမ်း၊ အုတ်ဂျုံမှုန့်၊ သဘာဝအချိုဓာတ်\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.iron-enriched-cookies-4",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး",
+      "title": "Energy Bar",
       "sectionId": "product.iron-enriched-cookies-4",
-      "text": "Name: Thone Pan Hla - သံဓာတ်ဖြည့် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: ကြွပ်ရွပြီး ပေါ့ပါးကာ သဘာဝအာဟာရရှိသော နေ့စဉ်မုန့်။\nIngredients: အုတ်ဂျုံ၊ စတီဗီးယား၊ ထောပတ်၊ ပင်လယ်ဆား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: Energy Bar\nSeries: ပရိုတင်းစီးရီး\nDescription: အလုပ်များပြီး စားသောက်ချိန်မမှန်လို့ဖြစ်စေ၊ ခရီးသွားတဲ့အခါဖြစ်စေ၊ Workout တွေမှာ stamina, focus ကောင်းဖို့ Pre/ Post workout meal plan မှာ ထည့်သွင်းစားသုံးချင်တဲ့အခါဖြစ်စေ၊ ဝိတ်ထိန်းနေလို့ အသားဓာတ်များပြီး အဆာခံမယ့် snack မျိုးရှာနေလို့ဖြစ်စေ၊ မကြာခဏဗိုက်ဆာတတ်လို့ဖြစ်ဖြစ်၊ အဆာလွန်လို့ သွေးတွင်းသကြားတတ် တတ်/ကျမှာ စိုးရိမ်လို့ဖြစ်စေ၊ အသားဓာတ်များများပါပြီး အာဟာရပြည့်ဝတဲ့ snack မျိုးရှာဖွေနေလို့ဖြစ်စေ သိမ်းရလွယ်၊ သယ်ရလွယ််၊ စားရလွယ််စေမှာ Healthy & Happy Energy Bar ပါ။\n\nအာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ......... လိုအစေ့အဆန်တွေနေ ဖန်တီးထားပြီး တစ်ချောင်းစားလိုက်တိုင်းမှာ Plant-based Protein 7 g နဲ့အတူ ၆ နာရီကြာ အဆာခံစေလို့  မကြာခဏဆာလောင်တတ်သူ၊ ဝိတ်ထိန်းနေသူတွေအတွက် အဆင်ပြေစေမယ့်အပြင် အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ အချိုကြောင့် ကျန်းမာရေးနောက်ဆက်တွဲပြဿနာတွေကို စိုးရိမ်သူတွေ၊ ကင်ဆာဝေနာရှင်တွေအထိပါအဆင်ပြေစေပါတယ်။\n\nတစ်ချောင်းချင်းစီ၏ အာဟာရတန်ဖိုးအား အိတ်ခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: အုတ်ဂျုံ၊ စတီဗီးယား၊ ထောပတ်၊ ပင်လယ်ဆား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.lavash",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "နှမ်းမုန့်ကြွပ်",
+      "sectionId": "product.lavash",
+      "text": "Name: နှမ်းမုန့်ကြွပ်\nSeries: မူရင်းစီးရီး\nDescription: အပျင်းပြေစားစား၊ အဆာပြေစားစား၊ နေ့နေ့ညည တကြွပ်ကြွပ်ဝါးရင်း ဝိတ်တက်မှာ၊ ဆီးချိုတတ်မှာ လုံးဝစိုးရိမ်စရာမလိုတဲ့ အဆာပြေမုန့်မျိုးဆို Healthy & Happy နှမ်းမုန့်ကြွပ်ပါပဲ။\n\nဂျုံကြမ်း၊နှမ်းကိုသာ အဓိကအသုံးပြုထားပြီး အာဟာရဆရာဝန်ကြီးကြပ်မှုနဲ့ အချို၊ ကြာရှည်ခံဆေးမသုံးဘဲ ဖန်တီးထားတာကြောင့် တချပ်လုံးစားမှ ၁၅ ကယ်လိုရီပဲပါလို့ ဆီးချို၊ ကင်ဆာ၊ ဝိတ်ထိန်းနေသူတွေ စိုးရိမ်စရာလုံးဝမလိုဘဲ အာလူးကြော်တမျှ ကြွပ်ရွတဲ့ ထိမိမှုမျိုးကို အာဟာရပြည့်ဝတဲ့ ခံစားချက်ကို ထိထိမိမိ စားနိုင်ပါတယ်။\n\nတစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။\nIngredients: ဂျုံကြမ်း၊ နှမ်း\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.nut-cookies-1",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - အခွံမာသီး ကွတ်ကီး",
+      "title": "သစ်ကြံပိုးလွတ်ကွတ်ကီး",
       "sectionId": "product.nut-cookies-1",
-      "text": "Name: Thone Pan Hla - အခွံမာသီး ကွတ်ကီး\nSeries: ပရိုတင်းစီးရီး\nDescription: အာဟာရဖြည့်တင်းပြီး စွမ်းအင်ပေးသော အခွံမာသီး ကွတ်ကီးများ။\nIngredients: ဗာဒံသီး၊ အခွံမာသီး၊ အုတ်ဂျုံမှုန့်၊ စတီဗီးယား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: သစ်ကြံပိုးလွတ်ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: ကျန်းမာရေးကြောင့် အချို၊ သကြားရှောင်နေရသော်ငြား တစ်ချပ်စား တကိုက် ကိုက်လိုက်တိုင်းမှာ \"ဆေးဖက်ဝင်တယ်၊ ကျန်းမာရေးနဲ့ညီညွတ်တယ်၊ အာဟာရပြည့်ဝမျှတယ်\" ဆိုတဲ့ ခံစားချက််မျိုးအပြည့်ရစေဖို့ ကွတ်ကီးထဲမှာ သစ်ကြံပိုးမှုန့်ကိုထည့်သွင်းဖန်တီးထားတဲ့ သစ်ကြံပိုးကွတ်ကီး...။\n\nနေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ဖို့ အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမထည့်ထားဘဲ Calories အနည်းဆုံးဖြစ်အောင် အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဂျုံကြမ်း၊ အုတ်၊ သစ်ကြံပိုးမှုန့်၊ ဆားမပါတဲ့ထောပတ်ကိုသာအဓိကထားပြီးဖန်တီးထားတာဖြစ်လို့ စားလိုက်တိုင်းမှာ သစ်ကြံပိုးရဲ့ နွေးနွေးထွေးထွေးရနံ့မွှေးမွှေးနဲ့အတူ သဘာဝဆန်တဲ့ အရသာ၊ ကြွပ်မွမှုကို ခံစားရစေမှာပါ။\n\nကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: ဗာဒံသီး၊ အခွံမာသီး၊ အုတ်ဂျုံမှုန့်၊ စတီဗီးယား\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.nut-cookies-2",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - အခွံမာသီး ကွတ်ကီး",
+      "title": "သကြားမုန်လာကွတ်ကီး",
       "sectionId": "product.nut-cookies-2",
-      "text": "Name: Thone Pan Hla - အခွံမာသီး ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: သဘာဝအချိုအရသာဖြင့် ပြည့်ဝသော အခွံမာသီး ကွတ်ကီးများ။\nIngredients: အခွံမာသီးစုံ၊ ထောပတ်၊ သစ်ကြံပိုးခေါက်၊ မုန့်ချိုသီး\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: သကြားမုန်လာကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: Beetroot ရဲ့ နီနီဆွေးဆွေးအရောင်အသွေးနဲ့ ထူးကဲတဲ့အရသာကြောင့် ပုံမှန်စားနေကျ ကွတ်ကီးတွေနဲ့မတူ ကွဲထွက်နေပြီး အဆာပြေကွတ်ကီးစားရင်း ဟင်းသီးဟင်းရွက်ရဲ့ အာဟာရကိုပါ တပြိုင်တည်းရယူလိုသူ၊ ဝိတ်လည်းမတတ်ချင်သူ၊ ကျန်းမာရေးနဲ့လည်းညီညွတ်ချင်သူ၊ ဆီးချိုတတ်မှာစိုးရိမ်သူတွေအတွက် Healthy & Happy Beetroot Cookies။\n\nBeetroot ရဲ့ စိမ်းရွှေရွှေရနံ့ကို ဖျောက်ထားပေးပြီး အုတ်ဂျုံဖတ်လေးတွေရဲ့ ချိုတိုတို စိမ့်တိမ့်တိမ့်အရသာကိုမှ ဂျုံကြမ်း၊ ဆားမပါထောပတ်တွေကို အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဖန်တီးထားတာဖြစ်လို့ တစ်ချက် တစ်ကိုက် ဝါးလိုက်တိုင်းမှာ သပ်သပ်ရပ်ရပ်ကြွပ်မွတဲ့ အရသာမျိုးနဲ့ စားပြီးရင်းစားချင်စိတ်ကိုတောင် ကြွယ်ဝတဲ့အမျှင်ဓာတ်တွေက တားဆီးပေးတာကြောင့် ဝိတ်ထိန်းနေသူတွေအတွက် အဆင်ပြေလွန်းရုံမက အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ပါတယ်။\n\nတစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။\nIngredients: အခွံမာသီးစုံ၊ ထောပတ်၊ သစ်ကြံပိုးခေါက်၊ မုန့်ချိုသီး\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.nuts-cake",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "အစေ့အဆန်ကိတ်",
+      "sectionId": "product.nuts-cake",
+      "text": "Name: အစေ့အဆန်ကိတ်\nSeries: မူရင်းစီးရီး\nDescription: ကိတ်မုန့်လေးလည်း စားချင်တယ်...ဆီးချိုတတ်မှာလည်းကြောက်တယ်၊ ဝိတ်တက်မှာလည်းစိုးရိမ်တယ်၊ ချောင်းဆိုးမှာလည်း စိတ်ပူတယ် ဆိုတဲ့ ဝေခွဲမရ သောက စိတ်ဆန္ဒတွေကို ဖြည့်ဆည်းပေးဖို့ အချိုလုံးဝမပါလို့ ဆီးချိုတတ်မှာ ချောင်းဆိုးမှာ စိတ်ပူစရာမလိုရုံမက ဝိတ်တက်မှာပါအထိ စိုးရိမ်စရာမလိုတဲ့ အစေ့အဆန်ကိတ်။\n\nဂျုံကြမ်းကိုအဓိကထားသုံးထားပေမယ့် Healthy & Happy Bakery Team ရဲ့ ဖန်တီးမှုကြောင့် ကြမ်းတမ်းခြောက်သွေ့စားရမခက်ဘဲ ပါးစပ်ထဲလျှောလျှောရှူရှူဝင်သွားမယ့်အပြင် အာဟာရဆရာဝန်ကြီးကြပ်မှုနဲ့ တချပ်လုံးစားမှ ၉၆ cal ပဲပါအောင် ဖန်တီးပေးထားတာကြောင့် ဝိတ်တက်မှာလည်း စိုးရိမ်စရာမလို၊ ခြေမွထည့်ထားတဲ့ အစေ့အဆန်လေးတွေကြောင့် သဘာဝကျကျ ချိုချိုစိမ့်စိမ့်အရသာလေးက ဆီးချိုဝေဒနာရှင်တွေအတွက် သီးစုံကိတ်အလား နတ်သုဒ္ဓါတမျှအရသာကို ခံစားရစေမှာပါ။\n\nတစ်ချပ်ချင်း၏အာဟာရတန်ဖိုးအား ဗူးခွံတွင်ဖော်ပြထားပါသည်။\nIngredients: ဂျုံကြမ်း၊ အစေ့အဆန်များ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.nuts-cookies",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "အစေ့အဆန်ကွတ်ကီး",
+      "sectionId": "product.nuts-cookies",
+      "text": "Name: အစေ့အဆန်ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: Nutrient Powerhouse လို့တောင် တင်စားရတဲ့ (         )အစေ့အဆန််တွေရဲ့ Healthy Fats, အသားဓာတ်၊ အမျှင်ဓာတ်၊ ဗီတာမင်နဲ့ သတ္ထုဓာတ်တွေကို တစ်ချပ် တစ်ကိုက် ကိုက်ရုံနဲ့တင်် တစုတစည်းတည်းရယူချင်တယ်ဆိုရင် အစေ့အဆန်တွေရဲ့ မွှေးမွှေးစိမ့်စိမ့်ရနံ့၊ အရသာနဲ့ Healthy & Happy Nuts Cookies\n\nအစေ့အဆန်တွေရဲ့ ချိုချိုစိမ့်စိမ့်အရသာကိုမှ ဂျုံကြမ်း၊ ဆားမပါထောပတ်တွေကို အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဖန်တီးထားတာဖြစ်လို့ တစ်ကိုက် ဝါးလိုက်တိုင်းမှာ ကြွပ်မွတဲ့ခံစားချက််မျိုးနဲ့ အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ပါတယ်။\n\nကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: အစေ့အဆန်များ၊ ဂျုံကြမ်းမှုန့်၊ ဆားမပါသောထောပတ်\nTags: သကြားမပါ, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+    },
+    {
+      "id": "my:product.protein-bite-diabetes",
+      "locale": "my",
+      "sourcePath": "messages/my/product.json",
+      "contentType": "product",
+      "title": "ပရိုတင်းဗိုက် (ဆီးချို)",
+      "sectionId": "product.protein-bite-diabetes",
+      "text": "Name: ပရိုတင်းဗိုက် (ဆီးချို)\nSeries: ပရိုတင်းစီးရီး\nDescription: မကြာခဏဗိုက်ဆာတတ်တဲ့အကျင့်ကြောင့် သွေးတွင်းသကြားဓာတ် ထိုးတတ်/ကျသွားမှာ စိုးရိမ်လို့ဖြစ်စေ၊ ကျန်းမာရေးကြောင့် အချိုရှောင်နေရလို့ဖြစ်စေ၊ Gym ကစားနေလို့ဖြစ်စေ၊ သားသတ်လွတ်စားနေလို့ဖြစ်စေ၊ ဝိတ်ထိန်းနေလို့ အသားဓာတ်ပိုလိုအပ်လို့ဖြစ်စေ၊ နေမကောင်း မကျန်းမာ နာလန်ထူကာစမို့လို့ အသားဓာတ်လိုအပ်နေလို့ဖြစ်စေ တနေ့တာလိုအပ်တဲ့အသားဓာတ်ကို တွက်ချက်စရာမလို ချက်ပြုတ်ပြင်ဆင်စရာမလို အလွယ်တကူဖြည့်ဆည်းပေးဖို့ဆို မြန်မာပြည်သူတွေရဲ့ အာဟာရလိုအပ်ချက်ကို တထောင့်တနေရာကနေဖြည့်ဆည်းပေးဖို့ ရည်ရွယ်ချက်အပြည့်နဲ့ ဖန်တီးထားတဲ့ Healthy & Happy Protein Bite (Diabetes)\n\nပြည်တွင်းကုန်ကြမ်းတွေဖြစ်တဲ့ မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲတွေကို အဓိကအသုံးပြုထားပြီး တချပ်စားလိုက်တိုင်းမှာ Plant-based Protein 4 g၊ (၃) ချပ်စားလိုက်တိုင်းမှာ ထမင်းတစ်ပန်းကန်၊ အသား (၂) တုံးနဲ့ညီမျှတဲ့ အာဟာရကိုအလွယ်တကူရနိုင်အောင် အာဟာရဆရာဝန်ကြီးကြပ်ထားပြီး\n\nမြေပဲရနံ့သင်းသင်းမွှေးမွှေးလေးကြောင့် အိမ်ပြန်ရောက်သွားသလို နွေးထွေးသွားစေမယ့် ခံစားချက်နဲ့အတူ သဘာဝအတိုင်းအစိမ့်အရသာကြောင့် အဆာခံကျေနပ် ပြည့်ဝတင်းတိမ်ကျေနပ်စေမှာပါ။\n\nကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.spinach-cookies-1",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး",
+      "title": "ဟင်းနုနွယ်ကွက်ကီး",
       "sectionId": "product.spinach-cookies-1",
-      "text": "Name: Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး\nSeries: ပရိုတင်းစီးရီး\nDescription: ကျန်းမာရေးအတွက် သံဓာတ်နှင့် အမျှင်ဓာတ်ကြွယ်ဝသော ကွတ်ကီးများ။\nIngredients: ဟင်းနုနွယ်အနှစ်၊ ဂျုံကြမ်း၊ သံလွင်ဆီ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, ပရိုတင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: ဟင်းနုနွယ်ကွက်ကီး\nSeries: မူရင်းစီးရီး\nDescription: စျေးကွက်ထဲမှာ လွယ်လင့်တကူဝယ်ယူနိုင်တဲ့ ဟင်းနုနွယ်ရွက်အစစ်ကို Value-added ဖြစ်အောင် ကွတ်ကီးထဲမှာထည့်သွင်းဖန်တီးထားတဲ့ မြန်မာနိုင်ငံရဲ့ ပထမဆုံးသော ဟင်းနုနွယ်ကွတ်ကီး။\n\nနေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ဖို့ အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမထည့်ထားဘဲ Calories အနည်းဆုံးဖြစ်အောင် အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဂျုံကြမ်း၊ အုတ်၊ ဟင်းနုနွယ်ရွက်၊ ဆားမပါတဲ့ထောပတ်ကိုသာအဓိကထားပြီးဖန်တီးထားတာဖြစ်လို့ စားလိုက်တိုင်းမှာ သဘာဝဆန်တဲ့ရနံ့၊ အရသာ၊ ကြွပ်မွမှုနဲ့ အဆာပြေစားရင်း ဟင်းသီးဟင်းရွက်ရဲ့ အာဟာရကိုပါ တပြိုင်တည်းရစေမှာပါ။\n\nကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: ဟင်းနုနွယ်အနှစ်၊ ဂျုံကြမ်း၊ သံလွင်ဆီ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     },
     {
       "id": "my:product.spinach-cookies-2",
       "locale": "my",
       "sourcePath": "messages/my/product.json",
       "contentType": "product",
-      "title": "Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး",
+      "title": "အုတ်ကွတ်ကီး",
       "sectionId": "product.spinach-cookies-2",
-      "text": "Name: Thone Pan Hla - ဟင်းနုနွယ် ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: ဟင်းနုနွယ်၏ ကောင်းမြတ်မှုကို အချိန်တိုင်း အရသာရှိစွာ ဖုတ်ထားသော ကွတ်ကီး။\nIngredients: ဟင်းနုနွယ်၊ အုတ်ဂျုံမှုန့်၊ အီရစ်သရစ်တော၊ ဥ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
+      "text": "Name: အုတ်ကွတ်ကီး\nSeries: မူရင်းစီးရီး\nDescription: ဝိတ်ထိန်းနေတဲ့အတွက် နည်းနည်းစားလိုက်ရုံနဲ့ ဗိုက်ပြည့်သွားတဲ့ ခံစားချက်မျိုးရချင်တယ်။ အရသာရှိရှိလည်းစားချင်တယ်။ တဇွတ်ဇွတ် စားမိရင်တောင် နောင်တမရချင်ဘူး။မကြာခဏဗိုက်ပြန်ဆာတာမျိုးလည်းမကြိုက်လို့ အမျှင်ဓာတ်များများပါတဲ့ အဆာပြေမုန့်မျိုးစားချင််သူတွေအတွက် အုတ်ဂျုံကွတ်ကီး။\n\nအုတ်ဂျုံဖတ်လေးတွေရဲ့ ရိုးရိုးရှင်းရှင်း ချိုတိုတို စိမ့်တိမ့်တိမ့်အရသာကိုမှ ဂျုံကြမ်း၊ ဆားမပါထောပတ်တွေကို အာဟာရဆရာဝန်ရဲ့ကြီးကြပ်မှုနဲ့ ဖန်တီးထားတာဖြစ်လို့ တစ်ချက် တစ်ကိုက် ဝါးလိုက်တိုင်းမှာ သူမတူတဲ့ ကြွပ်မွမှုမျိုးနဲ့ စားပြီးရင်းစားချင်စိတ်ကိုတောင် ကြွယ်ဝတဲ့အမျှင်ဓာတ်တွေက တားဆီးပေးတာကြောင့် ဝိတ်ထိန်းနေသူတွေအတွက် အဆင်ပြေလွန်းရုံမက အချို၊ artificial sweetener၊ ကြာရှည်ခံဆေးလုံးဝမသုံးထားလို့ နေ့စဥ်ဘဝမှာ ကျန်းမာရေးကို ဦးစားပေးသူတွေသာမက  ကလေးငယ်တွေအထိပါ စိတ်ချလက်ချစားနိုင်ပါတယ်။\n\nကွတ်ကီးတစ်ချပ်ချင်းစီ၏ အာဟာရတန်ဖိုးအား ဗူးခွံတွင် ဖော်ပြပေးထားပါသည်။\nIngredients: ဟင်းနုနွယ်၊ အုတ်ဂျုံမှုန့်၊ အီရစ်သရစ်တော၊ ဥ\nTags: သကြားမပါ, ကယ်လိုရီနည်း, မူရင်းစီးရီး\nPrice: ၅,၀၀၀ ကျပ်"
     }
   ]
 }

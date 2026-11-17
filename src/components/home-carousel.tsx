@@ -25,6 +25,7 @@ export function ProductCarousel({
   messages: HomeMessages["productCarousel"];
 }) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
+  const shouldReduceMotion = useReducedMotion();
   const productMessages = locale === "my" ? myProduct : enProduct;
   const products = productMedia.map((media) => ({
     ...media,
@@ -45,10 +46,12 @@ export function ProductCarousel({
 
       {/* 2. Swiper Carousel */}
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         onSwiper={setSwiper}
         spaceBetween={24}
         slidesPerView={1.1}
+        loop
+        autoplay={shouldReduceMotion ? false : { delay: 2000, disableOnInteraction: false }}
         breakpoints={{
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 2 },
@@ -134,12 +137,12 @@ export default function PerfectCoverCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const shouldReduceMotion = useReducedMotion();
 
-  // ⏱️ Auto-play loop set to 10 seconds (10,000 ms)
+  // Auto-play loop set to 2 seconds.
   useEffect(() => {
     if (shouldReduceMotion) return;
     const timer = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % CAROUSEL_ITEMS.length);
-    }, 10000); // 👈 10 seconds loop time
+    }, 2000);
 
     return () => clearInterval(timer); // Clean up timer on unmount/interaction
   }, [shouldReduceMotion]);
@@ -208,10 +211,11 @@ export default function PerfectCoverCarousel() {
 
 
 
-const PRODUCTION_IMAGES = [
-  { id: 1, src: assets.product, alt: 'Production 1' },
-  { id: 2, src: assets.product, alt: 'Production 2' },
-];
+const PRODUCTION_IMAGES = productMedia.map(({ id, image }) => ({
+  id,
+  src: image,
+  alt: "Healthy & Happy product",
+}));
 
 
 // Production Carousel Component
@@ -227,7 +231,7 @@ export function ProductionPlaceCarousel() {
         onSwiper={setSwiper}
         slidesPerView={1}
         loop
-        autoplay={shouldReduceMotion ? false : { delay: 4000, disableOnInteraction: false }}
+        autoplay={shouldReduceMotion ? false : { delay: 2000, disableOnInteraction: false }}
         className="h-full w-full overflow-hidden rounded-3xl"
       >
         {PRODUCTION_IMAGES.map((item) => (

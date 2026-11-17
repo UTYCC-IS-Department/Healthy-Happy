@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useRef, type WheelEvent } from "react";
 
 type Award = {
   label: string;
@@ -23,6 +23,7 @@ const END_ANGLE = 82;
 
 export default function AwardWheel({ awards, activeAward, onSelect }: AwardWheelProps) {
   const visible = Math.min(7, awards.length);
+  const lastWheelChange = useRef(0);
 
   const wheel = useMemo(() => {
     const half = Math.floor(visible / 2);
@@ -42,8 +43,20 @@ export default function AwardWheel({ awards, activeAward, onSelect }: AwardWheel
     });
   }, [awards, activeAward, visible]);
 
+  const handleWheel = (event: WheelEvent<HTMLDivElement>) => {
+    if (event.deltaY === 0 || awards.length === 0) return;
+    event.preventDefault();
+
+    const now = Date.now();
+    if (now - lastWheelChange.current < 250) return;
+    lastWheelChange.current = now;
+
+    const direction = event.deltaY > 0 ? 1 : -1;
+    onSelect((activeAward + direction + awards.length) % awards.length);
+  };
+
   return (
-    <div className="relative h-[650px] w-[650px] ">
+    <div className="relative h-[650px] w-[650px]" onWheel={handleWheel}>
       <svg
         viewBox={`0 0 ${SIZE} ${SIZE}`}
         className="h-full w-full  overflow-visible"

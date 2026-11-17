@@ -257,7 +257,7 @@ export const WhereCanBuy: React.FC<WhereCanBuyProps> = ({ messages }) => {
                           <img
                             src={getRetailerLogo(item.id)}
                             alt={item.name}
-                            className="w-full h-full object-contain"
+                            className={`w-full h-full ${item.id === 4 ? "rounded-full object-cover" : "object-contain"}`}
                           />
                         )}
                       </motion.div>
