@@ -110,13 +110,51 @@ const DOC_PATH =
 /* ── FolderCard ──────────────────────────────────────────────────
    
 ──────────────────────────────────────────────────────────────── */
-function FolderCard({ title, children }: { title: string; children: React.ReactNode }) {
+function FolderCard({
+  title,
+  children,
+  onTap,
+}: {
+  title: string;
+  children: React.ReactNode;
+  onTap: (direction: -1 | 1) => void;
+}) {
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    const touch = event.touches[0];
+    if (touch) touchStart.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start || !window.matchMedia("(max-width: 767px)").matches) return;
+
+    const touch = event.changedTouches[0];
+    if (!touch || Math.abs(touch.clientX - start.x) > 12 || Math.abs(touch.clientY - start.y) > 12) {
+      return;
+    }
+
+    const { left, width } = event.currentTarget.getBoundingClientRect();
+    onTap(touch.clientX < left + width / 2 ? -1 : 1);
+  };
+
   return (
-    <div className="relative w-full pb-[57%]">
+    <div
+      className="relative w-full pb-[57%] xl:pb-[65%]"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={() => {
+        touchStart.current = null;
+      }}
+    >
       {/* SVG backdrop */}
       <svg
         viewBox={FOLDER_VB}
         xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
         aria-hidden="true"
       >
@@ -296,6 +334,8 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
   const [activeAward, setActiveAward] = useState(0);
   const awards = messages.items.map((item, index) => ({ ...item, image: awardImages[index] }));
   const award = awards[activeAward];
+  const navigateAward = (direction: -1 | 1) =>
+    setActiveAward((current) => (current + direction + awards.length) % awards.length);
 
   return (
     <div className="bg-background pb-24">
@@ -310,8 +350,8 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
         <h1 className="text-3xl font-bold text-primary md:text-4xl">{messages.title}</h1>
       </motion.section>
       {/* Awards */}
-      <section className="mx-auto px-4 py-12">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)] lg:gap-10">
+      <section className="mx-auto px-4 py-12 xl:px-0">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)] lg:gap-10 xl:max-w-[1440px] xl:grid-cols-[minmax(0,600px)_minmax(0,1fr)] xl:gap-4 xl:-translate-x-12">
           {/* Award selector */}
           <motion.div
             className="flex justify-center"
@@ -320,7 +360,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="mx-auto hidden w-full max-w-[520px] md:block">
+            <div className="mx-auto hidden w-full max-w-[520px] md:block xl:max-w-[660px] xl:translate-x-[28%]">
               <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
             </div>
             <nav className="w-full md:hidden" aria-label={messages.title}>
@@ -347,20 +387,18 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
 
           {/* Folder */}
           <motion.div
-            className="mx-auto w-full max-w-[640px] min-w-0"
+            className="mx-auto w-full max-w-[640px] min-w-0 xl:max-w-[800px] xl:-translate-x-12"
             variants={rightVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <FolderCard title={award.title}>
+            <FolderCard title={award.title} onTap={navigateAward}>
               <DocCard description={award.description} />
               <TrophyCard
                 title={award.title}
                 awardImage={award.image}
-                onSwipe={(direction) =>
-                  setActiveAward((current) => (current + direction + awards.length) % awards.length)
-                }
+                onSwipe={navigateAward}
               />
             </FolderCard>
           </motion.div>
