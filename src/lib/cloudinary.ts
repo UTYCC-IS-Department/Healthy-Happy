@@ -7,7 +7,7 @@ export function getPublicId(path: string, resourceType: "image" | "video" = "ima
   const cleanPath = path.replace(/^https?:\/\/[^/]+\//, "");
   if (cleanPath.startsWith("healthy-happy-site/")) return cleanPath;
   const relativePath = path.replace(/^\//, "").replace(/\.[^/.]+$/, "");
-  const safePath = relativePath.replace(/[^A-Za-z0-9/_-]+/g, "-");
+  const safePath = relativePath.replace(/[^A-Za-z0-9/_-]+/g, "-").replace(/-+$/, "");
   return `healthy-happy-site/${resourceType}s/${safePath}`;
 }
 
@@ -17,7 +17,7 @@ export function cloudinaryImage(path: string) {
     return path;
   }
   const pid = getPublicId(path, "image");
-  return `${deliveryBase}/image/upload/f_auto/q_auto/c_limit,w_1600/${pid}`;
+  return `${deliveryBase}/image/upload/f_auto,q_auto,c_limit,w_1600/${pid}`;
 }
 
 export function cloudinaryVideo(path: string) {

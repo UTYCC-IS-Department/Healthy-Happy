@@ -26,15 +26,15 @@ The system SHALL display the v1 local product catalog and provide a locale-prefi
 
 #### Scenario: English product detail
 
-- **GIVEN** an English user selects a listed product with ID `iron-enriched-cookies-1`
+- **GIVEN** an English user selects a listed product with ID `protein-bite-original`
 - **WHEN** the product route opens
-- **THEN** `/en/products/iron-enriched-cookies-1` displays that product's translated image, series, description, ingredients, tags, and price
+- **THEN** `/en/products/protein-bite-original` displays that product's translated image, series, description, ingredients, tags, and price
 
 #### Scenario: Burmese product detail
 
-- **GIVEN** a Burmese user selects a listed product with ID `iron-enriched-cookies-1`
+- **GIVEN** a Burmese user selects a listed product with ID `protein-bite-original`
 - **WHEN** the product route opens
-- **THEN** `/my/products/iron-enriched-cookies-1` displays the same product identity with Burmese localized product content
+- **THEN** `/my/products/protein-bite-original` displays the same product identity with Burmese localized product content
 
 ### Requirement: Unknown product handling
 

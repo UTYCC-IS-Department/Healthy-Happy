@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
-import { defaultLocale, locales } from "@/i18n/config";
+import { locales } from "@/i18n/config";
 import { assets, productMedia } from "@/lib/site-data";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://healthyandhappymyanmar.com";
+const STATIC_LAST_MODIFIED = "2026-11-18";
 
 function buildLocalizedUrl(siteUrl: string, locale: string, path = ""): string {
   const normalizedPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
@@ -14,7 +15,6 @@ function buildAlternateLanguages(siteUrl: string, path = ""): Record<string, str
   return {
     en: buildLocalizedUrl(siteUrl, "en", path),
     my: buildLocalizedUrl(siteUrl, "my", path),
-    "x-default": buildLocalizedUrl(siteUrl, defaultLocale, path),
   };
 }
 
@@ -42,8 +42,6 @@ function sanitizeImages(images: (string | undefined)[], siteUrl: string): string
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
-
   // Top products image URLs for the products overview page
   const featuredProductImages = sanitizeImages(
     productMedia.slice(0, 6).map((p) => p.image),
@@ -54,26 +52,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     {
       path: "",
-      changeFrequency: "daily" as const,
-      priority: 1.0,
+      lastModified: STATIC_LAST_MODIFIED,
       images: sanitizeImages([assets.banner, assets.logo, assets.product], SITE_URL),
     },
     {
       path: "/products",
-      changeFrequency: "daily" as const,
-      priority: 0.9,
+      lastModified: STATIC_LAST_MODIFIED,
       images: sanitizeImages([assets.banner, ...featuredProductImages], SITE_URL),
     },
     {
       path: "/about",
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
+      lastModified: STATIC_LAST_MODIFIED,
       images: sanitizeImages([assets.banner], SITE_URL),
     },
     {
       path: "/awards",
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
+      lastModified: STATIC_LAST_MODIFIED,
       images: sanitizeImages(
         [
           assets.award1,
@@ -91,17 +85,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       path: "/contact",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
+      lastModified: STATIC_LAST_MODIFIED,
       images: sanitizeImages(
-        ["https://res.cloudinary.com/dh6jges3r/image/upload/f_auto/q_auto/c_limit,w_1600/healthy-happy-site/images/healthy-happy/contact_us_1784649192452"],
+        ["https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/healthy-happy-site/images/healthy-happy/contact_us_1784649192452"],
         SITE_URL
       ),
     },
     {
       path: "/chat",
-      changeFrequency: "weekly" as const,
-      priority: 0.7,
+      lastModified: STATIC_LAST_MODIFIED,
       images: sanitizeImages([assets.banner], SITE_URL),
     },
   ];
@@ -109,13 +101,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   // Generate localized pages
-  routes.forEach(({ path, changeFrequency, priority, images }) => {
+  routes.forEach(({ path, lastModified, images }) => {
     locales.forEach((locale) => {
       entries.push({
         url: buildLocalizedUrl(SITE_URL, locale, path),
-        lastModified: now,
-        changeFrequency,
-        priority,
+        lastModified,
         alternates: {
           languages: buildAlternateLanguages(SITE_URL, path),
         },
@@ -135,9 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     locales.forEach((locale) => {
       entries.push({
         url: buildLocalizedUrl(SITE_URL, locale, productPath),
-        lastModified: now,
-        changeFrequency: "weekly",
-        priority: 0.85,
+        lastModified: STATIC_LAST_MODIFIED,
         alternates: {
           languages: buildAlternateLanguages(SITE_URL, productPath),
         },

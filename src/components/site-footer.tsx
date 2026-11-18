@@ -119,8 +119,8 @@ export function SiteFooter({ locale, messages }: { locale: Locale; messages: She
             icon={<ShoppingBag className="size-4 text-black" />}
             links={[
               [messages.links.proteinBites, `/${locale}/products`],
-              [messages.links.nutCookies, `/${locale}/products/nut-cookies-1`],
-              [messages.links.spinachCookies, `/${locale}/products/spinach-cookies-1`],
+              [messages.links.nutCookies, `/${locale}/products/cinnamon-cookies`],
+              [messages.links.spinachCookies, `/${locale}/products/spinach-cookies`],
             ]}
           />
 

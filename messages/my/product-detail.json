@@ -8,21 +8,21 @@
   "newsAction": "နောက်ဆုံးသတင်းများ ကြည့်ရန်",
   "showImage": "{product} ၏ ပုံ {number} ကို ပြရန်",
   "products": {
-    "iron-enriched-cookies-1": {
+    "protein-bite-original": {
       "ingredients": "မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲ"
     },
     "protein-bite-diabetes": {
       "ingredients": "မြေပဲ၊ အုတ်ဂျုံ၊ ဂျုံကြမ်း၊ ကုလားပဲ"
     },
-    "iron-enriched-cookies-2": {
+    "peanut-butter-no-sugar": {
       "ingredients": "ပရိုတင်းမှုန့်၊ သံဓာတ်ပါ အုတ်ဂျုံ၊ မုန့်ချိုသီး၊ ထောပတ်"
     },
-    "iron-enriched-cookies-3": { "ingredients": "ဂျုံကြမ်း၊ အုတ်ဂျုံမှုန့်၊ သဘာဝအချိုဓာတ်" },
-    "iron-enriched-cookies-4": { "ingredients": "အုတ်ဂျုံ၊ စတီဗီးယား၊ ထောပတ်၊ ပင်လယ်ဆား" },
-    "spinach-cookies-1": { "ingredients": "ဟင်းနုနွယ်အနှစ်၊ ဂျုံကြမ်း၊ သံလွင်ဆီ" },
-    "spinach-cookies-2": { "ingredients": "ဟင်းနုနွယ်၊ အုတ်ဂျုံမှုန့်၊ အီရစ်သရစ်တော၊ ဥ" },
-    "nut-cookies-1": { "ingredients": "ဗာဒံသီး၊ အခွံမာသီး၊ အုတ်ဂျုံမှုန့်၊ စတီဗီးယား" },
-    "nut-cookies-2": { "ingredients": "အခွံမာသီးစုံ၊ ထောပတ်၊ သစ်ကြံပိုးခေါက်၊ မုန့်ချိုသီး" },
+    "iron-enriched-cookies": { "ingredients": "ဂျုံကြမ်း၊ အုတ်ဂျုံမှုန့်၊ သဘာဝအချိုဓာတ်" },
+    "energy-bar": { "ingredients": "အုတ်ဂျုံ၊ စတီဗီးယား၊ ထောပတ်၊ ပင်လယ်ဆား" },
+    "spinach-cookies": { "ingredients": "ဟင်းနုနွယ်အနှစ်၊ ဂျုံကြမ်း၊ သံလွင်ဆီ" },
+    "oat-cookies": { "ingredients": "ဟင်းနုနွယ်၊ အုတ်ဂျုံမှုန့်၊ အီရစ်သရစ်တော၊ ဥ" },
+    "cinnamon-cookies": { "ingredients": "ဗာဒံသီး၊ အခွံမာသီး၊ အုတ်ဂျုံမှုန့်၊ စတီဗီးယား" },
+    "beetroot-cookies": { "ingredients": "အခွံမာသီးစုံ၊ ထောပတ်၊ သစ်ကြံပိုးခေါက်၊ မုန့်ချိုသီး" },
     "nuts-cookies": { "ingredients": "အစေ့အဆန်များ၊ ဂျုံကြမ်းမှုန့်၊ ဆားမပါသောထောပတ်" },
     "nuts-cake": { "ingredients": "ဂျုံကြမ်း၊ အစေ့အဆန်များ" },
     "lavash": { "ingredients": "ဂျုံကြမ်း၊ နှမ်း" }

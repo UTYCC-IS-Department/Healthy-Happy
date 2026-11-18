@@ -220,12 +220,12 @@ export const healthyHappyImages: ImageAsset[] = [
   {
     id: 'brand-04',
     name: 'Brand Image 4',
-    path: '/healthy-happy/IMG_0319_1_1784649192457.png',
+    path: '/healthy-happy/Iron-Enriched-Cookies.png',
   },
   {
     id: 'brand-05',
     name: 'Brand Image 5',
-    path: '/healthy-happy/IMG_0382.png',
+    path: '/healthy-happy/Beetroot-Cookies.png',
   },
   {
     id: 'brand-06',

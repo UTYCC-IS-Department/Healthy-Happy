@@ -152,7 +152,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
                             : slug === "healthy-snacks"
                               ? cloudinaryImage("/healthy-happy/Energy-Bar")
                               : slug === "original-series"
-                                ? cloudinaryImage("/healthy-happy/IMG_0382")
+                                ? cloudinaryImage("/healthy-happy/Beetroot-Cookies")
                                 : assets.product
                       }
                       alt={name}

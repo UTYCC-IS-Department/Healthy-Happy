@@ -14,26 +14,27 @@ export type ProductMedia = {
 
 const productImage1 = mediaUrl("product-1", "/healthy-happy/Protein Bite (Original).png");
 const productImage2 = mediaUrl("product-2", "/healthy-happy/Peanut Butter (No Sugar).png");
-const productImage3 = mediaUrl("product-3", "/healthy-happy/IMG_0319_1_1784649192457.png");
+const productImage3 = mediaUrl("product-3", "/healthy-happy/Iron-Enriched-Cookies.png");
 const productImage4 = mediaUrl("product-4", "/healthy-happy/Energy Bar.JPG");
 const productImage5 = mediaUrl("product-5", "/healthy-happy/Spinach Cookies.png");
 const productImage6 = mediaUrl("product-6", "/healthy-happy/Oat Cookies.png");
 const productImage7 = mediaUrl("product-7", "/healthy-happy/Protein Bite (Diabetes).png");
-const productImage8 = mediaUrl("product-8", "/healthy-happy/IMG_0382.png");
-const lavashImage = mediaUrl("product-lavash", "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/lavash_s7u4xi.jpg");
-const nutsCakeImage = mediaUrl("product-nuts-cake", "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821484/Nut_cakes_y0cwog.jpg");
-const nutsCookiesImage = mediaUrl("product-nuts-cookies", "https://res.cloudinary.com/dh6jges3r/image/upload/v1794821590/nut_cookies_a4ivnc.jpg");
+const productImage8 = mediaUrl("product-8", "/healthy-happy/Beetroot-Cookies.png");
+const productImage9 = mediaUrl("product-9", "/healthy-happy/Cinnamon-Cookies.jpg");
+const lavashImage = mediaUrl("product-lavash", "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/lavash_s7u4xi.jpg");
+const nutsCakeImage = mediaUrl("product-nuts-cake", "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/Nut_cakes_y0cwog.jpg");
+const nutsCookiesImage = mediaUrl("product-nuts-cookies", "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821590/nut_cookies_a4ivnc.jpg");
 
 export const productMedia: ProductMedia[] = [
-  ["iron-enriched-cookies-1", productImage1],
-  ["protein-bite-diabetes", productImage1],
-  ["iron-enriched-cookies-2", productImage2],
-  ["iron-enriched-cookies-3", productImage3],
-  ["iron-enriched-cookies-4", productImage4],
-  ["spinach-cookies-1", productImage5],
-  ["spinach-cookies-2", productImage6],
-  ["nut-cookies-1", productImage7],
-  ["nut-cookies-2", productImage8],
+  ["protein-bite-original", productImage1],
+  ["protein-bite-diabetes", productImage7],
+  ["peanut-butter-no-sugar", productImage2],
+  ["iron-enriched-cookies", productImage3],
+  ["energy-bar", productImage4],
+  ["spinach-cookies", productImage5],
+  ["oat-cookies", productImage6],
+  ["cinnamon-cookies", productImage9],
+  ["beetroot-cookies", productImage8],
   ["nuts-cookies", nutsCookiesImage],
   ["nuts-cake", nutsCakeImage],
   ["lavash", lavashImage],

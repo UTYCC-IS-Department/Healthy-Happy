@@ -365,7 +365,7 @@
   {
     "id": "product-3",
     "name": "Iron Enriched Cookies",
-    "path": "/healthy-happy/IMG_0319_1_1784649192457.png",
+    "path": "/healthy-happy/Iron-Enriched-Cookies.png",
     "page": "Products",
     "section": "Product Catalog",
     "usage": "Products Page & Home Best Sellers",
@@ -419,13 +419,24 @@
   },
   {
     "id": "product-8",
-    "name": "Nut Cookies & Snacks",
-    "path": "/healthy-happy/IMG_0382.png",
+    "name": "Beetroot Cookies",
+    "path": "/healthy-happy/Beetroot-Cookies.png",
     "page": "Products",
     "section": "Product Catalog",
     "usage": "Products Page & Home Best Sellers",
     "component": "site-data.ts",
-    "alt": "Assorted Nut Cookies",
+    "alt": "Beetroot Cookies",
+    "resourceType": "image"
+  },
+  {
+    "id": "product-9",
+    "name": "Cinnamon Cookies",
+    "path": "/healthy-happy/Cinnamon-Cookies.jpg",
+    "page": "Products",
+    "section": "Product Catalog",
+    "usage": "Products Page & Home Best Sellers",
+    "component": "site-data.ts",
+    "alt": "Cinnamon Cookies",
     "resourceType": "image"
   },
   {
@@ -838,7 +849,7 @@
   {
     "id": "brand-04",
     "name": "Brand Image 4",
-    "path": "/healthy-happy/IMG_0319_1_1784649192457.png",
+    "path": "/healthy-happy/Iron-Enriched-Cookies.png",
     "page": "About Us",
     "section": "Legacy & Gallery",
     "usage": "Gallery and historical photo archive",
@@ -849,7 +860,7 @@
   {
     "id": "brand-05",
     "name": "Brand Image 5",
-    "path": "/healthy-happy/IMG_0382.png",
+    "path": "/healthy-happy/Beetroot-Cookies.png",
     "page": "About Us",
     "section": "Legacy & Gallery",
     "usage": "Gallery and historical photo archive",
