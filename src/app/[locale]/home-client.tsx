@@ -112,7 +112,7 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
               <a
                 key={slug}
                 href={`/${locale}/products?category=${slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.04] active:scale-95 sm:w-42"
+                className="group relative flex w-36 shrink-0 flex-col items-center sm:w-42"
               >
                 <div className="relative w-full">
                   <svg

@@ -38,6 +38,7 @@ export const productMedia: ProductMedia[] = [
   ["nuts-cookies", nutsCookiesImage],
   ["nuts-cake", nutsCakeImage],
   ["lavash", lavashImage],
+  ["protein-bite-diabetes", productImage1],
 ].map(([id, image]) => ({
   id,
   image,
@@ -65,8 +66,8 @@ export const assets = {
 
   certification1: mediaUrl("certification-1", "/healthy-happy/certification1.png"),
   certification2: mediaUrl("certification-2", "/healthy-happy/certification2.jpg"),
-  certification3: mediaUrl("certification-3", "/healthy-happy/certification3.png"),
-  certification4: mediaUrl("certification-4", "/healthy-happy/certification4.png"),
+  certification3: mediaUrl("certification-3", "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (5).jpg"),
+  certification4: mediaUrl("certification-4", "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (12).jpg"),
   certification5: mediaUrl("certification-5", "/healthy-happy/certification5.png"),
   certification6: "/healthy-happy/certification6.png",
   certification7: "/healthy-happy/certification7.png",

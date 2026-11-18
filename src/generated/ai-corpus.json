@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T03:02:26.720Z",
+  "generatedAt": "2026-11-18T04:01:26.773Z",
   "chunks": [
     {
       "id": "en:about.coreIdentity.items[0].description",
@@ -467,7 +467,7 @@
       "contentType": "message",
       "title": "about: sustainability.placeholder",
       "sectionId": "about.sustainability.placeholder",
-      "text": "You can add some text here"
+      "text": "Healthy & Happy is committed to sustainability, focusing on responsible sourcing, eco-friendly packaging, and community engagement."
     },
     {
       "id": "en:about.sustainability.title",
@@ -503,7 +503,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[1]",
       "sectionId": "about.whereCanBuy.retailers[1]",
-      "text": "Shan Ohh Pharmacy"
+      "text": "Shwe Ohh Pharmacy"
     },
     {
       "id": "en:about.whereCanBuy.retailers[10]",
@@ -530,7 +530,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[2]",
       "sectionId": "about.whereCanBuy.retailers[2]",
-      "text": "Ko Hin Tin Pharmacy"
+      "text": "Ko Han Tin Pharmacy"
     },
     {
       "id": "en:about.whereCanBuy.retailers[3]",
@@ -539,7 +539,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[3]",
       "sectionId": "about.whereCanBuy.retailers[3]",
-      "text": "One Stop"
+      "text": "One Stop Mart"
     },
     {
       "id": "en:about.whereCanBuy.retailers[4]",
@@ -557,7 +557,7 @@
       "contentType": "message",
       "title": "about: whereCanBuy.retailers[5]",
       "sectionId": "about.whereCanBuy.retailers[5]",
-      "text": "Oceania Supermarket"
+      "text": "Ocean Supermarket"
     },
     {
       "id": "en:about.whereCanBuy.retailers[6]",
@@ -953,7 +953,7 @@
       "contentType": "message",
       "title": "awards: items[0].description",
       "sectionId": "awards.items[0].description",
-      "text": "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category."
+      "text": "The Myanmar Women Entrepreneurs Network recognized May Hnin Wai of Healthy & Happy Myanmar for her achievement."
     },
     {
       "id": "en:awards.items[0].label",
@@ -971,7 +971,7 @@
       "contentType": "message",
       "title": "awards: items[0].title",
       "sectionId": "awards.items[0].title",
-      "text": "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022."
+      "text": "ASEAN Business Award"
     },
     {
       "id": "en:awards.items[1].description",
@@ -980,7 +980,7 @@
       "contentType": "message",
       "title": "awards: items[1].description",
       "sectionId": "awards.items[1].description",
-      "text": "An honour celebrating the work of women entrepreneurs creating positive impact for their communities."
+      "text": "A Myanmar-language trophy recognizing achievement in the micro, small, and medium enterprise sector."
     },
     {
       "id": "en:awards.items[1].label",
@@ -998,7 +998,7 @@
       "contentType": "message",
       "title": "awards: items[1].title",
       "sectionId": "awards.items[1].title",
-      "text": "The Most Responsible Business Award 2022"
+      "text": "Myanmar MSME Award"
     },
     {
       "id": "en:awards.items[10].description",
@@ -1007,7 +1007,7 @@
       "contentType": "message",
       "title": "awards: items[10].description",
       "sectionId": "awards.items[10].description",
-      "text": "Award description 11."
+      "text": "Healthy & Happy Myanmar won the Global Food Industry Award for Industrialization of a Traditional Food."
     },
     {
       "id": "en:awards.items[10].label",
@@ -1025,7 +1025,7 @@
       "contentType": "message",
       "title": "awards: items[10].title",
       "sectionId": "awards.items[10].title",
-      "text": "Award Title 11"
+      "text": "Global Food Industry Award"
     },
     {
       "id": "en:awards.items[2].description",
@@ -1034,7 +1034,7 @@
       "contentType": "message",
       "title": "awards: items[2].description",
       "sectionId": "awards.items[2].description",
-      "text": "Award description 3."
+      "text": "UNDP and UN Women recognized Healthy & Happy Myanmar as a winner in the Capacity Enhancement Fund category of the Resilience for Women-Led SMEs Award."
     },
     {
       "id": "en:awards.items[2].label",
@@ -1052,7 +1052,7 @@
       "contentType": "message",
       "title": "awards: items[2].title",
       "sectionId": "awards.items[2].title",
-      "text": "Award Title 3"
+      "text": "Women-Led SME Resilience Award"
     },
     {
       "id": "en:awards.items[3].description",
@@ -1061,7 +1061,7 @@
       "contentType": "message",
       "title": "awards: items[3].description",
       "sectionId": "awards.items[3].description",
-      "text": "Award description 4."
+      "text": "Healthy & Happy Myanmar received the Silver Award at the China-ASEAN Expo."
     },
     {
       "id": "en:awards.items[3].label",
@@ -1079,7 +1079,7 @@
       "contentType": "message",
       "title": "awards: items[3].title",
       "sectionId": "awards.items[3].title",
-      "text": "Award Title 4"
+      "text": "China-ASEAN Silver Award"
     },
     {
       "id": "en:awards.items[4].description",
@@ -1088,7 +1088,7 @@
       "contentType": "message",
       "title": "awards: items[4].description",
       "sectionId": "awards.items[4].description",
-      "text": "Award description 5."
+      "text": "This Myanmar-language award recognizes achievement in the micro, small, and medium enterprise sector."
     },
     {
       "id": "en:awards.items[4].label",
@@ -1106,7 +1106,7 @@
       "contentType": "message",
       "title": "awards: items[4].title",
       "sectionId": "awards.items[4].title",
-      "text": "Award Title 5"
+      "text": "MSME Achievement Award"
     },
     {
       "id": "en:awards.items[5].description",
@@ -1115,7 +1115,7 @@
       "contentType": "message",
       "title": "awards: items[5].description",
       "sectionId": "awards.items[5].description",
-      "text": "Award description 6."
+      "text": "The Women Entrepreneurship Program recognized Healthy & Happy Myanmar for responsible business leadership."
     },
     {
       "id": "en:awards.items[5].label",
@@ -1133,7 +1133,7 @@
       "contentType": "message",
       "title": "awards: items[5].title",
       "sectionId": "awards.items[5].title",
-      "text": "Award Title 6"
+      "text": "Responsible Business Award"
     },
     {
       "id": "en:awards.items[6].description",
@@ -1142,7 +1142,7 @@
       "contentType": "message",
       "title": "awards: items[6].description",
       "sectionId": "awards.items[6].description",
-      "text": "Award description 7."
+      "text": "This award recognizes achievement in Myanmar's micro, small, and medium enterprise sector."
     },
     {
       "id": "en:awards.items[6].label",
@@ -1160,7 +1160,7 @@
       "contentType": "message",
       "title": "awards: items[6].title",
       "sectionId": "awards.items[6].title",
-      "text": "Award Title 7"
+      "text": "MSME Development Award"
     },
     {
       "id": "en:awards.items[7].description",
@@ -1169,7 +1169,7 @@
       "contentType": "message",
       "title": "awards: items[7].description",
       "sectionId": "awards.items[7].description",
-      "text": "Award description 8."
+      "text": "Thone Pan Hla Cookies received the Most Promising Award at the ASEAN-India Grassroots Innovation Forum for its nutritional benefits."
     },
     {
       "id": "en:awards.items[7].label",
@@ -1187,7 +1187,7 @@
       "contentType": "message",
       "title": "awards: items[7].title",
       "sectionId": "awards.items[7].title",
-      "text": "Award Title 8"
+      "text": "Most Promising Cookie Award"
     },
     {
       "id": "en:awards.items[8].description",
@@ -1196,7 +1196,7 @@
       "contentType": "message",
       "title": "awards: items[8].description",
       "sectionId": "awards.items[8].description",
-      "text": "Award description 9."
+      "text": "Healthy & Happy Myanmar was recognized in the SME Food and Beverages Sector under the Priority Integration Sector."
     },
     {
       "id": "en:awards.items[8].label",
@@ -1214,7 +1214,7 @@
       "contentType": "message",
       "title": "awards: items[8].title",
       "sectionId": "awards.items[8].title",
-      "text": "Award Title 9"
+      "text": "ASEAN SME Food Award"
     },
     {
       "id": "en:awards.items[9].description",
@@ -1223,7 +1223,7 @@
       "contentType": "message",
       "title": "awards: items[9].description",
       "sectionId": "awards.items[9].description",
-      "text": "Award description 10."
+      "text": "The UMFCCI recognized Healthy & Happy Myanmar with the SME Outstanding Award."
     },
     {
       "id": "en:awards.items[9].label",
@@ -1241,7 +1241,7 @@
       "contentType": "message",
       "title": "awards: items[9].title",
       "sectionId": "awards.items[9].title",
-      "text": "Award Title 10"
+      "text": "SME Outstanding Award"
     },
     {
       "id": "en:awards.title",
@@ -3275,7 +3275,7 @@
       "contentType": "message",
       "title": "awards: items[0].description",
       "sectionId": "awards.items[0].description",
-      "text": "Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆောင် SME အဖြစ် ထူးချွန်သော ခံနိုင်ရည်နှင့် ခေါင်းဆောင်မှုအတွက် အသိအမှတ်ပြုခံရပါသည်။"
+      "text": "Myanmar Women Entrepreneurs Network က Healthy & Happy Myanmar မှ May Hnin Wai ၏ အောင်မြင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[0].label",
@@ -3293,7 +3293,7 @@
       "contentType": "message",
       "title": "awards: items[0].title",
       "sectionId": "awards.items[0].title",
-      "text": "UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသမီးဦးဆောင် SME များအတွက် ခံနိုင်ရည်ရှိမှုဆု"
+      "text": "ASEAN Business Award"
     },
     {
       "id": "my:awards.items[1].description",
@@ -3302,7 +3302,7 @@
       "contentType": "message",
       "title": "awards: items[1].description",
       "sectionId": "awards.items[1].description",
-      "text": "အသိုက်အဝန်းအတွက် အပြုသဘောဆောင်သော အကျိုးသက်ရောက်မှုဖန်တီးနေသည့် အမျိုးသမီးစွန့်ဦးတီထွင်သူများ၏ လုပ်ဆောင်မှုကို ဂုဏ်ပြုသောဆု ဖြစ်ပါသည်။"
+      "text": "အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သည့် မြန်မာဘာသာဖြင့် ရေးသားထားသော ဆုတံဆိပ်ဖြစ်ပါသည်။"
     },
     {
       "id": "my:awards.items[1].label",
@@ -3320,7 +3320,7 @@
       "contentType": "message",
       "title": "awards: items[1].title",
       "sectionId": "awards.items[1].title",
-      "text": "၂၀၂၂ ခုနှစ် တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု"
+      "text": "မြန်မာ MSME ဆု"
     },
     {
       "id": "my:awards.items[10].description",
@@ -3329,7 +3329,7 @@
       "contentType": "message",
       "title": "awards: items[10].description",
       "sectionId": "awards.items[10].description",
-      "text": "ဆုဖော်ပြချက် ၁၁"
+      "text": "Healthy & Happy Myanmar သည် ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award ရရှိခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[10].label",
@@ -3347,7 +3347,7 @@
       "contentType": "message",
       "title": "awards: items[10].title",
       "sectionId": "awards.items[10].title",
-      "text": "ဆုခေါင်းစဉ် ၁၁"
+      "text": "Global Food Industry Award"
     },
     {
       "id": "my:awards.items[2].description",
@@ -3356,7 +3356,7 @@
       "contentType": "message",
       "title": "awards: items[2].description",
       "sectionId": "awards.items[2].description",
-      "text": "ဆုဖော်ပြချက် ၃"
+      "text": "UNDP နှင့် UN Women တို့က Healthy & Happy Myanmar ကို Resilience for Women-Led SMEs Award ၏ Capacity Enhancement Fund အမျိုးအစားတွင် ဆုရရှိသူအဖြစ် အသိအမှတ်ပြုခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[2].label",
@@ -3374,7 +3374,7 @@
       "contentType": "message",
       "title": "awards: items[2].title",
       "sectionId": "awards.items[2].title",
-      "text": "ဆုခေါင်းစဉ် ၃"
+      "text": "အမျိုးသမီးဦးဆောင် SME ကြံ့ကြံ့ခံနိုင်မှုဆု"
     },
     {
       "id": "my:awards.items[3].description",
@@ -3383,7 +3383,7 @@
       "contentType": "message",
       "title": "awards: items[3].description",
       "sectionId": "awards.items[3].description",
-      "text": "ဆုဖော်ပြချက် ၄"
+      "text": "Healthy & Happy Myanmar သည် China-ASEAN Expo တွင် ငွေတံဆိပ်ဆု ရရှိခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[3].label",
@@ -3401,7 +3401,7 @@
       "contentType": "message",
       "title": "awards: items[3].title",
       "sectionId": "awards.items[3].title",
-      "text": "ဆုခေါင်းစဉ် ၄"
+      "text": "China-ASEAN ငွေတံဆိပ်ဆု"
     },
     {
       "id": "my:awards.items[4].description",
@@ -3410,7 +3410,7 @@
       "contentType": "message",
       "title": "awards: items[4].description",
       "sectionId": "awards.items[4].description",
-      "text": "ဆုဖော်ပြချက် ၅"
+      "text": "အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သော မြန်မာဘာသာ ဆုဖြစ်ပါသည်။"
     },
     {
       "id": "my:awards.items[4].label",
@@ -3428,7 +3428,7 @@
       "contentType": "message",
       "title": "awards: items[4].title",
       "sectionId": "awards.items[4].title",
-      "text": "ဆုခေါင်းစဉ် ၅"
+      "text": "MSME ထူးချွန်ဆု"
     },
     {
       "id": "my:awards.items[5].description",
@@ -3437,7 +3437,7 @@
       "contentType": "message",
       "title": "awards: items[5].description",
       "sectionId": "awards.items[5].description",
-      "text": "ဆုဖော်ပြချက် ၆"
+      "text": "Women Entrepreneurship Program က Healthy & Happy Myanmar ၏ တာဝန်ယူမှုရှိသော စီးပွားရေးလုပ်ဆောင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[5].label",
@@ -3455,7 +3455,7 @@
       "contentType": "message",
       "title": "awards: items[5].title",
       "sectionId": "awards.items[5].title",
-      "text": "ဆုခေါင်းစဉ် ၆"
+      "text": "တာဝန်ယူမှုရှိသော စီးပွားရေးဆု"
     },
     {
       "id": "my:awards.items[6].description",
@@ -3464,7 +3464,7 @@
       "contentType": "message",
       "title": "awards: items[6].description",
       "sectionId": "awards.items[6].description",
-      "text": "ဆုဖော်ပြချက် ၇"
+      "text": "မြန်မာနိုင်ငံ၏ အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုကို အသိအမှတ်ပြုသည့် ဆုဖြစ်ပါသည်။"
     },
     {
       "id": "my:awards.items[6].label",
@@ -3482,7 +3482,7 @@
       "contentType": "message",
       "title": "awards: items[6].title",
       "sectionId": "awards.items[6].title",
-      "text": "ဆုခေါင်းစဉ် ၇"
+      "text": "MSME ဖွံ့ဖြိုးရေးဆု"
     },
     {
       "id": "my:awards.items[7].description",
@@ -3491,7 +3491,7 @@
       "contentType": "message",
       "title": "awards: items[7].description",
       "sectionId": "awards.items[7].description",
-      "text": "ဆုဖော်ပြချက် ၈"
+      "text": "Thone Pan Hla ကွတ်ကီးများသည် ASEAN-India Grassroots Innovation Forum တွင် Most Promising Award ရရှိခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[7].label",
@@ -3509,7 +3509,7 @@
       "contentType": "message",
       "title": "awards: items[7].title",
       "sectionId": "awards.items[7].title",
-      "text": "ဆုခေါင်းစဉ် ၈"
+      "text": "အလားအလာအကောင်းဆုံး ကွတ်ကီးဆု"
     },
     {
       "id": "my:awards.items[8].description",
@@ -3518,7 +3518,7 @@
       "contentType": "message",
       "title": "awards: items[8].description",
       "sectionId": "awards.items[8].description",
-      "text": "ဆုဖော်ပြချက် ၉"
+      "text": "Healthy & Happy Myanmar သည် Priority Integration Sector အောက်ရှိ SME Food and Beverages Sector ကဏ္ဍတွင် အသိအမှတ်ပြုခံခဲ့ရပါသည်။"
     },
     {
       "id": "my:awards.items[8].label",
@@ -3536,7 +3536,7 @@
       "contentType": "message",
       "title": "awards: items[8].title",
       "sectionId": "awards.items[8].title",
-      "text": "ဆုခေါင်းစဉ် ၉"
+      "text": "ASEAN SME အစားအသောက်ဆု"
     },
     {
       "id": "my:awards.items[9].description",
@@ -3545,7 +3545,7 @@
       "contentType": "message",
       "title": "awards: items[9].description",
       "sectionId": "awards.items[9].description",
-      "text": "ဆုဖော်ပြချက် ၁၀"
+      "text": "UMFCCI က Healthy & Happy Myanmar အား SME Outstanding Award ချီးမြှင့်ခဲ့ပါသည်။"
     },
     {
       "id": "my:awards.items[9].label",
@@ -3563,7 +3563,7 @@
       "contentType": "message",
       "title": "awards: items[9].title",
       "sectionId": "awards.items[9].title",
-      "text": "ဆုခေါင်းစဉ် ၁၀"
+      "text": "SME ထူးချွန်ဆု"
     },
     {
       "id": "my:awards.title",

@@ -5,23 +5,59 @@
   "items": [
     {
       "label": "Award-1",
-      "title": "RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.",
-      "description": "Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category."
+      "title": "ASEAN Business Award",
+      "description": "The Myanmar Women Entrepreneurs Network recognized May Hnin Wai of Healthy & Happy Myanmar for her achievement."
     },
     {
       "label": "Award-2",
-      "title": "The Most Responsible Business Award 2022",
-      "description": "An honour celebrating the work of women entrepreneurs creating positive impact for their communities."
+      "title": "Myanmar MSME Award",
+      "description": "A Myanmar-language trophy recognizing achievement in the micro, small, and medium enterprise sector."
     },
-    { "label": "Award-3", "title": "Award Title 3", "description": "Award description 3." },
-    { "label": "Award-4", "title": "Award Title 4", "description": "Award description 4." },
-    { "label": "Award-5", "title": "Award Title 5", "description": "Award description 5." },
-    { "label": "Award-6", "title": "Award Title 6", "description": "Award description 6." },
-    { "label": "Award-7", "title": "Award Title 7", "description": "Award description 7." },
-    { "label": "Award-8", "title": "Award Title 8", "description": "Award description 8." },
-    { "label": "Award-9", "title": "Award Title 9", "description": "Award description 9." },
-    { "label": "Award-10", "title": "Award Title 10", "description": "Award description 10." },
-    { "label": "Award-11", "title": "Award Title 11", "description": "Award description 11." }
+    {
+      "label": "Award-3",
+      "title": "Women-Led SME Resilience Award",
+      "description": "UNDP and UN Women recognized Healthy & Happy Myanmar as a winner in the Capacity Enhancement Fund category of the Resilience for Women-Led SMEs Award."
+    },
+    {
+      "label": "Award-4",
+      "title": "China-ASEAN Silver Award",
+      "description": "Healthy & Happy Myanmar received the Silver Award at the China-ASEAN Expo."
+    },
+    {
+      "label": "Award-5",
+      "title": "MSME Achievement Award",
+      "description": "This Myanmar-language award recognizes achievement in the micro, small, and medium enterprise sector."
+    },
+    {
+      "label": "Award-6",
+      "title": "Responsible Business Award",
+      "description": "The Women Entrepreneurship Program recognized Healthy & Happy Myanmar for responsible business leadership."
+    },
+    {
+      "label": "Award-7",
+      "title": "MSME Development Award",
+      "description": "This award recognizes achievement in Myanmar's micro, small, and medium enterprise sector."
+    },
+    {
+      "label": "Award-8",
+      "title": "Most Promising Cookie Award",
+      "description": "Thone Pan Hla Cookies received the Most Promising Award at the ASEAN-India Grassroots Innovation Forum for its nutritional benefits."
+    },
+    {
+      "label": "Award-9",
+      "title": "ASEAN SME Food Award",
+      "description": "Healthy & Happy Myanmar was recognized in the SME Food and Beverages Sector under the Priority Integration Sector."
+    },
+    {
+      "label": "Award-10",
+      "title": "SME Outstanding Award",
+      "description": "The UMFCCI recognized Healthy & Happy Myanmar with the SME Outstanding Award."
+    },
+    {
+      "label": "Award-11",
+      "title": "Global Food Industry Award",
+      "description": "Healthy & Happy Myanmar won the Global Food Industry Award for Industrialization of a Traditional Food."
+    }
   ],
   "certificateLabels": [
     "Certification 1",

@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useReducedMotion } from "framer-motion";
 import type { Product } from "@/lib/product-catalog";
 
 export function ProductGallery({
@@ -13,6 +14,18 @@ export function ProductGallery({
 }) {
   const [activeImage, setActiveImage] = useState(0);
   const images = [product.image, ...product.thumbnails].slice(0, 3);
+  const shouldReduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    if (shouldReduceMotion || images.length < 2) return;
+
+    const timer = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % images.length);
+    }, 2000);
+
+    return () => window.clearInterval(timer);
+  }, [images.length, shouldReduceMotion]);
+
   return (
     <div className="rounded-3xl border bg-card p-3 shadow-sm sm:p-4">
       <div className="relative mb-4 aspect-square overflow-hidden rounded-2xl bg-[#eef1e8]">

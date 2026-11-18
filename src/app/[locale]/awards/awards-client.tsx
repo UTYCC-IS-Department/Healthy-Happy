@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useRef, useState, type TouchEvent } from "react";
 
 import AwardWheel from "@/components/award-wheel";
 import CertificationBlock from "@/components/certification-block";
@@ -110,13 +110,51 @@ const DOC_PATH =
 /* ── FolderCard ──────────────────────────────────────────────────
    
 ──────────────────────────────────────────────────────────────── */
-function FolderCard({ title, children }: { title: string; children: React.ReactNode }) {
+function FolderCard({
+  title,
+  children,
+  onTap,
+}: {
+  title: string;
+  children: React.ReactNode;
+  onTap: (direction: -1 | 1) => void;
+}) {
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    const touch = event.touches[0];
+    if (touch) touchStart.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start || !window.matchMedia("(max-width: 767px)").matches) return;
+
+    const touch = event.changedTouches[0];
+    if (!touch || Math.abs(touch.clientX - start.x) > 12 || Math.abs(touch.clientY - start.y) > 12) {
+      return;
+    }
+
+    const { left, width } = event.currentTarget.getBoundingClientRect();
+    onTap(touch.clientX < left + width / 2 ? -1 : 1);
+  };
+
   return (
-    <div style={{ position: "relative", paddingBottom: "57%" }}>
+    <div
+      className="relative w-full pb-[57%] xl:pb-[65%]"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={() => {
+        touchStart.current = null;
+      }}
+    >
       {/* SVG backdrop */}
       <svg
         viewBox={FOLDER_VB}
         xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
         style={{ position: "absolute", inset: 0, width: "100%", height: "100%" }}
         aria-hidden="true"
       >
@@ -129,8 +167,8 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
           position: "absolute",
           left: "5%",
           top: "-2%",
-          right: "44%",
-          height: "11%",
+          right: "25%",
+          height: "14%",
           display: "flex",
           alignItems: "center",
           border: "1.5px solid #2dc100",
@@ -144,7 +182,7 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
         <p
           style={{
             margin: 0,
-            fontSize: "clamp(8px, 1.1vw, 12px)",
+            fontSize: "clamp(12px, 1.5vw, 17px)",
             fontWeight: 700,
             color: "#fff",
             lineHeight: 1.3,
@@ -160,16 +198,7 @@ function FolderCard({ title, children }: { title: string; children: React.ReactN
 
       {/* ── Cards row — DocCard + Troph */}
       <div
-        style={{
-          position: "absolute",
-          top: "30%",
-          left: "4%",
-          right: "4%",
-          bottom: "8%",
-          display: "flex",
-          gap: 24,
-          alignItems: "stretch",
-        }}
+        className="absolute inset-x-[4%] top-[22%] bottom-[5%] flex items-stretch gap-[2%] sm:top-[30%] sm:bottom-[8%]"
       >
         {children}
       </div>
@@ -202,26 +231,10 @@ function DocCard({ description }: { description: string }) {
 
       {/* Description text */}
       <div
-        style={{
-          position: "absolute",
-          top: "25%",
-          left: "6%",
-          right: "6%",
-          bottom: "21%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+        className="absolute inset-x-[6%] top-[6%] bottom-[6%] flex items-center justify-center sm:top-[25%] sm:bottom-[21%]"
       >
         <p
-          style={{
-            margin: 0,
-            textAlign: "center",
-            fontSize: "clamp(10px,1.3vw,13px)",
-            fontWeight: 500,
-            lineHeight: 1.5,
-            color: "#f0eae8",
-          }}
+          className="m-0 text-center text-[clamp(11px,3vw,14px)] font-medium leading-[1.2] text-[#f0eae8] sm:text-[clamp(14px,1.7vw,18px)] sm:leading-[1.5]"
         >
           {description}
         </p>
@@ -233,9 +246,46 @@ function DocCard({ description }: { description: string }) {
 /* ── TrophyCard ──────────────────────────────────────────────────
    
 ──────────────────────────────────────────────────────────────── */
-function TrophyCard({ title, awardImage }: { title: string; awardImage: string }) {
+function TrophyCard({
+  title,
+  awardImage,
+  onSwipe,
+}: {
+  title: string;
+  awardImage: string;
+  onSwipe: (direction: -1 | 1) => void;
+}) {
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+
+  const handleTouchStart = (event: TouchEvent<HTMLDivElement>) => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    const touch = event.touches[0];
+    if (touch) touchStart.current = { x: touch.clientX, y: touch.clientY };
+  };
+
+  const handleTouchEnd = (event: TouchEvent<HTMLDivElement>) => {
+    const start = touchStart.current;
+    touchStart.current = null;
+    if (!start || !window.matchMedia("(max-width: 767px)").matches) return;
+
+    const touch = event.changedTouches[0];
+    if (!touch) return;
+
+    const deltaX = touch.clientX - start.x;
+    const deltaY = touch.clientY - start.y;
+    if (Math.abs(deltaX) < 40 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+
+    onSwipe(deltaX < 0 ? 1 : -1);
+  };
+
   return (
     <div
+      className="touch-pan-y md:touch-auto"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={() => {
+        touchStart.current = null;
+      }}
       style={{
         width: "38%",
         flexShrink: 0,
@@ -284,6 +334,8 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
   const [activeAward, setActiveAward] = useState(0);
   const awards = messages.items.map((item, index) => ({ ...item, image: awardImages[index] }));
   const award = awards[activeAward];
+  const navigateAward = (direction: -1 | 1) =>
+    setActiveAward((current) => (current + direction + awards.length) % awards.length);
 
   return (
     <div className="bg-background pb-24">
@@ -298,9 +350,9 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
         <h1 className="text-3xl font-bold text-primary md:text-4xl">{messages.title}</h1>
       </motion.section>
       {/* Awards */}
-      <section className="mx-auto px-4 py-12">
-        <div className="grid items-center gap-10 lg:grid-cols-[minmax(320px,430px)_1fr]">
-          {/* Wheel */}
+      <section className="mx-auto px-4 py-12 xl:px-0">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 lg:grid-cols-[minmax(0,430px)_minmax(0,1fr)] lg:gap-10 xl:max-w-[1440px] xl:grid-cols-[minmax(0,600px)_minmax(0,1fr)] xl:gap-4 xl:-translate-x-12">
+          {/* Award selector */}
           <motion.div
             className="flex justify-center"
             variants={leftVariants}
@@ -308,22 +360,46 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="mx-auto w-full max-w-[430px]">
+            <div className="mx-auto hidden w-full max-w-[520px] md:block xl:max-w-[660px] xl:translate-x-[28%]">
               <AwardWheel awards={awards} activeAward={activeAward} onSelect={setActiveAward} />
             </div>
+            <nav className="w-full md:hidden" aria-label={messages.title}>
+              <div className="flex snap-x snap-mandatory gap-2 overflow-x-auto px-1 pb-3 [scrollbar-width:thin]">
+                {awards.map((item, index) => (
+                  <button
+                    key={item.label}
+                    type="button"
+                    aria-label={`${item.label}: ${item.title}`}
+                    aria-pressed={activeAward === index}
+                    onClick={() => setActiveAward(index)}
+                    className={`shrink-0 snap-start rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+                      activeAward === index
+                        ? "border-primary bg-primary text-white"
+                        : "border-border bg-white text-foreground"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </nav>
           </motion.div>
 
           {/* Folder */}
           <motion.div
-            className="mx-auto w-full w-[640px]  lg:-ml-10 lg:mr-20"
+            className="mx-auto w-full max-w-[640px] min-w-0 xl:max-w-[800px] xl:-translate-x-12"
             variants={rightVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
           >
-            <FolderCard title={award.title}>
+            <FolderCard title={award.title} onTap={navigateAward}>
               <DocCard description={award.description} />
-              <TrophyCard title={award.title} awardImage={award.image} />
+              <TrophyCard
+                title={award.title}
+                awardImage={award.image}
+                onSwipe={navigateAward}
+              />
             </FolderCard>
           </motion.div>
         </div>
@@ -350,7 +426,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {certificationImages.map((certiImage) => (
+          {certificationImages.slice(0, 4).map((certiImage) => (
             <motion.div
               key={certiImage}
               variants={certificationItem}
@@ -369,13 +445,55 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           ))}
         </motion.div>
 
-        <div className="mt-10 flex items-center gap-4 rounded-2xl border bg-white p-5 shadow-sm">
+        <div className="mt-10 flex flex-wrap items-center gap-4 rounded-2xl border bg-white p-5 shadow-sm">
           <Image
             src={assets.fda}
             alt={messages.brandAlt}
             width={48}
             height={48}
             className="size-12 rounded-full border object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-8e4be1da8644c46ad5cd8607a2716c397f089aa4cb712ce44eaee9ab66c7811a_a4a6475e35ae5f8e.png"
+            alt="UMFCCI logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-787609da3f6218cfa5984e6bc0277a127e0f9f667a9316b14eb84fa644a085e4_c07ee3f094c14cfd.png"
+            alt="MSME Myanmar logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-f32ca52d27cf92d32b6573a2a8cbac86e7a50d481a5031b00c90f237e39662cf_d53af37bb8c41c2c.png"
+            alt="Partner organization logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/0-02-06-f62677f3e3a73303469d8bd895df2e34c8195ed32e8b176b6f8f2fcbcca11bc9_d2629094ac8a5b98.png"
+            alt="Food science organization logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/images (6).jpg"
+            alt="University of Technology Yatanarpon Cyber City logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
+          />
+          <Image
+            src="/images/aboutusimg/images (5).png"
+            alt="Information Science and Technology logo"
+            width={48}
+            height={48}
+            className="size-12 object-contain"
           />
 
           <div className="h-1 flex-1 rounded-full bg-secondary/20" />

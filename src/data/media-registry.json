@@ -255,7 +255,7 @@
   {
     "id": "retailer-grand-hantha",
     "name": "Grand Hantha Hospital",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/0-02-06-0081c869d100cea5e8314e68ff3ff8fee68f820a14a8b9160ae2de4316ebba54_8da6e4a081b3780e.png",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 1",
@@ -266,7 +266,7 @@
   {
     "id": "retailer-ko-han-tin",
     "name": "Ko Han Tin Mart",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/where-can-buy-2.jpg",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 2",
@@ -277,7 +277,7 @@
   {
     "id": "retailer-marketplace",
     "name": "Marketplace by City Mart",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/0-02-06-148cb8a4a93783882d617ba16c09fabca8d3fe8737285f5ea48ce83b7cd52b86_c8d94eb471140ef0.png",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 3",
@@ -288,7 +288,7 @@
   {
     "id": "retailer-citymart",
     "name": "City Mart Supermarket",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/0-02-06-f80d7eff451ebd0ec9aa531e6f57b44480689deb6b023afdaad61366dc1825e2_613ea79a2d7c6a29.png",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 4",
@@ -299,7 +299,7 @@
   {
     "id": "retailer-ocean",
     "name": "Ocean Supercenter",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/0-02-06-f75cbaaaeae0d9deac685b66e1dba929c589062a683038155fd66dfe18f4c033_2de47d8255b6161.png",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 5",
@@ -310,7 +310,7 @@
   {
     "id": "retailer-makro",
     "name": "Makro Myanmar",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/0-02-06-0dd40092aef4ecb1563a467854730ff8c79b76e922f8a5d226abefab21049e17_e7f459386a4832d7.png",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 6",
@@ -321,7 +321,7 @@
   {
     "id": "retailer-healthy-happy",
     "name": "Healthy & Happy Flagship",
-    "path": "/healthy-happy/178331480681205_f00f80f8-85f7-42b5-a7d9-da0f853fcfe9_2_1784649192396.png",
+    "path": "/images/aboutusimg/where-can-buy-4.jpg",
     "page": "About Us",
     "section": "Where Can Buy",
     "usage": "Where Can Buy card 7",
@@ -338,6 +338,50 @@
     "usage": "Where Can Buy card 8",
     "component": "WhereCanBuy.tsx",
     "alt": "Myanwen Mart Outlet",
+    "resourceType": "image"
+  },
+  {
+    "id": "retailer-sein-gay-har",
+    "name": "Sein Gay Har",
+    "path": "/images/aboutusimg/where-can-buy-11.jpg",
+    "page": "About Us",
+    "section": "Where Can Buy",
+    "usage": "Where Can Buy card 11",
+    "component": "WhereCanBuy.tsx",
+    "alt": "Sein Gay Har",
+    "resourceType": "image"
+  },
+  {
+    "id": "retailer-life-plus",
+    "name": "Life Plus",
+    "path": "/images/aboutusimg/where-can-buy-10.jpg",
+    "page": "About Us",
+    "section": "Where Can Buy",
+    "usage": "Where Can Buy card 10",
+    "component": "WhereCanBuy.tsx",
+    "alt": "Life Plus",
+    "resourceType": "image"
+  },
+  {
+    "id": "retailer-dmart",
+    "name": "DMart",
+    "path": "/images/aboutusimg/where-can-buy-9.jpg",
+    "page": "About Us",
+    "section": "Where Can Buy",
+    "usage": "Where Can Buy card 9",
+    "component": "WhereCanBuy.tsx",
+    "alt": "D-Mart Aung Pan",
+    "resourceType": "image"
+  },
+  {
+    "id": "retailer-foodland",
+    "name": "Foodland Minimart",
+    "path": "/images/aboutusimg/where-can-buy-8.jpg",
+    "page": "About Us",
+    "section": "Where Can Buy",
+    "usage": "Where Can Buy card 8",
+    "component": "WhereCanBuy.tsx",
+    "alt": "Foodland Minimart",
     "resourceType": "image"
   },
   {
@@ -629,7 +673,7 @@
   {
     "id": "certification-3",
     "name": "Certification 3",
-    "path": "/healthy-happy/certification3.png",
+    "path": "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (5).jpg",
     "page": "Awards",
     "section": "Certifications",
     "usage": "Certification badge 3",
@@ -640,7 +684,7 @@
   {
     "id": "certification-4",
     "name": "Certification 4",
-    "path": "/healthy-happy/certification4.png",
+    "path": "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (12).jpg",
     "page": "Awards",
     "section": "Certifications",
     "usage": "Certification badge 4",
@@ -1069,7 +1113,7 @@
   {
     "id": "wellness-cookies-hero",
     "name": "Wellness Cookies Hero",
-    "path": "/images/wellness-cookies-hero.png",
+    "path": "/healthy-happy/Oat Cookies.png",
     "page": "About Us",
     "section": "Legacy & Gallery",
     "usage": "Gallery and historical photo archive",

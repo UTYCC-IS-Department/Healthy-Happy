@@ -520,7 +520,7 @@ Sustainability Bottom Card
 - sourcePath: messages/en/about.json
 - sectionId: about.sustainability.placeholder
 
-You can add some text here
+Healthy & Happy is committed to sustainability, focusing on responsible sourcing, eco-friendly packaging, and community engagement.
 
 ## about: sustainability.title
 
@@ -560,7 +560,7 @@ Grand Hantha Hospital
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[1]
 
-Shan Ohh Pharmacy
+Shwe Ohh Pharmacy
 
 ## about: whereCanBuy.retailers[10]
 
@@ -590,7 +590,7 @@ Healthy & Happy Store
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[2]
 
-Ko Hin Tin Pharmacy
+Ko Han Tin Pharmacy
 
 ## about: whereCanBuy.retailers[3]
 
@@ -600,7 +600,7 @@ Ko Hin Tin Pharmacy
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[3]
 
-One Stop
+One Stop Mart
 
 ## about: whereCanBuy.retailers[4]
 
@@ -620,7 +620,7 @@ CityMart
 - sourcePath: messages/en/about.json
 - sectionId: about.whereCanBuy.retailers[5]
 
-Oceania Supermarket
+Ocean Supermarket
 
 ## about: whereCanBuy.retailers[6]
 
@@ -1060,7 +1060,7 @@ Certifications
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[0].description
 
-Recognized for outstanding resilience and leadership as a women-led SME, Healthy & Happy Myanmar received this prestigious award in the capacity enhancement fund category.
+The Myanmar Women Entrepreneurs Network recognized May Hnin Wai of Healthy & Happy Myanmar for her achievement.
 
 ## awards: items[0].label
 
@@ -1080,7 +1080,7 @@ Award-1
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[0].title
 
-RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.
+ASEAN Business Award
 
 ## awards: items[1].description
 
@@ -1090,7 +1090,7 @@ RESILIENCE FOR WOMEN LED SMEs AWARD by UNDP, UNWOMEN in 2022.
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[1].description
 
-An honour celebrating the work of women entrepreneurs creating positive impact for their communities.
+A Myanmar-language trophy recognizing achievement in the micro, small, and medium enterprise sector.
 
 ## awards: items[1].label
 
@@ -1110,7 +1110,7 @@ Award-2
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[1].title
 
-The Most Responsible Business Award 2022
+Myanmar MSME Award
 
 ## awards: items[10].description
 
@@ -1120,7 +1120,7 @@ The Most Responsible Business Award 2022
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[10].description
 
-Award description 11.
+Healthy & Happy Myanmar won the Global Food Industry Award for Industrialization of a Traditional Food.
 
 ## awards: items[10].label
 
@@ -1140,7 +1140,7 @@ Award-11
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[10].title
 
-Award Title 11
+Global Food Industry Award
 
 ## awards: items[2].description
 
@@ -1150,7 +1150,7 @@ Award Title 11
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[2].description
 
-Award description 3.
+UNDP and UN Women recognized Healthy & Happy Myanmar as a winner in the Capacity Enhancement Fund category of the Resilience for Women-Led SMEs Award.
 
 ## awards: items[2].label
 
@@ -1170,7 +1170,7 @@ Award-3
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[2].title
 
-Award Title 3
+Women-Led SME Resilience Award
 
 ## awards: items[3].description
 
@@ -1180,7 +1180,7 @@ Award Title 3
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[3].description
 
-Award description 4.
+Healthy & Happy Myanmar received the Silver Award at the China-ASEAN Expo.
 
 ## awards: items[3].label
 
@@ -1200,7 +1200,7 @@ Award-4
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[3].title
 
-Award Title 4
+China-ASEAN Silver Award
 
 ## awards: items[4].description
 
@@ -1210,7 +1210,7 @@ Award Title 4
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[4].description
 
-Award description 5.
+This Myanmar-language award recognizes achievement in the micro, small, and medium enterprise sector.
 
 ## awards: items[4].label
 
@@ -1230,7 +1230,7 @@ Award-5
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[4].title
 
-Award Title 5
+MSME Achievement Award
 
 ## awards: items[5].description
 
@@ -1240,7 +1240,7 @@ Award Title 5
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[5].description
 
-Award description 6.
+The Women Entrepreneurship Program recognized Healthy & Happy Myanmar for responsible business leadership.
 
 ## awards: items[5].label
 
@@ -1260,7 +1260,7 @@ Award-6
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[5].title
 
-Award Title 6
+Responsible Business Award
 
 ## awards: items[6].description
 
@@ -1270,7 +1270,7 @@ Award Title 6
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[6].description
 
-Award description 7.
+This award recognizes achievement in Myanmar's micro, small, and medium enterprise sector.
 
 ## awards: items[6].label
 
@@ -1290,7 +1290,7 @@ Award-7
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[6].title
 
-Award Title 7
+MSME Development Award
 
 ## awards: items[7].description
 
@@ -1300,7 +1300,7 @@ Award Title 7
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[7].description
 
-Award description 8.
+Thone Pan Hla Cookies received the Most Promising Award at the ASEAN-India Grassroots Innovation Forum for its nutritional benefits.
 
 ## awards: items[7].label
 
@@ -1320,7 +1320,7 @@ Award-8
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[7].title
 
-Award Title 8
+Most Promising Cookie Award
 
 ## awards: items[8].description
 
@@ -1330,7 +1330,7 @@ Award Title 8
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[8].description
 
-Award description 9.
+Healthy & Happy Myanmar was recognized in the SME Food and Beverages Sector under the Priority Integration Sector.
 
 ## awards: items[8].label
 
@@ -1350,7 +1350,7 @@ Award-9
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[8].title
 
-Award Title 9
+ASEAN SME Food Award
 
 ## awards: items[9].description
 
@@ -1360,7 +1360,7 @@ Award Title 9
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[9].description
 
-Award description 10.
+The UMFCCI recognized Healthy & Happy Myanmar with the SME Outstanding Award.
 
 ## awards: items[9].label
 
@@ -1380,7 +1380,7 @@ Award-10
 - sourcePath: messages/en/awards.json
 - sectionId: awards.items[9].title
 
-Award Title 10
+SME Outstanding Award
 
 ## awards: title
 
@@ -3766,7 +3766,7 @@ Healthy & Happy
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[0].description
 
-Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆောင် SME အဖြစ် ထူးချွန်သော ခံနိုင်ရည်နှင့် ခေါင်းဆောင်မှုအတွက် အသိအမှတ်ပြုခံရပါသည်။
+Myanmar Women Entrepreneurs Network က Healthy & Happy Myanmar မှ May Hnin Wai ၏ အောင်မြင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။
 
 ## awards: items[0].label
 
@@ -3786,7 +3786,7 @@ Healthy & Happy Myanmar သည် အမျိုးသမီးဦးဆော�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[0].title
 
-UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသမီးဦးဆောင် SME များအတွက် ခံနိုင်ရည်ရှိမှုဆု
+ASEAN Business Award
 
 ## awards: items[1].description
 
@@ -3796,7 +3796,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[1].description
 
-အသိုက်အဝန်းအတွက် အပြုသဘောဆောင်သော အကျိုးသက်ရောက်မှုဖန်တီးနေသည့် အမျိုးသမီးစွန့်ဦးတီထွင်သူများ၏ လုပ်ဆောင်မှုကို ဂုဏ်ပြုသောဆု ဖြစ်ပါသည်။
+အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သည့် မြန်မာဘာသာဖြင့် ရေးသားထားသော ဆုတံဆိပ်ဖြစ်ပါသည်။
 
 ## awards: items[1].label
 
@@ -3816,7 +3816,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[1].title
 
-၂၀၂၂ ခုနှစ် တာဝန်ယူမှုအရှိဆုံး စီးပွားရေးဆု
+မြန်မာ MSME ဆု
 
 ## awards: items[10].description
 
@@ -3826,7 +3826,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[10].description
 
-ဆုဖော်ပြချက် ၁၁
+Healthy & Happy Myanmar သည် ရိုးရာအစားအစာ စက်မှုလုပ်ငန်းဖွံ့ဖြိုးတိုးတက်ရေးအတွက် Global Food Industry Award ရရှိခဲ့ပါသည်။
 
 ## awards: items[10].label
 
@@ -3846,7 +3846,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[10].title
 
-ဆုခေါင်းစဉ် ၁၁
+Global Food Industry Award
 
 ## awards: items[2].description
 
@@ -3856,7 +3856,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[2].description
 
-ဆုဖော်ပြချက် ၃
+UNDP နှင့် UN Women တို့က Healthy & Happy Myanmar ကို Resilience for Women-Led SMEs Award ၏ Capacity Enhancement Fund အမျိုးအစားတွင် ဆုရရှိသူအဖြစ် အသိအမှတ်ပြုခဲ့ပါသည်။
 
 ## awards: items[2].label
 
@@ -3876,7 +3876,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[2].title
 
-ဆုခေါင်းစဉ် ၃
+အမျိုးသမီးဦးဆောင် SME ကြံ့ကြံ့ခံနိုင်မှုဆု
 
 ## awards: items[3].description
 
@@ -3886,7 +3886,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[3].description
 
-ဆုဖော်ပြချက် ၄
+Healthy & Happy Myanmar သည် China-ASEAN Expo တွင် ငွေတံဆိပ်ဆု ရရှိခဲ့ပါသည်။
 
 ## awards: items[3].label
 
@@ -3906,7 +3906,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[3].title
 
-ဆုခေါင်းစဉ် ၄
+China-ASEAN ငွေတံဆိပ်ဆု
 
 ## awards: items[4].description
 
@@ -3916,7 +3916,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[4].description
 
-ဆုဖော်ပြချက် ၅
+အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုအတွက် ချီးမြှင့်သော မြန်မာဘာသာ ဆုဖြစ်ပါသည်။
 
 ## awards: items[4].label
 
@@ -3936,7 +3936,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[4].title
 
-ဆုခေါင်းစဉ် ၅
+MSME ထူးချွန်ဆု
 
 ## awards: items[5].description
 
@@ -3946,7 +3946,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[5].description
 
-ဆုဖော်ပြချက် ၆
+Women Entrepreneurship Program က Healthy & Happy Myanmar ၏ တာဝန်ယူမှုရှိသော စီးပွားရေးလုပ်ဆောင်မှုကို အသိအမှတ်ပြုခဲ့ပါသည်။
 
 ## awards: items[5].label
 
@@ -3966,7 +3966,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[5].title
 
-ဆုခေါင်းစဉ် ၆
+တာဝန်ယူမှုရှိသော စီးပွားရေးဆု
 
 ## awards: items[6].description
 
@@ -3976,7 +3976,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[6].description
 
-ဆုဖော်ပြချက် ၇
+မြန်မာနိုင်ငံ၏ အသေးစား၊ အငယ်စားနှင့် အလတ်စား စီးပွားရေးလုပ်ငန်းကဏ္ဍတွင် အောင်မြင်မှုကို အသိအမှတ်ပြုသည့် ဆုဖြစ်ပါသည်။
 
 ## awards: items[6].label
 
@@ -3996,7 +3996,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[6].title
 
-ဆုခေါင်းစဉ် ၇
+MSME ဖွံ့ဖြိုးရေးဆု
 
 ## awards: items[7].description
 
@@ -4006,7 +4006,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[7].description
 
-ဆုဖော်ပြချက် ၈
+Thone Pan Hla ကွတ်ကီးများသည် ASEAN-India Grassroots Innovation Forum တွင် Most Promising Award ရရှိခဲ့ပါသည်။
 
 ## awards: items[7].label
 
@@ -4026,7 +4026,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[7].title
 
-ဆုခေါင်းစဉ် ၈
+အလားအလာအကောင်းဆုံး ကွတ်ကီးဆု
 
 ## awards: items[8].description
 
@@ -4036,7 +4036,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[8].description
 
-ဆုဖော်ပြချက် ၉
+Healthy & Happy Myanmar သည် Priority Integration Sector အောက်ရှိ SME Food and Beverages Sector ကဏ္ဍတွင် အသိအမှတ်ပြုခံခဲ့ရပါသည်။
 
 ## awards: items[8].label
 
@@ -4056,7 +4056,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[8].title
 
-ဆုခေါင်းစဉ် ၉
+ASEAN SME အစားအသောက်ဆု
 
 ## awards: items[9].description
 
@@ -4066,7 +4066,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[9].description
 
-ဆုဖော်ပြချက် ၁၀
+UMFCCI က Healthy & Happy Myanmar အား SME Outstanding Award ချီးမြှင့်ခဲ့ပါသည်။
 
 ## awards: items[9].label
 
@@ -4086,7 +4086,7 @@ UNDP နှင့် UNWOMEN တို့၏ ၂၀၂၂ အမျိုးသ�
 - sourcePath: messages/my/awards.json
 - sectionId: awards.items[9].title
 
-ဆုခေါင်းစဉ် ၁၀
+SME ထူးချွန်ဆု
 
 ## awards: title
 
