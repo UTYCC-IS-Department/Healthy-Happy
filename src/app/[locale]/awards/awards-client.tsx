@@ -6,6 +6,7 @@ import { useRef, useState, type TouchEvent } from "react";
 import AwardWheel from "@/components/award-wheel";
 import CertificationBlock from "@/components/certification-block";
 import { assets } from "@/lib/site-data";
+import { cloudinaryImage } from "@/lib/cloudinary";
 import type { AwardsMessages } from "@/i18n/message-types";
 import { motion, type Variants } from "framer-motion";
 
@@ -133,7 +134,11 @@ function FolderCard({
     if (!start || !window.matchMedia("(max-width: 767px)").matches) return;
 
     const touch = event.changedTouches[0];
-    if (!touch || Math.abs(touch.clientX - start.x) > 12 || Math.abs(touch.clientY - start.y) > 12) {
+    if (
+      !touch ||
+      Math.abs(touch.clientX - start.x) > 12 ||
+      Math.abs(touch.clientY - start.y) > 12
+    ) {
       return;
     }
 
@@ -197,9 +202,7 @@ function FolderCard({
       </div>
 
       {/* ── Cards row — DocCard + Troph */}
-      <div
-        className="absolute inset-x-[4%] top-[22%] bottom-[5%] flex items-stretch gap-[2%] sm:top-[30%] sm:bottom-[8%]"
-      >
+      <div className="absolute inset-x-[4%] top-[22%] bottom-[5%] flex items-stretch gap-[2%] sm:top-[30%] sm:bottom-[8%]">
         {children}
       </div>
     </div>
@@ -230,12 +233,8 @@ function DocCard({ description }: { description: string }) {
       </svg>
 
       {/* Description text */}
-      <div
-        className="absolute inset-x-[6%] top-[6%] bottom-[6%] flex items-center justify-center sm:top-[25%] sm:bottom-[21%]"
-      >
-        <p
-          className="m-0 text-center text-[clamp(11px,3vw,14px)] font-medium leading-[1.2] text-[#f0eae8] sm:text-[clamp(14px,1.7vw,18px)] sm:leading-[1.5]"
-        >
+      <div className="absolute inset-x-[6%] top-[6%] bottom-[6%] flex items-center justify-center sm:top-[25%] sm:bottom-[21%]">
+        <p className="m-0 text-center text-[clamp(11px,3vw,14px)] font-medium leading-[1.2] text-[#f0eae8] sm:text-[clamp(14px,1.7vw,18px)] sm:leading-[1.5]">
           {description}
         </p>
       </div>
@@ -395,11 +394,7 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
           >
             <FolderCard title={award.title} onTap={navigateAward}>
               <DocCard description={award.description} />
-              <TrophyCard
-                title={award.title}
-                awardImage={award.image}
-                onSwipe={navigateAward}
-              />
+              <TrophyCard title={award.title} awardImage={award.image} onSwipe={navigateAward} />
             </FolderCard>
           </motion.div>
         </div>
@@ -454,42 +449,50 @@ export default function AwardsClient({ messages }: { messages: AwardsMessages })
             className="size-12 rounded-full border object-contain"
           />
           <Image
-            src="/images/aboutusimg/0-02-06-8e4be1da8644c46ad5cd8607a2716c397f089aa4cb712ce44eaee9ab66c7811a_a4a6475e35ae5f8e.png"
+            src={cloudinaryImage(
+              "/images/aboutusimg/0-02-06-8e4be1da8644c46ad5cd8607a2716c397f089aa4cb712ce44eaee9ab66c7811a_a4a6475e35ae5f8e.png",
+            )}
             alt="UMFCCI logo"
             width={48}
             height={48}
             className="size-12 object-contain"
           />
           <Image
-            src="/images/aboutusimg/0-02-06-787609da3f6218cfa5984e6bc0277a127e0f9f667a9316b14eb84fa644a085e4_c07ee3f094c14cfd.png"
+            src={cloudinaryImage(
+              "/images/aboutusimg/0-02-06-787609da3f6218cfa5984e6bc0277a127e0f9f667a9316b14eb84fa644a085e4_c07ee3f094c14cfd.png",
+            )}
             alt="MSME Myanmar logo"
             width={48}
             height={48}
             className="size-12 object-contain"
           />
           <Image
-            src="/images/aboutusimg/0-02-06-f32ca52d27cf92d32b6573a2a8cbac86e7a50d481a5031b00c90f237e39662cf_d53af37bb8c41c2c.png"
+            src={cloudinaryImage(
+              "/images/aboutusimg/0-02-06-f32ca52d27cf92d32b6573a2a8cbac86e7a50d481a5031b00c90f237e39662cf_d53af37bb8c41c2c.png",
+            )}
             alt="Partner organization logo"
             width={48}
             height={48}
             className="size-12 object-contain"
           />
           <Image
-            src="/images/aboutusimg/0-02-06-f62677f3e3a73303469d8bd895df2e34c8195ed32e8b176b6f8f2fcbcca11bc9_d2629094ac8a5b98.png"
+            src={cloudinaryImage(
+              "/images/aboutusimg/0-02-06-f62677f3e3a73303469d8bd895df2e34c8195ed32e8b176b6f8f2fcbcca11bc9_d2629094ac8a5b98.png",
+            )}
             alt="Food science organization logo"
             width={48}
             height={48}
             className="size-12 object-contain"
           />
           <Image
-            src="/images/aboutusimg/images (6).jpg"
+            src={cloudinaryImage("/images/aboutusimg/images (6).jpg")}
             alt="University of Technology Yatanarpon Cyber City logo"
             width={48}
             height={48}
             className="size-12 object-contain"
           />
           <Image
-            src="/images/aboutusimg/images (5).png"
+            src={cloudinaryImage("/images/aboutusimg/images (5).png")}
             alt="Information Science and Technology logo"
             width={48}
             height={48}

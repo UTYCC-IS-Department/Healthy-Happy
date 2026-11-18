@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs/promises";
 import path from "path";
 import crypto from "crypto";
+import { getPublicId } from "@/lib/cloudinary";
 
 const CLOUD_NAME = process.env.CLOUDINARY_CLOUD_NAME || "dh6jges3r";
 const API_KEY = process.env.CLOUDINARY_API_KEY || "953391144947254";
@@ -10,16 +11,25 @@ const API_SECRET = process.env.CLOUDINARY_API_SECRET || "sibJ3V6IsIo0EmH9_Kxmaov
 async function uploadLocalFileToCloudinary(relativePath: string) {
   const cleanPath = relativePath.replace(/^\//, "");
   const fullDiskPath = path.join(process.cwd(), "public", cleanPath);
+  const isVideo = /\.(mp4|webm|mov)$/i.test(cleanPath);
+  const resourceType = isVideo ? "video" : "image";
+  const publicId = getPublicId(relativePath, resourceType);
 
   try {
-    const buffer = await fs.readFile(fullDiskPath);
+    let buffer: Buffer;
+    try {
+      buffer = await fs.readFile(fullDiskPath);
+    } catch {
+      // Check if already exists on Cloudinary
+      const checkUrl = `https://res.cloudinary.com/${CLOUD_NAME}/${resourceType}/upload/${publicId}`;
+      const cldCheck = await fetch(checkUrl, { method: "HEAD" });
+      if (cldCheck.ok) {
+        return { ok: true, publicId, url: checkUrl };
+      }
+      return { ok: false, error: "File not found locally or on Cloudinary" };
+    }
+
     const ext = path.extname(cleanPath) || ".jpg";
-    const baseName = path.basename(cleanPath, ext);
-
-    const relativeWithoutExt = cleanPath.replace(/\.[^/.]+$/, "");
-    const safePath = relativeWithoutExt.replace(/[^A-Za-z0-9/_-]+/g, "-");
-    const publicId = `healthy-happy-site/images/${safePath}`;
-
     const timestamp = Math.floor(Date.now() / 1000);
     const paramsToSign: Record<string, string | number> = {
       public_id: publicId,
@@ -30,7 +40,13 @@ async function uploadLocalFileToCloudinary(relativePath: string) {
     const stringToSign = sortedKeys.map((k) => `${k}=${paramsToSign[k]}`).join("&") + API_SECRET;
     const signature = crypto.createHash("sha1").update(stringToSign).digest("hex");
 
-    const mime = ext === ".png" ? "image/png" : ext === ".webp" ? "image/webp" : "image/jpeg";
+    const mime = isVideo
+      ? "video/mp4"
+      : ext === ".png"
+        ? "image/png"
+        : ext === ".webp"
+          ? "image/webp"
+          : "image/jpeg";
     const base64DataUri = `data:${mime};base64,${buffer.toString("base64")}`;
 
     const uploadBody = new URLSearchParams();
@@ -40,10 +56,13 @@ async function uploadLocalFileToCloudinary(relativePath: string) {
     uploadBody.append("api_key", API_KEY);
     uploadBody.append("signature", signature);
 
-    const cldRes = await fetch(`https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`, {
-      method: "POST",
-      body: uploadBody,
-    });
+    const cldRes = await fetch(
+      `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/${resourceType}/upload`,
+      {
+        method: "POST",
+        body: uploadBody,
+      },
+    );
 
     if (cldRes.ok) {
       const data = await cldRes.json();
@@ -60,17 +79,16 @@ async function uploadLocalFileToCloudinary(relativePath: string) {
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const paths: string[] = Array.isArray(body.paths)
-      ? body.paths
-      : body.path
-      ? [body.path]
-      : [];
+    const paths: string[] = Array.isArray(body.paths) ? body.paths : body.path ? [body.path] : [];
 
     if (paths.length === 0) {
       return NextResponse.json({ success: false, error: "No paths provided" }, { status: 400 });
     }
 
-    const results: Record<string, { ok: boolean; publicId?: string; url?: string; error?: string }> = {};
+    const results: Record<
+      string,
+      { ok: boolean; publicId?: string; url?: string; error?: string }
+    > = {};
 
     for (const p of paths) {
       results[p] = await uploadLocalFileToCloudinary(p);
@@ -84,9 +102,6 @@ export async function POST(request: Request) {
       results,
     });
   } catch (error) {
-    return NextResponse.json(
-      { success: false, error: (error as Error).message },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, error: (error as Error).message }, { status: 500 });
   }
 }

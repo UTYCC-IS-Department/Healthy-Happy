@@ -19,21 +19,27 @@ export async function GET() {
 
     try {
       const files = await fs.readdir(aboutUsDir);
-      aboutUsFiles = files.filter((f) => /\.(jpg|jpeg|png|webp|svg)$/i.test(f)).map((f) => `/images/aboutusimg/${f}`);
+      aboutUsFiles = files
+        .filter((f) => /\.(jpg|jpeg|png|webp|svg)$/i.test(f))
+        .map((f) => `/images/aboutusimg/${f}`);
     } catch {
       // ignore if missing
     }
 
     try {
       const files = await fs.readdir(healthyHappyDir);
-      healthyHappyFiles = files.filter((f) => /\.(jpg|jpeg|png|webp|svg)$/i.test(f)).map((f) => `/healthy-happy/${f}`);
+      healthyHappyFiles = files
+        .filter((f) => /\.(jpg|jpeg|png|webp|svg)$/i.test(f))
+        .map((f) => `/healthy-happy/${f}`);
     } catch {
       // ignore if missing
     }
 
-    const availableLocalPaths = [...aboutUsFiles, ...healthyHappyFiles];
-    const registeredPaths = new Set(items.map((i) => i.path));
-    const unregisteredPaths = availableLocalPaths.filter((p) => !registeredPaths.has(p));
+    const registeredPaths = Array.from(new Set(items.map((i) => i.path)));
+    const availableLocalPaths = Array.from(
+      new Set([...aboutUsFiles, ...healthyHappyFiles, ...registeredPaths]),
+    );
+    const unregisteredPaths = availableLocalPaths.filter((p) => !new Set(registeredPaths).has(p));
 
     return NextResponse.json({
       success: true,
@@ -44,10 +50,7 @@ export async function GET() {
       sections: Array.from(new Set(items.map((i) => i.section))),
     });
   } catch (error) {
-    return NextResponse.json(
-      { success: false, error: (error as Error).message },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, error: (error as Error).message }, { status: 500 });
   }
 }
 
@@ -59,7 +62,7 @@ export async function POST(request: Request) {
     if (!Array.isArray(items)) {
       return NextResponse.json(
         { success: false, error: "Items must be an array" },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -72,9 +75,6 @@ export async function POST(request: Request) {
       count: items.length,
     });
   } catch (error) {
-    return NextResponse.json(
-      { success: false, error: (error as Error).message },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, error: (error as Error).message }, { status: 500 });
   }
 }

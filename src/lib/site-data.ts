@@ -21,9 +21,18 @@ const productImage6 = mediaUrl("product-6", "/healthy-happy/Oat Cookies.png");
 const productImage7 = mediaUrl("product-7", "/healthy-happy/Protein Bite (Diabetes).png");
 const productImage8 = mediaUrl("product-8", "/healthy-happy/Beetroot-Cookies.png");
 const productImage9 = mediaUrl("product-9", "/healthy-happy/Cinnamon-Cookies.jpg");
-const lavashImage = mediaUrl("product-lavash", "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/lavash_s7u4xi.jpg");
-const nutsCakeImage = mediaUrl("product-nuts-cake", "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/Nut_cakes_y0cwog.jpg");
-const nutsCookiesImage = mediaUrl("product-nuts-cookies", "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821590/nut_cookies_a4ivnc.jpg");
+const lavashImage = mediaUrl(
+  "product-lavash",
+  "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/lavash_s7u4xi.jpg",
+);
+const nutsCakeImage = mediaUrl(
+  "product-nuts-cake",
+  "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/Nut_cakes_y0cwog.jpg",
+);
+const nutsCookiesImage = mediaUrl(
+  "product-nuts-cookies",
+  "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821590/nut_cookies_a4ivnc.jpg",
+);
 
 export const productMedia: ProductMedia[] = [
   ["protein-bite-original", productImage1],
@@ -48,7 +57,10 @@ export const productMedia: ProductMedia[] = [
 
 export const assets = {
   logo: mediaUrl("site-logo", "/healthy-happy/Healthy_&_Happy_Myanmar_Logo_1_1784649192455.png"),
-  banner: mediaUrl("site-banner", "/healthy-happy/Healthy_and_Happy_Products_(1)_1_1784649192453.png"),
+  banner: mediaUrl(
+    "site-banner",
+    "/healthy-happy/Healthy_and_Happy_Products_(1)_1_1784649192453.png",
+  ),
   fda: mediaUrl("site-fda", "/healthy-happy/MOHAS.png"),
   product: productImage1,
 
@@ -66,9 +78,15 @@ export const assets = {
 
   certification1: mediaUrl("certification-1", "/healthy-happy/certification1.png"),
   certification2: mediaUrl("certification-2", "/healthy-happy/certification2.jpg"),
-  certification3: mediaUrl("certification-3", "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (5).jpg"),
-  certification4: mediaUrl("certification-4", "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (12).jpg"),
-  certification5: mediaUrl("certification-5", "/healthy-happy/certification5.png"),
+  certification3: mediaUrl(
+    "certification-3",
+    "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (5).jpg",
+  ),
+  certification4: mediaUrl(
+    "certification-4",
+    "/images/aboutusimg/ASEAN_INDIAGRASSROOTFORUM_PHOTOS (12).jpg",
+  ),
+  certification5: mediaUrl("certification-5", "/healthy-happy/certification2.jpg"),
   certification6: "/healthy-happy/certification6.png",
   certification7: "/healthy-happy/certification7.png",
   certification8: "/healthy-happy/certification8.png",
