@@ -9,6 +9,8 @@ import type { Locale, Product, ProductListMessages } from "@/lib/product-catalog
 import { assets } from "@/lib/site-data";
 import { motion } from "framer-motion";
 
+const SERIES_ORDER = ["protein-series", "sugar-free-series", "low-calories-series"] as const;
+
 export function ProductsClient({
   locale,
   products,
@@ -20,34 +22,42 @@ export function ProductsClient({
 }) {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
-  const seriesCategories = useMemo(
-    () => new Set(products.map((product) => product.series)),
-    [products],
-  );
-  const categories = useMemo(
-    () => [
-      ...new Set([
-        ...products.flatMap((product) =>
-          product.tags.filter((tag) => !seriesCategories.has(tag)),
-        ),
-        ...seriesCategories,
-      ]),
-    ],
-    [products, seriesCategories],
-  );
+
+  const seriesOptions = useMemo(() => {
+    const labelBySlug = new Map<string, string>();
+    for (const product of products) {
+      if (!labelBySlug.has(product.series)) {
+        labelBySlug.set(product.series, product.seriesLabel || product.series);
+      }
+    }
+    for (const cat of messages.categories ?? []) {
+      if (!labelBySlug.has(cat.id)) {
+        labelBySlug.set(cat.id, cat.name);
+      }
+    }
+    const orderedSlugs = [
+      ...SERIES_ORDER.filter((slug) => labelBySlug.has(slug)),
+      ...[...labelBySlug.keys()].filter(
+        (slug) => !SERIES_ORDER.includes(slug as (typeof SERIES_ORDER)[number]),
+      ),
+    ];
+    return orderedSlugs.map((slug) => ({
+      id: slug,
+      label: labelBySlug.get(slug) || slug,
+    }));
+  }, [products, messages.categories]);
+
   const normalizedSearch = search.trim().toLocaleLowerCase();
   const filtered = products.filter((product) => {
     const matchesSearch =
       !normalizedSearch ||
       product.name.toLocaleLowerCase().includes(normalizedSearch) ||
-      product.series.toLocaleLowerCase().includes(normalizedSearch);
-    const matchesCategory =
-      !activeCategory ||
-      (seriesCategories.has(activeCategory)
-        ? product.series === activeCategory
-        : product.tags.includes(activeCategory));
+      product.series.toLocaleLowerCase().includes(normalizedSearch) ||
+      (product.seriesLabel?.toLocaleLowerCase().includes(normalizedSearch) ?? false);
+    const matchesCategory = !activeCategory || product.series === activeCategory;
     return matchesSearch && matchesCategory;
   });
+
   const hasActiveFilters = Boolean(search.trim() || activeCategory);
   const resultCount = messages.resultsCount.replace("{count}", String(filtered.length));
 
@@ -119,15 +129,15 @@ export function ProductsClient({
                 >
                   {messages.allCategories}
                 </button>
-                {categories.map((category) => (
+                {seriesOptions.map((series) => (
                   <button
-                    key={category}
+                    key={series.id}
                     type="button"
-                    aria-pressed={activeCategory === category}
-                    onClick={() => setActiveCategory(category)}
-                    className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors duration-200 active:scale-95 ${activeCategory === category ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
+                    aria-pressed={activeCategory === series.id}
+                    onClick={() => setActiveCategory(series.id)}
+                    className={`shrink-0 rounded-full border px-4 py-2 text-sm font-semibold transition-colors duration-200 active:scale-95 ${activeCategory === series.id ? "border-primary bg-primary text-white" : "bg-background text-foreground hover:border-primary"}`}
                   >
-                    {category}
+                    {series.label}
                   </button>
                 ))}
               </div>

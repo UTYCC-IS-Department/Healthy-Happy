@@ -82,7 +82,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
 
       <div className="w-full h-3 sm:h-4 md:h-5 bg-[#16b300]" />
 
-      <CoreIdentity messages={messages.coreIdentity} />
+      <CoreIdentity messages={messages.coreIdentity} headline={messages.headline} />
 
       <Sustainability messages={messages.sustainability} />
 

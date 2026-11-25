@@ -9,49 +9,145 @@ export { hasLocale, locales, type Locale };
 export type ProductListMessages = typeof product;
 export type ProductDetailMessages = typeof productDetail;
 
-export type ProductId = keyof ProductListMessages["products"];
+type RawProductItem = {
+  id: string;
+  name?: string;
+  pcs?: string;
+  series?: string;
+  seriesLabel?: string;
+  highlight?: string;
+  tags?: string[];
+  description?: string;
+  price?: string;
+};
+
+type RawDetailEntry = {
+  ingredients?: string;
+  [key: string]: unknown;
+};
+
+type ProductListingRecord = Record<string, RawProductItem>;
+type ProductDetailRecord = Record<string, RawDetailEntry>;
+
+export type ProductId = string;
 export type Product = ProductMedia & {
   id: ProductId;
   name: string;
+  pcs?: string;
   series: string;
+  seriesLabel?: string;
+  highlight?: string;
   description: string;
   ingredients: string;
   tags: string[];
   price: string;
 };
 
-export function buildLocalizedProducts(product: ProductListMessages, productDetail: ProductDetailMessages): Product[] {
-  assertCatalogIntegrity(product, productDetail);
+function normalizeListingMap(msg: ProductListMessages): ProductListingRecord {
+  const raw = msg as unknown as {
+    products?: ProductListingRecord;
+    items?: RawProductItem[];
+  };
 
-  return productMedia.map((media) => {
-    const id = media.id as ProductId;
-    const listing = product.products[id];
-    const detail = productDetail.products[id];
+  if (raw?.products && typeof raw.products === "object") {
+    return raw.products;
+  }
+
+  const map: ProductListingRecord = {};
+  if (Array.isArray(raw?.items)) {
+    for (const item of raw.items) {
+      if (item?.id) {
+        map[item.id] = item;
+      }
+    }
+  }
+  return map;
+}
+
+function normalizeDetailMap(msg: ProductDetailMessages): ProductDetailRecord {
+  const raw = msg as unknown as {
+    products?: ProductDetailRecord;
+    items?: Array<{ id: string; ingredients?: string; [key: string]: unknown }>;
+  };
+
+  if (raw?.products && typeof raw.products === "object") {
+    return raw.products;
+  }
+
+  const map: ProductDetailRecord = {};
+  if (Array.isArray(raw?.items)) {
+    for (const item of raw.items) {
+      if (item?.id) {
+        map[item.id] = item;
+      }
+    }
+  }
+  return map;
+}
+
+export function assertCatalogIntegrity(
+  productMsg: ProductListMessages,
+  productDetailMsg: ProductDetailMessages,
+): void {
+  const listingMap = normalizeListingMap(productMsg);
+  const detailMap = normalizeDetailMap(productDetailMsg);
+
+  const listingKeys = listingMap && typeof listingMap === "object" ? Object.keys(listingMap) : [];
+  const detailKeys = detailMap && typeof detailMap === "object" ? Object.keys(detailMap) : [];
+
+  if (process.env.NODE_ENV === "development") {
+    if (listingKeys.length === 0) {
+      console.warn("[product-catalog] No product listing items found.");
+    }
+    if (detailKeys.length === 0) {
+      console.warn("[product-catalog] No product detail items found.");
+    }
+  }
+}
+
+export function buildLocalizedProducts(
+  productMsg: ProductListMessages,
+  productDetailMsg: ProductDetailMessages,
+): Product[] {
+  assertCatalogIntegrity(productMsg, productDetailMsg);
+
+  const listingMap = normalizeListingMap(productMsg);
+  const detailMap = normalizeDetailMap(productDetailMsg);
+
+  const safeMedia = Array.isArray(productMedia) ? productMedia : [];
+  const seenIds = new Set<string>();
+  const uniqueMedia = safeMedia.filter((m) => {
+    if (!m?.id || seenIds.has(m.id)) return false;
+    seenIds.add(m.id);
+    return true;
+  });
+
+  return uniqueMedia.map((media) => {
+    const id = media.id;
+    const listing = listingMap[id] ?? { id };
+    const detail = detailMap[id] ?? {};
+    const mediaAlt = (media as ProductMedia & { alt?: string }).alt;
 
     return {
       ...media,
       id,
-      ...listing,
-      ingredients: detail.ingredients,
+      name: listing.name ?? mediaAlt ?? id,
+      pcs: listing.pcs ?? "",
+      series: listing.series ?? listing.seriesLabel ?? "",
+      seriesLabel: listing.seriesLabel,
+      highlight: listing.highlight ?? "",
+      description: listing.description ?? "",
+      ingredients: typeof detail.ingredients === "string" ? detail.ingredients : "",
+      tags: Array.isArray(listing.tags) ? listing.tags : [],
+      price: listing.price ?? "",
     };
   });
 }
 
 export function getLocalizedProduct(
-  product: ProductListMessages,
-  productDetail: ProductDetailMessages,
+  productMsg: ProductListMessages,
+  productDetailMsg: ProductDetailMessages,
   id: string,
 ) {
-  return buildLocalizedProducts(product, productDetail).find((item) => item.id === id);
-}
-
-function assertCatalogIntegrity(product: ProductListMessages, productDetail: ProductDetailMessages) {
-  const listingIds = Object.keys(product.products);
-  const detailIds = Object.keys(productDetail.products);
-  if (listingIds.length !== detailIds.length || listingIds.some((id) => !(id in productDetail.products))) {
-    throw new Error("Product and product-detail resources must have matching product IDs");
-  }
-  for (const media of productMedia) {
-    if (!(media.id in product.products)) throw new Error(`Missing product copy for media ID ${media.id}`);
-  }
+  return buildLocalizedProducts(productMsg, productDetailMsg).find((item) => item.id === id);
 }

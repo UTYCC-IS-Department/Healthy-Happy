@@ -17,6 +17,39 @@ import type { HomeMessages } from "@/i18n/message-types";
 import "swiper/css";
 import "swiper/css/navigation";
 
+type ProductCopyEntry = {
+  id: string;
+  name?: string;
+  pcs?: string;
+  series?: string;
+  seriesLabel?: string;
+  highlight?: string;
+  tags?: string[];
+  description?: string;
+  price?: string;
+};
+
+function getProductCopyMap(rawProductJson: unknown): Record<string, ProductCopyEntry> {
+  const data = rawProductJson as {
+    products?: Record<string, ProductCopyEntry>;
+    items?: ProductCopyEntry[];
+  };
+
+  if (data?.products && typeof data.products === "object") {
+    return data.products;
+  }
+
+  const map: Record<string, ProductCopyEntry> = {};
+  if (Array.isArray(data?.items)) {
+    for (const item of data.items) {
+      if (item?.id) {
+        map[item.id] = item;
+      }
+    }
+  }
+  return map;
+}
+
 export function ProductCarousel({
   locale,
   messages,
@@ -27,10 +60,17 @@ export function ProductCarousel({
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const shouldReduceMotion = useReducedMotion();
   const productMessages = locale === "my" ? myProduct : enProduct;
-  const products = productMedia.map((media) => ({
-    ...media,
-    ...productMessages.products[media.id as keyof typeof enProduct.products],
-  }));
+  const copyMap = getProductCopyMap(productMessages);
+
+  const products = productMedia.map((media) => {
+    const copy = copyMap[media.id] ?? {};
+    return {
+      ...media,
+      ...copy,
+      name: copy.name ?? media.id,
+      description: copy.description ?? "",
+    };
+  });
 
   return (
     <div className="relative mx-auto max-w-6xl px-4 sm:px-10">
