@@ -13,90 +13,185 @@
   "newsText": "Check Out news for last updated products",
   "newsAction": "Check out updated news",
   "bestSeller": "Best Seller",
-  "products": {
-    "protein-bite-original": {
-      "name": "Protein Bite",
-      "series": "Protein Series",
-      "description": "Intend for people who cannot eat well in covid-19 pandemic",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Protein Series"]
+  "categories": [
+    {
+      "id": "protein-series",
+      "name": "Protein Series"
     },
-    "protein-bite-diabetes": {
-      "name": "Protein Bite (Diabetes)",
-      "series": "Protein Series",
-      "description": "Whether concerned about blood sugar spikes due to frequent hunger, including as a protein source in your pre- or post-workout meal plan, avoiding sugar for health reasons, hitting the gym, following a vegetarian diet, managing your weight and seeking extra protein, or recovering from illness and needing additional nourishment, Healthy & Happy Protein Bite (Diabetes) makes meeting your daily protein needs easy and convenient—no calculations or meal prep required. Created with a heartfelt mission to support the nutritional needs of people across Myanmar.\n\nEach Healthy & Happy Protein Bite (Diabetes) delivers 4 g of plant-based protein from locally sourced ingredients, including peanuts, oats, whole wheat, and chickpeas. Created under the guidance of a nutrition professional, these cookies provide a simple and convenient way to boost your daily protein intake without the hassle of cooking or preparing meals.\n\nWith its warm, inviting peanut aroma that feels like coming home, every bite offers a naturally rich, nutty flavor that leaves you feeling satisfied, nourished, and comfortably full.\n\nNutritional value per cookie is clearly stated on the product packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Protein Series"]
+    {
+      "id": "sugar-free-series",
+      "name": "Sugar Free Series"
     },
-    "peanut-butter-no-sugar": {
-      "name": "Peanut Butter",
-      "series": "Protein Series",
-      "description": "Whether you need an extra source of protein, want to fuel your pre- or post-workout nutrition, or simply crave a satisfying snack any time of day, Healthy & Happy Sugar-Free Peanut Butter is a convenient and delicious choice. As Myanmar’s first sugar-free peanut butter, it offers a naturally nutty treat without added sugar, making it a suitable option for people managing their blood sugar levels, including those living with diabetes and cancer patients, including children.\n\nMade from locally sourced peanuts, Healthy & Happy  Peanut Butter delivers 7 g of plant-based protein per tablespoon while preserving the peanuts’ natural aroma, flavor, and color. Crafted under the supervision of a nutritionist, it contains no artificial sweeteners or thickeners and supports local farmers by creating additional income opportunities.\n\nNutritional value per tablespoon is provided on the product label.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Protein Series"]
-    },
-    "iron-enriched-cookies": {
-      "name": "Thone Pan Hla - Iron Enriched Cookies",
-      "series": "Original Series",
-      "description": "Made primarily from two valuable traditional grains, common millet and Italian millet, cultivated in Myanmar’s dry zone and mountainous regions, Healthy & Happy Thone Pan Hal Cookies were specially developed to help meet the nutritional needs of pregnant women, breastfeeding mothers, and young children in Myanmar.\n\nDeveloped under the supervision of a nutritionist, Healthy & Happy Thone Pan Hla Cookies combine common millet and Italian millet, two valuable locally grown grains from Myanmar, with chickpeas and cashew nuts to create a tasty, nourishing snack, thoughtfully crafted to help provide iron and protein, designing  with the nutritional needs of pregnant women, breastfeeding mothers, young children, and people living with diabetes or cancer.\n\nBeyond nutrition, every cookie supports a meaningful purpose by creating better employment and income opportunities for local farmers.\n\nNutrition value per piece is provided on packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
-    },
-    "energy-bar": {
-      "name": "Energy Bar",
-      "series": "Protein Series",
-      "description": "Whether busy with work and have irregular meal times, traveling, looking for a boost in stamina and focus during your workouts, or searching for a protein-rich snack to keep you feeling full while managing your weight, those who often feel hungry, want a nutritious snack, or concerned about blood sugar spikes, Healthy & Happy Energy Bar is the perfect easy to store, easy to carry, and easy to enjoy, on-the-go choice.\n\nDeveloped from nutrient-rich nuts and seeds, such as ............., under the supervision of a nutritionist, each bar delivers 7 g of plant-based protein to help keep you feeling satisfied for up to 6 hours. It’s a nourishing choice for those who tend to feel hungry frequently or are looking to manage their weight.\n\nWith no added sugar, artificial sweeteners, or preservatives, it’s a mindful snacking option for anyone seeking to reduce sugar intake and embrace healthier eating habits.\n\nNutritional value for each bar is provided on the packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
-    },
-    "spinach-cookies": {
-      "name": "Spinach Diabetes Cookies",
-      "series": "Original Series",
-      "description": "Made with real spinach, our innovative spinach cookies transform an everyday vegetable into a delicious, value-added snack.\n\nCarefully Crafted under the supervision of a nutritionist, our cookies are thoughtfully developed  with whole wheat, oats, real spinach, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives for health-conscious consumers, as well as families looking for more wholesome treats for their children.\n\nDesigned with calorie-conscious snacking in mind, every bite delivers a naturally delicious aroma, a delightful crunch, and the benefits of vegetables in one tasty bite.\n\nNutrition value per cookie is clearly stated on the product packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Protein Series"]
-    },
-    "oat-cookies": {
-      "name": "Oat Diabetes Cookies",
-      "series": "Original Series",
-      "description": "For those who want to feel fuller with smaller portions while managing their weight, enjoy delicious treats without sacrificing taste, snack mindfully without feeling guilty, and choose a fiber-rich snack to help stay full longer, Healthy & Happy Oat Cookies are a deliciously satisfying and smarter way to snack.\n\nNot only with the simple goodness of oats with a gentle sweetness and a rich, buttery taste, but also made with whole wheat and unsalted butter under the supervision of a nutritionist, every bite delivers a uniquely crispy crunch that keeps you coming back for more.\n\npacked with fibers to help you feel fuller for longer, these cookies are the perfect choice for mindful snackers who want to manage their portions and enjoy delicious treats without compromising on taste.\n\nEven better, they contain no added sugar, artificial sweeteners, or preservatives, making them a thoughtful snack choice for health-conscious individuals and families, including children.\n\nNutritional value per cookie is clearly stated on the product packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
-    },
-    "cinnamon-cookies": {
-      "name": "Cinnamon Cookies",
-      "series": "Original Series",
-      "description": "Our Healthy & Happy's Cinnamon Cookies bring together the distinctive flavor of cinnamon and wholesome ingredients to give you \"the full feeling of goodness, healthiness, and balanced nutrition\" in every bite, to create a delicious snack for those who want to make healthier choices.\n\nCarefully crafted under the supervision of a nutritionist, our cookies are made primarily with whole wheat flour, oats, cinnamon powder, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives.\n\nDesigned with calorie-conscious snacking in mind, every bite delivers a naturally rich flavor, a warm cinnamon aroma, and a satisfying crunch, making healthy-minded snacking a little more enjoyable for health-conscious individuals and families alike.\n\nNutritional value per cookie is clearly stated on the product packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
-    },
-    "beetroot-cookies": {
-      "name": "Beetroot Cookies",
-      "series": "Original Series",
-      "description": "With its vibrant reddish-purple color and distinctive flavor, our Healthy & Happy Beetroot Cookies stand out from typical cookies and are a delicious choice for those who want to enjoy a tasty snack while getting the nutritional benefits of vegetables, managing their weight, making healthier food choices, and being mindful of their blood sugar levels.\n\nWith the earthy aroma of beetroot carefully balanced, Healthy & Happy Beetroot Cookies combine the subtly sweet, nutty flavor of oats with whole wheat flour and unsalted butter, and crafted under the supervision of nutritionist, each bite delivers a satisfyingly crisp and crunchy texture that keeps you coming back for more.\n\nRich in dietary fiber, these cookies are a convenient choice for those managing their weight and looking for a more satisfying snack. Made without added sugar, artificial sweeteners, or preservatives, they are a thoughtful option for health-conscious individuals like diabetics and cancer patients and even children to enjoy as part of a balanced diet.\n\nNutrition value per cookie is provided on packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
-    },
-    "nuts-cookies": {
-      "name": "Nuts Cookies",
-      "series": "Original Series",
-      "description": "Known as a nutrient powerhouse, from Healthy & Happy Nuts Cookies bring together the naturally rich aroma and satisfying taste of nuts in every bite—making your everyday snack a little more delightful with healthy fats, protein, fiber, vitamins, and minerals.\n\nCrafted under the supervision of a nutritionist, Healthy & Happy Nuts Cookies combine the naturally rich, nutty sweetness of nuts with whole wheat flour and unsalted butter for a delightfully crisp and crumbly texture in every bite.\n\nMade without added sugar, artificial sweeteners, or preservatives, they are a thoughtful snack choice for those who prioritize healthier eating, as well as families looking for enjoyable treats for their children.\n\nNutritional value per cookie is clearly stated on the product packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Original Series"]
-    },
-    "nuts-cake": {
-      "name": "Nuts Cake",
-      "series": "Original Series",
-      "description": "Craving a little cake but worried about blood sugar, weight gain, or coughing? Our Healthy & Happy Nuts Cake, made with absolutely no added sugar, is here to satisfy your conflicting cravings and ease your concerns, so you can enjoy every bite with greater peace of mind without worrying about blood sugar, weight gain or coughing.\n\nAlthough made primarily with whole wheat flour, our team has carefully crafted this cake to avoid the usual dryness and rough texture of whole wheat baked goods, making it smooth and easy to enjoy. Developed under the supervision of a nutritionist, each slice contains just 96 calories, allowing you to enjoy a delicious treat while being mindful of your calorie intake.\n\nThanks to the crushed ground nuts and seeds, every bite delivers a naturally sweet, rich, and nutty flavor reminiscent of a heavenly fruitcake, offering a delightful treat for those who are mindful of their sugar intake.\n\nNutrition value per slice is provided on packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
-    },
-    "lavash": {
-      "name": "Lavash",
-      "series": "Original Series",
-      "description": "Whether munching for fun or satisfying hunger, enjoy that irresistible crunch day or night without worrying about weight gain or blood sugar spikes, with Healthy & Happy Lavash—your guilt-free snack choice for pure crunch, pure enjoyment.\n\nMade primarily with whole wheat and sesame, Healthy & Happy Lavash are crafted under the supervision of nutritionist, with no added sugar or preservatives. At just 15 calories per piece, they offer a deliciously crispy, potato-chip-like crunch with nourishing goodness in every bite—an appealing snack option for those managing their weight or seeking to make more mindful food choices.\n\nNutrition value per piece is provided on packaging.",
-      "price": "5,000 MMK",
-      "tags": ["No Sugar", "Low Calories", "Original Series"]
+    {
+      "id": "low-calories-series",
+      "name": "Low Calories Series"
     }
-  }
+  ],
+  "items": [
+    {
+      "id": "protein-bite-original",
+      "name": "Protein Bite (Original)",
+      "pcs": "10 Pcs",
+      "series": "protein-series",
+      "seriesLabel": "Protein Series",
+      "highlight": "Plant-Based Protein for Everyday Energy",
+      "description": "Whether hitting gym, including as a protein source in your pre- or post-workout meal plan, following a vegetarian diet, managing your weight and looking for extra protein, or recovering from illness and needing additional nourishment, Healthy & Happy Protein Bite (Original) makes meeting your daily protein needs easy and convenient—no calculations or meal prep required. Created with a heartfelt mission to support the nutritional needs of people across Myanmar.\n\nMade primarily with locally sourced peanuts, oats, whole wheat, and chickpeas, each cookie provides 4 g of plant-based protein. Developed under the supervision of a nutrition professional, Healthy & Happy Protein Bite (Original) offers a convenient way to supplement your daily protein intake without the need for cooking or meal preparation.\n\nThe warm, comforting aroma of peanuts brings back the cozy feeling of home, while the addition of chocolate chips creates a rich, nutty sweetness that satisfies both your cravings and your heart.\n\nNutritional value per cookie is clearly stated on the product packaging.",
+      "price": "13,500 MMK",
+      "tags": ["Plant-Based Protein", "High Protein", "Smart Nutrition"]
+    },
+    {
+      "id": "energy-bar",
+      "name": "Energy Bar",
+      "pcs": "3 Pcs",
+      "series": "protein-series",
+      "seriesLabel": "Protein Series",
+      "highlight": "Power Your Day, Naturally",
+      "description": "Whether busy with work and have irregular meal times, traveling, looking for a boost in stamina and focus during your workouts, or searching for a protein-rich snack to keep you feeling full while managing your weight, those who often feel hungry, want a nutritious snack, or concerned about blood sugar spikes, Healthy & Happy Energy Bar is the perfect easy to store, easy to carry, and easy to enjoy, on-the-go choice.\n\nDeveloped from nutrient-rich nuts and seeds under the supervision of a nutritionist, each bar delivers 7 g of plant-based protein to help keep you feeling satisfied for up to 6 hours. It’s a nourishing choice for those who tend to feel hungry frequently or are looking to manage your weight.\n\nWith no added sugar, artificial sweeteners, or preservatives, it’s a mindful snacking option for anyone seeking to reduce sugar intake and embrace healthier eating habits.\n\nNutritional value for each bar is provided on the packaging.",
+      "price": "12,000 MMK",
+      "tags": ["Plant-Based Protein", "No Sugar", "Protein-Rich", "Natural Energy"]
+    },
+    {
+      "id": "nuts-bread",
+      "name": "Nuts Bread",
+      "pcs": "12 Pcs",
+      "series": "protein-series",
+      "seriesLabel": "Protein Series",
+      "highlight": "Wholesome Bread with a Nutty Boost",
+      "description": "Enriched with nutrient-dense nuts and whole grains under the supervision of a nutritionist, Healthy & Happy Nuts Bread provides natural plant-based protein and healthy fats without added sugar or preservatives.",
+      "price": "7,000 MMK",
+      "tags": ["No Sugar", "Nut-Rich", "Protein-Packed"]
+    },
+    {
+      "id": "spinach-cookies",
+      "name": "Spinach Cookies",
+      "pcs": "15 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "A Green Goodness in Every Bite",
+      "description": "Made with real spinach, our innovative spinach cookies transform an everyday vegetable into a delicious, value-added snack.\n\nCarefully Crafted under the supervision of a nutritionist, our cookies are thoughtfully developed with whole wheat, oats, real spinach, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives for health-conscious consumers, as well as families looking for more wholesome treat for their children.\n\nDesigned with calorie-conscious snacking in mind, every bite delivers a naturally delicious aroma, a delightful crunch, and the benefits of vegetables in one tasty bite.\n\nNutrition value per cookie is clearly stated on the product packaging.",
+      "price": "15,000 MMK",
+      "tags": ["No Sugar", "Low Calorie", "Green Goodness"]
+    },
+    {
+      "id": "cinnamon-cookies",
+      "name": "Cinnamon Cookies",
+      "pcs": "15 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Warm Spice, Wholesome Goodness",
+      "description": "Our Healthy & Happy's Cinnamon Cookies bring together the distinctive flavor of cinnamon and wholesome ingredients to give you \"the full feeling of goodness, healthiness, and balanced nutrition\" in every bite, to create a delicious snack for those who want to make healthier choices.\n\nCarefully crafted under the supervision of a nutritionist, our cookies are made primarily with whole wheat flour, oats, cinnamon powder, and unsalted butter, with no added sugar, artificial sweeteners, or preservatives.\n\nDesigned with calorie-conscious snacking in mind, every bite delivers a naturally rich flavor, a warm cinnamon aroma, and a satisfying crunch-making healthy-minded snacking a little more enjoyable for health-conscious individuals and families alike.\n\nNutritional value per cookie is clearly stated on the product packaging.",
+      "price": "15,000 MMK",
+      "tags": ["No Sugar", "Light & Wholesome", "Naturally Aromatic"]
+    },
+    {
+      "id": "oat-cookies",
+      "name": "Oat Cookies",
+      "pcs": "15 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Simple Oats, Everyday Goodness",
+      "description": "For those who want to feel fuller with smaller portions while managing their weight, enjoy delicious treats without sacrificing taste, snack mindfully without feeling guilty, and choose a fiber-rich snack to help stay full longer, Healthy & Happy Oat Cookies is a deliciously satisfying, a smarter way to snack.\n\nNot only with the simple goodness of oats with a gentle sweetness and a rich, buttery taste, but also made with whole wheat and unsalted butter under the supervision of a nutritionist, every bite delivers a uniquely crispy crunch that keeps you coming back for more.\n\nPacked with fibers to help you feel fuller for longer, these cookies are the perfect choice for mindful snackers who want to manage their portions and enjoy delicious treats without compromising on taste.\n\nEven better, they contain no added sugar, artificial sweeteners, or preservatives, making them a thoughtful snack choice for health-conscious individuals and families, including children.\n\nNutritional value per cookie is clearly stated on the product packaging.",
+      "price": "16,000 MMK",
+      "tags": ["No Sugar", "Oat Goodness", "Low Calorie"]
+    },
+    {
+      "id": "protein-bite-diabetes",
+      "name": "Protein Bite (Diabetes)",
+      "pcs": "10 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Smart Nutrition for Better Choices",
+      "description": "Whether concerned about blood sugar spikes due to frequent hunger, including as a protein source in your pre- or post-workout meal plan, avoiding sugar for health reasons, hitting the gym, following a vegetarian diet, managing your weight and seeking extra protein, or recovering from illness and needing additional nourishment, Healthy & Happy Protein Bite (Diabetes) makes meeting your daily protein needs easy and convenient—no calculations or meal prep required. Created with a heartfelt mission to support the nutritional needs of people across Myanmar.\n\nEach Healthy & Happy Protein Bite (Diabetes) delivers 4 g of plant-based protein from locally sourced ingredients, including peanuts, oats, whole wheat, and chickpeas. Created under the guidance of a nutrition professional, these cookies provide a simple and convenient way to boost your daily protein intake without the hassle of cooking or preparing meals.\n\nWith its warm, inviting peanut aroma that feels like coming home, every bite offers a naturally rich, nutty flavor that leaves you feeling satisfied, nourished, and comfortably full.\n\nNutritional value per cookie is clearly stated on the product packaging.",
+      "price": "13,000 MMK",
+      "tags": ["Plant-Based Protein", "No Sugar", "High Protein", "Smart Nutrition"]
+    },
+    {
+      "id": "beetroot-cookies",
+      "name": "Beetroot Cookies",
+      "pcs": "15 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Naturally Good, Naturally Colorful",
+      "description": "With its vibrant reddish-purple color and distinctive flavor, our Healthy & Happy Beetroot Cookies stand out from typical cookies by a delicious choice for those who want to enjoy a tasty snack while getting the nutritional benefits of vegetables, managing their weight, making healthier food choices, and being mindful of their blood sugar levels.\n\nWith the earthy aroma of beetroot carefully balanced, Healthy & Happy Beetroot Cookies combine the subtly sweet, nutty flavor of oats with whole wheat flour and unsalted butter, and crafted under the supervision of nutritionist, each bite delivers a satisfyingly crisp and crunchy texture that keeps you coming back for more.\n\nRich in dietary fiber, these cookies are a convenient choice for those managing their weight and looking for a more satisfying snack. Made without added sugar, artificial sweeteners, or preservatives, they are a thoughtful option for health-conscious individuals like diabetics and cancer patients and even children to enjoy as part of a balanced diet.\n\nNutrition value per cookie is provided on packaging.",
+      "price": "16,000 MMK",
+      "tags": ["No Sugar", "Naturally Colorful", "Wholesome Goodness"]
+    },
+    {
+      "id": "nuts-cake",
+      "name": "Nuts Cake",
+      "pcs": "10 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Nutty Goodness in Every Slice",
+      "description": "Craving a little cake but worried about blood sugar, weight gain, or coughing? Our Healthy & Happy Nuts Cake, made with absolutely no added sugar, is here to satisfy your conflicting cravings and ease your concerns, so you can enjoy every bite with greater peace of mind without worrying about blood sugar, weight gain or coughing.\n\nAlthough made primarily with whole wheat flour, our team has carefully crafted this cake to avoid the usual dryness and rough texture of whole wheat baked goods, making it smooth and easy to enjoy. Developed under the supervision of a nutritionist, each slice contains just 96 calories, allowing you to enjoy a delicious treat while being mindful of your calorie intake.\n\nThanks to the crushed ground nuts and seeds, every bite delivers a naturally sweet, rich, and nutty flavor reminiscent of a heavenly fruitcake, offering a delightful treat for those who are mindful of their sugar intake.\n\nNutrition value per slice is provided on packaging.",
+      "price": "11,000 MMK",
+      "tags": ["No Sugar", "Nut-Rich", "Satisfying Goodness"]
+    },
+    {
+      "id": "whole-meal-bread",
+      "name": "Whole Meal Bread",
+      "pcs": "5 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Whole Grains for Everyday Nourishment",
+      "description": "Crafted with wholesome whole wheat grains under the supervision of a nutritionist, Healthy & Happy Whole Meal Bread contains no added sugar, artificial sweeteners, or preservatives—offering soft, fiber-rich nourishment for everyday balanced meals.",
+      "price": "4,500 MMK",
+      "tags": ["No Sugar", "Whole Grain Goodness", "Everyday Nutrition"]
+    },
+    {
+      "id": "nuts-cookies",
+      "name": "Nuts Cookies",
+      "pcs": "14 Pcs",
+      "series": "sugar-free-series",
+      "seriesLabel": "Sugar Free Series",
+      "highlight": "Crunchy, Nutty & Naturally Satisfying",
+      "description": "Known as a nutrient powerhouse, the nuts and seeds from Healthy & Happy Nuts Cookies bring together the naturally rich aroma and satisfying taste of nuts in every bite—making your everyday snack a little more delightful with healthy fats, protein, fiber, vitamins, and minerals.\n\nCrafted under the supervision of a nutritionist, Healthy & Happy Nuts Cookies combine the naturally rich, nutty sweetness of nuts with whole wheat flour and unsalted butter for a delightfully crisp and crumbly texture in every bite.\n\nMade without added sugar, artificial sweeteners, or preservatives, they are a thoughtful snack choice for those who prioritize healthier eating, as well as families looking for enjoyable treats for their children.\n\nNutritional value per cookie is clearly stated on the product packaging.",
+      "price": "16,000 MMK",
+      "tags": ["No Sugar", "Crunchy", "Nutritious", "Low Calories"]
+    },
+    {
+      "id": "chocolate-chip-cookies",
+      "name": "Chocolate Chip Cookies",
+      "pcs": "15 Pcs",
+      "series": "low-calories-series",
+      "seriesLabel": "Low Calories Series",
+      "highlight": "Classic Comfort in Every Bite",
+      "description": "Made with whole wheat flour, unsalted butter, and rich chocolate chips without added refined sugar or preservatives, Healthy & Happy Chocolate Chip Cookies bring classic comfort to mindful everyday snacking.",
+      "price": "14,500 MMK",
+      "tags": ["No Sugar", "Rich Chocolate Taste", "Low Calories"]
+    },
+    {
+      "id": "lavash",
+      "name": "Lavash",
+      "pcs": "25 Pcs",
+      "series": "low-calories-series",
+      "seriesLabel": "Low Calories Series",
+      "highlight": "Light, Wholesome & Versatile",
+      "description": "Whether munching for fun or satisfying hunger, enjoy that irresistible crunch day or night without worrying about weight gain or blood sugar spikes, with Healthy & Happy Lavash—your guilt-free snack choice for pure crunch, pure enjoyment.\n\nMade primarily with whole wheat and sesame, Healthy & Happy Lavash are crafted under the supervision of nutritionist, with no added sugar or preservatives. At just 15 calories per piece, they offer a deliciously crispy, potato-chip-like crunch with nourishing goodness in every bite—an appealing snack option for those managing their weight or seeking to make more mindful food choices.\n\nNutrition value per piece is provided on packaging.",
+      "price": "8,500 MMK",
+      "tags": ["No Sugar", "Light", "Wholesome", "Low Calories"]
+    },
+    {
+      "id": "egg-tart",
+      "name": "Egg Tart",
+      "pcs": "2 Pcs",
+      "series": "low-calories-series",
+      "seriesLabel": "Low Calories Series",
+      "highlight": "Golden, Creamy & Comforting",
+      "description": "Thoughtfully baked without added sugar or artificial sweeteners, Healthy & Happy Egg Tart delivers a light, creamy, and comforting treat calibrated for mindful calorie intake.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Light & Creamy", "Deliciously Balanced", "Low Calories"]
+    },
+    {
+      "id": "yogurt-cake",
+      "name": "Yogurt Cake",
+      "pcs": "1 Pcs",
+      "series": "low-calories-series",
+      "seriesLabel": "Low Calories Series",
+      "highlight": "Light, Soft & Delightfully Creamy",
+      "description": "Soft, airy, and crafted with wholesome yogurt and no added sugar, Healthy & Happy Yogurt Cake offers a naturally delightful, low-calorie dessert experience.",
+      "price": "5,000 MMK",
+      "tags": ["No Sugar", "Light & Soft", "Naturally Delightful", "Low Calories"]
+    }
+  ]
 }

@@ -3,22 +3,57 @@
     "established": "Est. 2017 in Mandalay, Myanmar",
     "company": "Healthy & Happy Myanmar Co., Ltd.",
     "heroAlt": "Leaf",
-    "intro": "The Healthy Plate is dedicated to promoting a wholesome lifestyle centered around fresh ingredients, balanced nutrition, and overall well-being. Our brand identity reflects vitality, health, and happiness through vibrant green aesthetics and clear nutritional categorization.",
-    "valuesTitle": "Brand Values",
+    "intro": "At Healthy & Happy, we believe better nutrition can create healthier people, happier lives, and stronger communities. We create nutritious, plant-based, high-protein food products that make healthy living more accessible, practical, and enjoyable — while creating positive impact for our communities and farmers.",
+    "valuesTitle": "Our Brand Values",
     "values": [
       {
-        "title": "Freshness",
-        "description": "Emphasizing farm-fresh vegetables, fruits, and organic produce"
+        "title": "Healthy",
+        "description": "We believe good health starts with better everyday nutrition. We create nutritious, plant-based food products designed to support a healthier lifestyle."
       },
       {
-        "title": "Balance",
-        "description": "Highlighting whole grains, lean proteins, and wholesome nutrition."
+        "title": "Happy",
+        "description": "Healthy living should be enjoyable, not complicated. We make nutritious food that brings convenience, confidence, and happiness to everyday life."
       },
       {
-        "title": "Joy & Vitality",
-        "description": "Inspiring a positive, energetic lifestyle summarized by our motto: Healthy & Happy"
+        "title": "Responsible",
+        "description": "We believe our impact goes beyond our customers. By working with farmers and supporting responsible food production, we aim to create value throughout the entire food system."
       }
     ],
+    "coreValuesTitle": "Our Core Values — HCPPN",
+    "coreValuesIntro": "At Healthy & Happy, we believe that better nutrition can create healthier people, happier families, and a stronger community.",
+    "coreValues": [
+      {
+        "code": "H",
+        "title": "Healthy",
+        "description": "We believe in creating better food choices that support healthier everyday living."
+      },
+      {
+        "code": "C",
+        "title": "Community Support",
+        "description": "We create positive impact by supporting farmers, communities, and people around us."
+      },
+      {
+        "code": "P",
+        "title": "Plant-Based",
+        "description": "We promote nutritious plant-based protein food as a better choice for people and the planet."
+      },
+      {
+        "code": "P",
+        "title": "High Protein",
+        "description": "We focus on high-protein nutrition to support energy, strength, and everyday well-being."
+      },
+      {
+        "code": "N",
+        "title": "Nutrition",
+        "description": "We put nutrition at the heart of everything we create, combining quality ingredients with purposeful nutrition."
+      }
+    ],
+    "philosophy": {
+      "title": "Our Philosophy",
+      "heading": "Healthy People. Happy Lives. Stronger Communities.",
+      "description": "We believe that every better food choice can create a positive change — for individuals, families, farmers, and society.",
+      "motto": "Healthy & Happy — Your Daily Nutrition Partner, Every Step of the Way!"
+    },
     "historyTitle": "Our History",
     "history": [
       "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs and a pioneering nutritionist.",
@@ -91,7 +126,6 @@
       "Life Plus",
       "Sein Gay Har",
       "Healthy & Happy Store"
-
     ],
     "note": "Apart from major modern trade venues, our products are widely available at prominent regional supermarkets and trusted local retail shops across the country"
   }

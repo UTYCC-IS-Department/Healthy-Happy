@@ -32,7 +32,7 @@
         "id": "story",
         "label": "Our Story",
         "title": "Our Story",
-        "content": "Established in 2017 in the vibrant city of Mandalay, Myanmar, Healthy & Happy Myanmar Co., Ltd. was founded by three visionary women entrepreneurs together with a pioneering nutritionist. Our mission is to revolutionize health and wellness in Myanmar by creating innovative, plant-based nutritional products that promote a balanced diet while supporting sustainable agricultural practices."
+        "content": "Born with Purpose. Growing with People.\n\nSince 2017, Healthy & Happy has been on a journey to make better nutrition accessible through plant-based, protein-rich foods — while creating value for farmers, people, and our communities."
       },
       {
         "id": "products",
@@ -42,9 +42,15 @@
       },
       {
         "id": "brands",
-        "label": "Our Brands",
-        "title": "Our Brands",
-        "content": "Under Healthy & Happy Myanmar, our signature product lines lead the local health movement. Recognized across major retail channels and health forums, our brand represents reliability, wholesome nutrition, and a firm commitment to clean eating for every household."
+        "label": "Our Brand",
+        "title": "Our Brand",
+        "content": "Healthy Food. Happy Life. Better Future.\n\nWe believe in WIN–WIN–WIN — creating better nutrition for people, better opportunities for farmers, and sustainable growth for our business."
+      },
+      {
+        "id": "services",
+        "label": "Our Services",
+        "title": "R&D-Driven Food Manufacturing",
+        "content": "From Idea to Product.\n\nWe develop and manufacture innovative, nutrition-focused food products — including OEM & Custom Product Development."
       }
     ],
     "seeMore": "See More"

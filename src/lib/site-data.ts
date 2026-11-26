@@ -13,8 +13,6 @@ export type ProductMedia = {
 };
 
 const productImage1 = mediaUrl("product-1", "/healthy-happy/Protein Bite (Original).png");
-const productImage2 = mediaUrl("product-2", "/healthy-happy/Peanut Butter (No Sugar).png");
-const productImage3 = mediaUrl("product-3", "/healthy-happy/Iron-Enriched-Cookies.png");
 const productImage4 = mediaUrl("product-4", "/healthy-happy/Energy Bar.JPG");
 const productImage5 = mediaUrl("product-5", "/healthy-happy/Spinach Cookies.png");
 const productImage6 = mediaUrl("product-6", "/healthy-happy/Oat Cookies.png");
@@ -34,20 +32,29 @@ const nutsCookiesImage = mediaUrl(
   "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821590/nut_cookies_a4ivnc.jpg",
 );
 
+// Temporary fallback images until dedicated images are added for the remaining 5 items
+const wholeMealBreadImage = mediaUrl("product-whole-meal-bread", productImage6);
+const nutsBreadImage = mediaUrl("product-nuts-bread", productImage1);
+const eggTartImage = mediaUrl("product-egg-tart", nutsCakeImage);
+const yogurtCakeImage = mediaUrl("product-yogurt-cake", nutsCakeImage);
+const chocolateChipCookiesImage = mediaUrl("product-chocolate-chip-cookies", productImage1);
+
 export const productMedia: ProductMedia[] = [
   ["protein-bite-original", productImage1],
   ["protein-bite-diabetes", productImage7],
-  ["peanut-butter-no-sugar", productImage2],
-  ["iron-enriched-cookies", productImage3],
-  ["energy-bar", productImage4],
   ["spinach-cookies", productImage5],
-  ["oat-cookies", productImage6],
   ["cinnamon-cookies", productImage9],
+  ["oat-cookies", productImage6],
   ["beetroot-cookies", productImage8],
-  ["nuts-cookies", nutsCookiesImage],
-  ["nuts-cake", nutsCakeImage],
+  ["energy-bar", productImage4],
   ["lavash", lavashImage],
-  ["protein-bite-diabetes", productImage1],
+  ["nuts-cake", nutsCakeImage],
+  ["whole-meal-bread", wholeMealBreadImage],
+  ["nuts-bread", nutsBreadImage],
+  ["nuts-cookies", nutsCookiesImage],
+  ["egg-tart", eggTartImage],
+  ["yogurt-cake", yogurtCakeImage],
+  ["chocolate-chip-cookies", chocolateChipCookiesImage],
 ].map(([id, image]) => ({
   id,
   image,

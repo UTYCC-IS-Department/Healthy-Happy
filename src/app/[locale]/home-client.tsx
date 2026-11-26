@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Award, BookOpen, Mail, MapPin, Phone, RefreshCcw } from "lucide-react";
+import { ArrowRight, Award, BookOpen, Factory, Mail, MapPin, Phone, RefreshCcw } from "lucide-react";
 import { SiFacebook, SiTiktok, SiWhatsapp } from "react-icons/si";
 import PerfectCoverCarousel, { ProductCarousel, ProductionPlaceCarousel } from "@/components/home-carousel";
 import { assets } from "@/lib/site-data";
@@ -23,13 +23,38 @@ interface Feature {
   content: string;
 }
 
-const featureIcons = [BookOpen, RefreshCcw, Award];
+const featureIcons = [BookOpen, RefreshCcw, Award, Factory];
+
+const HOME_FEATURE_SERIES = [
+  {
+    slug: "protein-series",
+    label: "Protein Series",
+    image: cloudinaryImage("/healthy-happy/Energy-Bar"),
+  },
+  {
+    slug: "sugar-free-series",
+    label: "Sugar Free Series",
+    image: cloudinaryImage("/healthy-happy/Spinach-Cookies"),
+  },
+  {
+    slug: "low-calories-series",
+    label: "Low Calories Series",
+    image:
+      "https://res.cloudinary.com/dh6jges3r/image/upload/f_auto,q_auto,c_limit,w_1600/v1794821484/lavash_s7u4xi.jpg",
+  },
+] as const;
 
 export default function HomeClient({ locale, messages }: { locale: Locale; messages: HomeMessages }) {
   const JourneyAndHappyFeatures: Feature[] = messages.journey.features.map((feature, index) => ({
     ...feature,
-    icon: featureIcons[index],
-    href: `/${locale}/${feature.id === "products" ? "products" : "about"}`,
+    icon: featureIcons[index] ?? BookOpen,
+    href: `/${locale}/${
+      feature.id === "products"
+        ? "products"
+        : feature.id === "services"
+          ? "contact"
+          : "about"
+    }`,
   }));
   const [activeTab, setActiveTab] = useState(0);
   const shouldReduceMotion = useReducedMotion();
@@ -103,16 +128,14 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
           </h2>
 
           <div
-            className="flex justify-between gap-3 overflow-x-auto scrollbar-hide sm:gap-6"
+            className="flex flex-wrap justify-center gap-4 sm:gap-8"
             style={{ marginBottom: "40px", paddingBottom: "16px" }}
           >
-            {messages.categories.items.map((name, index) => {
-              const slug = ["protein-bites", "no-sugar-cookies", "oat-cookies", "healthy-snacks", "original-series"][index];
-              return (
+            {HOME_FEATURE_SERIES.map((series) => (
               <a
-                key={slug}
-                href={`/${locale}/products?category=${slug}`}
-                className="group relative flex w-36 shrink-0 flex-col items-center sm:w-42"
+                key={series.slug}
+                href={`/${locale}/products?category=${series.slug}`}
+                className="group relative flex w-40 shrink-0 flex-col items-center sm:w-48"
               >
                 <div className="relative w-full">
                   <svg
@@ -121,7 +144,6 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
                     xmlns="http://www.w3.org/2000/svg"
                     className="w-full drop-shadow-md"
                   >
-                    {/* Shorter Downward Trend Path */}
                     <path
                       d="M 16 0 
        H 144 
@@ -144,36 +166,27 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
 
                   <div className="absolute left-[7%] top-[6%] h-[68%] w-[86%] overflow-hidden rounded-xl bg-white">
                     <Image
-                      src={
-                        slug === "no-sugar-cookies"
-                          ? cloudinaryImage("/healthy-happy/Spinach-Cookies")
-                          : slug === "oat-cookies"
-                            ? cloudinaryImage("/healthy-happy/Oat-Cookies")
-                            : slug === "healthy-snacks"
-                              ? cloudinaryImage("/healthy-happy/Energy-Bar")
-                              : slug === "original-series"
-                                ? cloudinaryImage("/healthy-happy/Beetroot-Cookies")
-                                : assets.product
-                      }
-                      alt={name}
+                      src={series.image}
+                      alt={series.label}
                       fill
-                      sizes="(max-width: 640px) 144px, 160px"
+                      sizes="(max-width: 640px) 160px, 192px"
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
 
                   <div className="absolute bottom-[4%] left-0 right-0 flex items-center justify-center px-2">
                     <span className="whitespace-nowrap text-center text-[11px] font-bold text-white sm:text-xs">
-                      {name}
+                      {series.label}
                     </span>
                   </div>
                 </div>
               </a>
-              );
-            })}
+            ))}
           </div>
 
-          <ProductCarousel locale={locale} messages={messages.productCarousel} />
+          
+
+<ProductCarousel locale={locale} messages={messages.productCarousel} />
         </div>
       </section>
       </ScrollReveal>
@@ -205,16 +218,16 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
               <div className="md:h-80 grid grid-cols-2 md:grid-cols-1 gap-3">
                 <div className="relative w-full h-37.5 sm:h-45.5 rounded-2xl overflow-hidden bg-[#d9d9d9]">
                   <Image
-                    src={assets.banner}
-                    alt={messages.journey.imageAlt.journey}
+                    src={cloudinaryImage("/healthy-happy/Spinach-Cookies")}
+                    alt="Spinach Cookies"
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="relative w-full h-37.5 sm:h-45.5 rounded-2xl overflow-hidden bg-[#d9d9d9]">
                   <Image
-                    src={assets.banner}
-                    alt={messages.journey.imageAlt.journey}
+                    src={cloudinaryImage("/healthy-happy/Energy-Bar")}
+                    alt="Energy Bar"
                     fill
                     className="object-cover"
                   />
@@ -229,13 +242,10 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
                 />
               </div>
             </div>
-            {/* <p className="text-[10px] text-muted">
-              Our story is one of family, perseverance, and commitment to the communities we serve.
-            </p> */}
           </div>
         </div>
-        <div className="mx-auto grid md:max-w-7xl gap-10 px-4 sm:px-8 lg:grid-cols-6 lg:px-12 mt-7 md:mt-12 lg:mt-7">
-          <div className="flex items-center  gap-2 text-xs font-bold text-primary lg:col-span-2">
+        <div className="mx-auto grid md:max-w-7xl items-start gap-6 px-4 sm:px-8 lg:grid-cols-6 lg:px-12 mt-7 md:mt-12 lg:mt-8">
+          <div className="grid grid-cols-2 gap-2.5 text-xs font-bold text-primary lg:col-span-2">
             {JourneyAndHappyFeatures.map((tab, index) => {
               const Icon = tab.icon;
               const isActive = index === activeTab;
@@ -243,14 +253,15 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
               return (
                 <button
                   key={tab.id}
+                  type="button"
                   onClick={() => setActiveTab(index)}
-                  className={`flex items-center gap-2 lg:text-[10px] xl:text-[12px] text-[12px] rounded-full lg:px-2 xl:px-3  px-3 py-2 cursor-pointer transition-all duration-300 ${isActive
-                    ? "bg-black text-white shadow-md scale-105"
-                    : "bg-gray-200 text-gray-800 hover:bg-amber-50"
+                  className={`flex w-full items-center justify-center gap-2 whitespace-nowrap rounded-full px-3.5 py-2.5 text-[11px] sm:text-xs cursor-pointer transition-all duration-300 ${isActive
+                    ? "bg-black text-white shadow-md"
+                    : "bg-gray-200 text-gray-800 hover:bg-gray-300"
                     }`}
                 >
-                  <Icon className="lg:size-3.5 size-4" />
-                  {tab.label}
+                  <Icon className="size-3.5 shrink-0" />
+                  <span>{tab.label}</span>
                 </button>
               );
             })}
@@ -262,19 +273,22 @@ export default function HomeClient({ locale, messages }: { locale: Locale; messa
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="space-y-3 lg:col-span-4 backdrop:blur-sm bg-[#2dc100] p-4 px-5 rounded-3xl text-white shadow-xl shadow-[#2dc100]/30 border border-white/20"
+            className="flex flex-col justify-between gap-4 lg:col-span-4 bg-[#2dc100] p-5 sm:px-6 rounded-3xl text-white shadow-xl shadow-[#2dc100]/30 border border-white/20"
           >
-            {/* title */}
-            <h4 className="text-lg font-bold">{currentTab.title}</h4>
-            <p className="text-[13px] font-medium text-gray-100 leading-4.5 -mt-3 relative">
-              {currentTab.content}
+            <div className="space-y-2">
+              <h4 className="text-lg font-bold">{currentTab.title}</h4>
+              <p className="text-[13px] font-medium text-gray-100 leading-relaxed whitespace-pre-line">
+                {currentTab.content}
+              </p>
+            </div>
+            <div className="flex justify-end">
               <Link
                 href={currentTab.href}
-                className="ml-2 text-white bg-black absolute -bottom-8 right-5 px-4 py-2 rounded-2xl cursor-pointer hover:bg-gray-600 transition-colors text-md font-semibold"
+                className="inline-flex items-center text-white bg-black px-4 py-2 rounded-2xl cursor-pointer hover:bg-gray-800 transition-colors text-sm font-semibold"
               >
                 {messages.journey.seeMore}
               </Link>
-            </p>
+            </div>
           </motion.div>
           </AnimatePresence>
         </div>
