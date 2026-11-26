@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 // Configure the Roboto font
@@ -40,7 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased ${roboto.variable}`}>
-      <body className="min-h-full font-sans" suppressHydrationWarning>{children}</body>
+      <body className="min-h-full font-sans" suppressHydrationWarning>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
